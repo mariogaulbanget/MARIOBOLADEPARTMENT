@@ -17,6 +17,8 @@ function setOrbitPaused(isPaused) {
   });
 }
 
+const standingsApi = "/api/standings";
+
 const fetchJson = async url => {
   const response = await fetch(url, { signal: AbortSignal.timeout(7000) });
   if (!response.ok) throw new Error(`Request failed: ${response.status}`);
@@ -32,39 +34,22 @@ async function showStandings(leagueElement) {
   standingsModal.classList.add("show");
 
   try {
-    const seasonsData = await fetchJson(`https://www.sofascore.com/api/v1/unique-tournament/${leagueId}/seasons`);
-    const seasons = seasonsData.seasons || [];
-    let currentSeason;
-    let rows = [];
+    const standingsData = await fetchJson(`${standingsApi}?league=${encodeURIComponent(leagueId)}`);
+    if (!standingsData.rows?.length) throw new Error("Standings unavailable");
 
-    for (const season of seasons) {
-      try {
-        const standingsData = await fetchJson(`https://www.sofascore.com/api/v1/unique-tournament/${leagueId}/season/${season.id}/standings/total`);
-        const availableRows = standingsData.standings?.[0]?.rows || [];
-        if (availableRows.length) {
-          currentSeason = season;
-          rows = availableRows;
-          break;
-        }
-      } catch {
-        continue;
-      }
-    }
-
-    if (!currentSeason) throw new Error("Standings unavailable");
-
-    standingsStatus.textContent = `${currentSeason.name.toUpperCase()} • DATA LIVE`;
-    standingsRows.innerHTML = rows.slice(0, 20).map(row => `
+    standingsStatus.textContent = `${standingsData.competition.toUpperCase()} ${standingsData.season} • DATA LIVE`;
+    standingsRows.innerHTML = standingsData.rows.slice(0, 20).map(row => `
       <tr>
         <td>${row.position ?? "-"}</td>
-        <td><strong>${row.team?.name ?? "Unknown team"}</strong></td>
-        <td>${row.matches ?? row.played ?? 0}</td>
+        <td><strong>${row.team ?? "Unknown team"}</strong></td>
+        <td>${row.played ?? 0}</td>
         <td>${row.goalDifference ?? 0}</td>
         <td><strong>${row.points ?? 0}</strong></td>
       </tr>
     `).join("");
   } catch {
-    standingsStatus.textContent = "KLASEMEN BELUM TERSEDIA. COBA LAGI NANTI.";
+    standingsStatus.textContent = "API klasemen ditolak browser. Buka sumber klasemen terbaru:";
+    standingsRows.innerHTML = `<tr><td colspan="5" class="standings-fallback"><a class="btn btn-primary" href="${leagueElement.dataset.standingsUrl || "https://www.sofascore.com/football"}" target="_blank" rel="noopener noreferrer">BUKA KLASEMEN TERBARU ↗</a></td></tr>`;
   }
 }
 
