@@ -45,3 +45,4 @@ a{text-decoration:none;color:inherit}button{font:inherit;color:inherit}.site-hea
 .track-6 .orbit-team{background:var(--panel2);border-color:rgba(233,75,155,.9);box-shadow:0 0 16px rgba(233,75,155,.85),0 0 34px rgba(233,75,155,.35)}
 .track-7 .orbit-team{background:var(--panel2);border-color:rgba(55,200,255,.95);box-shadow:0 0 16px rgba(55,200,255,.9),0 0 34px rgba(55,200,255,.4)}
 .track-8 .orbit-team{background:var(--panel2);border-color:rgba(255,23,64,.95);box-shadow:0 0 18px rgba(255,23,64,.9),0 0 36px rgba(255,23,64,.4)}
+.team-crest.has-crest{background-color:#f5f7fa;background-repeat:no-repeat;background-position:center;background-size:72%;font-size:0}.team-crest.alt.has-crest{background-color:#f5f7fa}.team-crest:not(.has-crest){background-image:none}
