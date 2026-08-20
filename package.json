@@ -1,0 +1,10 @@
+{
+  "name": "mariobola-manual-updater",
+  "private": true,
+  "version": "1.0.0",
+  "type": "module",
+  "scripts": {
+    "update": "node scripts/update-data.js",
+    "validate-data": "node scripts/update-data.js --validate"
+  }
+}
