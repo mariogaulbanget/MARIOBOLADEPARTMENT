@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/31276205/README.md)
+[README.md](https://github.com/user-attachments/files/31276526/README.md)
 # MARIOBOLA ALTERNATIF LOGIN — Public Website V1
 
 ## File utama
@@ -27,4 +27,4 @@ Liga yang memakai kode `football-data.org`: Premier League, La Liga, Serie A, Li
 
 ## BIG MATCH harian
 Section `02 / FEATURED MATCH` memakai `/api/matches?date=YYYY-MM-DD`.
-Endpoint ini mengambil pertandingan dari delapan kompetisi, memprioritaskan pertandingan live lalu pertandingan besar/terdekat, dan di-cache selama 5 menit. Setelah pertandingan selesai, halaman akan mengambil pertandingan berikutnya secara otomatis.
+Endpoint ini mengambil pertandingan dari katalog gratis yang diprioritaskan: liga top Eropa, Liga Champions, Europa League, Conference League, World Cup, Euro, dan Brasileirão. Endpoint memprioritaskan pertandingan live lalu pertandingan besar/terdekat dan di-cache selama 5 menit. Setelah pertandingan selesai, halaman akan mengambil pertandingan berikutnya secara otomatis.
