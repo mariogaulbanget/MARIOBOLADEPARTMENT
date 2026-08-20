@@ -4,65 +4,6 @@ const scrollProgress = document.getElementById("scrollProgress");
 const liveClock = document.getElementById("liveClock");
 const toast = document.getElementById("toast");
 const modal = document.getElementById("matchModal");
-const standingsModal = document.getElementById("standingsModal");
-const standingsTitle = document.getElementById("standingsTitle");
-const standingsStatus = document.getElementById("standingsStatus");
-const standingsRows = document.getElementById("standingsRows");
-const orbitTracks = document.querySelectorAll(".team-orbit-track");
-
-function setOrbitPaused(isPaused) {
-  orbitTracks.forEach(track => {
-    track.style.animationPlayState = isPaused ? "paused" : "running";
-    track.querySelector(".orbit-team").style.animationPlayState = isPaused ? "paused" : "running";
-  });
-}
-
-const standingsApi = "/api/standings";
-
-const fetchJson = async url => {
-  const response = await fetch(url, { signal: AbortSignal.timeout(7000) });
-  if (!response.ok) throw new Error(`Request failed: ${response.status}`);
-  return response.json();
-};
-
-async function showStandings(leagueElement) {
-  const leagueId = leagueElement.dataset.league;
-  const leagueName = leagueElement.dataset.leagueName;
-  standingsTitle.textContent = leagueName.toUpperCase();
-  standingsStatus.textContent = "MEMUAT KLASEMEN TERBARU...";
-  standingsRows.innerHTML = "";
-  standingsModal.classList.add("show");
-
-  try {
-    const standingsData = await fetchJson(`${standingsApi}?league=${encodeURIComponent(leagueId)}`);
-    if (!standingsData.rows?.length) throw new Error("Standings unavailable");
-
-    standingsStatus.textContent = `${standingsData.competition.toUpperCase()} ${standingsData.season} • DATA LIVE`;
-    standingsRows.innerHTML = standingsData.rows.slice(0, 20).map(row => `
-      <tr>
-        <td>${row.position ?? "-"}</td>
-        <td><strong>${row.team ?? "Unknown team"}</strong></td>
-        <td>${row.played ?? 0}</td>
-        <td>${row.goalDifference ?? 0}</td>
-        <td><strong>${row.points ?? 0}</strong></td>
-      </tr>
-    `).join("");
-  } catch {
-    standingsStatus.textContent = "API klasemen ditolak browser. Buka sumber klasemen terbaru:";
-    standingsRows.innerHTML = `<tr><td colspan="5" class="standings-fallback"><a class="btn btn-primary" href="${leagueElement.dataset.standingsUrl || "https://www.sofascore.com/football"}" target="_blank" rel="noopener noreferrer">BUKA KLASEMEN TERBARU ↗</a></td></tr>`;
-  }
-}
-
-document.querySelectorAll(".orbit-team[data-league]").forEach(leagueElement => {
-  leagueElement.addEventListener("pointerdown", () => setOrbitPaused(true));
-  leagueElement.addEventListener("click", () => showStandings(leagueElement));
-  leagueElement.addEventListener("keydown", event => {
-    if (event.key === "Enter" || event.key === " ") {
-      event.preventDefault();
-      showStandings(leagueElement);
-    }
-  });
-});
 
 menuToggle?.addEventListener("click", () => {
   const isOpen = mainNav.classList.toggle("open");
@@ -114,21 +55,11 @@ document.querySelectorAll("[data-modal]").forEach(button => {
 });
 
 document.querySelectorAll(".modal-close, .modal-close-btn").forEach(button => {
-  button.addEventListener("click", () => {
-    button.closest(".modal")?.classList.remove("show");
-    if (button.closest("#standingsModal")) setOrbitPaused(false);
-  });
+  button.addEventListener("click", () => button.closest(".modal")?.classList.remove("show"));
 });
 
 modal?.addEventListener("click", event => {
   if (event.target === modal) modal.classList.remove("show");
-});
-
-standingsModal?.addEventListener("click", event => {
-  if (event.target === standingsModal) {
-    standingsModal.classList.remove("show");
-    setOrbitPaused(false);
-  }
 });
 
 document.getElementById("year").textContent = new Date().getFullYear();
