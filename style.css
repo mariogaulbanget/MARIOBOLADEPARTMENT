@@ -33,5 +33,6 @@ a{text-decoration:none;color:inherit}button{font:inherit;color:inherit}.site-hea
 .team-orbit-track:hover,.team-orbit-track:hover .orbit-team{animation-play-state:paused}
 .hero-orb:hover .team-orbit-track,.hero-orb:hover .team-orbit-track .orbit-team{animation-play-state:paused}
 @media(max-width:680px){.standings-card{padding:28px 20px}.standings-table{min-width:450px;font-size:10px}}
+.standings-fallback{text-align:center!important;padding:30px 8px!important}
 .orb-ball{width:180px;height:180px}.track-1,.track-2,.track-3,.track-4,.track-5{inset:0}.track-6,.track-8{inset:52px}.track-7{inset:92px}
 @media(max-width:680px){.orb-ball{width:136px;height:136px}.track-1,.track-2,.track-3,.track-4,.track-5{inset:0}.track-6,.track-8{inset:34px}.track-7{inset:62px}}
