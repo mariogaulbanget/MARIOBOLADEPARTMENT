@@ -1,4 +1,3 @@
-[README.md](https://github.com/user-attachments/files/31276526/README.md)
 # MARIOBOLA ALTERNATIF LOGIN — Public Website V1
 
 ## File utama
@@ -24,6 +23,19 @@ Website memakai Cloudflare Pages Function di `functions/api/standings.js`.
 
 Klasemen dipanggil melalui `/api/standings?league=17` dan di-cache selama 5 menit.
 Liga yang memakai kode `football-data.org`: Premier League, La Liga, Serie A, Ligue 1, Bundesliga, dan Eredivisie. Liga Indonesia serta Belgian Pro League memerlukan provider dengan cakupan tambahan bila kode tersebut tidak tersedia pada akun gratis.
+
+## Update manual schedule dan berita
+File yang diedit manual:
+- `data/schedule.json` untuk pertandingan.
+- `data/news.json` untuk berita bola.
+
+Cara update:
+1. Edit isi kedua file JSON tersebut.
+2. Klik `update-data.cmd`.
+3. Pastikan muncul pesan `Update selesai`.
+4. Upload perubahan ke repository agar website ikut berubah.
+
+Script Node juga bisa dijalankan dengan `npm run update` atau divalidasi dengan `npm run validate-data`.
 
 ## BIG MATCH harian
 Section `02 / FEATURED MATCH` memakai `/api/matches?date=YYYY-MM-DD`.
