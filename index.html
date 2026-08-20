@@ -100,22 +100,22 @@
       </div>
 
       <article class="match-board">
-        <div class="match-top"><span>FEATURED FIXTURE</span><span class="competition">FOOTBALL LEAGUE</span><span class="match-status">UPCOMING</span></div>
+        <div class="match-top"><span>BIG MATCH TODAY</span><span class="competition" id="matchCompetition">FOOTBALL LEAGUE</span><span class="match-status" id="matchStatus">LOADING</span></div>
         <div class="match-main">
-          <div class="team"><div class="team-crest">A</div><h3>TEAM A</h3></div>
-          <div class="versus"><small>DATE & TIME</small><strong>VS</strong><span>COMING SOON</span></div>
-          <div class="team"><div class="team-crest alt">B</div><h3>TEAM B</h3></div>
+          <div class="team"><div class="team-crest" id="homeCrest">A</div><h3 id="homeTeam">LOADING</h3></div>
+          <div class="versus"><small id="matchDate">DATE & TIME</small><strong id="matchScore">VS</strong><span id="matchTime">CHECKING SCHEDULE</span></div>
+          <div class="team"><div class="team-crest alt" id="awayCrest">B</div><h3 id="awayTeam">LOADING</h3></div>
         </div>
         <div class="match-bottom">
-          <span>DATA AKAN DIKELOLA DARI ADMIN</span>
+          <span id="matchSource">DATA LIVE • FOOTBALL-DATA.ORG</span>
           <button class="mini-btn" data-modal="matchModal">MATCH DETAILS →</button>
         </div>
       </article>
 
       <div class="mini-fixtures">
-        <div><span>UPCOMING</span><strong>MATCH SLOT 01</strong><small>Waiting for schedule</small></div>
-        <div><span>UPCOMING</span><strong>MATCH SLOT 02</strong><small>Waiting for schedule</small></div>
-        <div><span>UPCOMING</span><strong>MATCH SLOT 03</strong><small>Waiting for schedule</small></div>
+        <div><span id="fixtureLabel1">NEXT</span><strong id="fixtureTeam1">LOADING</strong><small id="fixtureMeta1">Checking schedule</small></div>
+        <div><span id="fixtureLabel2">NEXT</span><strong id="fixtureTeam2">LOADING</strong><small id="fixtureMeta2">Checking schedule</small></div>
+        <div><span id="fixtureLabel3">NEXT</span><strong id="fixtureTeam3">LOADING</strong><small id="fixtureMeta3">Checking schedule</small></div>
       </div>
     </section>
 
@@ -191,8 +191,8 @@
     <div class="modal-card">
       <button class="modal-close" aria-label="Tutup">×</button>
       <span class="tag">MATCH DETAILS</span>
-      <h3>DETAIL MATCH AKAN TERHUBUNG KE D1.</h3>
-      <p>Pada tahap berikutnya, data tim, jadwal, kompetisi, status, dan link detail akan dibaca dari database D1.</p>
+      <h3 id="modalMatchTitle">MATCH DETAILS</h3>
+      <p id="modalMatchCopy">Data pertandingan terbaru akan dimuat dari sumber data sepak bola.</p>
       <button class="btn btn-primary modal-close-btn">UNDERSTOOD →</button>
     </div>
   </div>
