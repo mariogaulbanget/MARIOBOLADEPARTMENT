@@ -67,14 +67,14 @@
         <div class="orb-ring ring-b"></div>
         <div class="orb-ring ring-c"></div>
         <div class="team-orbit team-orbit-main" aria-label="Pemimpin delapan liga">
-          <div class="team-orbit-track track-1"><div class="orbit-team orbit-team-1" data-league="17" data-league-name="Premier League" data-standings-url="https://www.google.com/search?q=Premier+League+standings" role="button" tabindex="0"><img src="https://img.sofascore.com/api/v1/unique-tournament/17/image" alt="Logo Premier League"><span>PREMIER LEAGUE</span></div></div>
-          <div class="team-orbit-track track-2"><div class="orbit-team orbit-team-2" data-league="8" data-league-name="La Liga" data-standings-url="https://www.google.com/search?q=La+Liga+standings" role="button" tabindex="0"><img src="https://img.sofascore.com/api/v1/unique-tournament/8/image" alt="Logo La Liga"><span>LA LIGA</span></div></div>
-          <div class="team-orbit-track track-3"><div class="orbit-team orbit-team-3" data-league="23" data-league-name="Serie A" data-standings-url="https://www.google.com/search?q=Serie+A+standings" role="button" tabindex="0"><img src="https://img.sofascore.com/api/v1/unique-tournament/23/image" alt="Logo Serie A"><span>SERIE A</span></div></div>
-          <div class="team-orbit-track track-4"><div class="orbit-team orbit-team-4" data-league="34" data-league-name="Ligue 1" data-standings-url="https://www.google.com/search?q=Ligue+1+standings" role="button" tabindex="0"><img src="https://img.sofascore.com/api/v1/unique-tournament/34/image" alt="Logo Ligue 1"><span>LIGUE 1</span></div></div>
-          <div class="team-orbit-track track-5"><div class="orbit-team orbit-team-5" data-league="35" data-league-name="Bundesliga" data-standings-url="https://www.google.com/search?q=Bundesliga+standings" role="button" tabindex="0"><img src="https://img.sofascore.com/api/v1/unique-tournament/35/image" alt="Logo Bundesliga"><span>BUNDESLIGA</span></div></div>
-          <div class="team-orbit-track track-6"><div class="orbit-team orbit-team-6" data-league="37" data-league-name="Eredivisie" data-standings-url="https://www.google.com/search?q=Eredivisie+standings" role="button" tabindex="0"><img src="https://img.sofascore.com/api/v1/unique-tournament/37/image" alt="Logo Eredivisie"><span>EREDIVISIE</span></div></div>
-          <div class="team-orbit-track track-7"><div class="orbit-team orbit-team-7" data-league="1015" data-league-name="BRI Liga 1" data-standings-url="https://www.google.com/search?q=BRI+Liga+1+klasemen" role="button" tabindex="0"><img src="https://img.sofascore.com/api/v1/unique-tournament/1015/image" alt="Logo BRI Liga 1"><span>BRI LIGA 1</span></div></div>
-          <div class="team-orbit-track track-8"><div class="orbit-team orbit-team-8" data-league="38" data-league-name="Belgian Pro League" data-standings-url="https://www.google.com/search?q=Belgian+Pro+League+standings" role="button" tabindex="0"><img src="https://img.sofascore.com/api/v1/unique-tournament/38/image" alt="Logo Belgian Pro League"><span>BELGIAN PRO</span></div></div>
+          <div class="team-orbit-track track-1"><div class="orbit-team orbit-team-1"><img src="https://img.sofascore.com/api/v1/unique-tournament/17/image" alt="Logo Premier League"><span>PREMIER LEAGUE</span></div></div>
+          <div class="team-orbit-track track-2"><div class="orbit-team orbit-team-2"><img src="https://img.sofascore.com/api/v1/unique-tournament/8/image" alt="Logo La Liga"><span>LA LIGA</span></div></div>
+          <div class="team-orbit-track track-3"><div class="orbit-team orbit-team-3"><img src="https://img.sofascore.com/api/v1/unique-tournament/23/image" alt="Logo Serie A"><span>SERIE A</span></div></div>
+          <div class="team-orbit-track track-4"><div class="orbit-team orbit-team-4"><img src="https://img.sofascore.com/api/v1/unique-tournament/34/image" alt="Logo Ligue 1"><span>LIGUE 1</span></div></div>
+          <div class="team-orbit-track track-5"><div class="orbit-team orbit-team-5"><img src="https://img.sofascore.com/api/v1/unique-tournament/35/image" alt="Logo Bundesliga"><span>BUNDESLIGA</span></div></div>
+          <div class="team-orbit-track track-6"><div class="orbit-team orbit-team-6"><img src="https://img.sofascore.com/api/v1/unique-tournament/37/image" alt="Logo Eredivisie"><span>EREDIVISIE</span></div></div>
+          <div class="team-orbit-track track-7"><div class="orbit-team orbit-team-7"><img src="https://img.sofascore.com/api/v1/unique-tournament/1015/image" alt="Logo BRI Liga 1"><span>BRI LIGA 1</span></div></div>
+          <div class="team-orbit-track track-8"><div class="orbit-team orbit-team-8"><img src="https://img.sofascore.com/api/v1/unique-tournament/38/image" alt="Logo Belgian Pro League"><span>BELGIAN PRO</span></div></div>
         </div>
         <div class="orb-ball" role="img" aria-label="Bumi"></div>
         <div class="orb-label top-label">MARIOBOLA</div>
@@ -194,21 +194,6 @@
       <h3>DETAIL MATCH AKAN TERHUBUNG KE D1.</h3>
       <p>Pada tahap berikutnya, data tim, jadwal, kompetisi, status, dan link detail akan dibaca dari database D1.</p>
       <button class="btn btn-primary modal-close-btn">UNDERSTOOD →</button>
-    </div>
-  </div>
-
-  <div class="modal standings-modal" id="standingsModal" aria-hidden="true">
-    <div class="modal-card standings-card">
-      <button class="modal-close" aria-label="Tutup">×</button>
-      <span class="tag">LIVE STANDINGS</span>
-      <h3 id="standingsTitle">KLASEMEN TERBARU</h3>
-      <p class="standings-status" id="standingsStatus">Memuat klasemen...</p>
-      <div class="standings-table-wrap">
-        <table class="standings-table">
-          <thead><tr><th>#</th><th>TEAM</th><th>MP</th><th>GD</th><th>PTS</th></tr></thead>
-          <tbody id="standingsRows"></tbody>
-        </table>
-      </div>
     </div>
   </div>
 
