@@ -1,4 +1,4 @@
-[README.md](https://github.com/user-attachments/files/31275112/README.md)
+[README.md](https://github.com/user-attachments/files/31276205/README.md)
 # MARIOBOLA ALTERNATIF LOGIN — Public Website V1
 
 ## File utama
@@ -24,3 +24,7 @@ Website memakai Cloudflare Pages Function di `functions/api/standings.js`.
 
 Klasemen dipanggil melalui `/api/standings?league=17` dan di-cache selama 5 menit.
 Liga yang memakai kode `football-data.org`: Premier League, La Liga, Serie A, Ligue 1, Bundesliga, dan Eredivisie. Liga Indonesia serta Belgian Pro League memerlukan provider dengan cakupan tambahan bila kode tersebut tidak tersedia pada akun gratis.
+
+## BIG MATCH harian
+Section `02 / FEATURED MATCH` memakai `/api/matches?date=YYYY-MM-DD`.
+Endpoint ini mengambil pertandingan dari delapan kompetisi, memprioritaskan pertandingan live lalu pertandingan besar/terdekat, dan di-cache selama 5 menit. Setelah pertandingan selesai, halaman akan mengambil pertandingan berikutnya secara otomatis.
