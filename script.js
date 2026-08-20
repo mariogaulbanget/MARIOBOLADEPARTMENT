@@ -106,9 +106,35 @@ function setFixtureCard(index, match) {
   meta.textContent = `${formatMatchTime(match.utcDate)} • ${statusLabel(match.status)}`;
 }
 
+function normalizeManualMatch(match) {
+  return {
+    ...match,
+    utcDate: `${match.date}T${match.time || "00:00"}:00+07:00`,
+    competitionCode: match.competitionCode || "MATCH",
+    homeScore: match.homeScore ?? null,
+    awayScore: match.awayScore ?? null
+  };
+}
+
+async function loadManualSchedule() {
+  const data = await fetchJson("data/schedule.json");
+  const today = jakartaDate();
+  const matches = (data.matches || []).filter(match => match.date >= today).map(normalizeManualMatch);
+  return {
+    match: matches[0] || null,
+    upcoming: matches.slice(0, 4)
+  };
+}
+
 async function loadFeaturedMatch() {
   try {
-    const data = await fetchJson(`/api/matches?date=${jakartaDate()}`);
+    let data;
+    try {
+      data = await fetchJson(`/api/matches?date=${jakartaDate()}`);
+    } catch {
+      data = await loadManualSchedule();
+      matchSource.textContent = "DATA MANUAL • data/schedule.json";
+    }
     const match = data.match;
     if (!match) throw new Error("No match available");
 
@@ -121,7 +147,9 @@ async function loadFeaturedMatch() {
     awayTeam.textContent = match.awayTeam;
     setCrest(homeCrest, match.homeCrest, "A");
     setCrest(awayCrest, match.awayCrest, "B");
-    matchSource.textContent = "DATA LIVE • FOOTBALL-DATA.ORG";
+    if (!matchSource.textContent.includes("DATA MANUAL")) {
+      matchSource.textContent = "DATA LIVE • FOOTBALL-DATA.ORG";
+    }
     modalMatchTitle.textContent = `${match.homeTeam} VS ${match.awayTeam}`;
     modalMatchCopy.textContent = `${match.competition} • ${formatMatchTime(match.utcDate)} WIB • Status: ${statusLabel(match.status)}.`;
     data.upcoming?.slice(1, 4).forEach((upcomingMatch, index) => setFixtureCard(index + 1, upcomingMatch));
