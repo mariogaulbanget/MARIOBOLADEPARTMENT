@@ -1,4 +1,7 @@
-const competitions = ["PL", "PD", "SA", "FL1", "BL1", "DED", "ID1", "BJL"];
+const competitions = [
+  "PL", "PD", "SA", "BL1", "FL1", "DED", "PPL",
+  "CL", "EL", "ECL", "WC", "EC", "BSA"
+];
 const priority = new Map(competitions.map((code, index) => [code, index]));
 
 function dateOnly(value) {
