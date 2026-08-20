@@ -1,0 +1,15 @@
+{
+  "updatedAt": "2026-08-21T00:00:00+07:00",
+  "articles": [
+    {
+      "id": "news-001",
+      "publishedAt": "2026-08-21T09:00:00+07:00",
+      "category": "MATCHDAY",
+      "title": "Judul berita bola terbaru",
+      "summary": "Ringkasan berita bola ditulis di sini.",
+      "image": "",
+      "url": "#",
+      "source": "Manual update"
+    }
+  ]
+}
