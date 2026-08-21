@@ -93,15 +93,27 @@ function countryForCompetition(competition) {
   return rules.find(([re])=>re.test(c))?.[1] || '';
 }
 function logoCandidates(match, side) {
-  const explicit = side === "home" ? match.homeCrest : match.awayCrest;
-  if (explicit) return [explicit];
-  const country = countryForCompetition(match.competition);
-  if (!country) return [];
-  const slug = slugTeam(side === "home" ? match.homeTeam : match.awayTeam);
-  return [
-    `https://cdn.jsdelivr.net/gh/leoratzlaff/football-badges@latest/logos/${country}/${slug}.png`,
-    `https://cdn.jsdelivr.net/gh/leoratzlaff/football-badges@latest/logos/${country}/${slug}-fc.png`
-  ];
+  const explicit =
+    side === "home"
+      ? match.homeCrest
+      : match.awayCrest;
+
+  /*
+    Prioritas utama:
+    logo yang sudah ditemukan oleh GitHub Actions
+    dari database Football Logos.
+  */
+  if (explicit) {
+    return [explicit];
+  }
+
+  /*
+    Fallback terakhir.
+    Tidak lagi menggunakan football-badges.
+    Kita sengaja mengosongkan fallback agar
+    website tidak menampilkan logo klub yang salah.
+  */
+  return [];
 }
 function logoMarkup(match, side) {
   const name = side === "home" ? match.homeTeam : match.awayTeam;
