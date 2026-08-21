@@ -14,8 +14,8 @@ const root = resolve(import.meta.dirname, "..");
 const inputDir = resolve(root, "input");
 const dataDir = resolve(root, "data");
 
-const scheduleInput = resolve(inputDir, "jadwal-harian.txt");
-const predictionInput = resolve(inputDir, "prediksi-harian.txt");
+const scheduleInput = resolve(inputDir, "jadwal.txt");
+const predictionInput = resolve(inputDir, "prediksi.txt");
 
 const scheduleOutput = resolve(dataDir, "schedule.json");
 const predictionOutput = resolve(dataDir, "predictions.json");
