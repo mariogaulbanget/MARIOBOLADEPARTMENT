@@ -8,6 +8,8 @@ on:
       - "scripts/update-data.js"
       - "scripts/team-registry.js"
       - "scripts/resolve-team-logos.js"
+      - "scripts/update-news.js"
+      - "package.json"
       - ".github/workflows/update-data.yml"
 
 permissions:
@@ -16,25 +18,41 @@ permissions:
 jobs:
   update-data:
     runs-on: ubuntu-latest
+
     steps:
-      - uses: actions/checkout@v4
-      - uses: actions/setup-node@v4
+      - name: Checkout repository
+        uses: actions/checkout@v4
+
+      - name: Setup Node.js
+        uses: actions/setup-node@v4
         with:
           node-version: 20
+
       - name: Parse TXT and update team registry
         run: npm run update
+
       - name: Resolve team logos
         run: npm run resolve-logos
+
       - name: Rebuild match JSON with resolved logos
         run: npm run update
+
       - name: Update editorial news from Fakta Global Sport
         run: npm run update-news
+
       - name: Validate generated data
         run: npm run validate-data
+
       - name: Commit generated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+
           git add data/
-          git diff --cached --quiet || git commit -m "chore: update MarioBola match data"
-          git push
+
+          if git diff --cached --quiet; then
+            echo "Tidak ada perubahan data untuk di-commit."
+          else
+            git commit -m "chore: update MarioBola match data"
+            git push
+          fi
