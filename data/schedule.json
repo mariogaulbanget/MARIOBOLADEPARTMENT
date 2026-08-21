@@ -2,8 +2,8 @@
   "updatedAt": "2026-08-21T00:41:16.440Z",
   "source": "MarioBola daily TXT",
   "inputFiles": [
-    "input/jadwal.txt",
-    "input/prediksi.txt"
+    "input/jadwal-harian.txt",
+    "input/prediksi-harian.txt"
   ],
   "matches": [
     {
