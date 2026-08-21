@@ -1,0 +1,127 @@
+{
+  "generatedAt": "2026-08-22T00:00:00Z",
+  "season": "2026-27",
+  "source": "mariobola-standings-engine",
+
+  "leagues": [
+    {
+      "id": "premier-league",
+      "name": "English Premier League",
+      "shortName": "Premier League",
+      "country": "England",
+      "countryCode": "GB",
+      "logo": "",
+      "season": "2026-27",
+
+      "teams": []
+    },
+
+    {
+      "id": "la-liga",
+      "name": "La Liga",
+      "shortName": "La Liga",
+      "country": "Spain",
+      "countryCode": "ES",
+      "logo": "",
+      "season": "2026-27",
+
+      "teams": []
+    },
+
+    {
+      "id": "serie-a",
+      "name": "Serie A",
+      "shortName": "Serie A",
+      "country": "Italy",
+      "countryCode": "IT",
+      "logo": "",
+      "season": "2026-27",
+
+      "teams": []
+    },
+
+    {
+      "id": "bundesliga",
+      "name": "Bundesliga",
+      "shortName": "Bundesliga",
+      "country": "Germany",
+      "countryCode": "DE",
+      "logo": "",
+      "season": "2026-27",
+
+      "teams": []
+    },
+
+    {
+      "id": "ligue-1",
+      "name": "Ligue 1",
+      "shortName": "Ligue 1",
+      "country": "France",
+      "countryCode": "FR",
+      "logo": "",
+      "season": "2026-27",
+
+      "teams": []
+    },
+
+    {
+      "id": "eredivisie",
+      "name": "Eredivisie",
+      "shortName": "Eredivisie",
+      "country": "Netherlands",
+      "countryCode": "NL",
+      "logo": "",
+      "season": "2026-27",
+
+      "teams": []
+    },
+
+    {
+      "id": "primeira-liga",
+      "name": "Primeira Liga",
+      "shortName": "Primeira Liga",
+      "country": "Portugal",
+      "countryCode": "PT",
+      "logo": "",
+      "season": "2026-27",
+
+      "teams": []
+    },
+
+    {
+      "id": "brasileirao-serie-a",
+      "name": "Brasileirão Série A",
+      "shortName": "Brasileirão",
+      "country": "Brazil",
+      "countryCode": "BR",
+      "logo": "",
+      "season": "2026",
+
+      "teams": []
+    },
+
+    {
+      "id": "mls",
+      "name": "Major League Soccer",
+      "shortName": "MLS",
+      "country": "United States",
+      "countryCode": "US",
+      "logo": "",
+      "season": "2026",
+
+      "teams": []
+    },
+
+    {
+      "id": "bri-super-league",
+      "name": "BRI Super League",
+      "shortName": "BRI Super League",
+      "country": "Indonesia",
+      "countryCode": "ID",
+      "logo": "",
+      "season": "2026-27",
+
+      "teams": []
+    }
+  ]
+}
