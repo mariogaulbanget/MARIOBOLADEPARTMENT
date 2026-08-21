@@ -34,7 +34,7 @@
       <a href="#live">LIVE</a>
     </nav>
 
-    <a class="header-cta" href="https://kingmariobola.net/?mob=0" target="_blank" rel="noopener noreferrer">LOGIN TO MARIOBOLA <span>↗</span></a>
+    <a class="header-cta" href="https://kingmariobola.net/?mob=0" data-config-link="login">LOGIN TO MARIOBOLA <span>↗</span></a>
   </header>
 
   <main>
@@ -107,11 +107,16 @@
           <div class="team"><div class="team-crest alt" id="awayCrest">B</div><h3 id="awayTeam">LOADING</h3></div>
         </div>
         <div class="match-bottom">
-          <span id="matchSource">DATA LIVE • FOOTBALL-DATA.ORG</span>
+          <span id="matchSource">DATA MANUAL • TXT MARIOBOLA</span>
+          <div class="match-board-data">
+            <span>HANDICAP <b id="matchHandicap">-</b></span>
+            <span>PREDICTION <b id="matchPrediction">-</b></span>
+          </div>
           <button class="mini-btn" data-modal="matchModal">MATCH DETAILS →</button>
         </div>
       </article>
 
+      <div class="mini-fixtures-title">NEXT SCHEDULE</div>
       <div class="mini-fixtures">
         <div><span id="fixtureLabel1">NEXT</span><strong id="fixtureTeam1">LOADING</strong><small id="fixtureMeta1">Checking schedule</small></div>
         <div><span id="fixtureLabel2">NEXT</span><strong id="fixtureTeam2">LOADING</strong><small id="fixtureMeta2">Checking schedule</small></div>
@@ -125,7 +130,7 @@
           <span class="section-number">03 / PREDICTION HUB</span>
           <h2>READ THE <span>GAME.</span></h2>
         </div>
-        <p>Area editorial untuk analisis, preview, dan prediksi. Konten contoh ini akan diganti dari admin.</p>
+        <p>Analisis, Preview, dan Prediksi dari Team Analisis MARIOBOLA dan akan terus update setiap harinya.</p>
       </div>
 
       <div class="prediction-layout">
@@ -134,31 +139,60 @@
           <div class="prediction-content">
             <span class="tag">FEATURED ANALYSIS</span>
             <h3>THE NEXT BIG MATCH<br>STARTS <span>HERE.</span></h3>
-            <p>Gunakan area ini untuk menampilkan analisis pertandingan utama dengan thumbnail, judul, ringkasan, dan tombol detail.</p>
-            <a href="#" class="btn btn-secondary" data-demo-link="Prediction article">READ ANALYSIS →</a>
+            <p>Analisis dan berita bola mengenai pertandingan-pertandingan BIG MATCH yang akan datang.</p>
+            <a href="#" class="btn btn-secondary" data-config-link="analysis">READ ANALYSIS →</a>
           </div>
         </article>
         <div class="prediction-list">
-          <article><span>01</span><div><small>UPCOMING PREVIEW</small><h4>Match Preview Slot</h4></div><button data-demo-link="Preview 01">↗</button></article>
-          <article><span>02</span><div><small>TACTICAL VIEW</small><h4>Prediction Slot</h4></div><button data-demo-link="Prediction 02">↗</button></article>
-          <article><span>03</span><div><small>EDITOR'S PICK</small><h4>Featured Analysis</h4></div><button data-demo-link="Analysis 03">↗</button></article>
+          <article><span>01</span><div><small>UPCOMING PREVIEW</small><h4>Match Preview Slot</h4></div><button data-scroll-target="match-preview">↗</button></article>
+          <article><span>02</span><div><small>TACTICAL VIEW</small><h4>Prediction Slot</h4></div><button data-scroll-target="prediction-board">↗</button></article>
+          <article><span>03</span><div><small>EDITOR'S PICK</small><h4>Featured Analysis</h4></div><button data-config-link="analysis">↗</button></article>
         </div>
       </div>
+    </section>
+
+    <section class="section match-preview-section" id="match-preview">
+      <div class="section-head">
+        <div>
+          <span class="section-number">MATCH PREVIEW</span>
+          <h2>TODAY'S <span>FIXTURES.</span></h2>
+        </div>
+        <p id="previewSummary">Memuat seluruh jadwal pertandingan dari file TXT harian MARIOBOLA.</p>
+      </div>
+      <div class="preview-toolbar">
+        <button class="preview-filter active" data-filter="all">ALL</button>
+        <button class="preview-filter" data-filter="upcoming">UPCOMING</button>
+        <button class="preview-filter" data-filter="live">LIVE</button>
+        <button class="preview-filter" data-filter="finished">FINISHED</button>
+      </div>
+      <div class="match-preview-grid" id="matchPreviewGrid"></div>
+    </section>
+
+    <section class="section prediction-board-section" id="prediction-board">
+      <div class="section-head">
+        <div>
+          <span class="section-number">PREDICTION SLOT</span>
+          <h2>ALL <span>PREDICTIONS.</span></h2>
+        </div>
+        <p>Seluruh jadwal pertandingan hari tersebut beserta handicap dan prediksi dari data TXT MARIOBOLA.</p>
+      </div>
+      <div class="prediction-board" id="predictionBoard"></div>
     </section>
 
     <section class="section live-section" id="live">
       <div class="live-panel">
         <div class="live-visual">
+          <img id="liveImage" class="live-stream-image" src="assets/live/live-placeholder.svg" alt="MARIOBOLA LIVE STREAMING">
           <div class="scanlines"></div>
           <div class="live-radar"><span></span></div>
           <div class="live-label"><span class="status-live"></span> LIVE CENTER</div>
-          <div class="live-empty">NO ACTIVE<br><b>BROADCAST</b></div>
+          <div class="live-empty" id="liveEmptyLabel">LIVE STREAMING<br><b>READY</b></div>
         </div>
         <div class="live-copy">
           <span class="section-number">04 / LIVE HUB</span>
           <h2>READY WHEN<br>THE WHISTLE <span>BLOWS.</span></h2>
           <p>Area ini disiapkan untuk informasi siaran dan tautan menuju tayangan dari sumber yang memiliki hak atau izin yang sesuai.</p>
-          <a href="#match" class="btn btn-primary">VIEW MATCH SCHEDULE →</a>
+          <a href="#" id="liveStreamingLink" class="btn btn-primary">LIVE STREAMING →</a>
         </div>
       </div>
     </section>
@@ -171,10 +205,11 @@
           <p>Hubungkan seluruh kanal resmi MARIOBOLA dari satu area.</p>
         </div>
         <div class="social-links">
-          <a href="#" data-demo-link="Instagram"><span>01</span> INSTAGRAM <b>↗</b></a>
-          <a href="#" data-demo-link="Telegram"><span>02</span> TELEGRAM <b>↗</b></a>
-          <a href="#" data-demo-link="Facebook"><span>03</span> FACEBOOK <b>↗</b></a>
-          <a href="#" data-demo-link="X"><span>04</span> X / TWITTER <b>↗</b></a>
+          <a href="#" data-config-link="whatsapp"><span>01</span> WHATSAPP OFFICIAL <b>↗</b></a>
+          <a href="#" data-config-link="instagram"><span>02</span> INSTAGRAM <b>↗</b></a>
+          <a href="#" data-config-link="telegram"><span>03</span> TELEGRAM <b>↗</b></a>
+          <a href="#" data-config-link="facebook"><span>04</span> FACEBOOK <b>↗</b></a>
+          <a href="#" data-config-link="x"><span>05</span> X / TWITTER <b>↗</b></a>
         </div>
       </div>
     </section>1
@@ -192,7 +227,9 @@
       <button class="modal-close" aria-label="Tutup">×</button>
       <span class="tag">MATCH DETAILS</span>
       <h3 id="modalMatchTitle">MATCH DETAILS</h3>
-      <p id="modalMatchCopy">Data pertandingan terbaru akan dimuat dari sumber data sepak bola.</p>
+      <p id="modalMatchCopy">Data pertandingan terbaru akan dimuat dari sumber data MarioBola.</p>
+      <div class="modal-match-meta" id="modalMatchMeta"></div>
+      <div class="modal-actions"><a id="modalDetailLink" class="btn btn-secondary" href="#" target="_blank" rel="noopener">MATCH DETAIL →</a><a id="modalStreamLink" class="btn btn-primary" href="#" target="_blank" rel="noopener">LIVE STREAMING →</a></div>
       <button class="btn btn-primary modal-close-btn">UNDERSTOOD →</button>
     </div>
   </div>

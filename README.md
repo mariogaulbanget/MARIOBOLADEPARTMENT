@@ -1,42 +1,34 @@
-# MARIOBOLA ALTERNATIF LOGIN — Public Website V1
+# MARIOBOLA — FINAL BUILD
 
-## File utama
-- index.html
-- style.css
-- script.js
+Website statis MarioBola dengan sumber pertandingan dari dua TXT harian. Tidak membutuhkan Football API atau VPS.
 
-## Cara upload ke GitHub
-1. Buka repository: mariobola-alternatif-login
-2. Upload ketiga file utama ke folder paling atas (root) repository.
-3. Jangan masukkan folder ZIP sebagai satu file.
-4. Commit ke branch `main`.
-5. Cloudflare Pages akan otomatis melakukan deployment.
+## Sumber data harian
+- `input/jadwal.txt`
+- `input/prediksi.txt`
 
-## Setup API klasemen
-Website memakai Cloudflare Pages Function di `functions/api/standings.js`.
+Parser menghasilkan:
+- `data/schedule.json`
+- `data/predictions.json`
+- `data/teams.json`
 
-1. Daftar token gratis di `football-data.org`.
-2. Di Cloudflare Pages, buka **Settings > Variables and Secrets**.
-3. Tambahkan secret production bernama `FOOTBALL_DATA_TOKEN`.
-4. Isi dengan token dari football-data.org.
-5. Deploy ulang project.
+## Fitur
+- Match Center / BIG MATCH rotation
+- NEXT SCHEDULE
+- status UPCOMING / LIVE / FINISHED berbasis WIB
+- Match Preview seluruh jadwal
+- Prediction Board seluruh jadwal + handicap + prediksi
+- Team Registry + logo resolver + fallback inisial
+- Live Center
+- Featured Analysis / Fakta Global Sport
+- WhatsApp, Instagram, Telegram, Facebook, X
+- GitHub Actions untuk otomatisasi data
+- Cloudflare Pages compatible
 
-Klasemen dipanggil melalui `/api/standings?league=17` dan di-cache selama 5 menit.
-Liga yang memakai kode `football-data.org`: Premier League, La Liga, Serie A, Ligue 1, Bundesliga, dan Eredivisie. Liga Indonesia serta Belgian Pro League memerlukan provider dengan cakupan tambahan bila kode tersebut tidak tersedia pada akun gratis.
+## Harian
+Ganti dua file TXT di `input/`, lalu commit/push ke GitHub. Workflow akan memproses data dan commit JSON hasilnya. Cloudflare Pages yang terhubung ke repository akan melakukan deploy otomatis.
 
-## Update manual schedule dan berita
-File yang diedit manual:
-- `data/schedule.json` untuk pertandingan.
-- `data/news.json` untuk berita bola.
+## Link permanen
+Isi `data/site-config.json` untuk link login, analisis, live streaming, gambar live, dan semua sosial media. Link sosial yang kosong sengaja dinonaktifkan sampai URL asli diberikan.
 
-Cara update:
-1. Edit isi kedua file JSON tersebut.
-2. Klik `update-data.cmd`.
-3. Pastikan muncul pesan `Update selesai`.
-4. Upload perubahan ke repository agar website ikut berubah.
-
-Script Node juga bisa dijalankan dengan `npm run update` atau divalidasi dengan `npm run validate-data`.
-
-## BIG MATCH harian
-Section `02 / FEATURED MATCH` memakai `/api/matches?date=YYYY-MM-DD`.
-Endpoint ini mengambil pertandingan dari katalog gratis yang diprioritaskan: liga top Eropa, Liga Champions, Europa League, Conference League, World Cup, Euro, dan Brasileirão. Endpoint memprioritaskan pertandingan live lalu pertandingan besar/terdekat dan di-cache selama 5 menit. Setelah pertandingan selesai, halaman akan mengambil pertandingan berikutnya secara otomatis.
+## Catatan
+Logo eksternal hanya di-resolve ketika GitHub Actions dapat mengakses dataset. Jika gagal, mapping lama dipertahankan dan website memakai fallback inisial sehingga tidak rusak.
