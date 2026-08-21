@@ -484,3 +484,92 @@ a{text-decoration:none;color:inherit}button{font:inherit;color:inherit}.site-hea
   }
 
 }
+/* =========================================================
+   PREDICTION STATUS ACTION
+   UPCOMING / LIVE / FINISHED
+   ========================================================= */
+
+.prediction-detail-modern.status-action{
+  min-width:105px;
+  min-height:42px;
+  padding:10px 12px;
+  border:1px solid rgba(55,200,255,.35);
+  background:rgba(10,18,31,.72);
+  color:#7edfff;
+  font-family:var(--body);
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:1.1px;
+  text-transform:uppercase;
+  cursor:pointer;
+  transition:.25s ease;
+}
+
+.prediction-detail-modern.status-action span{
+  margin-left:5px;
+  font-size:10px;
+}
+
+
+/* UPCOMING */
+
+.prediction-detail-modern.status-action.upcoming{
+  color:#7edfff;
+  border-color:rgba(55,200,255,.42);
+  background:rgba(22,119,255,.10);
+}
+
+.prediction-detail-modern.status-action.upcoming:hover{
+  color:#fff;
+  border-color:var(--ice);
+  background:rgba(22,119,255,.24);
+}
+
+
+/* LIVE */
+
+.prediction-detail-modern.status-action.live{
+  color:#56e39f;
+  border-color:rgba(86,227,159,.55);
+  background:rgba(86,227,159,.09);
+  box-shadow:
+    0 0 18px rgba(86,227,159,.08);
+}
+
+.prediction-detail-modern.status-action.live span{
+  animation:predictionLivePulse 1.2s infinite;
+}
+
+.prediction-detail-modern.status-action.live:hover{
+  color:#07110d;
+  background:#56e39f;
+  border-color:#56e39f;
+}
+
+
+/* FINISHED */
+
+.prediction-detail-modern.status-action.finished{
+  color:#9aa8ba;
+  border-color:rgba(120,140,165,.30);
+  background:rgba(120,140,165,.07);
+}
+
+.prediction-detail-modern.status-action.finished:hover{
+  color:#fff;
+  border-color:rgba(55,200,255,.35);
+  background:rgba(55,200,255,.10);
+}
+
+
+@keyframes predictionLivePulse{
+  0%,100%{
+    opacity:1;
+    transform:scale(1);
+  }
+
+  50%{
+    opacity:.35;
+    transform:scale(.75);
+  }
+}
