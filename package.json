@@ -1,13 +1,13 @@
 {
   "name": "mariobola-manual-updater",
   "private": true,
-  "version": "1.0.0",
+  "version": "2.0.0",
   "type": "module",
   "scripts": {
     "update": "node scripts/update-data.js",
     "validate-data": "node scripts/update-data.js --validate",
     "resolve-logos": "node scripts/resolve-team-logos.js",
-    "build-data": "npm run update && npm run resolve-logos && npm run update && npm run update-news && npm run validate-data",
-    "update-news": "node scripts/update-news.js"
+    "update-news": "node scripts/update-news.js",
+    "build-data": "npm run update && npm run resolve-logos && npm run update && npm run update-news && npm run validate-data"
   }
 }
