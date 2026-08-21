@@ -442,7 +442,10 @@ function renderNews() {
   if (tag) tag.textContent = article.category || "FEATURED ANALYSIS";
   if (title) title.innerHTML = `${esc(article.title || "THE NEXT BIG MATCH")}<br><span>STARTS HERE.</span>`;
   if (copy) copy.textContent = article.summary || "Analisis dan berita bola terbaru dari sumber editorial MARIOBOLA.";
-  if (link && article.url && article.url !== "#") { link.href = article.url; link.target = "_blank"; link.rel = "noopener noreferrer"; }
+  if (link) {
+  link.href = CONFIG.analysis || "#";
+  link.target = "_blank";
+  link.rel = "noopener noreferrer";
 }
 
 async function loadData() {
