@@ -1,737 +1,206 @@
 {
-  "updatedAt": "2026-08-21T22:56:11.170Z",
+  "updatedAt": "2026-08-21T23:13:39.060Z",
   "source": "TXT MARIOBOLA",
   "timezone": "Asia/Jakarta",
-  "total": 81,
+  "total": 22,
   "predictions": [
     {
-      "id": "2026-08-22|02:00|arsenal|coventry-city",
+      "id": "2026-08-22|23:30|inter-milan|monza",
       "date": "2026-08-22",
-      "time": "02:00",
-      "competition": "ENGLISH PREMIER LEAGUE",
-      "homeTeam": "Arsenal",
-      "awayTeam": "Coventry City",
-      "prediction": "3:0"
+      "time": "23:30",
+      "competition": "ITALY SERIE A",
+      "homeTeam": "Inter Milan",
+      "awayTeam": "Monza",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-22|02:00|real-betis|real-sociedad",
+      "id": "2026-08-22|18:30|lincoln-city|portsmouth",
       "date": "2026-08-22",
-      "time": "02:00",
-      "competition": "SPAIN LA LIGA",
-      "homeTeam": "Real Betis",
-      "awayTeam": "Real Sociedad",
-      "prediction": "1:1"
+      "time": "18:30",
+      "competition": "22/08 18:30 Millwall VS Norwich City 0:1/4",
+      "homeTeam": "Lincoln City",
+      "awayTeam": "Portsmouth",
+      "prediction": "0:0"
     },
     {
-      "id": "2026-08-22|01:45|marseille|strasbourg",
+      "id": "2026-08-22|21:00|west-ham-united|charlton-athletic",
       "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "FRANCE LIGUE 1",
-      "homeTeam": "Marseille",
-      "awayTeam": "Strasbourg",
-      "prediction": "2:1"
+      "time": "21:00",
+      "competition": "22/08 21:00 Swansea City VS Sheffield United 0:1/4",
+      "homeTeam": "West Ham United",
+      "awayTeam": "Charlton Athletic",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-21|17:00|kashiwa-reysol|v-varen-nagasaki",
-      "date": "2026-08-21",
-      "time": "17:00",
-      "competition": "JAPAN J1 LEAGUE",
-      "homeTeam": "Kashiwa Reysol",
-      "awayTeam": "V-Varen Nagasaki",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-21|17:30|fc-tokyo|jef-united-ichihara-chiba",
-      "date": "2026-08-21",
-      "time": "17:30",
-      "competition": "JAPAN J1 LEAGUE",
-      "homeTeam": "FC Tokyo",
-      "awayTeam": "JEF United Ichihara Chiba",
-      "prediction": "2:0"
-    },
-    {
-      "id": "2026-08-22|00:00|ik-sirius-fk|bk-hacken",
+      "id": "2026-08-22|16:30|fagiano-okayama|tokyo-verdy",
       "date": "2026-08-22",
-      "time": "00:00",
-      "competition": "SWEDEN ALLSVENSKAN",
-      "homeTeam": "IK Sirius FK",
-      "awayTeam": "BK Hacken",
-      "prediction": "1:2"
+      "time": "16:30",
+      "competition": "22/08 16:00 Kashima Antlers VS Avispa Fukuoka 0:1/4",
+      "homeTeam": "Fagiano Okayama",
+      "awayTeam": "Tokyo Verdy",
+      "prediction": "0:0"
     },
     {
-      "id": "2026-08-21|23:00|seinajoen-jk|lahti",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "FINLAND VEIKKAUSLIIGA",
-      "homeTeam": "Seinajoen JK",
-      "awayTeam": "Lahti",
-      "prediction": "2:0"
-    },
-    {
-      "id": "2026-08-22|02:00|cordoba-cf|girona",
+      "id": "2026-08-22|16:30|kataller-toyama|fc-imabari",
       "date": "2026-08-22",
-      "time": "02:00",
-      "competition": "SPAIN LA LIGA 2",
-      "homeTeam": "Cordoba CF",
-      "awayTeam": "Girona",
-      "prediction": "1:2"
+      "time": "16:30",
+      "competition": "22/08 16:00 Blaublitz Akita VS Ventforet Kofu 0:1/4",
+      "homeTeam": "Kataller Toyama",
+      "awayTeam": "FC Imabari",
+      "prediction": "0:0"
     },
     {
-      "id": "2026-08-22|01:45|standard-liege|raal-la-louviere",
+      "id": "2026-08-22|18:00|sv-wehen-wiesbaden|bayer-04-leverkusen",
       "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "BELGIUM FIRST DIVISION A",
-      "homeTeam": "Standard Liege",
-      "awayTeam": "RAAL La Louviere",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|01:30|erzurumspor-fk|galatasaray",
-      "date": "2026-08-22",
-      "time": "01:30",
-      "competition": "TURKIYE SUPER LEAGUE",
-      "homeTeam": "Erzurumspor FK",
-      "awayTeam": "Galatasaray",
-      "prediction": "0:3"
-    },
-    {
-      "id": "2026-08-22|00:30|sv-ried|grazer-ak",
-      "date": "2026-08-22",
-      "time": "00:30",
-      "competition": "AUSTRIA BUNDESLIGA",
-      "homeTeam": "SV Ried",
-      "awayTeam": "Grazer AK",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|01:30|lr-vicenza-1902|catanzaro",
-      "date": "2026-08-22",
-      "time": "01:30",
-      "competition": "ITALY SERIE B",
-      "homeTeam": "LR Vicenza 1902",
-      "awayTeam": "Catanzaro",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|01:00|clermont-foot|dijon",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "FRANCE LIGUE 2",
-      "homeTeam": "Clermont Foot",
-      "awayTeam": "Dijon",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|01:00|pau-fc|nancy",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "FRANCE LIGUE 2",
-      "homeTeam": "Pau FC",
-      "awayTeam": "Nancy",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|01:00|sochaux|guingamp",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "FRANCE LIGUE 2",
-      "homeTeam": "Sochaux",
-      "awayTeam": "Guingamp",
+      "time": "18:00",
+      "competition": "GERMANY CUP",
+      "homeTeam": "SV Wehen Wiesbaden",
+      "awayTeam": "Bayer 04 Leverkusen",
       "prediction": "1:0"
     },
     {
-      "id": "2026-08-22|01:00|us-boulogne|red-star-saint-ouen",
+      "id": "2026-08-23|02:30|sporting-lisbon|fc-alverca",
+      "date": "2026-08-23",
+      "time": "02:30",
+      "competition": "23/08 00:00 Estoril VS Rio Ave 0:1/4",
+      "homeTeam": "Sporting Lisbon",
+      "awayTeam": "FC Alverca",
+      "prediction": "0:1"
+    },
+    {
+      "id": "2026-08-23|01:30|fenerbahce|konyaspor",
+      "date": "2026-08-23",
+      "time": "01:30",
+      "competition": "22/08 23:00 Corum FK VS Kasimpasa 1/4:0",
+      "homeTeam": "Fenerbahce",
+      "awayTeam": "Konyaspor",
+      "prediction": "0:1"
+    },
+    {
+      "id": "2026-08-23|00:30|sturm-graz|austria-lustenau",
+      "date": "2026-08-23",
+      "time": "00:30",
+      "competition": "22/08 22:00 SCR Altach VS TSV Hartberg 0:1/4",
+      "homeTeam": "Sturm Graz",
+      "awayTeam": "Austria Lustenau",
+      "prediction": "0:1"
+    },
+    {
+      "id": "2026-08-22|19:00|beijing-guoan|yunnan-yukun",
       "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "FRANCE LIGUE 2",
-      "homeTeam": "US Boulogne",
-      "awayTeam": "Red Star Saint Ouen",
-      "prediction": "1:1"
+      "time": "19:00",
+      "competition": "22/08 18:35 Shenzhen Peng City VS Zhejiang Professional FC 1/4:0",
+      "homeTeam": "Beijing Guoan",
+      "awayTeam": "Yunnan Yukun",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-22|01:00|usl-dunkerque|montpellier",
+      "id": "2026-08-22|21:00|leicester-city|burton-albion",
       "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "FRANCE LIGUE 2",
-      "homeTeam": "USL Dunkerque",
-      "awayTeam": "Montpellier",
-      "prediction": "1:2"
+      "time": "21:00",
+      "competition": "22/08 21:00 Bromley VS Cambridge United 0:1/4",
+      "homeTeam": "Leicester City",
+      "awayTeam": "Burton Albion",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-21|23:00|waldhof-mannheim|kaiserslautern",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "GERMANY CUP",
-      "homeTeam": "Waldhof Mannheim",
-      "awayTeam": "Kaiserslautern",
-      "prediction": "1:2"
+      "id": "2026-08-23|00:00|aek-athens|iraklis-1908",
+      "date": "2026-08-23",
+      "time": "00:00",
+      "competition": "GREECE SUPER LEAGUE",
+      "homeTeam": "AEK Athens",
+      "awayTeam": "Iraklis 1908",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-21|23:00|sc-preussen-munster|karlsruher-sc",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "GERMANY CUP",
-      "homeTeam": "SC Preussen Munster",
-      "awayTeam": "Karlsruher SC",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|01:45|hansa-rostock|vfb-stuttgart",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "GERMANY CUP",
-      "homeTeam": "Hansa Rostock",
-      "awayTeam": "VfB Stuttgart",
-      "prediction": "0:2"
-    },
-    {
-      "id": "2026-08-22|01:45|bohemians|derry-city",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "IRELAND PREMIER DIVISION",
-      "homeTeam": "Bohemians",
-      "awayTeam": "Derry City",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|01:45|drogheda-united|st-patricks-athletic",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "IRELAND PREMIER DIVISION",
-      "homeTeam": "Drogheda United",
-      "awayTeam": "St. Patricks Athletic",
-      "prediction": "1:0"
-    },
-    {
-      "id": "2026-08-22|01:45|dundalk|galway-united",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "IRELAND PREMIER DIVISION",
-      "homeTeam": "Dundalk",
-      "awayTeam": "Galway United",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|02:00|sligo-rovers|waterford-fc",
-      "date": "2026-08-22",
+      "id": "2026-08-23|02:00|olympiacos|atromitos",
+      "date": "2026-08-23",
       "time": "02:00",
-      "competition": "IRELAND PREMIER DIVISION",
-      "homeTeam": "Sligo Rovers",
-      "awayTeam": "Waterford FC",
-      "prediction": "2:1"
+      "competition": "23/08 00:00 FC Kalamata VS Aris Thessaloniki 1/2:0",
+      "homeTeam": "Olympiacos",
+      "awayTeam": "Atromitos",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-22|01:30|cracovia-krakow|ks-wieczysta-krakow",
+      "id": "2026-08-23|01:00|al-ahli-jeddah|abha",
+      "date": "2026-08-23",
+      "time": "01:00",
+      "competition": "23/08 01:00 Al Khaleej Saihat VS Al Shabab Riyadh 1/4:0",
+      "homeTeam": "Al Ahli Jeddah",
+      "awayTeam": "Abha",
+      "prediction": "0:1"
+    },
+    {
+      "id": "2026-08-22|23:35|al-ain-abu-dhabi|khor-fakkan",
       "date": "2026-08-22",
-      "time": "01:30",
-      "competition": "POLAND EKSTRAKLASA",
-      "homeTeam": "Cracovia Krakow",
-      "awayTeam": "KS Wieczysta Krakow",
-      "prediction": "1:1"
+      "time": "23:35",
+      "competition": "UAE PRO LEAGUE",
+      "homeTeam": "Al Ain Abu Dhabi",
+      "awayTeam": "Khor Fakkan",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-21|23:00|vejle|esbjerg",
-      "date": "2026-08-21",
+      "id": "2026-08-23|01:00|slavia-praha|bohemians-1905",
+      "date": "2026-08-23",
+      "time": "01:00",
+      "competition": "22/08 22:00 FC Zlin VS Slovan Liberec 0:1/4",
+      "homeTeam": "Slavia Praha",
+      "awayTeam": "Bohemians 1905",
+      "prediction": "0:1"
+    },
+    {
+      "id": "2026-08-23|02:00|nk-dinamo-zagreb|nk-varazdin",
+      "date": "2026-08-23",
+      "time": "02:00",
+      "competition": "22/08 23:30 Slaven Koprivnica VS HNK Gorica 0:1/4",
+      "homeTeam": "NK Dinamo Zagreb",
+      "awayTeam": "NK Varazdin",
+      "prediction": "0:1"
+    },
+    {
+      "id": "2026-08-22|23:00|ludogorets-razgrad|slavia-sofia",
+      "date": "2026-08-22",
       "time": "23:00",
-      "competition": "DENMARK 1ST DIV",
-      "homeTeam": "Vejle",
-      "awayTeam": "Esbjerg",
-      "prediction": "1:1"
+      "competition": "BULGARIA FIRST PROFESSIONAL FOOTBALL LEAGUE",
+      "homeTeam": "Ludogorets Razgrad",
+      "awayTeam": "Slavia Sofia",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-21|23:00|hobro|aalborg",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "DENMARK 1ST DIV",
-      "homeTeam": "Hobro",
-      "awayTeam": "Aalborg",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|00:00|fredericia|aarhus-fremad",
-      "date": "2026-08-22",
-      "time": "00:00",
-      "competition": "DENMARK 1ST DIV",
-      "homeTeam": "Fredericia",
-      "awayTeam": "Aarhus Fremad",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|01:00|dordrecht|roda-jc",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "NETHERLANDS EERSTE DIVISIE",
-      "homeTeam": "Dordrecht",
-      "awayTeam": "Roda JC",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|01:00|mvv-maastricht|volendam",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "NETHERLANDS EERSTE DIVISIE",
-      "homeTeam": "MVV Maastricht",
-      "awayTeam": "Volendam",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|01:00|helmond-sport|rkc-waalwijk",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "NETHERLANDS EERSTE DIVISIE",
-      "homeTeam": "Helmond Sport",
-      "awayTeam": "RKC Waalwijk",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|01:00|vitesse|almere-city-fc",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "NETHERLANDS EERSTE DIVISIE",
-      "homeTeam": "Vitesse",
-      "awayTeam": "Almere City FC",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|01:00|fc-emmen|jong-az-alkmaar",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "NETHERLANDS EERSTE DIVISIE",
-      "homeTeam": "FC Emmen",
-      "awayTeam": "Jong AZ Alkmaar",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|01:00|den-bosch|fc-eindhoven",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "NETHERLANDS EERSTE DIVISIE",
-      "homeTeam": "Den Bosch",
-      "awayTeam": "FC Eindhoven",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-21|22:30|haka|seinajoen-jk-akatemia",
-      "date": "2026-08-21",
-      "time": "22:30",
-      "competition": "FINLAND YKKOSLIIGA",
-      "homeTeam": "Haka",
-      "awayTeam": "Seinajoen JK Akatemia",
-      "prediction": "3:0"
-    },
-    {
-      "id": "2026-08-21|23:00|pk-35-helsinki|japs",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "FINLAND YKKOSLIIGA",
-      "homeTeam": "PK-35 Helsinki",
-      "awayTeam": "JaPS",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-21|23:30|sv-austria-salzburg|kapfenberger-sv",
-      "date": "2026-08-21",
-      "time": "23:30",
-      "competition": "AUSTRIA 2ND LIGA",
-      "homeTeam": "SV Austria Salzburg",
-      "awayTeam": "Kapfenberger SV",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-21|23:30|wacker-innsbruck|skn-st-polten",
-      "date": "2026-08-21",
-      "time": "23:30",
-      "competition": "AUSTRIA 2ND LIGA",
-      "homeTeam": "Wacker Innsbruck",
-      "awayTeam": "SKN St. Polten",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-21|23:30|fc-liefering|young-violets-austria-wien",
-      "date": "2026-08-21",
-      "time": "23:30",
-      "competition": "AUSTRIA 2ND LIGA",
-      "homeTeam": "FC Liefering",
-      "awayTeam": "Young Violets Austria Wien",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-21|23:30|sku-amstetten|fc-hertha-wels",
-      "date": "2026-08-21",
-      "time": "23:30",
-      "competition": "AUSTRIA 2ND LIGA",
-      "homeTeam": "SKU Amstetten",
-      "awayTeam": "FC Hertha Wels",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|01:30|admira-wacker|first-vienna-1894",
-      "date": "2026-08-22",
-      "time": "01:30",
-      "competition": "AUSTRIA 2ND LIGA",
-      "homeTeam": "Admira Wacker",
-      "awayTeam": "First Vienna 1894",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|00:30|petrolul-ploiesti|rapid-bucuresti",
-      "date": "2026-08-22",
-      "time": "00:30",
-      "competition": "ROMANIA SUPERLIGA",
-      "homeTeam": "Petrolul Ploiesti",
-      "awayTeam": "Rapid Bucuresti",
-      "prediction": "1:0"
-    },
-    {
-      "id": "2026-08-22|00:00|benfica-b|portimonense",
-      "date": "2026-08-22",
-      "time": "00:00",
-      "competition": "LIGA PORTUGAL 2",
-      "homeTeam": "Benfica B",
-      "awayTeam": "Portimonense",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|02:15|cd-tondela|academica-coimbra",
-      "date": "2026-08-22",
-      "time": "02:15",
-      "competition": "LIGA PORTUGAL 2",
-      "homeTeam": "CD Tondela",
-      "awayTeam": "Academica Coimbra",
-      "prediction": "2:0"
-    },
-    {
-      "id": "2026-08-22|01:00|nk-rudes|nk-lokomotiva-zagreb",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "CROATIA SUPERLIGA",
-      "homeTeam": "NK Rudes",
-      "awayTeam": "NK Lokomotiva Zagreb",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|01:45|treaty-united|cork-city",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "IRELAND 1ST DIV",
-      "homeTeam": "Treaty United",
-      "awayTeam": "Cork City",
-      "prediction": "0:2"
-    },
-    {
-      "id": "2026-08-22|01:45|wexford-fc|athlone-town",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "IRELAND 1ST DIV",
-      "homeTeam": "Wexford FC",
-      "awayTeam": "Athlone Town",
-      "prediction": "2:0"
-    },
-    {
-      "id": "2026-08-22|01:45|finn-harps|cobh-ramblers",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "IRELAND 1ST DIV",
-      "homeTeam": "Finn Harps",
-      "awayTeam": "Cobh Ramblers",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|01:45|kerry-fc|uc-dublin",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "IRELAND 1ST DIV",
-      "homeTeam": "Kerry FC",
-      "awayTeam": "UC Dublin",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|01:00|ksc-lokeren|kas-eupen",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "BELGIUM FIRST DIVISION B",
-      "homeTeam": "KSC Lokeren",
-      "awayTeam": "KAS Eupen",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|01:00|rsca-futures|royal-excelsior-virton",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "BELGIUM FIRST DIVISION B",
-      "homeTeam": "RSCA Futures",
-      "awayTeam": "Royal Excelsior Virton",
-      "prediction": "2:0"
-    },
-    {
-      "id": "2026-08-22|01:30|inverness-ct|partick-thistle",
-      "date": "2026-08-22",
-      "time": "01:30",
-      "competition": "SCOTLAND CHAMPIONSHIP",
-      "homeTeam": "Inverness CT",
-      "awayTeam": "Partick Thistle",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|00:30|neuchatel-xamax|fc-stade-lausanne-ouchy",
-      "date": "2026-08-22",
-      "time": "00:30",
-      "competition": "SWISS CHALLENGE LEAGUE",
-      "homeTeam": "Neuchatel Xamax",
-      "awayTeam": "FC Stade Lausanne Ouchy",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|00:30|stade-nyonnais|etoile-carouge-fc",
-      "date": "2026-08-22",
-      "time": "00:30",
-      "competition": "SWISS CHALLENGE LEAGUE",
-      "homeTeam": "Stade Nyonnais",
-      "awayTeam": "Etoile Carouge FC",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|01:15|fc-rapperswil-jona|winterthur",
-      "date": "2026-08-22",
+      "id": "2026-08-23|01:15|levski-sofia|spartak-varna",
+      "date": "2026-08-23",
       "time": "01:15",
-      "competition": "SWISS CHALLENGE LEAGUE",
-      "homeTeam": "FC Rapperswil-Jona",
-      "awayTeam": "Winterthur",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|00:00|alashkert-fc-n|fc-gandzasar-kapan",
-      "date": "2026-08-22",
-      "time": "00:00",
-      "competition": "ARMENIA PREMIER LEAGUE",
-      "homeTeam": "Alashkert FC [n]",
-      "awayTeam": "FC Gandzasar Kapan",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-21|22:00|ararat-yerevan|fc-pyunik",
-      "date": "2026-08-21",
-      "time": "22:00",
-      "competition": "ARMENIA PREMIER LEAGUE",
-      "homeTeam": "Ararat Yerevan",
-      "awayTeam": "FC Pyunik",
-      "prediction": "0:2"
-    },
-    {
-      "id": "2026-08-21|23:30|torpedo-moscow|spartak-kostroma",
-      "date": "2026-08-21",
-      "time": "23:30",
-      "competition": "RUSSIA FIRST LEAGUE",
-      "homeTeam": "Torpedo Moscow",
-      "awayTeam": "Spartak Kostroma",
-      "prediction": "2:0"
-    },
-    {
-      "id": "2026-08-21|23:00|sfc-opava|fotbal-trinec",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "CZECHIA NATIONAL FOOTBALL LEAGUE",
-      "homeTeam": "SFC Opava",
-      "awayTeam": "Fotbal Trinec",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-21|23:00|sk-prostejov|sk-kladno",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "CZECHIA NATIONAL FOOTBALL LEAGUE",
-      "homeTeam": "SK Prostejov",
-      "awayTeam": "SK Kladno",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-21|23:00|fc-sellier-and-bellot-vlasim|fk-pribram",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "CZECHIA NATIONAL FOOTBALL LEAGUE",
-      "homeTeam": "FC Sellier & Bellot Vlasim",
-      "awayTeam": "FK Pribram",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-21|23:00|usti-nad-labem|fk-dukla-praha",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "CZECHIA NATIONAL FOOTBALL LEAGUE",
-      "homeTeam": "Usti nad Labem",
-      "awayTeam": "FK Dukla Praha",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-21|23:00|vysocina-jihlava|fc-silon-taborsko",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "CZECHIA NATIONAL FOOTBALL LEAGUE",
-      "homeTeam": "Vysocina Jihlava",
-      "awayTeam": "FC Silon Taborsko",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-21|23:00|mfk-karvina|viktoria-zizkov",
-      "date": "2026-08-21",
-      "time": "23:00",
-      "competition": "CZECHIA NATIONAL FOOTBALL LEAGUE",
-      "homeTeam": "MFK Karvina",
-      "awayTeam": "Viktoria Zizkov",
-      "prediction": "2:0"
-    },
-    {
-      "id": "2026-08-22|01:45|ballymena-united|glentoran-fc",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "NORTHERN IRELAND PREMIERSHIP",
-      "homeTeam": "Ballymena United",
-      "awayTeam": "Glentoran FC",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|01:45|linfield-fc|cliftonville",
-      "date": "2026-08-22",
-      "time": "01:45",
-      "competition": "NORTHERN IRELAND PREMIERSHIP",
-      "homeTeam": "Linfield FC",
-      "awayTeam": "Cliftonville",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|00:30|aldosivi|union-de-santa-fe",
-      "date": "2026-08-22",
-      "time": "00:30",
-      "competition": "ARGENTINA LIGA PROFESIONAL",
-      "homeTeam": "Aldosivi",
-      "awayTeam": "Union de Santa Fe",
-      "prediction": "1:0"
-    },
-    {
-      "id": "2026-08-22|06:00|estudiantes-de-rio-cuarto|san-lorenzo",
-      "date": "2026-08-22",
-      "time": "06:00",
-      "competition": "ARGENTINA LIGA PROFESIONAL",
-      "homeTeam": "Estudiantes de Rio Cuarto",
-      "awayTeam": "San Lorenzo",
+      "competition": "BULGARIA FIRST PROFESSIONAL FOOTBALL LEAGUE",
+      "homeTeam": "Levski Sofia",
+      "awayTeam": "Spartak Varna",
       "prediction": "0:1"
     },
     {
-      "id": "2026-08-22|08:00|club-leon|monterrey",
+      "id": "2026-08-22|23:45|zira-fk|imisli-fk",
       "date": "2026-08-22",
-      "time": "08:00",
-      "competition": "MEXICO PRIMERA DIVISION",
-      "homeTeam": "Club Leon",
-      "awayTeam": "Monterrey",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|08:00|tigres-uanl|atlante",
-      "date": "2026-08-22",
-      "time": "08:00",
-      "competition": "MEXICO PRIMERA DIVISION",
-      "homeTeam": "Tigres UANL",
-      "awayTeam": "Atlante",
-      "prediction": "3:0"
-    },
-    {
-      "id": "2026-08-22|10:00|fc-juarez|club-america",
-      "date": "2026-08-22",
-      "time": "10:00",
-      "competition": "MEXICO PRIMERA DIVISION",
-      "homeTeam": "FC Juarez",
-      "awayTeam": "Club America",
-      "prediction": "0:2"
-    },
-    {
-      "id": "2026-08-22|10:10|queretaro|deportivo-toluca",
-      "date": "2026-08-22",
-      "time": "10:10",
-      "competition": "MEXICO PRIMERA DIVISION",
-      "homeTeam": "Queretaro",
-      "awayTeam": "Deportivo Toluca",
-      "prediction": "1:2"
-    },
-    {
-      "id": "2026-08-22|07:30|audax-italiano|union-la-calera",
-      "date": "2026-08-22",
-      "time": "07:30",
-      "competition": "CHILE PRIMERA DIVISION",
-      "homeTeam": "Audax Italiano",
-      "awayTeam": "Union La Calera",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|10:00|ca-la-paz|cruz-azul-hidalgo",
-      "date": "2026-08-22",
-      "time": "10:00",
-      "competition": "MEXICO LIGA DE EXPANSION",
-      "homeTeam": "CA La Paz",
-      "awayTeam": "Cruz Azul Hidalgo",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|04:30|rubio-nu|sportivo-trinidense",
-      "date": "2026-08-22",
-      "time": "04:30",
-      "competition": "PARAGUAY PRIMERA DIVISION",
-      "homeTeam": "Rubio Nu",
-      "awayTeam": "Sportivo Trinidense",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|01:30|albion-fc|ca-boston-river",
-      "date": "2026-08-22",
-      "time": "01:30",
-      "competition": "URUGUAY PRIMERA DIVISION",
-      "homeTeam": "Albion FC",
-      "awayTeam": "CA Boston River",
-      "prediction": "1:1"
-    },
-    {
-      "id": "2026-08-22|05:00|liverpool-montevideo|ca-cerro",
-      "date": "2026-08-22",
-      "time": "05:00",
-      "competition": "URUGUAY PRIMERA DIVISION",
-      "homeTeam": "Liverpool Montevideo",
-      "awayTeam": "CA Cerro",
-      "prediction": "2:0"
-    },
-    {
-      "id": "2026-08-22|08:00|puntarenas-fc|perez-zeledon",
-      "date": "2026-08-22",
-      "time": "08:00",
-      "competition": "COSTA RICA PRIMERA DIVISION",
-      "homeTeam": "Puntarenas FC",
-      "awayTeam": "Perez Zeledon",
-      "prediction": "2:1"
-    },
-    {
-      "id": "2026-08-22|01:00|ca-acassuso|godoy-cruz-antonio-tomba",
-      "date": "2026-08-22",
-      "time": "01:00",
-      "competition": "ARGENTINA PRIMERA NACIONAL",
-      "homeTeam": "CA Acassuso",
-      "awayTeam": "Godoy Cruz Antonio Tomba",
+      "time": "23:45",
+      "competition": "22/08 21:30 Qabala FK VS Shafa Baku FK 0:1/4",
+      "homeTeam": "Zira FK",
+      "awayTeam": "Imisli FK",
       "prediction": "0:1"
     },
     {
-      "id": "2026-08-22|01:30|ca-san-telmo|deportivo-moron",
-      "date": "2026-08-22",
-      "time": "01:30",
-      "competition": "ARGENTINA PRIMERA NACIONAL",
-      "homeTeam": "CA San Telmo",
-      "awayTeam": "Deportivo Moron",
-      "prediction": "1:1"
+      "id": "2026-08-23|06:30|inter-miami-cf|toronto-fc",
+      "date": "2026-08-23",
+      "time": "06:30",
+      "competition": "23/08 06:30 Orlando City SC VS Real Salt Lake 0:1/4",
+      "homeTeam": "Inter Miami CF",
+      "awayTeam": "Toronto FC",
+      "prediction": "0:1"
     },
     {
-      "id": "2026-08-22|05:00|deportivo-madryn|club-atletico-mitre",
-      "date": "2026-08-22",
-      "time": "05:00",
-      "competition": "ARGENTINA PRIMERA NACIONAL",
-      "homeTeam": "Deportivo Madryn",
-      "awayTeam": "Club Atletico Mitre",
-      "prediction": "1:0"
+      "id": "2026-08-23|02:00|fluminense-rj|remo-pa",
+      "date": "2026-08-23",
+      "time": "02:00",
+      "competition": "BRAZIL SERIE A",
+      "homeTeam": "Fluminense RJ",
+      "awayTeam": "Remo PA",
+      "prediction": "0:1"
     }
   ]
 }

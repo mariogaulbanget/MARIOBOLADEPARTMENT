@@ -1,1214 +1,4681 @@
 {
-  "updatedAt": "2026-08-21T22:56:12.486Z",
-  "total": 162,
-  "resolved": 73,
-  "pending": 89,
+  "updatedAt": "2026-08-21T23:13:43.229Z",
+  "total": 620,
+  "resolved": 334,
+  "pending": 286,
   "teams": [
     {
-      "name": "Aalborg",
+      "name": "AB Gladsaxe",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Aarhus Fremad",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
+      "name": "Abha",
+      "matchedName": "Abha",
+      "logoUrl": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/abha.e9f77104.png",
+      "country": "Saudi Arabia",
+      "confidence": 1,
+      "matchType": "EXACT"
     },
     {
-      "name": "Academica Coimbra",
-      "matchedName": "Académica de Coimbra",
-      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/academica-de-coimbra.1a1f510e.png",
+      "name": "AC Oulu",
+      "matchedName": "AC Oulu",
+      "logoUrl": "https://assets.football-logos.cc/logos/finland/256x256/oulu.77e27167.png",
+      "country": "Finland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Academico Viseu",
+      "matchedName": "Académico de Viseu",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/academico-de-viseu.474a481b.png",
       "country": "Portugal",
       "confidence": 0.82,
       "matchType": "FUZZY"
     },
     {
-      "name": "Admira Wacker",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Alashkert FC [n]",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Albion FC",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Aldosivi",
-      "matchedName": "Aldosivi",
-      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/aldosivi.1869fe02.png",
-      "country": "Argentina",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Almere City FC",
-      "matchedName": "Almere City FC",
-      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/almere-city-fc.28f26b3f.png",
-      "country": "Netherlands",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Ararat Yerevan",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Arsenal",
-      "matchedName": "Arsenal",
-      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/arsenal.e5528ede.png",
+      "name": "Accrington Stanley",
+      "matchedName": "Accrington Stanley",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/accrington.985a895a.png",
       "country": "England",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Athlone Town",
+      "name": "AD Ceuta",
       "logoUrl": "",
       "country": "",
       "confidence": 0.7,
       "matchType": "PENDING"
     },
     {
-      "name": "Atlante",
+      "name": "AD Tarma",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Audax Italiano",
-      "matchedName": "Audax Italiano",
-      "logoUrl": "https://assets.football-logos.cc/logos/chile/256x256/audax-italiano.c8102cac.png",
-      "country": "Chile",
+      "name": "AEK Athens",
+      "matchedName": "AEK Athens",
+      "logoUrl": "https://assets.football-logos.cc/logos/greece/256x256/aek-athens.c6c750f1.png",
+      "country": "Greece",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Ballymena United",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
+      "name": "AFC Fylde",
+      "matchedName": "AFC Fylde",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/afc-fylde.d0ec43fc.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
     },
     {
-      "name": "Benfica B",
+      "name": "AFC Telford United",
+      "matchedName": "AFC Telford United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/afc-telford-united.15f2ea27.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "AFC Wimbledon",
+      "matchedName": "AFC Wimbledon",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/afc-wimbledon.68931326.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Aguilas Doradas",
+      "matchedName": "Águilas Doradas",
+      "logoUrl": "https://assets.football-logos.cc/logos/colombia/256x256/aguilas-doradas.58d7220f.png",
+      "country": "Colombia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Akhmat Grozny",
       "logoUrl": "",
       "country": "",
       "confidence": 0.7,
       "matchType": "PENDING"
     },
     {
-      "name": "BK Hacken",
-      "matchedName": "Häcken",
-      "logoUrl": "https://assets.football-logos.cc/logos/sweden/256x256/hacken.f352d1ce.png",
-      "country": "Sweden",
+      "name": "Al Ahli Jeddah",
+      "matchedName": "Al Ahli",
+      "logoUrl": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-ahli.4a088ea9.png",
+      "country": "Saudi Arabia",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Al Ain Abu Dhabi",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Al Ettifaq",
+      "matchedName": "Al Ettifaq",
+      "logoUrl": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-ettifaq.012ffc39.png",
+      "country": "Saudi Arabia",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Bohemians",
-      "matchedName": "Bohemians",
-      "logoUrl": "https://assets.football-logos.cc/logos/republic-of-ireland/256x256/bohemians.ea2eae46.png",
-      "country": "Republic Of Ireland",
+      "name": "Al Fateh",
+      "matchedName": "Al Fateh",
+      "logoUrl": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-fateh.fe613f47.png",
+      "country": "Saudi Arabia",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "CA Acassuso",
+      "name": "Al Khaleej Saihat",
+      "matchedName": "Al Khaleej",
+      "logoUrl": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-khaleej.79da44d6.png",
+      "country": "Saudi Arabia",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Al Kholood",
+      "matchedName": "Al-Kholood",
+      "logoUrl": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-kholood.fe801b7f.png",
+      "country": "Saudi Arabia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Al Masry SC",
+      "matchedName": "Al-Masry SC",
+      "logoUrl": "https://assets.football-logos.cc/logos/egypt/256x256/al-masry.ff16eddc.png",
+      "country": "Egypt",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Al Shabab Riyadh",
+      "matchedName": "Al Riyadh",
+      "logoUrl": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-riyadh.3d0f075b.png",
+      "country": "Saudi Arabia",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Al Taawoun Buraidah",
+      "matchedName": "Al Taawoun",
+      "logoUrl": "https://assets.football-logos.cc/logos/saudi-arabia/256x256/al-taawoun.ddaee130.png",
+      "country": "Saudi Arabia",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Alacranes de Durango",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "CA Boston River",
-      "matchedName": "Boston River",
-      "logoUrl": "https://assets.football-logos.cc/logos/uruguay/256x256/boston-river.4e0c5bb7.png",
-      "country": "Uruguay",
+      "name": "Albacete Balompie",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Albirex Niigata",
+      "matchedName": "Albirex Niigata",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/albirex-niigata.2f1f5a11.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Aldershot Town",
+      "matchedName": "Aldershot Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/aldershot-town.2c3c696b.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Alebrijes de Oaxaca",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Almirante Brown",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Altona Magic",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Altrincham",
+      "matchedName": "Altrincham",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/64x64/altrincham.cc7c6c63.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Amarante FC",
+      "matchedName": "Amarante",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/amarante.cd293730.png",
+      "country": "Portugal",
       "confidence": 0.96,
       "matchType": "ALIAS"
     },
     {
-      "name": "CA Cerro",
-      "matchedName": "Cerro",
-      "logoUrl": "https://assets.football-logos.cc/logos/uruguay/256x256/cerro.8366080e.png",
-      "country": "Uruguay",
+      "name": "America de Cali",
+      "matchedName": "América de Cali",
+      "logoUrl": "https://assets.football-logos.cc/logos/colombia/256x256/america-de-cali.f3646c89.png",
+      "country": "Colombia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Anapolis GO",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Ansan Greeners",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Arab Contractors",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Arbroath",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Arezzo",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Aris Thessaloniki",
+      "matchedName": "Aris Thessaloniki",
+      "logoUrl": "https://assets.football-logos.cc/logos/greece/256x256/aris-thessaloniki.915735c7.png",
+      "country": "Greece",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Arminia Bielefeld",
+      "matchedName": "Arminia Bielefeld",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/arminia-bielefeld.9e47d26c.png",
+      "country": "Germany",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Athletic Bilbao",
+      "matchedName": "Athletic Club Bilbao",
+      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/athletic-club.e1bfba0c.png",
+      "country": "Spain",
       "confidence": 0.96,
       "matchType": "ALIAS"
     },
     {
-      "name": "CA La Paz",
+      "name": "Atlas",
+      "matchedName": "Atlas",
+      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/atlas.2af6a8cf.png",
+      "country": "Mexico",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Atletico Bucaramanga",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Atletico Mineiro",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "CA San Telmo",
+      "name": "Atletico Ottawa",
+      "matchedName": "Atlético Ottawa",
+      "logoUrl": "https://assets.football-logos.cc/logos/canada/256x256/atletico-ottawa.8857cd30.png",
+      "country": "Canada",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Atletico Tucuman",
+      "matchedName": "Atlético Tucumán",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/atletico-tucuman.3021868e.png",
+      "country": "Argentina",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Atromitos",
+      "matchedName": "Atromitos",
+      "logoUrl": "https://assets.football-logos.cc/logos/greece/256x256/atromitos.00dfa4b2.png",
+      "country": "Greece",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Augsburg",
+      "matchedName": "Augsburg",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/augsburg.2bc910e0.png",
+      "country": "Germany",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Austin FC",
+      "matchedName": "Austin FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/austins-fc.33ed60ae.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Austria Lustenau",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Catanzaro",
-      "matchedName": "Catanzaro",
-      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/catanzaro.2deb6417.png",
+      "name": "Auxerre",
+      "matchedName": "Auxerre",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/auxerre.1eaae387.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Avellino",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Avispa Fukuoka",
+      "matchedName": "Avispa Fukuoka",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/avispa-fukuoka.29a8870a.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Avondale FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Ayr United",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "AZ Alkmaar",
+      "matchedName": "AZ Alkmaar",
+      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/az-alkmaar.a5883ab7.png",
+      "country": "Netherlands",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Banfield",
+      "matchedName": "Banfield",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/banfield.2b03df71.png",
+      "country": "Argentina",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Bangor FC",
+      "matchedName": "Bangor",
+      "logoUrl": "https://assets.football-logos.cc/logos/northern-ireland/256x256/bangor.2ff3eea0.png",
+      "country": "Northern Ireland",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Barcelona SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Barnet",
+      "matchedName": "Barnet",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/barnet.0e3477dc.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Barnsley",
+      "matchedName": "Barnsley",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/barnsley.eeaac65d.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Barrow",
+      "matchedName": "Barrow",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/64x64/barrow.c60c20be.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Basel",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Bayer 04 Leverkusen",
+      "matchedName": "Bayer Leverkusen",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/bayer-leverkusen.72f211d8.png",
+      "country": "Germany",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Bayern Munchen",
+      "matchedName": "Bayern München",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/bayern-munchen.6c38f13a.png",
+      "country": "Germany",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Bedford Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Beerschot VA",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Beijing Guoan",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Benevento",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Bentleigh Greens",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "BFC Daugavpils",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Billericay Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Birmingham City",
+      "matchedName": "Birmingham City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/birmingham.1026e178.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Birmingham Legion",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Blackburn Rovers",
+      "matchedName": "Blackburn Rovers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/blackburn-rovers.a6f1e611.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Blackpool",
+      "matchedName": "Blackpool",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/blackpool.05310153.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Blacktown City",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Blaublitz Akita",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Bohemians 1905",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Bolton Wanderers",
+      "matchedName": "Bolton Wanderers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/bolton.4a68a472.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Boreham Wood",
+      "matchedName": "Boreham Wood",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/boreham-wood.da47e05e.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Borussia Dortmund",
+      "matchedName": "Borussia Dortmund",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/borussia-dortmund.09ffedcd.png",
+      "country": "Germany",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Boston United",
+      "matchedName": "Boston United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/boston-united.f644cc84.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Botafogo PB",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Brackley Town",
+      "matchedName": "Brackley Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/brackley-town.3b15bff8.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Braintree Town",
+      "matchedName": "Braintree Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/braintree-town.4a41dfbf.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Bray Wanderers",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Brentford",
+      "matchedName": "Brentford",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/brentford.e3296e20.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Brest",
+      "matchedName": "Brest",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/brest.bdb50f5e.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Bristol City",
+      "matchedName": "Bristol City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/bristol-city.32f1f82d.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Bristol Rovers",
+      "matchedName": "Bristol Rovers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/bristol-rovers.3396d3b9.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Bromley",
+      "matchedName": "Bromley",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/bromley.70df050b.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Brooklyn FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Bryne",
+      "matchedName": "Bryne",
+      "logoUrl": "https://assets.football-logos.cc/logos/norway/256x256/bryne.f435257f.png",
+      "country": "Norway",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Bucheon FC 1995",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Burton Albion",
+      "matchedName": "Burton Albion",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/burton.c4e07845.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Busan I.Park",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Buxton",
+      "matchedName": "Buxton",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/buxton.5270d492.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "CA Atlanta",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "CA Colegiales",
+      "matchedName": "Colegiales",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/colegiales.dd8300ef.png",
+      "country": "Argentina",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "CA Estudiantes De Caseros",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "CA Huracan",
+      "matchedName": "CA Huracán",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/ca-huracan.c9e27138.png",
+      "country": "Argentina",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "CA Independiente",
+      "matchedName": "Independiente",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/independiente.091ccb51.png",
+      "country": "Argentina",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "CA Los Andes",
+      "matchedName": "Los Andes",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/los-andes.8a418fbf.png",
+      "country": "Argentina",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "CA San Miguel",
+      "matchedName": "San Miguel",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/san-miguel.650ad1d0.png",
+      "country": "Argentina",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Cadiz",
+      "matchedName": "Cadiz",
+      "logoUrl": "https://assets.football-logos.cc/logos/spain/64x64/cadiz.fdf257af.png",
+      "country": "Spain",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Cagliari",
+      "matchedName": "Cagliari",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/cagliari.1c3353f1.png",
       "country": "Italy",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "CD Tondela",
-      "matchedName": "Tondela",
-      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/tondela.e08b9ef4.png",
-      "country": "Portugal",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Clermont Foot",
-      "matchedName": "Clermont Foot",
-      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/clermont-foot.03374383.png",
-      "country": "France",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Cliftonville",
-      "matchedName": "Cliftonville",
-      "logoUrl": "https://assets.football-logos.cc/logos/northern-ireland/256x256/cliftonville.a803879f.png",
-      "country": "Northern Ireland",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Club America",
-      "matchedName": "Club America",
-      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/club-america.1f41fbf0.png",
-      "country": "Mexico",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Club Atletico Mitre",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Club Leon",
-      "matchedName": "Club Leon",
-      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/club-leon.f3d8969c.png",
-      "country": "Mexico",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Cobh Ramblers",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Cordoba CF",
-      "matchedName": "Córdoba",
-      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/cordoba.669c976a.png",
-      "country": "Spain",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Cork City",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Coventry City",
-      "matchedName": "Coventry City",
-      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/coventry-city.0d74fc5a.png",
+      "name": "Cambridge United",
+      "matchedName": "Cambridge United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/cambridge-united.ce4c866e.png",
       "country": "England",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Cracovia Krakow",
+      "name": "Cancun FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Cardiff City",
+      "matchedName": "Cardiff City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/cardiff-city.f164becb.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Carlisle United",
+      "matchedName": "Carlisle United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/carlisle.b0d67ab3.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Caroline Springs George Cross FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Carrarese",
+      "matchedName": "Carrarese",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/64x64/carrarese.7124f579.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Carrick Rangers",
       "logoUrl": "",
       "country": "",
       "confidence": 0.7,
       "matchType": "PENDING"
     },
     {
-      "name": "Cruz Azul Hidalgo",
-      "matchedName": "Cruz Azul",
-      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/cruz-azul.c7d0245e.png",
-      "country": "Mexico",
-      "confidence": 0.82,
-      "matchType": "FUZZY"
-    },
-    {
-      "name": "Den Bosch",
+      "name": "Cartagines",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Deportivo Madryn",
-      "matchedName": "Deportivo Madryn",
-      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/deportivo-madryn.eda52e13.png",
-      "country": "Argentina",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Deportivo Moron",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Deportivo Toluca",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Derry City",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Dijon",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Dordrecht",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Drogheda United",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Dundalk",
-      "matchedName": "Dundalk",
-      "logoUrl": "https://assets.football-logos.cc/logos/republic-of-ireland/256x256/dundalk.24c29555.png",
-      "country": "Republic Of Ireland",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Erzurumspor FK",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Esbjerg",
-      "matchedName": "Esbjerg",
-      "logoUrl": "https://assets.football-logos.cc/logos/denmark/256x256/esbjerg.4774083f.png",
-      "country": "Denmark",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Estudiantes de Rio Cuarto",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Etoile Carouge FC",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Eindhoven",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Emmen",
-      "matchedName": "FC Emmen",
-      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-emmen.8aca22fe.png",
-      "country": "Netherlands",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "FC Gandzasar Kapan",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Hertha Wels",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Juarez",
-      "matchedName": "FC Juarez",
-      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/fc-juarez.07ef50b5.png",
-      "country": "Mexico",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "FC Liefering",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Pyunik",
-      "matchedName": "Pyunik",
-      "logoUrl": "https://assets.football-logos.cc/logos/armenia/256x256/pyunik.62dc5a2f.png",
-      "country": "Armenia",
+      "name": "Cavalry FC",
+      "matchedName": "Cavalry",
+      "logoUrl": "https://assets.football-logos.cc/logos/canada/256x256/cavalry.4491359a.png",
+      "country": "Canada",
       "confidence": 0.96,
       "matchType": "ALIAS"
     },
     {
-      "name": "FC Rapperswil-Jona",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Sellier & Bellot Vlasim",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Silon Taborsko",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Stade Lausanne Ouchy",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FC Tokyo",
-      "matchedName": "FC Tokyo",
-      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/fc-tokyo.4b2237cc.png",
-      "country": "Japan",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Finn Harps",
-      "matchedName": "Finn Harps",
-      "logoUrl": "https://assets.football-logos.cc/logos/republic-of-ireland/256x256/finn-harps.0d9b66a4.png",
-      "country": "Republic Of Ireland",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "First Vienna 1894",
-      "matchedName": "First Vienna",
-      "logoUrl": "https://assets.football-logos.cc/logos/austria/256x256/first-vienna.d1964a12.png",
-      "country": "Austria",
-      "confidence": 0.82,
-      "matchType": "FUZZY"
-    },
-    {
-      "name": "FK Dukla Praha",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "FK Pribram",
-      "matchedName": "Příbram",
-      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/pribram.b9fd99b2.png",
-      "country": "Czech Republic",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Fotbal Trinec",
-      "matchedName": "Fotbal Třinec",
-      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/fotbal-trinec.3d7adfb7.png",
-      "country": "Czech Republic",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Fredericia",
-      "matchedName": "FC Fredericia",
-      "logoUrl": "https://assets.football-logos.cc/logos/denmark/256x256/fredericia.db1d838a.png",
-      "country": "Denmark",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Galatasaray",
-      "matchedName": "Galatasaray",
-      "logoUrl": "https://assets.football-logos.cc/logos/turkey/256x256/galatasaray.b788795f.png",
+      "name": "Caykur Rizespor",
+      "matchedName": "Çaykur Rizespor",
+      "logoUrl": "https://assets.football-logos.cc/logos/turkey/256x256/rizespor.ce5e503b.png",
       "country": "Turkey",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Galway United",
+      "name": "CD Eldense",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Girona",
-      "matchedName": "Girona",
-      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/girona.14b919ce.png",
-      "country": "Spain",
-      "confidence": 1,
-      "matchType": "EXACT"
+      "name": "CD Magallanes",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
     },
     {
-      "name": "Glentoran FC",
-      "matchedName": "Glentoran",
-      "logoUrl": "https://assets.football-logos.cc/logos/northern-ireland/256x256/glentoran.14ff9224.png",
-      "country": "Northern Ireland",
+      "name": "CD Universidad Catolica",
+      "matchedName": "Universidad Católica",
+      "logoUrl": "https://assets.football-logos.cc/logos/chile/256x256/universidad-catolica.e49b192f.png",
+      "country": "Chile",
       "confidence": 0.96,
       "matchType": "ALIAS"
     },
     {
-      "name": "Godoy Cruz Antonio Tomba",
+      "name": "Ceara CE",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Celta Vigo",
       "logoUrl": "",
       "country": "",
       "confidence": 0.7,
       "matchType": "PENDING"
     },
     {
-      "name": "Grazer AK",
+      "name": "Central Norte de Salta",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Guingamp",
-      "matchedName": "Guingamp",
-      "logoUrl": "https://assets.football-logos.cc/logos/france/64x64/guingamp.aea1049a.png",
-      "country": "France",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Haka",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Hansa Rostock",
-      "matchedName": "Hansa Rostock",
-      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/hansa-rostock.0e79d560.png",
-      "country": "Germany",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Helmond Sport",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Hobro",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "IK Sirius FK",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Inverness CT",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "JaPS",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "JEF United Ichihara Chiba",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Jong AZ Alkmaar",
-      "matchedName": "AZ Alkmaar",
-      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/az-alkmaar.a5883ab7.png",
-      "country": "Netherlands",
-      "confidence": 0.82,
-      "matchType": "FUZZY"
-    },
-    {
-      "name": "Kaiserslautern",
-      "matchedName": "FC Kaiserslautern",
-      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/fc-kaiserslautern.dd69845b.png",
-      "country": "Germany",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Kapfenberger SV",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Karlsruher SC",
-      "matchedName": "Karlsruher SC",
-      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/karlsruher.c1e834ee.png",
-      "country": "Germany",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "KAS Eupen",
-      "matchedName": "KAS Eupen",
-      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/eupen.b6e1fb1c.png",
-      "country": "Belgium",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Kashiwa Reysol",
-      "matchedName": "Kashiwa Reysol",
-      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/kashiwa-reysol.73fbf857.png",
+      "name": "Cerezo Osaka",
+      "matchedName": "Cerezo Osaka",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/cerezo-osaka.b24b0f1f.png",
       "country": "Japan",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Kerry FC",
+      "name": "CF Montreal",
+      "matchedName": "CF Montréal",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/cf-montreal.cbd8eee0.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Chaco For Ever",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "KS Wieczysta Krakow",
+      "name": "Charleston Battery",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "KSC Lokeren",
+      "name": "Charlotte FC",
+      "matchedName": "Charlotte FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/charlotte-fc.7a927503.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Charlton Athletic",
+      "matchedName": "Charlton Athletic",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/charlton.68457b55.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Chelmsford City",
+      "matchedName": "Chelmsford City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/chelmsford-city.2ec20b9c.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Cheltenham Town",
+      "matchedName": "Cheltenham Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/cheltenham.b8c84bf8.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Chengdu Rongcheng",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Lahti",
-      "matchedName": "FC Lahti",
-      "logoUrl": "https://assets.football-logos.cc/logos/finland/256x256/lahti.df49f97c.png",
-      "country": "Finland",
+      "name": "Cheonan City FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Chesham United",
+      "matchedName": "Chesham United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/chesham.df933a66.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Chester",
+      "matchedName": "Chester FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/chester-fc.9c635a2c.png",
+      "country": "England",
       "confidence": 0.96,
       "matchType": "ALIAS"
     },
     {
-      "name": "Linfield FC",
-      "matchedName": "Linfield",
-      "logoUrl": "https://assets.football-logos.cc/logos/northern-ireland/256x256/linfield.b7eb9c05.png",
+      "name": "Chesterfield",
+      "matchedName": "Chesterfield",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/chesterfield.c6832531.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Chicago Fire",
+      "matchedName": "Chicago Fire FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/chicago-fire-fc.e072e068.png",
+      "country": "Usa",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Chorley",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Club Agropecuario Argentino",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Club Almagro",
+      "matchedName": "Almagro",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/almagro.a71d5562.png",
+      "country": "Argentina",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Club Nxt",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Cobreloa",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Colchester United",
+      "matchedName": "Colchester United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/colchester.fba7369a.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Coleraine",
+      "matchedName": "Coleraine",
+      "logoUrl": "https://assets.football-logos.cc/logos/northern-ireland/256x256/coleraine.f3fd1e18.png",
+      "country": "Northern Ireland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Colon de Santa Fe",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Colorado Rapids",
+      "matchedName": "Colorado Rapids",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/colorado-rapids.822ec489.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Columbus Crew",
+      "matchedName": "Columbus Crew",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/columbus-crew.39b05128.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Comerciantes Unidos",
+      "matchedName": "Comerciantes Unidos",
+      "logoUrl": "https://assets.football-logos.cc/logos/peru/256x256/comerciantes-unidos.0c1a16f8.png",
+      "country": "Peru",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Como",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Confianca SE",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Corum FK",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Crawley Town",
+      "matchedName": "Crawley Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/crawley-town.4c72af78.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Cremonese",
+      "matchedName": "Cremonese",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/cremonese.4021eef2.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Crewe Alexandra",
+      "matchedName": "Crewe Alexandra",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/crewe.21e8c9f5.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Crusaders FC",
+      "matchedName": "Crusaders",
+      "logoUrl": "https://assets.football-logos.cc/logos/northern-ireland/256x256/crusaders.884c5a31.png",
       "country": "Northern Ireland",
       "confidence": 0.96,
       "matchType": "ALIAS"
     },
     {
-      "name": "Liverpool Montevideo",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "LR Vicenza 1902",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Marseille",
-      "matchedName": "Marseille",
-      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/marseille.92b6437c.png",
-      "country": "France",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "MFK Karvina",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Monterrey",
-      "matchedName": "Monterrey",
-      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/monterrey.11571be0.png",
+      "name": "Cruz Azul",
+      "matchedName": "Cruz Azul",
+      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/cruz-azul.c7d0245e.png",
       "country": "Mexico",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Montpellier",
-      "matchedName": "Montpellier",
-      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/montpellier.e048338a.png",
-      "country": "France",
+      "name": "Cruzeiro MG",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Crystal Palace",
+      "matchedName": "Crystal Palace",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/crystal-palace.53067b96.png",
+      "country": "England",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "MVV Maastricht",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Nancy",
-      "matchedName": "Nancy",
-      "logoUrl": "https://assets.football-logos.cc/logos/france/64x64/nancy.4df6bb90.png",
-      "country": "France",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Neuchatel Xamax",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "NK Lokomotiva Zagreb",
-      "matchedName": "Lokomotiva Zagreb",
-      "logoUrl": "https://assets.football-logos.cc/logos/croatia/256x256/lokomotiva-zagreb.7ae1bb82.png",
-      "country": "Croatia",
-      "confidence": 0.82,
-      "matchType": "FUZZY"
-    },
-    {
-      "name": "NK Rudes",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Partick Thistle",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Pau FC",
-      "matchedName": "Pau FC",
-      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/pau.6ae1c32f.png",
-      "country": "France",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Perez Zeledon",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Petrolul Ploiesti",
-      "matchedName": "Petrolul Ploiești",
-      "logoUrl": "https://assets.football-logos.cc/logos/romania/256x256/petrolul-ploiesti.787b17c4.png",
-      "country": "Romania",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "PK-35 Helsinki",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Portimonense",
-      "matchedName": "Portimonense",
-      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/portimonense.3ea08680.png",
-      "country": "Portugal",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Puntarenas FC",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Queretaro",
-      "matchedName": "Queretaro FC",
-      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/queretaro-fc.91390b0b.png",
-      "country": "Mexico",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "RAAL La Louviere",
-      "matchedName": "RAAL La Louvière",
-      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/raal-la-louviere.9801fb4f.png",
-      "country": "Belgium",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Rapid Bucuresti",
-      "matchedName": "Rapid Bucureşti",
-      "logoUrl": "https://assets.football-logos.cc/logos/romania/256x256/rapid-bucuresti.af9e25af.png",
-      "country": "Romania",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Real Betis",
-      "matchedName": "Real Betis",
-      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/real-betis.7bb10421.png",
-      "country": "Spain",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Real Sociedad",
-      "matchedName": "Real Sociedad",
-      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/real-sociedad.501e3b1e.png",
-      "country": "Spain",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Red Star Saint Ouen",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "RKC Waalwijk",
-      "matchedName": "RKC Waalwijk",
-      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/rkc-waalwijk.c6f20fed.png",
-      "country": "Netherlands",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Roda JC",
-      "matchedName": "Roda JC Kerkrade",
-      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/roda-jc-kerkrade.ee519c03.png",
-      "country": "Netherlands",
-      "confidence": 0.82,
-      "matchType": "FUZZY"
-    },
-    {
-      "name": "Royal Excelsior Virton",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "RSCA Futures",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Rubio Nu",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "San Lorenzo",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "SC Preussen Munster",
-      "matchedName": "Preussen Munster",
-      "logoUrl": "https://assets.football-logos.cc/logos/germany/64x64/preussen-munster.a1874dc8.png",
-      "country": "Germany",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Seinajoen JK",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Seinajoen JK Akatemia",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "SFC Opava",
-      "matchedName": "SFC Opava",
-      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/opava.dddb5fa6.png",
-      "country": "Czech Republic",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "SK Kladno",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "SK Prostejov",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "SKN St. Polten",
-      "matchedName": "St Pölten",
-      "logoUrl": "https://assets.football-logos.cc/logos/austria/256x256/st-polten.ed060152.png",
-      "country": "Austria",
-      "confidence": 0.82,
-      "matchType": "FUZZY"
-    },
-    {
-      "name": "SKU Amstetten",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Sligo Rovers",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Sochaux",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Spartak Kostroma",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Sportivo Trinidense",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "St. Patricks Athletic",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Stade Nyonnais",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Standard Liege",
-      "matchedName": "Standard Liège",
-      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/standard-liege.ce182b3d.png",
-      "country": "Belgium",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Strasbourg",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "SV Austria Salzburg",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "SV Ried",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Tigres UANL",
-      "matchedName": "Tigres UANL",
-      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/tigres-uanl.d9441325.png",
-      "country": "Mexico",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Torpedo Moscow",
-      "matchedName": "Torpedo Moscow",
-      "logoUrl": "https://assets.football-logos.cc/logos/russia/256x256/torpedo-moskva.e7438f46.png",
+      "name": "CSKA Moscow",
+      "matchedName": "CSKA Moscow",
+      "logoUrl": "https://assets.football-logos.cc/logos/russia/256x256/cska-moskva.303a8507.png",
       "country": "Russia",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Treaty United",
+      "name": "Cucuta Deportivo",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Cuiaba MT",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "UC Dublin",
+      "name": "Cusco FC",
+      "matchedName": "Cusco FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/peru/256x256/cusco.1429cb61.png",
+      "country": "Peru",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "D.C. United",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Union de Santa Fe",
+      "name": "DAC Dunajska Streda",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Union La Calera",
-      "matchedName": "Unión La Calera",
-      "logoUrl": "https://assets.football-logos.cc/logos/chile/256x256/union-la-calera.57233b43.png",
+      "name": "Daegu FC",
+      "matchedName": "Daegu FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/south-korea/256x256/daegu-fc.7f150244.png",
+      "country": "South Korea",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Dagenham & Redbridge",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Dandenong City SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Dandenong Thunder",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Darlington",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Defensores de Belgrano",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Deportes Copiapo",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Deportes Iquique",
+      "matchedName": "Deportes Iquique",
+      "logoUrl": "https://assets.football-logos.cc/logos/chile/256x256/deportes-iquique.a21c2214.png",
       "country": "Chile",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "US Boulogne",
-      "matchedName": "Boulogne",
-      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/boulogne.e46bb539.png",
-      "country": "France",
+      "name": "Deportes Limache",
+      "matchedName": "Deportes Limache",
+      "logoUrl": "https://assets.football-logos.cc/logos/chile/256x256/deportes-limache.55da718a.png",
+      "country": "Chile",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Deportes Puerto Montt",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Deportes Recoleta",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Deportes Santa Cruz",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Deportes Tolima",
+      "matchedName": "Deportes Tolima",
+      "logoUrl": "https://assets.football-logos.cc/logos/colombia/256x256/deportes-tolima.053332de.png",
+      "country": "Colombia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Deportivo Garcilaso",
+      "matchedName": "Deportivo Garcilaso",
+      "logoUrl": "https://assets.football-logos.cc/logos/peru/256x256/deportivo-garcilaso.009a0079.png",
+      "country": "Peru",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Deportivo Moquegua",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Deportivo Recoleta",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Deportivo Riestra",
+      "matchedName": "Deportivo Riestra",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/deportivo-riestra.34842092.png",
+      "country": "Argentina",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Deportivo Tristan Suarez",
+      "matchedName": "Tristán Suárez",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/tristan-suarez.6faed9eb.png",
+      "country": "Argentina",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Derby County",
+      "matchedName": "Derby County",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/derby-county.ba26b540.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Detroit City",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Dinamo Bucuresti [n]",
+      "matchedName": "Dinamo Bucureşti",
+      "logoUrl": "https://assets.football-logos.cc/logos/romania/256x256/dinamo-bucuresti.1d0d09df.png",
+      "country": "Romania",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Doncaster Rovers",
+      "matchedName": "Doncaster Rovers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/doncaster-rovers.b36ecd25.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Dorking Wanderers",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Dover Athletic",
+      "matchedName": "Dover Athletic",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/dover-athletic.68bdd24a.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Dundee FC",
+      "matchedName": "Dundee",
+      "logoUrl": "https://assets.football-logos.cc/logos/scotland/256x256/dundee.1575086b.png",
+      "country": "Scotland",
       "confidence": 0.96,
       "matchType": "ALIAS"
     },
     {
-      "name": "USL Dunkerque",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0.7,
-      "matchType": "PENDING"
+      "name": "Dundee United",
+      "matchedName": "Dundee United",
+      "logoUrl": "https://assets.football-logos.cc/logos/scotland/256x256/dundee-united.983be0fc.png",
+      "country": "Scotland",
+      "confidence": 1,
+      "matchType": "EXACT"
     },
     {
-      "name": "Usti nad Labem",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "V-Varen Nagasaki",
+      "name": "Dunfermline Athletic",
       "logoUrl": "",
       "country": "",
       "confidence": 0,
       "matchType": "PENDING"
     },
     {
-      "name": "Vejle",
+      "name": "Dungannon Swifts",
       "logoUrl": "",
       "country": "",
       "confidence": 0.7,
       "matchType": "PENDING"
     },
     {
-      "name": "VfB Stuttgart",
-      "matchedName": "VfB Stuttgart",
-      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/vfb-stuttgart.5b4b15e7.png",
+      "name": "Eastleigh",
+      "matchedName": "Eastleigh",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/eastleigh.6d5c99dd.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Ekenas IF",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Empoli",
+      "matchedName": "Empoli",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/empoli.1eeeb2b4.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Energie Cottbus",
+      "matchedName": "Energie Cottbus",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/energie-cottbus.185c4200.png",
       "country": "Germany",
       "confidence": 1,
       "matchType": "EXACT"
     },
     {
-      "name": "Viktoria Zizkov",
-      "matchedName": "Viktoria Žižkov",
-      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/zizkov.e12e1e76.png",
-      "country": "Czech Republic",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Vitesse",
-      "matchedName": "Vitesse",
-      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/vitesse.ffea0429.png",
-      "country": "Netherlands",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Volendam",
-      "matchedName": "Volendam",
-      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/volendam.f594d394.png",
-      "country": "Netherlands",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Vysocina Jihlava",
-      "matchedName": "FC Vysočina Jihlava",
-      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/jihlava.bcff99c7.png",
-      "country": "Czech Republic",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Wacker Innsbruck",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Waldhof Mannheim",
-      "logoUrl": "",
-      "country": "",
-      "confidence": 0,
-      "matchType": "PENDING"
-    },
-    {
-      "name": "Waterford FC",
-      "matchedName": "Waterford",
-      "logoUrl": "https://assets.football-logos.cc/logos/republic-of-ireland/256x256/waterford.5c29350e.png",
-      "country": "Republic Of Ireland",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Wexford FC",
-      "matchedName": "Wexford",
-      "logoUrl": "https://assets.football-logos.cc/logos/republic-of-ireland/256x256/wexford.dc2e5828.png",
-      "country": "Republic Of Ireland",
-      "confidence": 0.96,
-      "matchType": "ALIAS"
-    },
-    {
-      "name": "Winterthur",
-      "matchedName": "Winterthur",
-      "logoUrl": "https://assets.football-logos.cc/logos/switzerland/256x256/winterthur.f8cf9656.png",
-      "country": "Switzerland",
-      "confidence": 1,
-      "matchType": "EXACT"
-    },
-    {
-      "name": "Young Violets Austria Wien",
+      "name": "Erzgebirge Aue",
       "logoUrl": "",
       "country": "",
       "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Escorpiones Belen",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Estoril",
+      "matchedName": "Estoril",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/estoril.d82142b7.png",
+      "country": "Portugal",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Everton",
+      "matchedName": "Everton",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/everton.6b635cd7.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Exeter City",
+      "matchedName": "Exeter City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/exeter.48c0a951.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Fagiano Okayama",
+      "matchedName": "Fagiano Okayama",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/fagiano-okayama.1a26e88d.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Fakel Voronezh",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Farnborough",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Farnham Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC Alverca",
+      "matchedName": "Alverca",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/alverca.5fa8ebbd.png",
+      "country": "Portugal",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "FC Anyang",
+      "matchedName": "FC Anyang",
+      "logoUrl": "https://assets.football-logos.cc/logos/south-korea/256x256/fc-anyang.135b0bd3.png",
+      "country": "South Korea",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "FC Cincinnati",
+      "matchedName": "FC Cincinnati",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/fc-cincinnati.7fd3f806.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "FC Corvinul Hunedoara",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC Dallas",
+      "matchedName": "FC Dallas",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/fc-dallas.0df10005.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "FC Imabari",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC Kalamata",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC Kosice",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC KTP",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC Orenburg",
+      "matchedName": "Orenburg",
+      "logoUrl": "https://assets.football-logos.cc/logos/russia/256x256/orenburg.b11a3887.png",
+      "country": "Russia",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "FC Seoul",
+      "matchedName": "FC Seoul",
+      "logoUrl": "https://assets.football-logos.cc/logos/south-korea/256x256/fc-seoul.80454f22.png",
+      "country": "South Korea",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "FC Sudtirol",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC Tampa Bay Rowdies",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC Tulsa",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "FC Zlin",
+      "matchedName": "Zlín",
+      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/zlin.7f9cf645.png",
+      "country": "Czech Republic",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "FCV Dender EH",
+      "matchedName": "FCV Dender EH",
+      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/fcv-dender-eh.a8285b32.png",
+      "country": "Belgium",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Fenerbahce",
+      "matchedName": "Fenerbahçe",
+      "logoUrl": "https://assets.football-logos.cc/logos/turkey/256x256/fenerbahce.826f10c2.png",
+      "country": "Turkey",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "FK Zeleziarne Podbrezova",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Flamengo RJ",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Fleetwood Town",
+      "matchedName": "Fleetwood Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/fleetwood-town.84ce757f.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Floresta CE",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Floridsdorfer AC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Fluminense RJ",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Folkestone Invicta",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Forest Green Rovers",
+      "matchedName": "Forest Green Rovers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/forest-green-rovers.7814383a.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Forge FC",
+      "matchedName": "Forge",
+      "logoUrl": "https://assets.football-logos.cc/logos/canada/256x256/forge.57dcc53c.png",
+      "country": "Canada",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Fortuna Sittard",
+      "matchedName": "Fortuna Sittard",
+      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/fortuna-sittard.05ad8019.png",
+      "country": "Netherlands",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "FS Jelgava",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Fujieda MYFC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Fylkir",
+      "matchedName": "Fylkir",
+      "logoUrl": "https://assets.football-logos.cc/logos/iceland/256x256/fylkir.6f3d7d51.png",
+      "country": "Iceland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Gamba Osaka",
+      "matchedName": "Gamba Osaka",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/gamba-osaka.3c641b15.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Gateshead",
+      "matchedName": "Gateshead",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/64x64/gateshead.b17e89a3.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Genoa",
+      "matchedName": "Genoa",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/genoa.a5ec9be4.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Ghazl El Mahalla",
+      "matchedName": "Ghazl El Mahalla",
+      "logoUrl": "https://assets.football-logos.cc/logos/egypt/256x256/ghazl-el-mahalla.573264db.png",
+      "country": "Egypt",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Gillingham",
+      "matchedName": "Gillingham",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/gillingham.d39bc314.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Gimcheon Sangmu FC",
+      "matchedName": "Gimcheon Sangmu FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/south-korea/256x256/gimcheon-sangmu-fc.37b97c7f.png",
+      "country": "South Korea",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Gimhae FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Gimnasia Jujuy",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Gimnasia La Plata",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Gimnasia Mendoza",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Gimnasia Y Tiro",
+      "matchedName": "Gimnasia y Tiro",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/gimnasia-y-tiro.9fa92eb9.png",
+      "country": "Argentina",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Goias GO",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Greenock Morton",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Grenoble Foot 38",
+      "matchedName": "Grenoble Foot 38",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/grenoble-foot-38.4559d085.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Grimsby Town",
+      "matchedName": "Grimsby Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/grimsby.c8994bb0.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Grindavik",
+      "matchedName": "Grindavík",
+      "logoUrl": "https://assets.football-logos.cc/logos/iceland/256x256/grindavik.872a8965.png",
+      "country": "Iceland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Guadalajara Chivas",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Guarani SP",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Guayaquil City",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Halifax Town",
+      "matchedName": "Halifax Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/64x64/halifax-town.5c6d660f.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Halmstads",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Hampton & Richmond Borough",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Harborough Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Harju JK Laagri",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Harrogate Town",
+      "matchedName": "Harrogate Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/harrogate-town.8d7f79d7.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Hartlepool United",
+      "matchedName": "Hartlepool United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/hartlepool.c6691f24.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Hebburn Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Hednesford Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Hemel Hempstead Town",
+      "matchedName": "Hemel Hempstead Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/hemel-hempstead-town.a147befb.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Herediano",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Hereford",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Hertha Berlin",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "HFX Wanderers FC",
+      "matchedName": "HFX Wanderers",
+      "logoUrl": "https://assets.football-logos.cc/logos/canada/256x256/hfx-wanderers.d603428b.png",
+      "country": "Canada",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "HK Kopavogur",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "HNK Gorica",
+      "matchedName": "HNK Gorica",
+      "logoUrl": "https://assets.football-logos.cc/logos/croatia/256x256/gorica.0bcb61b0.png",
+      "country": "Croatia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Hokkaido Consadole Sapporo",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Holstein Kiel",
+      "matchedName": "Holstein Kiel",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/holstein-kiel.88cbd066.png",
+      "country": "Germany",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Hornchurch FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Horsham FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Houston Dynamo",
+      "matchedName": "Houston Dynamo",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/64x64/houston-dynamo.d5c7fc9a.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Huachipato",
+      "matchedName": "Huachipato",
+      "logoUrl": "https://assets.football-logos.cc/logos/chile/256x256/huachipato.dd97dd81.png",
+      "country": "Chile",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Huddersfield Town",
+      "matchedName": "Huddersfield Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/huddersfield.944e6a57.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Hull City",
+      "matchedName": "Hull City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/hull-city.28918662.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Hume City",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Hvidovre",
+      "matchedName": "Hvidovre IF",
+      "logoUrl": "https://assets.football-logos.cc/logos/denmark/256x256/hvidovre-if.164944fd.png",
+      "country": "Denmark",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "IF Vestri",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Ilves Tampere",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Imisli FK",
+      "matchedName": "İmişli",
+      "logoUrl": "https://assets.football-logos.cc/logos/azerbaijan/256x256/imisli.4d0ddd1e.png",
+      "country": "Azerbaijan",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Independiente Medellin",
+      "matchedName": "Independiente Medellín",
+      "logoUrl": "https://assets.football-logos.cc/logos/colombia/256x256/independiente-medellin.dfa39679.png",
+      "country": "Colombia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Independiente Rivadavia",
+      "matchedName": "Independiente Rivadavia",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/independiente-rivadavia.fd293578.png",
+      "country": "Argentina",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Independiente Santa Fe",
+      "matchedName": "Independiente Santa Fe",
+      "logoUrl": "https://assets.football-logos.cc/logos/colombia/256x256/independiente-santa-fe.79161278.png",
+      "country": "Colombia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Indy Eleven",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Instituto",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Inter Miami CF",
+      "matchedName": "Inter Miami CF",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/inter-miami-cf.e2a16c34.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Inter Milan",
+      "matchedName": "Inter",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/inter.3a7ce90c.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Inter Turku 2",
+      "matchedName": "Inter Turku",
+      "logoUrl": "https://assets.football-logos.cc/logos/finland/256x256/inter-turku.13add21e.png",
+      "country": "Finland",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Internacional RS",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Ipswich Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Iraklis 1908",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Ituano FC SP",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Iwaki FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Jaiba Brava",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Jaro",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Jeju SK",
+      "matchedName": "Jeju SK FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/south-korea/256x256/jeju-sk-fc.4df50cff.png",
+      "country": "South Korea",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Jeonbuk Hyundai Motors",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Jong Ajax",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Juan Pablo II College",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Jubilo Iwata",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "K.Lierse SK",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Kashima Antlers",
+      "matchedName": "Kashima Antlers",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/kashima-antlers.5c8392b8.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Kasimpasa",
+      "matchedName": "Kasimpasa",
+      "logoUrl": "https://assets.football-logos.cc/logos/turkey/64x64/kasimpasa.8882888e.png",
+      "country": "Turkey",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Kataller Toyama",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Kawasaki Frontale",
+      "matchedName": "Kawasaki Frontale",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/kawasaki-frontale.8dff32df.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Khor Fakkan",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Kidderminster Harriers",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Kings Lynn Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Klubi 04 Helsinki",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Konyaspor",
+      "matchedName": "Konyaspor",
+      "logoUrl": "https://assets.football-logos.cc/logos/turkey/256x256/konyaspor.748221f7.png",
+      "country": "Turkey",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Korona Kielce",
+      "matchedName": "Korona Kielce",
+      "logoUrl": "https://assets.football-logos.cc/logos/poland/256x256/korona-kielce.956168a8.png",
+      "country": "Poland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "KRC Genk",
+      "matchedName": "KRC Genk",
+      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/genk.7f39c354.png",
+      "country": "Belgium",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "KV Mechelen",
+      "matchedName": "KV Mechelen",
+      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/mechelen.78af1e3a.png",
+      "country": "Belgium",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Kyoto Sanga",
+      "matchedName": "Kyoto Sanga",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/kyoto-sanga.664c65da.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "L.A Galaxy",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Las Palmas",
+      "matchedName": "Las Palmas",
+      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/las-palmas.61c92246.png",
+      "country": "Spain",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Las Vegas Lights FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Lausanne-Sport",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Le Mans",
+      "matchedName": "Le Mans",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/64x64/le-mans.11abbc97.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Leeds United",
+      "matchedName": "Leeds United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/leeds-united.26dba8f5.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Leganes",
+      "matchedName": "Leganés",
+      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/leganes.8892e6af.png",
+      "country": "Spain",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Legia Warszawa",
+      "matchedName": "Legia Warszawa",
+      "logoUrl": "https://assets.football-logos.cc/logos/poland/256x256/legia-warszawa.e9a87d79.png",
+      "country": "Poland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Leicester City",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Leiknir Reykjavik",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Leixoes",
+      "matchedName": "Leixões",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/leixoes.18cc3c7e.png",
+      "country": "Portugal",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Lens",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Leones Negros",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Levski Sofia",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Lexington SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Leyton Orient",
+      "matchedName": "Leyton Orient",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/leyton-orient.c7c4a14e.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Lincoln City",
+      "matchedName": "Lincoln City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/lincoln-city.d7003a2c.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Livingston",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Lokomotiv Moscow",
+      "matchedName": "Lokomotiv Moscow",
+      "logoUrl": "https://assets.football-logos.cc/logos/russia/256x256/lokomotiv-moskva.c121b343.png",
+      "country": "Russia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Londrina PR",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Longford Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Lorient",
+      "matchedName": "Lorient",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/64x64/lorient.d1374310.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Los Angeles FC",
+      "matchedName": "Los Angeles Fc",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/64x64/los-angeles-fc.0feb6819.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Louisville City FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Ludogorets Razgrad",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Lusitania FC Lourosa [n]",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Luton Town",
+      "matchedName": "Luton Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/luton-town.b918012a.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Luzern",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Lyon",
+      "matchedName": "Lyon",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/64x64/lyon.fc1b6010.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Macclesfield FC",
+      "matchedName": "Macclesfield",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/macclesfield.fe87797c.png",
+      "country": "England",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Maidenhead United",
+      "matchedName": "Maidenhead United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/maidenhead.086140cb.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Maidstone United",
+      "matchedName": "Maidstone United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/maidstone.027dc9f5.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Manchester United",
+      "matchedName": "Manchester United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/manchester-united.7ab9d343.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Manly United",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Mansfield Town",
+      "matchedName": "Mansfield Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/mansfield.93b6fc2f.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Manta FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Mantova",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Marine",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Maritimo",
+      "matchedName": "Marítimo",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/maritimo.b5b1d5e8.png",
+      "country": "Portugal",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Melbourne City FC [Youth]",
+      "matchedName": "Melbourne City FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/australia/256x256/melbourne-city.dfad8e92.png",
+      "country": "Australia",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Merthyr Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Metz",
+      "matchedName": "FC Metz",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/fc-metz.1a20cbee.png",
+      "country": "France",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "MFK Skalica",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "MFK Zemplin Michalovce",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Miami FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Middlesbrough",
+      "matchedName": "Middlesbrough",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/middlesbrough.b9f845aa.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Millonarios",
+      "matchedName": "Millonarios",
+      "logoUrl": "https://assets.football-logos.cc/logos/colombia/256x256/millonarios.78c9e996.png",
+      "country": "Colombia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Millwall",
+      "matchedName": "Millwall",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/millwall.07c9fbfe.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Milton Keynes Dons",
+      "matchedName": "Milton Keynes Dons",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/mk-dons.661a7209.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Minnesota United FC",
+      "matchedName": "Minnesota United FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/minnesota-united-fc.0ea2d2ed.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Mito Hollyhock",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Mlada Boleslav",
+      "matchedName": "Mladá Boleslav",
+      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/mlada-boleslav.7a933325.png",
+      "country": "Czech Republic",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Modena",
+      "matchedName": "Modena",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/modena.13041e43.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Montedio Yamagata",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Monterey Bay FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Monza",
+      "matchedName": "Monza",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/monza.a0b0c166.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Morecambe",
+      "matchedName": "Morecambe",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/morecambe.d8e7ff84.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Motor Lublin",
+      "matchedName": "Motor Lublin",
+      "logoUrl": "https://assets.football-logos.cc/logos/poland/256x256/motor-lublin.02b6ff81.png",
+      "country": "Poland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "MP Mikkeli",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "MSV Duisburg",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "MTK Budapest",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "NAC Breda",
+      "matchedName": "NAC Breda",
+      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/nac-breda.57a892cd.png",
+      "country": "Netherlands",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Nagoya Grampus",
+      "matchedName": "Nagoya Grampus",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/nagoya-grampus.a6b8f2a5.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Nantes",
+      "matchedName": "Nantes",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/nantes.92be1c98.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Napoli",
+      "matchedName": "Napoli",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/napoli.ee47a50b.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Nashville SC",
+      "matchedName": "Nashville SC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/nashville-sc.cde979c3.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "NEC Nijmegen",
+      "matchedName": "Nec Nijmegen",
+      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/64x64/nec-nijmegen.3b4caa00.png",
+      "country": "Netherlands",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "New York Red Bulls",
+      "matchedName": "New York Red Bulls",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/new-york-red-bulls.e6a92af7.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Newells Old Boys",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Newport County",
+      "matchedName": "Newport County",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/newport.5139ecec.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Nice",
+      "matchedName": "Nice",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/nice.e1cdc4f3.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "NK Dinamo Zagreb",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "NK Varazdin",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Nomme Kalju FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Northampton Town",
+      "matchedName": "Northampton Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/northampton.5a5f9731.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Norwich City",
+      "matchedName": "Norwich City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/norwich-city.5cf24a54.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Nottingham Forest",
+      "matchedName": "Nottingham Forest",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/nottingham-forest.43b53a26.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Notts County",
+      "matchedName": "Notts County",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/notts-county.b135f072.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Nublense",
+      "matchedName": "Ñublense",
+      "logoUrl": "https://assets.football-logos.cc/logos/chile/256x256/nublense.f6a1cf1b.png",
+      "country": "Chile",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Nueva Chicago",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Nurnberg",
+      "matchedName": "FC Nürnberg",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/fc-nurnberg.7688006f.png",
+      "country": "Germany",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "NWS Spirit FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Nyiregyhaza Spartacus",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Oakland Roots SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Oakleigh Cannons",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Ogre United",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Oita Trinita",
+      "matchedName": "Oita Trinita",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/oita-trinita.eb495841.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Oldham Athletic",
+      "matchedName": "Oldham Athletic",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/oldham.8e568e90.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "OLS Oulu",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Olympiacos",
+      "matchedName": "Olympiacos",
+      "logoUrl": "https://assets.football-logos.cc/logos/greece/256x256/olympiacos.2eaa46ae.png",
+      "country": "Greece",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Orange County SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Orense SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Orgryte",
+      "matchedName": "Örgryte",
+      "logoUrl": "https://assets.football-logos.cc/logos/sweden/256x256/orgryte.28fac1c8.png",
+      "country": "Sweden",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Orlando City SC",
+      "matchedName": "Orlando City",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/orlando-city.9f7d53f6.png",
+      "country": "Usa",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Oxford City",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Oxford United",
+      "matchedName": "Oxford United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/oxford-united.881849cd.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Pacific FC [CAN]",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Paris FC",
+      "matchedName": "Paris FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/paris-fc.3e31d6c5.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Parma",
+      "matchedName": "Parma",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/parma.ca4e3120.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Patro Eisden Maasmechelen",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Patronato",
+      "matchedName": "Patronato",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/patronato.5106b442.png",
+      "country": "Argentina",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Paysandu PA",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "PEC Zwolle",
+      "matchedName": "PEC Zwolle",
+      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/pec-zwolle.bb36e35d.png",
+      "country": "Netherlands",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Peterborough United",
+      "matchedName": "Peterborough United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/peterborough.9291845e.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Philadelphia Union",
+      "matchedName": "Philadelphia Union",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/philadelphia-union.f118a513.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Piast Gliwice",
+      "matchedName": "Piast Gliwice",
+      "logoUrl": "https://assets.football-logos.cc/logos/poland/256x256/piast.21ad348e.png",
+      "country": "Poland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Piratas FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Pittsburgh Riverhounds",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Plymouth Argyle",
+      "matchedName": "Plymouth Argyle",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/plymouth-argyle.be2526a7.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Pohang Steelers",
+      "matchedName": "Pohang Steelers",
+      "logoUrl": "https://assets.football-logos.cc/logos/south-korea/256x256/pohang-steelers.07721753.png",
+      "country": "South Korea",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Port Vale",
+      "matchedName": "Port Vale",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/64x64/port-vale.fd9d8e68.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Portadown FC",
+      "matchedName": "Portadown",
+      "logoUrl": "https://assets.football-logos.cc/logos/northern-ireland/256x256/portadown.ba62bc75.png",
+      "country": "Northern Ireland",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Portland Timbers",
+      "matchedName": "Portland Timbers",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/portland-timbers.7089e6ca.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Portsmouth",
+      "matchedName": "Portsmouth",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/portsmouth.1007a222.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Preston Lions",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Preston North End",
+      "matchedName": "Preston North End",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/preston-north-end.c8495ff2.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Puebla FC",
+      "matchedName": "Puebla",
+      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/puebla.d4e3a188.png",
+      "country": "Mexico",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Puskas Academy FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Pyramids FC",
+      "matchedName": "Pyramids FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/egypt/256x256/pyramids.ec103532.png",
+      "country": "Egypt",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Qabala FK",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Qingdao West Coast FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Queens Park",
+      "matchedName": "Queens Park Rangers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/queens-park-rangers.520a466e.png",
+      "country": "England",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Queens Park Rangers",
+      "matchedName": "Queens Park Rangers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/queens-park-rangers.520a466e.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Radcliffe",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Raith Rovers",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Rapid Wien II",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "RB Omiya Ardija",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "RCD Espanyol",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Reading",
+      "matchedName": "Reading",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/reading.97e75826.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Real Madrid",
+      "matchedName": "Real Madrid",
+      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/real-madrid.5ce15611.png",
+      "country": "Spain",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Real Oviedo",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Real Salt Lake",
+      "matchedName": "Real Salt Lake",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/real-salt-lake.c4dc26d5.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Real Sociedad B",
+      "matchedName": "Real Sociedad",
+      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/real-sociedad.501e3b1e.png",
+      "country": "Spain",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Remo PA",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "RFC Seraing",
+      "matchedName": "RFC Seraing",
+      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/seraing.66c21060.png",
+      "country": "Belgium",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Rhode Island FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Rio Ave",
+      "matchedName": "Rio Ave",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/rio-ave.0818d764.png",
+      "country": "Portugal",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Rochdale",
+      "matchedName": "Rochdale",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/rochdale.0d47ef97.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Rodez Aveyron",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "RoPS Rovaniemi",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Rostov FK",
+      "matchedName": "Rostov",
+      "logoUrl": "https://assets.football-logos.cc/logos/russia/256x256/rostov.dcab8020.png",
+      "country": "Russia",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Rotherham United",
+      "matchedName": "Rotherham United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/rotherham.8002b756.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Royal Antwerp",
+      "matchedName": "Royal Antwerp FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/antwerp.8f7b0701.png",
+      "country": "Belgium",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Royal Charleroi SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "S.E.R Caxias",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Saarbrucken",
+      "matchedName": "Saarbrücken",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/saarbrucken.3e24707f.png",
+      "country": "Germany",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Sagan Tosu",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Saint Etienne",
+      "matchedName": "AS Saint-Étienne",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/as-saint-etienne.b6d9c83b.png",
+      "country": "France",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Salford City",
+      "matchedName": "Salford City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/salford-city.b6285922.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Salisbury",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Salon Palloilijat",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Samsunspor",
+      "matchedName": "Samsunspor",
+      "logoUrl": "https://assets.football-logos.cc/logos/turkey/256x256/samsunspor.41fc3878.png",
+      "country": "Turkey",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "San Antonio FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "San Diego FC",
+      "matchedName": "San Diego Fc",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/64x64/san-diego-fc.4a79cf7f.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "San Jose Earthquakes",
+      "matchedName": "San Jose Earthquakes",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/san-jose-earthquakes.27cfb930.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "San Martin San Juan",
+      "matchedName": "San Martín San Juan",
+      "logoUrl": "https://assets.football-logos.cc/logos/argentina/256x256/san-martin-san-juan.addb1d1d.png",
+      "country": "Argentina",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Sandnes Ulf",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Sanfrecce Hiroshima",
+      "matchedName": "Sanfrecce Hiroshima",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/sanfrecce-hiroshima.f7066470.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Santa Cruz PE",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Santos Laguna",
+      "matchedName": "Santos Laguna",
+      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/santos-laguna.acbf6962.png",
+      "country": "Mexico",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "SBV Excelsior",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "SC Heerenveen",
+      "matchedName": "sc Heerenveen",
+      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/sc-heerenveen.c36c6c06.png",
+      "country": "Netherlands",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Scarborough Athletic",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "SCR Altach",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "SCU Torreense",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Scunthorpe United",
+      "matchedName": "Scunthorpe United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/scunthorpe.318e2ba2.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "SD Raiders",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Seattle Sounders",
+      "matchedName": "Seattle Sounders FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/seattle-sounders-fc.643a572a.png",
+      "country": "Usa",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Seongnam FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Sevilla",
+      "matchedName": "Sevilla",
+      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/sevilla.b741a6ce.png",
+      "country": "Spain",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "SG Sonnenhof Grossaspach",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Shafa Baku FK",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Shandong Taishan",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Shanghai Shenhua",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Sheffield United",
+      "matchedName": "Sheffield United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/sheffield-united.1c8f00ec.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Shenzhen Peng City",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Shimizu S-Pulse",
+      "matchedName": "Shimizu S-Pulse",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/shimizu-s-pulse.5d20a393.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Shinnik Yaroslavl",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Shirak FC",
+      "matchedName": "Shirak",
+      "logoUrl": "https://assets.football-logos.cc/logos/armenia/256x256/shirak.1857259f.png",
+      "country": "Armenia",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Shonan Bellmare",
+      "matchedName": "Shonan Bellmare",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/shonan-bellmare.72d7acfd.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Shrewsbury Town",
+      "matchedName": "Shrewsbury Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/shrewsbury.12fdf1c9.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "SK Artis Brno",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "SK Beveren",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "SK Super Nova",
+      "matchedName": "SK Super Nova",
+      "logoUrl": "https://assets.football-logos.cc/logos/latvia/256x256/sk-super-nova.cb4e12e8.png",
+      "country": "Latvia",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Slask Wroclaw",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Slaven Koprivnica",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Slavia Praha",
+      "matchedName": "SK Slavia Praha",
+      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/slavia-praha.7051a566.png",
+      "country": "Czech Republic",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Slavia Sofia",
+      "matchedName": "Slavia Sofia",
+      "logoUrl": "https://assets.football-logos.cc/logos/bulgaria/256x256/slavia-sofia.43990133.png",
+      "country": "Bulgaria",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Slough Town",
+      "matchedName": "Slough Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/slough-town.5fba2762.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Slovacko",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Slovan Bratislava",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Slovan Liberec",
+      "matchedName": "Slovan Liberec",
+      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/liberec.b5b226c7.png",
+      "country": "Czech Republic",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Smouha SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Solihull Moors",
+      "matchedName": "Solihull Moors",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/solihull-moors.e19a190f.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "South Shields",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Southampton",
+      "matchedName": "Southampton",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/southampton.2a25d8e7.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Southend United",
+      "matchedName": "Southend United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/southend.81c56625.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Southport",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Spalding United",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Sparta Praha",
+      "matchedName": "AC Sparta Praha",
+      "logoUrl": "https://assets.football-logos.cc/logos/czech-republic/256x256/sparta-praha.b68bbc80.png",
+      "country": "Czech Republic",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Sparta Rotterdam",
+      "matchedName": "Sparta Rotterdam",
+      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/sparta-rotterdam.03d6a993.png",
+      "country": "Netherlands",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Spartak Varna",
+      "matchedName": "Spartak Varna",
+      "logoUrl": "https://assets.football-logos.cc/logos/bulgaria/256x256/spartak-varna.fcea8532.png",
+      "country": "Bulgaria",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Spennymoor Town",
+      "matchedName": "Spennymoor Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/spennymoor-town.609f66fe.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Sport Huancayo",
+      "matchedName": "Sport Huancayo",
+      "logoUrl": "https://assets.football-logos.cc/logos/peru/256x256/sport-huancayo.b876fed3.png",
+      "country": "Peru",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Sporting JAX",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Sporting Lisbon",
+      "matchedName": "Sporting CP",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/sporting-cp.cf9a4c5b.png",
+      "country": "Portugal",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Sporting San Jose",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Sportivo Ameliano",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "St George City FA",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "St George FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "St Louis City SC",
+      "matchedName": "St. Louis CITY SC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/st-louis-city-sc.5df5e816.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Stade Lavallois",
+      "matchedName": "Stade Lavallois",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/stade-lavallois.ec66fc25.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Stenhousemuir",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Stevenage FC",
+      "matchedName": "Stevenage",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/stevenage.cb1c36fa.png",
+      "country": "England",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Stockport County",
+      "matchedName": "Stockport County",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/stockport-county.82cbdd72.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Stoke City",
+      "matchedName": "Stoke City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/stoke-city.d394721d.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Sturm Graz",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Sturm Graz II",
+      "matchedName": "Sturm Graz",
+      "logoUrl": "https://assets.football-logos.cc/logos/austria/256x256/sturm-graz.895a28f8.png",
+      "country": "Austria",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Sunderland",
+      "matchedName": "Sunderland",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/sunderland.2f55baea.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Sutherland Sharks",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Sutton United",
+      "matchedName": "Sutton United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/sutton-united.40475d8e.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Suwon Bluewings",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Suwon FC",
+      "matchedName": "Suwon FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/south-korea/256x256/suwon-fc.5c655e7d.png",
+      "country": "South Korea",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "SV Elversberg",
+      "matchedName": "SV Elversberg",
+      "logoUrl": "https://assets.football-logos.cc/logos/germany/256x256/sv-elversberg.b3a70987.png",
+      "country": "Germany",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "SV Wehen Wiesbaden",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "SW Bregenz",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Swansea City",
+      "matchedName": "Swansea City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/swansea-city.af33720d.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Swindon Town",
+      "matchedName": "Swindon Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/swindon-town.244d3daa.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Talaea El Gaish SC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Tampere United",
+      "matchedName": "Tampere United",
+      "logoUrl": "https://assets.football-logos.cc/logos/finland/256x256/tampere-united.186c1661.png",
+      "country": "Finland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Tamworth",
+      "matchedName": "Tamworth",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/tamworth.62a62a02.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Tecnico Universitario",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Tegevajaro Miyazaki",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Thailand",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Throttur Reykjavik",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Tianjin Jinmen Tiger",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Tijuana",
+      "matchedName": "Club Tijuana",
+      "logoUrl": "https://assets.football-logos.cc/logos/mexico/256x256/club-tijuana.0dbc0b70.png",
+      "country": "Mexico",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Tochigi City FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Tokushima Vortis",
+      "matchedName": "Tokushima Vortis",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/tokushima-vortis.a229014f.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Tokyo Verdy",
+      "matchedName": "Tokyo Verdy",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/tokyo-verdy.76482cf5.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Tonbridge Angels",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Toronto FC",
+      "matchedName": "Toronto FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/toronto-fc.d3870546.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Torquay United",
+      "matchedName": "Torquay United",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/torquay-united.87bd8183.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Tottenham Hotspur",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Toulouse",
+      "matchedName": "Toulouse",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/toulouse.67db8b0f.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "TPV Tampere",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Tranmere Rovers",
+      "matchedName": "Tranmere Rovers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/tranmere.7f26ba66.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Troyes",
+      "matchedName": "Troyes",
+      "logoUrl": "https://assets.football-logos.cc/logos/france/256x256/troyes.696cfe28.png",
+      "country": "France",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Truro City",
+      "matchedName": "Truro City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/truro-city.6f96d079.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "TSG 1899 Hoffenheim",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "TSV 1860 Munchen",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "TSV Hartberg",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Udinese",
+      "matchedName": "Udinese",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/udinese.a69e0bef.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Ulsan HD FC",
+      "matchedName": "Ulsan HD FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/south-korea/256x256/ulsan-hd-fc.5bd36e8f.png",
+      "country": "South Korea",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "UMF Njardvik",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Uniao Leiria",
+      "matchedName": "União de Leiria",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/leiria.d4ec7bf6.png",
+      "country": "Portugal",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Union Espanola",
+      "matchedName": "Unión Española",
+      "logoUrl": "https://assets.football-logos.cc/logos/chile/256x256/union-espanola.e22b2d5b.png",
+      "country": "Chile",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Universidad Catolica del Ecuador",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Universitatea Cluj",
+      "matchedName": "Universitatea Cluj",
+      "logoUrl": "https://assets.football-logos.cc/logos/romania/256x256/u-cluj.fa8dbeaa.png",
+      "country": "Romania",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "UNSW FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Urartu FC",
+      "matchedName": "Urartu",
+      "logoUrl": "https://assets.football-logos.cc/logos/armenia/256x256/urartu.831259fa.png",
+      "country": "Armenia",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "UTA Arad",
+      "matchedName": "UTA Arad",
+      "logoUrl": "https://assets.football-logos.cc/logos/romania/256x256/uta.36dca791.png",
+      "country": "Romania",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "UTC Cajamarca",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Utrecht",
+      "matchedName": "FC Utrecht",
+      "logoUrl": "https://assets.football-logos.cc/logos/netherlands/256x256/fc-utrecht.a8ccd806.png",
+      "country": "Netherlands",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Vaasa VPS",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Valencia CF",
+      "matchedName": "Valencia",
+      "logoUrl": "https://assets.football-logos.cc/logos/spain/256x256/valencia.f9d9eee2.png",
+      "country": "Spain",
+      "confidence": 0.96,
+      "matchType": "ALIAS"
+    },
+    {
+      "name": "Vancouver FC",
+      "matchedName": "Vancouver FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/canada/256x256/vancouver-fc.a922436f.png",
+      "country": "Canada",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Vancouver Whitecaps FC",
+      "matchedName": "Vancouver Whitecaps FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/usa/256x256/vancouver-whitecaps-fc.f472282a.png",
+      "country": "Usa",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Vanraure Hachinohe FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Vasas Budapest",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Vegalta Sendai",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Ventforet Kofu",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Vietnam",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Viktoria Koln",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0.7,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Virtus Entella",
+      "matchedName": "Virtus Entella",
+      "logoUrl": "https://assets.football-logos.cc/logos/italy/256x256/virtus-entella.efc58096.png",
+      "country": "Italy",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Vissel Kobe",
+      "matchedName": "Vissel Kobe",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/vissel-kobe.02a99f8c.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Vizela",
+      "matchedName": "Vizela",
+      "logoUrl": "https://assets.football-logos.cc/logos/portugal/256x256/vizela.fe9a9919.png",
+      "country": "Portugal",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Volga Ulyanovsk",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Volsungur",
+      "matchedName": "Volsungur",
+      "logoUrl": "https://assets.football-logos.cc/logos/iceland/256x256/volsungur.a7bade11.png",
+      "country": "Iceland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Volta Redonda RJ",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Walsall",
+      "matchedName": "Walsall",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/walsall.573843c4.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Walton & Hersham",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Watford",
+      "matchedName": "Watford",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/watford.99d74158.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Wealdstone",
+      "matchedName": "Wealdstone",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/wealdstone.8f3b2e54.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "West Ham United",
+      "matchedName": "West Ham",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/west-ham.c86eebf5.png",
+      "country": "England",
+      "confidence": 0.82,
+      "matchType": "FUZZY"
+    },
+    {
+      "name": "Weston Super Mare",
+      "matchedName": "Weston Super Mare",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/weston-super-mare.3b99184c.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Widzew Lodz",
+      "matchedName": "Widzew Lodz",
+      "logoUrl": "https://assets.football-logos.cc/logos/poland/256x256/widzew.d3702637.png",
+      "country": "Poland",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Wigan Athletic",
+      "matchedName": "Wigan Athletic",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/wigan.9339b194.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Woking",
+      "matchedName": "Woking",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/64x64/woking.73fe9aa8.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Wolverhampton Wanderers",
+      "matchedName": "Wolverhampton Wanderers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/wolves.2c773758.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Worksop Town",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Worthing",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Wrexham",
+      "matchedName": "Wrexham",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/64x64/wrexham.5652ff90.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Wuhan Three Towns",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Wycombe Wanderers",
+      "matchedName": "Wycombe Wanderers",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/wycombe.b55b5638.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Yeovil Town",
+      "matchedName": "Yeovil Town",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/yeovil.47e0c27c.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Yokohama F Marinos",
+      "matchedName": "Yokohama F. Marinos",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/yokohama-f-marinos.0b048f68.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Yokohama FC",
+      "matchedName": "Yokohama FC",
+      "logoUrl": "https://assets.football-logos.cc/logos/japan/256x256/yokohama-fc.9a93728f.png",
+      "country": "Japan",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "York City",
+      "matchedName": "York City",
+      "logoUrl": "https://assets.football-logos.cc/logos/england/256x256/york.fb8e692f.png",
+      "country": "England",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Yunnan Yukun",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Zhejiang Professional FC",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Zira FK",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
+      "matchType": "PENDING"
+    },
+    {
+      "name": "Zulte Waregem",
+      "matchedName": "Zulte Waregem",
+      "logoUrl": "https://assets.football-logos.cc/logos/belgium/256x256/zulte-waregem.14c3a83a.png",
+      "country": "Belgium",
+      "confidence": 1,
+      "matchType": "EXACT"
+    },
+    {
+      "name": "Zurich",
+      "logoUrl": "",
+      "country": "",
+      "confidence": 0,
       "matchType": "PENDING"
     }
   ]
