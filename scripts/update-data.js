@@ -1,33 +1,18 @@
-import {
-  readFile,
-  writeFile,
-  mkdir
-} from "node:fs/promises";
-
-import {
-  resolve,
-  basename
-} from "node:path";
+import { readFile, writeFile, access } from "node:fs/promises";
+import { resolve } from "node:path";
 
 const root = resolve(import.meta.dirname, "..");
-
 const inputDir = resolve(root, "input");
 const dataDir = resolve(root, "data");
 
-const scheduleInput = resolve(inputDir, "jadwal.txt");
-const predictionInput = resolve(inputDir, "prediksi.txt");
+const SCHEDULE_FILE = resolve(inputDir, "jadwal.txt");
+const PREDICTION_FILE = resolve(inputDir, "prediksi.txt");
 
-const scheduleOutput = resolve(dataDir, "schedule.json");
-const predictionOutput = resolve(dataDir, "predictions.json");
-const teamsOutput = resolve(dataDir, "teams.json");
+const SCHEDULE_OUTPUT = resolve(dataDir, "schedule.json");
+const PREDICTION_OUTPUT = resolve(dataDir, "predictions.json");
+const TEAMS_OUTPUT = resolve(dataDir, "teams.json");
 
-function assert(condition, message) {
-  if (!condition) {
-    throw new Error(message);
-  }
-}
-
-function normalizeTeamName(value) {
+function normalize(value) {
   return String(value || "")
     .normalize("NFD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -39,53 +24,40 @@ function normalizeTeamName(value) {
 }
 
 function makeId(date, time, home, away) {
-  return [
-    date,
-    time,
-    normalizeTeamName(home),
-    normalizeTeamName(away)
-  ]
-    .join("|")
+  return `${date}-${normalize(home)}-${normalize(away)}`
     .replace(/\s+/g, "-");
 }
 
-function currentJakartaYear() {
-  return new Intl.DateTimeFormat("en-US", {
+function parseDate(day, month) {
+  const now = new Date();
+
+  const year = new Intl.DateTimeFormat("en-US", {
     timeZone: "Asia/Jakarta",
     year: "numeric"
-  }).format(new Date());
-}
-
-function parseTxtDate(day, month) {
-  const year = currentJakartaYear();
+  }).format(now);
 
   return `${year}-${String(month).padStart(2, "0")}-${String(day).padStart(2, "0")}`;
 }
 
-/*
-  FORMAT YANG DIBACA:
-
-  SPAIN LA LIGA
-  18/08 02:00 Deportivo La Coruna VS Elche 0:1/4
-
-  ENGLISH CHAMPIONSHIP
-  18/08 02:00 Cardiff City VS Wrexham 1/4:0
-*/
-
-function parseSchedule(text) {
+function parseMatches(text, mode = "schedule") {
   const lines = text
     .replace(/\r/g, "")
     .split("\n");
 
   const matches = [];
+
   let competition = "";
 
-  for (let rawLine of lines) {
-    const line = rawLine.trim();
+  for (const raw of lines) {
+    const line = raw.trim();
 
-    if (!line) {
-      continue;
-    }
+    if (!line) continue;
+
+    /*
+      Format:
+
+      22/08 02:00 Arsenal VS Coventry City 0:1
+    */
 
     const match = line.match(
       /^(\d{1,2})\/(\d{1,2})\s+(\d{1,2}:\d{2})\s+(.+?)\s+VS\s+(.+?)\s+(\S+)$/i
@@ -103,123 +75,96 @@ function parseSchedule(text) {
       time,
       home,
       away,
-      handicap
+      value
     ] = match;
 
-    const date = parseTxtDate(day, month);
+    const date = parseDate(day, month);
 
-    const cleanHome = home.trim();
-    const cleanAway = away.trim();
+    const homeTeam = home.trim();
+    const awayTeam = away.trim();
 
-    matches.push({
-      id: makeId(date, time, cleanHome, cleanAway),
+    const item = {
+      id: makeId(
+        date,
+        time,
+        homeTeam,
+        awayTeam
+      ),
+      competition:
+        competition || "FOOTBALL",
       date,
       time,
-      competition: competition || "FOOTBALL",
-      homeTeam: cleanHome,
-      awayTeam: cleanAway,
-      handicap: handicap.trim(),
-      prediction: "",
-      homeScore: null,
-      awayScore: null,
+      status: "UPCOMING",
+      homeTeam,
+      awayTeam,
       homeCrest: "",
       awayCrest: "",
-      liveStreamingUrl: "",
-      matchDetailUrl: "",
+      venue: "TBA",
+      handicap: mode === "schedule"
+        ? value.trim()
+        : "",
+      prediction: "",
+      predictionHome: null,
+      predictionAway: null,
       featured: false,
-      status: "UPCOMING",
-      source: "TXT MARIOBOLA"
-    });
+      sortOrder: matches.length + 1,
+      matchDetailUrl: "",
+      liveStreamingUrl: "",
+      source: "MarioBola daily TXT"
+    };
+
+    if (mode === "prediction") {
+      const score = value.match(
+        /^(\d+)\s*[:\-]\s*(\d+)$/
+      );
+
+      if (score) {
+        item.prediction =
+          `${score[1]}:${score[2]}`;
+
+        item.predictionHome =
+          Number(score[1]);
+
+        item.predictionAway =
+          Number(score[2]);
+      }
+    }
+
+    matches.push(item);
   }
 
   return matches;
 }
 
-/*
-  FORMAT PREDIKSI:
+function mergePredictions(
+  schedule,
+  predictions
+) {
+  const predictionMap = new Map();
 
-  ENGLISH PREMIER LEAGUE
-  22/08 02:00 Arsenal VS Coventry City 3:0
-
-  Jadi angka terakhir = prediction.
-*/
-
-function parsePredictions(text) {
-  const lines = text
-    .replace(/\r/g, "")
-    .split("\n");
-
-  const predictions = [];
-  let competition = "";
-
-  for (let rawLine of lines) {
-    const line = rawLine.trim();
-
-    if (!line) {
-      continue;
-    }
-
-    const match = line.match(
-      /^(\d{1,2})\/(\d{1,2})\s+(\d{1,2}:\d{2})\s+(.+?)\s+VS\s+(.+?)\s+(\d+)\s*[:\-]\s*(\d+)$/i
+  for (const prediction of predictions) {
+    predictionMap.set(
+      prediction.id,
+      prediction
     );
-
-    if (!match) {
-      competition = line;
-      continue;
-    }
-
-    const [
-      ,
-      day,
-      month,
-      time,
-      home,
-      away,
-      homeScore,
-      awayScore
-    ] = match;
-
-    const date = parseTxtDate(day, month);
-
-    const cleanHome = home.trim();
-    const cleanAway = away.trim();
-
-    predictions.push({
-      id: makeId(date, time, cleanHome, cleanAway),
-      date,
-      time,
-      competition: competition || "FOOTBALL",
-      homeTeam: cleanHome,
-      awayTeam: cleanAway,
-      prediction: `${homeScore}:${awayScore}`,
-      homeScore: Number(homeScore),
-      awayScore: Number(awayScore)
-    });
   }
-
-  return predictions;
-}
-
-function mergePredictions(matches, predictions) {
-  const predictionMap = new Map(
-    predictions.map(item => [item.id, item])
-  );
 
   let matched = 0;
 
-  for (const match of matches) {
-    const prediction = predictionMap.get(match.id);
+  for (const match of schedule) {
+    const prediction =
+      predictionMap.get(match.id);
 
-    if (!prediction) {
-      continue;
-    }
+    if (!prediction) continue;
 
-    match.prediction = prediction.prediction;
+    match.prediction =
+      prediction.prediction;
 
-    /*
-      Jangan langsung memasukkan prediction sebagai hasil pertandingan.
-      Prediction hanyalah prediksi.
-    */
+    match.predictionHome =
+      prediction.predictionHome;
+
+    match.predictionAway =
+      prediction.predictionAway;
 
     matched++;
   }
@@ -227,19 +172,19 @@ function mergePredictions(matches, predictions) {
   return matched;
 }
 
-function buildTeams(matches) {
+function buildTeamRegistry(matches) {
   const map = new Map();
 
   for (const match of matches) {
-    for (const team of [
+    for (const name of [
       match.homeTeam,
       match.awayTeam
     ]) {
-      const key = normalizeTeamName(team);
+      const key = normalize(name);
 
       if (!map.has(key)) {
         map.set(key, {
-          name: team,
+          name,
           normalized: key,
           logoUrl: "",
           country: "",
@@ -250,147 +195,202 @@ function buildTeams(matches) {
     }
   }
 
-  return [...map.values()].sort((a, b) =>
-    a.name.localeCompare(b.name)
-  );
+  return [...map.values()];
 }
 
-function validateSchedule(data) {
-  assert(
-    data && Array.isArray(data.matches),
-    "schedule.json: matches harus berupa array"
-  );
-
-  assert(
-    data.matches.length > 0,
-    "schedule.json: tidak ada pertandingan"
-  );
-
-  for (const [index, match] of data.matches.entries()) {
-    assert(
-      match.id,
-      `matches[${index}]: id wajib diisi`
-    );
-
-    assert(
-      match.date,
-      `matches[${index}]: date wajib diisi`
-    );
-
-    assert(
-      match.time,
-      `matches[${index}]: time wajib diisi`
-    );
-
-    assert(
-      match.homeTeam && match.awayTeam,
-      `matches[${index}]: nama tim wajib diisi`
-    );
-
-    assert(
-      match.competition,
-      `matches[${index}]: competition wajib diisi`
-    );
-
-    assert(
-      typeof match.handicap === "string",
-      `matches[${index}]: handicap harus string`
-    );
-
-    assert(
-      typeof match.prediction === "string",
-      `matches[${index}]: prediction harus string`
-    );
+async function fileExists(path) {
+  try {
+    await access(path);
+    return true;
+  } catch {
+    return false;
   }
 }
 
-async function main() {
-  await mkdir(dataDir, { recursive: true });
+async function build() {
+  console.log("");
+  console.log("======================================");
+  console.log(" MARIOBOLA TXT DATA ENGINE");
+  console.log("======================================");
 
-  const scheduleText = await readFile(
-    scheduleInput,
-    "utf8"
-  );
+  if (!(await fileExists(SCHEDULE_FILE))) {
+    throw new Error(
+      `File tidak ditemukan: ${SCHEDULE_FILE}`
+    );
+  }
 
-  const predictionText = await readFile(
-    predictionInput,
-    "utf8"
-  ).catch(() => "");
+  const scheduleText =
+    await readFile(
+      SCHEDULE_FILE,
+      "utf8"
+    );
 
-  const matches = parseSchedule(scheduleText);
-  const predictions = predictionText
-    ? parsePredictions(predictionText)
-    : [];
+  const predictionText =
+    await fileExists(PREDICTION_FILE)
+      ? await readFile(
+          PREDICTION_FILE,
+          "utf8"
+        )
+      : "";
 
-  assert(
-    matches.length > 0,
-    `${basename(scheduleInput)} tidak menghasilkan pertandingan. Periksa format TXT.`
-  );
+  const matches =
+    parseMatches(
+      scheduleText,
+      "schedule"
+    );
 
-  const matched = mergePredictions(
-    matches,
-    predictions
-  );
+  const predictions =
+    predictionText
+      ? parseMatches(
+          predictionText,
+          "prediction"
+        )
+      : [];
 
-  const teams = buildTeams(matches);
+  if (!matches.length) {
+    throw new Error(
+      "Tidak ada pertandingan yang berhasil dibaca dari jadwal.txt."
+    );
+  }
 
-  const updatedAt = new Date().toISOString();
+  const matched =
+    mergePredictions(
+      matches,
+      predictions
+    );
+
+  const teams =
+    buildTeamRegistry(matches);
+
+  const updatedAt =
+    new Date().toISOString();
 
   const scheduleData = {
     updatedAt,
-    source: "TXT MARIOBOLA",
-    timezone: "Asia/Jakarta",
-    totalMatches: matches.length,
-    totalPredictions: predictions.length,
-    matchedPredictions: matched,
+    source: "MarioBola daily TXT",
+    inputFiles: [
+      "input/jadwal.txt",
+      "input/prediksi.txt"
+    ],
     matches
   };
 
   const predictionData = {
     updatedAt,
-    source: "TXT MARIOBOLA",
-    timezone: "Asia/Jakarta",
-    total: predictions.length,
+    source: "MarioBola daily TXT",
     predictions
   };
 
+  const teamsData = {
+    updatedAt,
+    total: teams.length,
+    resolved: 0,
+    pending: teams.length,
+    teams
+  };
+
   await writeFile(
-    scheduleOutput,
-    `${JSON.stringify(scheduleData, null, 2)}\n`
+    SCHEDULE_OUTPUT,
+    JSON.stringify(
+      scheduleData,
+      null,
+      2
+    ) + "\n"
   );
 
   await writeFile(
-    predictionOutput,
-    `${JSON.stringify(predictionData, null, 2)}\n`
+    PREDICTION_OUTPUT,
+    JSON.stringify(
+      predictionData,
+      null,
+      2
+    ) + "\n"
   );
 
   await writeFile(
-    teamsOutput,
-    `${JSON.stringify({
-      updatedAt,
-      total: teams.length,
-      teams
-    }, null, 2)}\n`
+    TEAMS_OUTPUT,
+    JSON.stringify(
+      teamsData,
+      null,
+      2
+    ) + "\n"
   );
 
-  console.log("");
-  console.log("======================================");
-  console.log(" MARIOBOLA DATA ENGINE");
-  console.log("======================================");
-  console.log(`Jadwal          : ${matches.length}`);
-  console.log(`Prediksi        : ${predictions.length}`);
-  console.log(`Prediksi cocok  : ${matched}`);
-  console.log(`Team Registry   : ${teams.length}`);
+  console.log(
+    `Jadwal        : ${matches.length}`
+  );
+
+  console.log(
+    `Prediksi      : ${predictions.length}`
+  );
+
+  console.log(
+    `Prediksi cocok: ${matched}`
+  );
+
+  console.log(
+    `Team registry : ${teams.length}`
+  );
+
   console.log("======================================");
   console.log("");
 }
 
-async function validateOnly() {
-  const schedule = JSON.parse(
-    await readFile(scheduleOutput, "utf8")
-  );
+async function validate() {
+  const schedule =
+    JSON.parse(
+      await readFile(
+        SCHEDULE_OUTPUT,
+        "utf8"
+      )
+    );
 
-  validateSchedule(schedule);
+  if (
+    !schedule ||
+    !Array.isArray(schedule.matches)
+  ) {
+    throw new Error(
+      "schedule.json tidak memiliki matches array."
+    );
+  }
+
+  if (!schedule.matches.length) {
+    throw new Error(
+      "schedule.json tidak memiliki pertandingan."
+    );
+  }
+
+  for (
+    const [index, match]
+    of schedule.matches.entries()
+  ) {
+    if (!match.id) {
+      throw new Error(
+        `Match ${index + 1}: ID kosong.`
+      );
+    }
+
+    if (
+      !match.homeTeam ||
+      !match.awayTeam
+    ) {
+      throw new Error(
+        `Match ${index + 1}: nama tim kosong.`
+      );
+    }
+
+    if (!match.date) {
+      throw new Error(
+        `Match ${index + 1}: tanggal kosong.`
+      );
+    }
+
+    if (!match.time) {
+      throw new Error(
+        `Match ${index + 1}: jam kosong.`
+      );
+    }
+  }
 
   console.log(
     `Validasi OK: ${schedule.matches.length} pertandingan.`
@@ -398,14 +398,20 @@ async function validateOnly() {
 }
 
 try {
-  if (process.argv.includes("--validate")) {
-    await validateOnly();
+  if (
+    process.argv.includes(
+      "--validate"
+    )
+  ) {
+    await validate();
   } else {
-    await main();
+    await build();
   }
 } catch (error) {
   console.error("");
-  console.error("❌ MARIOBOLA UPDATE ERROR");
+  console.error(
+    "❌ MARIOBOLA ERROR"
+  );
   console.error(error.message);
   console.error("");
   process.exit(1);
