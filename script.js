@@ -267,17 +267,49 @@ function renderPreview(filter=currentFilter) {
 
   const content = makeTicker(matches);
 
-  previewGrid.innerHTML = `
-    <div class="fixtures-marquee">
-      <div class="fixtures-marquee-group">
-        ${content}
-      </div>
-
-      <div class="fixtures-marquee-group">
-        ${content}
-      </div>
+previewGrid.innerHTML = `
+  <div class="fixtures-marquee">
+    <div class="fixtures-marquee-group">
+      ${content}
     </div>
-  `;
+
+    <div class="fixtures-marquee-group">
+      ${content}
+    </div>
+  </div>
+`;
+
+/*
+  KECEPATAN TICKER DIKUNCI BERDASARKAN
+  PIXEL PER DETIK.
+
+  Jadi:
+  ALL       = sama
+  UPCOMING  = sama
+  LIVE      = sama
+  FINISHED  = sama
+
+  Jumlah pertandingan tidak akan membuat
+  ticker terasa lebih cepat.
+*/
+
+requestAnimationFrame(() => {
+  const marquee = previewGrid.querySelector(".fixtures-marquee");
+  const group = previewGrid.querySelector(".fixtures-marquee-group");
+
+  if (!marquee || !group) return;
+
+  const pixelsPerSecond = 22;
+
+  const distance = group.scrollWidth;
+
+  const duration = Math.max(
+    35,
+    distance / pixelsPerSecond
+  );
+
+  marquee.style.animationDuration = `${duration}s`;
+});
 
   previewGrid
     .querySelectorAll("[data-logo-candidates]")
