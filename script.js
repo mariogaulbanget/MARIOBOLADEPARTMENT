@@ -197,23 +197,91 @@ function setLink(el, url, label) {
 }
 function renderPreview(filter=currentFilter) {
   if (!previewGrid) return;
-  currentFilter=filter;
-  const matches=allMatches.filter(m => filter === "all" || statusClass(m.status) === filter);
-  previewSummary.textContent = `${matches.length} pertandingan • sumber: TXT harian MarioBola • ${formatDate(new Date())}`;
-  previewGrid.innerHTML = matches.map((m,index) => `
-    <article class="preview-card ${m.featured ? "is-featured" : ""}">
-      <div class="preview-card-top"><span>${esc(m.competition)}</span><b class="preview-status ${statusClass(m.status)}">${statusLabel(m.status)}</b></div>
-      <div class="preview-date">${esc(formatDate(matchDateTime(m)))} • ${esc(m.time)} WIB</div>
-      <div class="preview-teams">
-        <div class="preview-team">${logoMarkup(m,"home")}<strong>${esc(m.homeTeam)}</strong></div>
-        <div class="preview-vs">VS</div>
-        <div class="preview-team">${logoMarkup(m,"away")}<strong>${esc(m.awayTeam)}</strong></div>
+
+  currentFilter = filter;
+
+  const matches = allMatches
+    .filter(
+      m =>
+        filter === "all" ||
+        statusClass(m.status) === filter
+    )
+    .sort(
+      (a, b) =>
+        matchDateTime(a) -
+        matchDateTime(b)
+    );
+
+  previewSummary.textContent =
+    `${matches.length} pertandingan • sumber: TXT harian MARIOBOLA • ${formatDate(new Date())}`;
+
+  if (!matches.length) {
+    previewGrid.innerHTML =
+      `<div class="preview-empty">NO MATCH FOUND FOR THIS FILTER.</div>`;
+    return;
+  }
+
+  const makeTicker = list =>
+    list.map(m => `
+      <article class="fixture-ticker-card">
+
+        <div class="fixture-ticker-league">
+          ${esc(m.competition)}
+        </div>
+
+        <div class="fixture-ticker-team">
+          ${logoMarkup(m, "home")}
+          <strong>${esc(m.homeTeam)}</strong>
+        </div>
+
+        <div class="fixture-ticker-vs">
+          VS
+        </div>
+
+        <div class="fixture-ticker-team">
+          ${logoMarkup(m, "away")}
+          <strong>${esc(m.awayTeam)}</strong>
+        </div>
+
+        <div class="fixture-ticker-time">
+          <strong>${esc(m.time)}</strong>
+          <small>${esc(formatDate(matchDateTime(m)))}</small>
+        </div>
+
+        <div class="fixture-ticker-prediction">
+          <small>PRED</small>
+          <strong>${esc(m.prediction || "-")}</strong>
+        </div>
+
+        <div class="fixture-ticker-status">
+          ${statusLabel(m.status)}
+        </div>
+
+      </article>
+    `).join("");
+
+  /*
+    Dua salinan identik membuat ticker
+    bisa berjalan terus tanpa putus.
+  */
+
+  const content = makeTicker(matches);
+
+  previewGrid.innerHTML = `
+    <div class="fixtures-marquee">
+      <div class="fixtures-marquee-group">
+        ${content}
       </div>
-      <div class="preview-data"><span>HANDICAP <b>${esc(m.handicap || "-")}</b></span><span>PREDICTION <b>${esc(m.prediction || "-")}</b></span></div>
-      <button class="preview-detail" data-preview-id="${esc(m.id)}">MATCH DETAIL →</button>
-    </article>`).join("") || `<div class="preview-empty">NO MATCH FOUND FOR THIS FILTER.</div>`;
-  previewGrid.querySelectorAll("[data-preview-id]").forEach(btn => btn.addEventListener("click", () => openMatch(btn.dataset.previewId)));
-  previewGrid.querySelectorAll("[data-logo-candidates]").forEach(el => loadPreviewLogo(el));
+
+      <div class="fixtures-marquee-group">
+        ${content}
+      </div>
+    </div>
+  `;
+
+  previewGrid
+    .querySelectorAll("[data-logo-candidates]")
+    .forEach(el => loadPreviewLogo(el));
 }
 function loadPreviewLogo(el) {
   try {
