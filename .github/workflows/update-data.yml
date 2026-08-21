@@ -1,16 +1,17 @@
-name: Update MarioBola data
+name: Update MarioBola Data
 
 on:
   workflow_dispatch:
+
   push:
     paths:
       - "input/*.txt"
-      - "scripts/update-data.js"
-      - "scripts/team-registry.js"
-      - "scripts/resolve-team-logos.js"
-      - "scripts/update-news.js"
+      - "scripts/**"
       - "package.json"
       - ".github/workflows/update-data.yml"
+
+  schedule:
+    - cron: "*/30 * * * *"
 
 permissions:
   contents: write
@@ -20,38 +21,72 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
+
       - name: Checkout repository
         uses: actions/checkout@v4
 
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
-          node-version: 20
+          node-version: 22
 
-      - name: Parse TXT and update team registry
+      - name: Download Football Logos database
+        run: |
+          curl -L --fail --retry 3 \
+            "https://raw.githubusercontent.com/hixcoder/football-teams-flags/main/football_teams.json" \
+            -o data/football-teams.json
+
+          echo "Football Logos database downloaded:"
+          wc -c data/football-teams.json
+
+      - name: Parse TXT jadwal dan prediksi
         run: npm run update
 
       - name: Resolve team logos
         run: npm run resolve-logos
 
-      - name: Rebuild match JSON with resolved logos
-        run: npm run update
-
-      - name: Update editorial news from Fakta Global Sport
-        run: npm run update-news
-
       - name: Validate generated data
         run: npm run validate-data
+
+      - name: Update editorial news
+        continue-on-error: true
+        run: npm run update-news
+
+      - name: Show generated data summary
+        run: |
+          echo "======================================"
+          echo " MARIOBOLA BUILD SUMMARY"
+          echo "======================================"
+
+          node -e "
+          const d=require('./data/schedule.json');
+          console.log('Matches       :', d.matches.length);
+          console.log('Predictions   :', d.matchedPredictions);
+          console.log(
+            'With home logo:',
+            d.matches.filter(x=>x.homeCrest).length
+          );
+          console.log(
+            'With away logo:',
+            d.matches.filter(x=>x.awayCrest).length
+          );
+          "
+
+          echo "======================================"
 
       - name: Commit generated data
         run: |
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/
+          git add data/schedule.json
+          git add data/predictions.json
+          git add data/teams.json
+          git add data/football-teams.json
+          git add data/news.json || true
 
           if git diff --cached --quiet; then
-            echo "Tidak ada perubahan data untuk di-commit."
+            echo "Tidak ada perubahan data."
           else
             git commit -m "chore: update MarioBola match data"
             git push
