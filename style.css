@@ -56,3 +56,431 @@ a{text-decoration:none;color:inherit}button{font:inherit;color:inherit}.site-hea
 /* PHASE 5 — BIG MATCH ROTATION */
 .match-board-data{display:flex;gap:16px;align-items:center;justify-content:center;flex-wrap:wrap}.match-board-data span{font-size:7px;letter-spacing:1px;color:var(--muted)}.match-board-data b{font-family:var(--display);font-size:15px;color:#fff;margin-left:4px}.mini-fixtures-title{margin:24px 0 8px;font-size:8px;font-weight:900;letter-spacing:2px;color:var(--ice)}.mini-fixtures>div{min-height:82px}.mini-fixtures small{display:block;line-height:1.4}
 @media(max-width:680px){.match-board-data{gap:10px}.match-board-data span{font-size:6px}.match-board-data b{font-size:13px}.mini-fixtures-title{margin-top:18px}}
+/* =========================================================
+   MARIOBOLA MODERN PREDICTION BOARD
+   ========================================================= */
+
+.prediction-card-modern{
+  position:relative;
+  display:grid;
+  grid-template-columns:55px minmax(0,1fr) 190px 105px;
+  align-items:center;
+  gap:20px;
+  min-height:135px;
+  padding:18px 20px;
+  margin-bottom:10px;
+  border:1px solid rgba(55,200,255,.12);
+  background:
+    linear-gradient(
+      110deg,
+      rgba(22,119,255,.10),
+      rgba(10,18,31,.94) 45%,
+      rgba(8,12,20,.98)
+    );
+  overflow:hidden;
+  transition:.28s ease;
+}
+
+.prediction-card-modern:before{
+  content:"";
+  position:absolute;
+  left:0;
+  top:0;
+  bottom:0;
+  width:3px;
+  background:linear-gradient(
+    180deg,
+    var(--ice),
+    var(--blue)
+  );
+  opacity:.45;
+}
+
+.prediction-card-modern:hover{
+  transform:translateX(5px);
+  border-color:rgba(55,200,255,.45);
+  box-shadow:0 18px 50px rgba(0,0,0,.25);
+}
+
+.prediction-card-modern.is-featured{
+  border-color:rgba(55,200,255,.42);
+  background:
+    linear-gradient(
+      110deg,
+      rgba(22,119,255,.18),
+      rgba(10,18,31,.96) 50%
+    );
+}
+
+.prediction-card-number{
+  font-family:var(--display);
+  font-size:30px;
+  font-weight:900;
+  color:#34465e;
+}
+
+.prediction-card-main{
+  min-width:0;
+}
+
+.prediction-card-league{
+  display:flex;
+  align-items:center;
+  gap:10px;
+  margin-bottom:5px;
+}
+
+.prediction-card-league span{
+  font-size:8px;
+  letter-spacing:1.3px;
+  color:var(--ice);
+  font-weight:800;
+  text-transform:uppercase;
+}
+
+.prediction-card-league b{
+  font-size:7px;
+  letter-spacing:1px;
+  padding:4px 7px;
+  border:1px solid rgba(55,200,255,.2);
+}
+
+.prediction-card-league b.live{
+  color:#56e39f;
+  border-color:rgba(86,227,159,.35);
+}
+
+.prediction-card-league b.upcoming{
+  color:var(--ice);
+}
+
+.prediction-card-league b.finished{
+  color:#77869b;
+}
+
+.prediction-card-date{
+  font-size:8px;
+  color:var(--muted);
+  margin-bottom:12px;
+}
+
+.prediction-card-teams{
+  display:grid;
+  grid-template-columns:minmax(120px,1fr) 40px minmax(120px,1fr);
+  align-items:center;
+  gap:12px;
+}
+
+.prediction-team{
+  display:flex;
+  align-items:center;
+  gap:9px;
+  min-width:0;
+}
+
+.prediction-team:last-child{
+  justify-content:flex-end;
+  text-align:right;
+}
+
+.prediction-team strong{
+  font-family:var(--display);
+  font-size:18px;
+  letter-spacing:.4px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.prediction-vs{
+  text-align:center;
+  font-family:var(--display);
+  font-size:13px;
+  color:#5e718a;
+}
+
+.prediction-card-info{
+  display:grid;
+  grid-template-columns:1fr 1fr;
+  gap:8px;
+}
+
+.prediction-card-info div{
+  min-height:65px;
+  display:flex;
+  flex-direction:column;
+  justify-content:center;
+  align-items:center;
+  padding:8px;
+  border:1px solid rgba(55,200,255,.12);
+  background:rgba(4,10,18,.45);
+}
+
+.prediction-card-info small{
+  font-size:7px;
+  letter-spacing:1px;
+  color:var(--muted);
+  margin-bottom:5px;
+}
+
+.prediction-card-info strong{
+  font-family:var(--display);
+  font-size:20px;
+  color:#fff;
+}
+
+.prediction-detail-modern{
+  min-height:42px;
+  border:1px solid rgba(55,200,255,.55);
+  background:linear-gradient(
+    135deg,
+    rgba(22,119,255,.35),
+    rgba(55,200,255,.12)
+  );
+  color:#7edfff;
+  font-size:8px;
+  font-weight:900;
+  letter-spacing:1px;
+  cursor:pointer;
+  transition:.25s ease;
+}
+
+.prediction-detail-modern span{
+  margin-left:5px;
+  font-size:13px;
+}
+
+.prediction-detail-modern:hover{
+  color:#fff;
+  background:var(--blue);
+  border-color:var(--ice);
+  transform:translateY(-2px);
+  box-shadow:0 8px 25px rgba(22,119,255,.25);
+}
+
+
+/* =========================================================
+   TODAY'S FIXTURES — RUNNING FOOTBALL TICKER
+   ========================================================= */
+
+#match-preview{
+  overflow:hidden;
+}
+
+.match-preview-grid{
+  display:block;
+  width:100%;
+  overflow:hidden;
+  position:relative;
+  border-top:1px solid rgba(55,200,255,.12);
+  border-bottom:1px solid rgba(55,200,255,.12);
+  background:#070d17;
+  padding:8px 0;
+}
+
+.fixtures-marquee{
+  display:flex;
+  width:max-content;
+  animation:marioFixturesScroll 65s linear infinite;
+  will-change:transform;
+}
+
+.fixtures-marquee:hover{
+  animation-play-state:paused;
+}
+
+.fixtures-marquee-group{
+  display:flex;
+  align-items:center;
+}
+
+.fixture-ticker-card{
+  flex:0 0 auto;
+  display:flex;
+  align-items:center;
+  gap:10px;
+  min-height:58px;
+  padding:7px 18px;
+  border-right:1px solid rgba(55,200,255,.12);
+  background:linear-gradient(
+    180deg,
+    rgba(255,255,255,.025),
+    rgba(255,255,255,.008)
+  );
+}
+
+.fixture-ticker-league{
+  width:80px;
+  font-size:7px;
+  line-height:1.1;
+  letter-spacing:.8px;
+  color:var(--ice);
+  text-transform:uppercase;
+  overflow:hidden;
+}
+
+.fixture-ticker-team{
+  display:flex;
+  align-items:center;
+  gap:6px;
+  max-width:125px;
+}
+
+.fixture-ticker-team strong{
+  font-family:var(--display);
+  font-size:13px;
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.fixture-ticker-vs{
+  font-family:var(--display);
+  font-size:10px;
+  color:#60738c;
+}
+
+.fixture-ticker-time{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-width:60px;
+}
+
+.fixture-ticker-time strong{
+  font-family:var(--display);
+  font-size:13px;
+  color:#fff;
+}
+
+.fixture-ticker-time small{
+  font-size:7px;
+  color:var(--muted);
+}
+
+.fixture-ticker-prediction{
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  min-width:55px;
+  padding-left:8px;
+  border-left:1px solid rgba(55,200,255,.12);
+}
+
+.fixture-ticker-prediction small{
+  font-size:6px;
+  letter-spacing:.8px;
+  color:var(--muted);
+}
+
+.fixture-ticker-prediction strong{
+  font-family:var(--display);
+  font-size:15px;
+  color:var(--ice);
+}
+
+.fixture-ticker-status{
+  font-size:6px;
+  letter-spacing:.7px;
+  color:#56e39f;
+}
+
+@keyframes marioFixturesScroll{
+  from{
+    transform:translateX(0);
+  }
+  to{
+    transform:translateX(-50%);
+  }
+}
+
+
+/* =========================================================
+   LOGO
+   ========================================================= */
+
+.preview-logo{
+  width:30px;
+  height:30px;
+  flex:0 0 30px;
+  border-radius:50%;
+  display:grid;
+  place-items:center;
+  background:linear-gradient(145deg,#194d9b,#091222);
+  border:1px solid rgba(55,200,255,.35);
+  background-size:contain;
+  background-position:center;
+  background-repeat:no-repeat;
+  font-family:var(--display);
+  font-size:10px;
+  font-weight:900;
+  color:#bdefff;
+}
+
+.preview-logo.has-logo{
+  background-color:#fff;
+  background-size:contain;
+}
+
+
+/* =========================================================
+   MOBILE
+   ========================================================= */
+
+@media(max-width:900px){
+
+  .prediction-card-modern{
+    grid-template-columns:35px minmax(0,1fr) 82px;
+    gap:12px;
+  }
+
+  .prediction-card-info{
+    grid-column:2 / 4;
+  }
+
+  .prediction-detail-modern{
+    grid-column:3;
+    grid-row:1;
+  }
+
+}
+
+@media(max-width:680px){
+
+  .prediction-card-modern{
+    grid-template-columns:28px 1fr 75px;
+    padding:14px;
+    gap:8px;
+  }
+
+  .prediction-card-number{
+    font-size:20px;
+  }
+
+  .prediction-card-teams{
+    grid-template-columns:1fr 28px 1fr;
+    gap:5px;
+  }
+
+  .prediction-team strong{
+    font-size:14px;
+  }
+
+  .prediction-card-info{
+    grid-column:2 / 4;
+  }
+
+  .prediction-card-info div{
+    min-height:52px;
+  }
+
+  .prediction-card-info strong{
+    font-size:17px;
+  }
+
+  .fixture-ticker-card{
+    padding-left:12px;
+    padding-right:12px;
+  }
+
+}
