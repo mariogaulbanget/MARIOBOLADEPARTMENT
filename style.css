@@ -573,3 +573,29 @@ a{text-decoration:none;color:inherit}button{font:inherit;color:inherit}.site-hea
     transform:scale(.75);
   }
 }
+/* =========================================================
+   LIVE HUB — IMAGE FIT
+   ========================================================= */
+
+.live-visual{
+  background:#050b14;
+}
+
+.live-stream-image{
+  position:absolute;
+  inset:0;
+
+  width:100%;
+  height:100%;
+
+  object-fit:contain;
+  object-position:center;
+
+  padding:14px;
+
+  opacity:1;
+
+  background:#050b14;
+
+  z-index:1;
+}
