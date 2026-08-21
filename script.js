@@ -403,12 +403,15 @@ function renderPredictionBoard() {
         </div>
 
         <button
-          class="prediction-detail-modern"
-          data-preview-id="${esc(m.id)}"
-        >
-          DETAILS
-          <span>↗</span>
-        </button>
+  class="prediction-detail-modern status-action ${statusClass(m.status)}"
+  data-preview-id="${esc(m.id)}"
+  type="button"
+>
+  ${statusLabel(m.status)}
+  <span>
+    ${m.status === "LIVE" ? "●" : "↗"}
+  </span>
+</button>
 
       </article>
     `).join("") ||
