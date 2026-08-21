@@ -44,6 +44,9 @@ jobs:
 
       - name: Resolve team logos
         run: npm run resolve-logos
+        
+      - name: Update league standings
+        run: npm run update-standings
 
       - name: Validate generated data
         run: npm run validate-data
