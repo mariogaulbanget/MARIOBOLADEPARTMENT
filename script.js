@@ -238,18 +238,94 @@ function openMatch(id) {
 }
 function renderPredictionBoard() {
   if (!predictionBoard) return;
-  const matches = [...allMatches].sort((a,b) => matchDateTime(a)-matchDateTime(b) || (a.sortOrder||0)-(b.sortOrder||0));
-  predictionBoard.innerHTML = matches.map((m, i) => `
-    <article class="prediction-row ${m.featured ? "is-featured" : ""}">
-      <div class="prediction-row-index">${String(i+1).padStart(2,"0")}</div>
-      <div class="prediction-row-match">
-        <small>${esc(m.competition)} • ${esc(formatDate(matchDateTime(m)))} • ${esc(m.time)} WIB</small>
-        <strong>${esc(m.homeTeam)} <span>VS</span> ${esc(m.awayTeam)}</strong>
-      </div>
-      <div class="prediction-row-data"><span>HANDICAP <b>${esc(m.handicap || "-")}</b></span><span>PREDICTION <b>${esc(m.prediction || "-")}</b></span></div>
-      <button class="prediction-row-button" data-preview-id="${esc(m.id)}">DETAIL →</button>
-    </article>`).join("") || `<div class="preview-empty">NO PREDICTION DATA.</div>`;
-  predictionBoard.querySelectorAll("[data-preview-id]").forEach(btn => btn.addEventListener("click", () => openMatch(btn.dataset.previewId)));
+
+  const matches = [...allMatches]
+    .sort(
+      (a, b) =>
+        matchDateTime(a) - matchDateTime(b) ||
+        (a.sortOrder || 0) - (b.sortOrder || 0)
+    );
+
+  predictionBoard.innerHTML =
+    matches.map((m, i) => `
+      <article class="prediction-card-modern ${m.featured ? "is-featured" : ""}">
+
+        <div class="prediction-card-number">
+          ${String(i + 1).padStart(2, "0")}
+        </div>
+
+        <div class="prediction-card-main">
+
+          <div class="prediction-card-league">
+            <span>${esc(m.competition)}</span>
+            <b class="${statusClass(m.status)}">
+              ${statusLabel(m.status)}
+            </b>
+          </div>
+
+          <div class="prediction-card-date">
+            ${esc(formatDate(matchDateTime(m)))} •
+            ${esc(m.time)} WIB
+          </div>
+
+          <div class="prediction-card-teams">
+
+            <div class="prediction-team">
+              ${logoMarkup(m, "home")}
+              <strong>${esc(m.homeTeam)}</strong>
+            </div>
+
+            <div class="prediction-vs">
+              VS
+            </div>
+
+            <div class="prediction-team">
+              ${logoMarkup(m, "away")}
+              <strong>${esc(m.awayTeam)}</strong>
+            </div>
+
+          </div>
+
+        </div>
+
+        <div class="prediction-card-info">
+
+          <div>
+            <small>HANDICAP</small>
+            <strong>${esc(m.handicap || "-")}</strong>
+          </div>
+
+          <div>
+            <small>PREDICTION</small>
+            <strong>${esc(m.prediction || "-")}</strong>
+          </div>
+
+        </div>
+
+        <button
+          class="prediction-detail-modern"
+          data-preview-id="${esc(m.id)}"
+        >
+          DETAILS
+          <span>↗</span>
+        </button>
+
+      </article>
+    `).join("") ||
+    `<div class="preview-empty">NO PREDICTION DATA.</div>`;
+
+  predictionBoard
+    .querySelectorAll("[data-preview-id]")
+    .forEach(btn => {
+      btn.addEventListener(
+        "click",
+        () => openMatch(btn.dataset.previewId)
+      );
+    });
+
+  predictionBoard
+    .querySelectorAll("[data-logo-candidates]")
+    .forEach(el => loadPreviewLogo(el));
 }
 
 function renderNews() {
