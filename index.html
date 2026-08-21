@@ -1,240 +1,53 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="id">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="MARIOBOLA Football Command Center — match center, predictions, live hub, events and quick access.">
-  <title>MARIOBOLA — Football Command Center</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="style.css">
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<meta name="description" content="MARIOBOLA Football Command Center — match center, predictions, live hub, standings and football editorial.">
+<title>MARIOBOLA — Football Command Center</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@500;600;700;800;900&family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <div class="site-noise"></div>
-  <div class="scroll-progress" id="scrollProgress"></div>
-
-  <header class="site-header" id="top">
-    <a class="brand" href="#top" aria-label="MARIOBOLA Home">
-      <span class="brand-mark">M</span>
-      <span>
-        <strong>MARIOBOLA</strong>
-        <small>FOOTBALL COMMAND CENTER</small>
-      </span>
-    </a>
-
-    <button class="menu-toggle" id="menuToggle" aria-label="Buka menu" aria-expanded="false">
-      <span></span><span></span><span></span>
-    </button>
-
-    <nav class="main-nav" id="mainNav">
-      <a href="#home" class="active">HOME</a>
-      <a href="#match">MATCH</a>
-      <a href="#prediction">PREDICTION</a>
-      <a href="#live">LIVE</a>
-    </nav>
-
-    <a class="header-cta" href="https://kingmariobola.net/?mob=0" data-config-link="login">LOGIN TO MARIOBOLA <span>↗</span></a>
-  </header>
-
-  <main>
-    <section class="hero" id="home">
-      <div class="hero-grid"></div>
-      <div class="hero-glow glow-one"></div>
-      <div class="hero-glow glow-two"></div>
-
-      <div class="hero-content">
-        <div class="eyebrow"><span class="pulse-dot"></span> MARIOBOLA NETWORK ONLINE</div>
-        <p class="hero-kicker">THE DIGITAL HOME OF</p>
-        <h1>FOOTBALL<br><span>NEVER STOPS.</span></h1>
-        <p class="hero-copy">
-          Satu pusat untuk akses, pertandingan, prediksi, live information, event, dan konten sepak bola pilihan.
-        </p>
-        <div class="hero-actions">
-          <a href="#match" class="btn btn-primary">ENTER MATCH CENTER <span>→</span></a>
-          <a href="#match" class="btn btn-secondary">EXPLORE MATCH CENTER</a>
-        </div>
-
-        <div class="hero-stats">
-          <div><strong>24/7</strong><span>NETWORK ACCESS</span></div>
-          <div><strong>LIVE</strong><span>FOOTBALL UPDATES</span></div>
-          <div><strong>ONE</strong><span>COMMAND CENTER</span></div>
-        </div>
-      </div>
-
-      <div class="hero-orb">
-        <div class="orb-ring ring-a"></div>
-        <div class="orb-ring ring-b"></div>
-        <div class="orb-ring ring-c"></div>
-        <div class="team-orbit team-orbit-main" aria-label="Logo delapan liga sepak bola">
-          <div class="team-orbit-track track-1"><div class="orbit-team orbit-team-1" data-mark="PL"><img src="https://assets.football-logos.cc/logos/england/1500x1500/english-premier-league.4d68127f.png" alt="Logo English Premier League"><span>PREMIER LEAGUE</span></div></div>
-          <div class="team-orbit-track track-2"><div class="orbit-team orbit-team-2" data-mark="LL"><img src="https://assets.football-logos.cc/logos/spain/1500x1500/la-liga.07ed875e.png" alt="Logo La Liga"><span>LA LIGA</span></div></div>
-          <div class="team-orbit-track track-3"><div class="orbit-team orbit-team-3" data-mark="SA"><img src="https://assets.football-logos.cc/logos/italy/1500x1500/serie-a.0e7a37ed.png" alt="Logo Serie A"><span>SERIE A</span></div></div>
-          <div class="team-orbit-track track-4"><div class="orbit-team orbit-team-4" data-mark="L1"><img src="https://assets.football-logos.cc/logos/france/1500x1500/ligue-1.0cc44ebd.png" alt="Logo Ligue 1"><span>LIGUE 1</span></div></div>
-          <div class="team-orbit-track track-5"><div class="orbit-team orbit-team-5" data-mark="BL"><img src="https://assets.football-logos.cc/logos/germany/1500x1500/bundesliga.77719ba2.png" alt="Logo Bundesliga"><span>BUNDESLIGA</span></div></div>
-          <div class="team-orbit-track track-6"><div class="orbit-team orbit-team-6" data-mark="ED"><img src="https://assets.football-logos.cc/logos/netherlands/1500x1500/eredivisie.5cc44d59.png" alt="Logo Eredivisie"><span>EREDIVISIE</span></div></div>
-          <div class="team-orbit-track track-7"><div class="orbit-team orbit-team-7" data-mark="BRI"><img src="https://assets.football-logos.cc/logos/indonesia/1500x1500/indonesian-super-league.111bee33.png" alt="Logo Indonesian Super League"><span>BRI SUPER LEAGUE</span></div></div>
-          <div class="team-orbit-track track-8"><div class="orbit-team orbit-team-8" data-mark="BP"><img src="https://assets.football-logos.cc/logos/belgium/1500x1500/jupiler-pro-league.b2cec643.png" alt="Logo Belgian Pro League"><span>BELGIAN PRO LEAGUE</span></div></div>
-        </div>
-        <div class="orb-ball" role="img" aria-label="Bumi"></div>
-        <div class="orb-label top-label">MARIOBOLA</div>
-        <div class="orb-label bottom-label">EST. 2026</div>
-      </div>
-
-      <a class="scroll-cue" href="#match"><span></span> SCROLL TO EXPLORE</a>
-    </section>
-
-    <section class="status-bar">
-      <div><span class="status-live"></span> SYSTEM STATUS: <strong>ONLINE</strong></div>
-      <div class="ticker"><span>●</span> FOOTBALL NEVER STOPS <b>—</b> MATCH CENTER ACTIVE <b>—</b> PREDICTION HUB READY <b>—</b> EVENT CHANNEL OPEN</div>
-      <div class="clock" id="liveClock">--:--:-- WIB</div>
-    </section>
-
-    <section class="section match-section" id="match">
-      <div class="section-head">
-        <div>
-          <span class="section-number">02 / FEATURED MATCH</span>
-          <h2>MATCH <span>CENTER.</span></h2>
-        </div>
-        <a href="#prediction" class="text-link">VIEW PREDICTIONS <span>→</span></a>
-      </div>
-
-      <article class="match-board">
-        <div class="match-top"><span>BIG MATCH TODAY</span><span class="competition" id="matchCompetition">FOOTBALL LEAGUE</span><span class="match-status" id="matchStatus">LOADING</span></div>
-        <div class="match-main">
-          <div class="team"><div class="team-crest" id="homeCrest">A</div><h3 id="homeTeam">LOADING</h3></div>
-          <div class="versus"><small id="matchDate">DATE & TIME</small><strong id="matchScore">VS</strong><span id="matchTime">CHECKING SCHEDULE</span></div>
-          <div class="team"><div class="team-crest alt" id="awayCrest">B</div><h3 id="awayTeam">LOADING</h3></div>
-        </div>
-        <div class="match-bottom">
-          <span id="matchSource">DATA MANUAL • TXT MARIOBOLA</span>
-          <div class="match-board-data">
-            <span>HANDICAP <b id="matchHandicap">-</b></span>
-            <span>PREDICTION <b id="matchPrediction">-</b></span>
-          </div>
-          <button class="mini-btn" data-modal="matchModal">MATCH DETAILS →</button>
-        </div>
-      </article>
-
-      <div class="mini-fixtures-title">NEXT SCHEDULE</div>
-      <div class="mini-fixtures">
-        <div><span id="fixtureLabel1">NEXT</span><strong id="fixtureTeam1">LOADING</strong><small id="fixtureMeta1">Checking schedule</small></div>
-        <div><span id="fixtureLabel2">NEXT</span><strong id="fixtureTeam2">LOADING</strong><small id="fixtureMeta2">Checking schedule</small></div>
-        <div><span id="fixtureLabel3">NEXT</span><strong id="fixtureTeam3">LOADING</strong><small id="fixtureMeta3">Checking schedule</small></div>
-      </div>
-    </section>
-
-    <section class="section prediction-section" id="prediction">
-      <div class="section-head">
-        <div>
-          <span class="section-number">03 / PREDICTION HUB</span>
-          <h2>READ THE <span>GAME.</span></h2>
-        </div>
-        <p>Analisis, Preview, dan Prediksi dari Team Analisis MARIOBOLA dan akan terus update setiap harinya.</p>
-      </div>
-
-      <div class="prediction-layout">
-        <article class="prediction-feature">
-          <div class="prediction-art"><span>BIG<br>MATCH</span><div class="prediction-lines"></div></div>
-          <div class="prediction-content">
-            <span class="tag">FEATURED ANALYSIS</span>
-            <h3>THE NEXT BIG MATCH<br>STARTS <span>HERE.</span></h3>
-            <p>Analisis dan berita bola mengenai pertandingan-pertandingan BIG MATCH yang akan datang.</p>
-            <a href="#" class="btn btn-secondary" data-config-link="analysis">READ ANALYSIS →</a>
-          </div>
-        </article>
-        <div class="prediction-list">
-          <article><span>01</span><div><small>UPCOMING PREVIEW</small><h4>Match Preview Slot</h4></div><button data-scroll-target="match-preview">↗</button></article>
-          <article><span>02</span><div><small>TACTICAL VIEW</small><h4>Prediction Slot</h4></div><button data-scroll-target="prediction-board">↗</button></article>
-          <article><span>03</span><div><small>EDITOR'S PICK</small><h4>Featured Analysis</h4></div><button data-config-link="analysis">↗</button></article>
-        </div>
-      </div>
-    </section>
-
-    <section class="section match-preview-section" id="match-preview">
-      <div class="section-head">
-        <div>
-          <span class="section-number">MATCH PREVIEW</span>
-          <h2>TODAY'S <span>FIXTURES.</span></h2>
-        </div>
-        <p id="previewSummary">Memuat seluruh jadwal pertandingan dari file TXT harian MARIOBOLA.</p>
-      </div>
-      <div class="preview-toolbar">
-        <button class="preview-filter active" data-filter="all">ALL</button>
-        <button class="preview-filter" data-filter="upcoming">UPCOMING</button>
-        <button class="preview-filter" data-filter="live">LIVE</button>
-        <button class="preview-filter" data-filter="finished">FINISHED</button>
-      </div>
-      <div class="match-preview-grid" id="matchPreviewGrid"></div>
-    </section>
-
-    <section class="section prediction-board-section" id="prediction-board">
-      <div class="section-head">
-        <div>
-          <span class="section-number">PREDICTION SLOT</span>
-          <h2>ALL <span>PREDICTIONS.</span></h2>
-        </div>
-        <p>Seluruh jadwal pertandingan hari tersebut beserta handicap dan prediksi dari data TXT MARIOBOLA.</p>
-      </div>
-      <div class="prediction-board" id="predictionBoard"></div>
-    </section>
-
-    <section class="section live-section" id="live">
-      <div class="live-panel">
-        <div class="live-visual">
-          <img id="liveImage" class="live-stream-image" src="assets/live/live-placeholder.svg" alt="MARIOBOLA LIVE STREAMING">
-          <div class="scanlines"></div>
-          <div class="live-radar"><span></span></div>
-          <div class="live-label"><span class="status-live"></span> LIVE CENTER</div>
-          <div class="live-empty" id="liveEmptyLabel">LIVE STREAMING<br><b>READY</b></div>
-        </div>
-        <div class="live-copy">
-          <span class="section-number">04 / LIVE HUB</span>
-          <h2>READY WHEN<br>THE WHISTLE <span>BLOWS.</span></h2>
-          <p>Area ini disiapkan untuk informasi siaran dan tautan menuju tayangan dari sumber yang memiliki hak atau izin yang sesuai.</p>
-          <a href="#" id="liveStreamingLink" class="btn btn-primary">LIVE STREAMING →</a>
-        </div>
-      </div>
-    </section>
-
-    <section class="section social-section" id="social">
-      <div class="social-box">
-        <div>
-          <span class="section-number">05 / OFFICIAL CHANNELS</span>
-          <h2>STAY IN THE <span>LOOP.</span></h2>
-          <p>Hubungkan seluruh kanal resmi MARIOBOLA dari satu area.</p>
-        </div>
-        <div class="social-links">
-          <a href="#" data-config-link="whatsapp"><span>01</span> WHATSAPP OFFICIAL <b>↗</b></a>
-          <a href="#" data-config-link="instagram"><span>02</span> INSTAGRAM <b>↗</b></a>
-          <a href="#" data-config-link="telegram"><span>03</span> TELEGRAM <b>↗</b></a>
-          <a href="#" data-config-link="facebook"><span>04</span> FACEBOOK <b>↗</b></a>
-          <a href="#" data-config-link="x"><span>05</span> X / TWITTER <b>↗</b></a>
-        </div>
-      </div>
-    </section>1
-
-  </main>
-
-  <footer class="site-footer">
-    <div class="footer-brand"><span class="brand-mark">M</span><div><strong>MARIOBOLA</strong><small>FOOTBALL COMMAND CENTER</small></div></div>
-    <p>ONE HUB. ONE NETWORK. FOOTBALL NEVER STOPS.</p>
-    <div>© <span id="year"></span> MARIOBOLA</div>
-  </footer>
-
-  <div class="modal" id="matchModal" aria-hidden="true">
-    <div class="modal-card">
-      <button class="modal-close" aria-label="Tutup">×</button>
-      <span class="tag">MATCH DETAILS</span>
-      <h3 id="modalMatchTitle">MATCH DETAILS</h3>
-      <p id="modalMatchCopy">Data pertandingan terbaru akan dimuat dari sumber data MarioBola.</p>
-      <div class="modal-match-meta" id="modalMatchMeta"></div>
-      <div class="modal-actions"><a id="modalDetailLink" class="btn btn-secondary" href="#" target="_blank" rel="noopener">MATCH DETAIL →</a><a id="modalStreamLink" class="btn btn-primary" href="#" target="_blank" rel="noopener">LIVE STREAMING →</a></div>
-      <button class="btn btn-primary modal-close-btn">UNDERSTOOD →</button>
-    </div>
-  </div>
-
-  <div class="toast" id="toast">Demo link belum dihubungkan.</div>
-  <script src="script.js"></script>
-</body>
-</html>
+<div class="site-noise"></div><div class="scroll-progress" id="scrollProgress"></div>
+<header class="site-header" id="top">
+  <a class="brand" href="#home"><span class="brand-mark">M</span><span><strong>MARIOBOLA</strong><small>FOOTBALL COMMAND CENTER</small></span></a>
+  <button class="menu-toggle" id="menuToggle" aria-label="Buka menu"><span></span><span></span><span></span></button>
+  <nav class="main-nav" id="mainNav"><a href="#home" class="active">HOME</a><a href="#match">MATCH</a><a href="#prediction">PREDICTION</a><a href="#live">LIVE</a></nav>
+  <a class="header-cta" href="#" data-config-link="login">LOGIN TO MARIOBOLA <span>↗</span></a>
+</header>
+<main>
+<section class="hero" id="home">
+  <div class="hero-grid"></div><div class="hero-glow glow-one"></div><div class="hero-glow glow-two"></div>
+  <div class="hero-content"><div class="eyebrow"><span class="pulse-dot"></span> MARIOBOLA NETWORK ONLINE</div><p class="hero-kicker">THE DIGITAL HOME OF</p><h1>FOOTBALL<br><span>NEVER STOPS.</span></h1><p class="hero-copy">Satu pusat untuk akses pertandingan, prediksi, live information, klasemen, berita, dan konten sepak bola pilihan.</p><div class="hero-actions"><a href="#match" class="btn btn-primary">ENTER MATCH CENTER <span>→</span></a><a href="#prediction" class="btn btn-secondary">EXPLORE PREDICTIONS</a></div><div class="hero-stats"><div><strong>24/7</strong><span>NETWORK ACCESS</span></div><div><strong>LIVE</strong><span>FOOTBALL UPDATES</span></div><div><strong>ONE</strong><span>COMMAND CENTER</span></div></div></div>
+  <div class="hero-orb"><div class="orb-ring ring-a"></div><div class="orb-ring ring-b"></div><div class="orb-ring ring-c"></div><div class="team-orbit team-orbit-main">
+    <div class="team-orbit-track track-1"><div class="orbit-team"><img src="https://assets.football-logos.cc/logos/england/256x256/english-premier-league.4d68127f.png"><span>PREMIER LEAGUE</span></div></div>
+    <div class="team-orbit-track track-2"><div class="orbit-team"><img src="https://assets.football-logos.cc/logos/spain/256x256/la-liga.07ed875e.png"><span>LA LIGA</span></div></div>
+    <div class="team-orbit-track track-3"><div class="orbit-team"><img src="https://assets.football-logos.cc/logos/italy/256x256/serie-a.0e7a37ed.png"><span>SERIE A</span></div></div>
+    <div class="team-orbit-track track-4"><div class="orbit-team"><img src="https://assets.football-logos.cc/logos/germany/256x256/bundesliga.77719ba2.png"><span>BUNDESLIGA</span></div></div>
+    <div class="team-orbit-track track-5"><div class="orbit-team"><img src="https://assets.football-logos.cc/logos/france/256x256/ligue-1.0cc44ebd.png"><span>LIGUE 1</span></div></div>
+    <div class="team-orbit-track track-6"><div class="orbit-team"><img src="https://assets.football-logos.cc/logos/netherlands/256x256/eredivisie.5cc44d59.png"><span>EREDIVISIE</span></div></div>
+    <div class="team-orbit-track track-7"><div class="orbit-team"><span class="orbit-mark">PL</span><span>PRIMEIRA LIGA</span></div></div>
+    <div class="team-orbit-track track-8"><div class="orbit-team"><span class="orbit-mark">BRA</span><span>BRASILEIRÃO</span></div></div>
+    <div class="team-orbit-track track-9"><div class="orbit-team"><span class="orbit-mark">MLS</span><span>MLS</span></div></div>
+    <div class="team-orbit-track track-10"><div class="orbit-team"><img src="https://assets.football-logos.cc/logos/indonesia/256x256/indonesian-super-league.111bee33.png"><span>BRI SUPER LEAGUE</span></div></div>
+  </div><div class="orb-ball">⚽</div><div class="orb-label top-label">MARIOBOLA</div><div class="orb-label bottom-label">EST. 2026</div></div>
+  <a class="scroll-cue" href="#match"><span></span> SCROLL TO EXPLORE</a>
+</section>
+<section class="status-bar"><div><span class="status-live"></span> SYSTEM STATUS: <strong>ONLINE</strong></div><div class="ticker"><span>●</span> FOOTBALL NEVER STOPS <b>—</b> MATCH CENTER ACTIVE <b>—</b> PREDICTION HUB READY <b>—</b> LIVE HUB OPEN</div><div class="clock" id="liveClock">--:--:-- WIB</div></section>
+<section class="section match-section" id="match"><div class="section-head"><div><span class="section-number">02 / FEATURED MATCH</span><h2>MATCH <span>CENTER.</span></h2></div><a href="#prediction-board" class="text-link">VIEW PREDICTIONS <span>→</span></a></div>
+<article class="match-board"><div class="match-top"><span>BIG MATCH ROTATION</span><span class="competition" id="matchCompetition">FOOTBALL LEAGUE</span><span class="match-status upcoming" id="matchStatus">UPCOMING</span></div><div class="match-main"><div class="team"><div class="team-crest" id="homeCrest">A</div><h3 id="homeTeam">LOADING</h3></div><div class="versus"><small id="matchDate">DATE</small><strong id="matchScore">VS</strong><span id="matchTime">CHECKING</span></div><div class="team"><div class="team-crest alt" id="awayCrest">B</div><h3 id="awayTeam">LOADING</h3></div></div><div class="match-bottom"><span>DATA MANUAL • TXT MARIOBOLA</span><div class="match-board-data"><span>HANDICAP <b id="matchHandicap">-</b></span><span>PREDICTION <b id="matchPrediction">-</b></span></div><button class="mini-btn" data-modal="matchModal">MATCH DETAILS →</button></div></article>
+<div class="mini-fixtures-title">NEXT SCHEDULE</div><div class="mini-fixtures"><div><span>NEXT</span><strong id="fixtureTeam1">LOADING</strong><small id="fixtureMeta1">Checking schedule</small></div><div><span>NEXT</span><strong id="fixtureTeam2">LOADING</strong><small id="fixtureMeta2">Checking schedule</small></div><div><span>NEXT</span><strong id="fixtureTeam3">LOADING</strong><small id="fixtureMeta3">Checking schedule</small></div></div></section>
+<section class="section prediction-section" id="prediction"><div class="section-head"><div><span class="section-number">03 / PREDICTION HUB</span><h2>READ THE <span>GAME.</span></h2></div><p>Analisis, Preview, dan Prediksi dari Team Analisis MARIOBOLA dan akan terus update setiap harinya.</p></div><div class="prediction-layout"><article class="prediction-feature"><div class="prediction-art"><span>BIG<br>MATCH</span><div class="prediction-lines"></div></div><div class="prediction-content"><span class="tag">FEATURED ANALYSIS</span><h3 id="featuredNewsTitle">THE NEXT BIG MATCH<br><span>STARTS HERE.</span></h3><p id="featuredNewsCopy">Analisis dan berita bola mengenai pertandingan-pertandingan BIG MATCH yang akan datang.</p><a href="#" class="btn btn-secondary" data-config-link="analysis">READ ANALYSIS →</a></div></article><div class="prediction-list"><article><span>01</span><div><small>UPCOMING PREVIEW</small><h4>Match Preview Slot</h4></div><button data-scroll-target="match-preview">↗</button></article><article><span>02</span><div><small>TACTICAL VIEW</small><h4>Prediction Slot</h4></div><button data-scroll-target="prediction-board">↗</button></article><article><span>03</span><div><small>EDITOR'S PICK</small><h4>Featured Analysis</h4></div><button data-config-link="analysis">↗</button></article></div></div></section>
+<section class="section match-preview-section" id="match-preview"><div class="section-head"><div><span class="section-number">MATCH PREVIEW</span><h2>TODAY'S <span>FIXTURES.</span></h2></div><p id="previewSummary">Memuat jadwal pertandingan dari TXT harian MARIOBOLA.</p></div><div class="preview-toolbar"><button class="preview-filter active" data-filter="all">ALL</button><button class="preview-filter" data-filter="upcoming">UPCOMING</button><button class="preview-filter" data-filter="live">LIVE</button><button class="preview-filter" data-filter="finished">FINISHED</button></div><div class="match-preview-grid" id="matchPreviewGrid"></div></section>
+<section class="section standings-section" id="standings"><div class="section-head"><div><span class="section-number">LIVE LEAGUE TABLE</span><h2>LIVE <span>STANDINGS.</span></h2></div><p>Klasemen otomatis untuk 10 liga utama. Data diperbarui oleh GitHub Actions tanpa input manual.</p></div><div class="standings-shell"><button class="standings-nav prev" id="standingsPrev" aria-label="Liga sebelumnya">‹</button><div class="standings-card" id="standingsCard"><div class="standings-card-head"><div><span class="tag">LIVE TABLE</span><h3 id="standingsLeagueName">LOADING</h3><small id="standingsMeta">Updating...</small></div><div class="standings-counter" id="standingsCounter">01 / 10</div></div><div class="table-wrap"><table><thead><tr><th>#</th><th>TEAM</th><th>P</th><th>W</th><th>D</th><th>L</th><th>GD</th><th>PTS</th></tr></thead><tbody id="standingsBody"><tr><td colspan="8" class="table-loading">LOADING STANDINGS...</td></tr></tbody></table></div></div><button class="standings-nav next" id="standingsNext" aria-label="Liga berikutnya">›</button></div><div class="standings-dots" id="standingsDots"></div></section>
+<section class="section prediction-board-section" id="prediction-board"><div class="section-head"><div><span class="section-number">PREDICTION SLOT</span><h2>ALL <span>PREDICTIONS.</span></h2></div><p>Seluruh jadwal pertandingan beserta handicap dan prediksi dari data TXT MARIOBOLA.</p></div><div class="prediction-board" id="predictionBoard"></div></section>
+<section class="section live-section" id="live"><div class="live-panel"><div class="live-visual"><img id="liveImage" class="live-stream-image" src="assets/live/live-placeholder.svg" alt="MARIOBOLA LIVE STREAMING"><div class="scanlines"></div><div class="live-label"><span class="status-live"></span> LIVE CENTER</div><div class="live-empty" id="liveEmptyLabel">LIVE STREAMING<br><b>READY</b></div></div><div class="live-copy"><span class="section-number">04 / LIVE HUB</span><h2>READY WHEN<br>THE WHISTLE <span>BLOWS.</span></h2><p>Live Streaming NOBAR bareng teman. Klik tombol untuk membuka tautan live yang dikonfigurasi MARIOBOLA.</p><a href="#" id="liveStreamingLink" class="btn btn-primary">LIVE STREAMING →</a></div></div></section>
+<section class="section social-section" id="social"><div class="social-box"><div><span class="section-number">05 / OFFICIAL CHANNELS</span><h2>STAY IN THE <span>LOOP.</span></h2><p>Hubungkan seluruh kanal resmi MARIOBOLA dari satu area.</p></div><div class="social-links"><a href="#" data-config-link="whatsapp"><span>01</span> WHATSAPP OFFICIAL <b>↗</b></a><a href="#" data-config-link="instagram"><span>02</span> INSTAGRAM <b>↗</b></a><a href="#" data-config-link="telegram"><span>03</span> TELEGRAM <b>↗</b></a><a href="#" data-config-link="facebook"><span>04</span> FACEBOOK <b>↗</b></a><a href="#" data-config-link="x"><span>05</span> X / TWITTER <b>↗</b></a></div></div></section>
+</main>
+<footer class="site-footer"><div class="footer-brand"><span class="brand-mark">M</span><div><strong>MARIOBOLA</strong><small>FOOTBALL COMMAND CENTER</small></div></div><p>ONE HUB. ONE NETWORK. FOOTBALL NEVER STOPS.</p><div>© <span id="year"></span> MARIOBOLA</div></footer>
+<div class="modal" id="matchModal" aria-hidden="true"><div class="modal-card"><button class="modal-close" aria-label="Tutup">×</button><span class="tag">MATCH DETAILS</span><h3 id="modalMatchTitle">MATCH DETAILS</h3><p id="modalMatchCopy">Data pertandingan terbaru akan dimuat dari TXT MARIOBOLA.</p><div class="modal-match-meta" id="modalMatchMeta"></div><div class="modal-actions"><a id="modalDetailLink" class="btn btn-secondary" href="#" target="_blank" rel="noopener">MATCH DETAIL →</a><a id="modalStreamLink" class="btn btn-primary" href="#" target="_blank" rel="noopener">LIVE STREAMING →</a></div><button class="btn btn-primary modal-close-btn">CLOSE →</button></div></div>
+<script src="script.js"></script>
+</body></html>
