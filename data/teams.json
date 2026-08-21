@@ -1,5 +1,5 @@
 {
-  "updatedAt": "2026-08-21T21:21:40.511Z",
+  "updatedAt": "2026-08-21T21:43:38.547Z",
   "total": 162,
   "resolved": 73,
   "pending": 89,
@@ -44,7 +44,7 @@
       "name": "Albion FC",
       "logoUrl": "",
       "country": "",
-      "confidence": 0,
+      "confidence": 0.7,
       "matchType": "PENDING"
     },
     {
@@ -365,7 +365,7 @@
       "name": "FC Eindhoven",
       "logoUrl": "",
       "country": "",
-      "confidence": 0.7,
+      "confidence": 0,
       "matchType": "PENDING"
     },
     {
