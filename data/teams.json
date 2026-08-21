@@ -1,0 +1,1310 @@
+{
+  "version": 3,
+  "source": "MarioBola daily TXT",
+  "teamCount": 162,
+  "teams": [
+    {
+      "id": "aalborg",
+      "name": "Aalborg",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "aarhus-fremad",
+      "name": "Aarhus Fremad",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "academica-coimbra",
+      "name": "Academica Coimbra",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "admira-wacker",
+      "name": "Admira Wacker",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "alashkert-fc-n",
+      "name": "Alashkert FC [n]",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "albion-fc",
+      "name": "Albion FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "aldosivi",
+      "name": "Aldosivi",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "almere-city-fc",
+      "name": "Almere City FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ararat-yerevan",
+      "name": "Ararat Yerevan",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "arsenal",
+      "name": "Arsenal",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "athlone-town",
+      "name": "Athlone Town",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "atlante",
+      "name": "Atlante",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "audax-italiano",
+      "name": "Audax Italiano",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ballymena-united",
+      "name": "Ballymena United",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "benfica-b",
+      "name": "Benfica B",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "bk-hacken",
+      "name": "BK Hacken",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "bohemians",
+      "name": "Bohemians",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ca-acassuso",
+      "name": "CA Acassuso",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ca-boston-river",
+      "name": "CA Boston River",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ca-cerro",
+      "name": "CA Cerro",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ca-la-paz",
+      "name": "CA La Paz",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ca-san-telmo",
+      "name": "CA San Telmo",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "catanzaro",
+      "name": "Catanzaro",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "cd-tondela",
+      "name": "CD Tondela",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "clermont-foot",
+      "name": "Clermont Foot",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "cliftonville",
+      "name": "Cliftonville",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "club-america",
+      "name": "Club America",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "club-atletico-mitre",
+      "name": "Club Atletico Mitre",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "club-leon",
+      "name": "Club Leon",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "cobh-ramblers",
+      "name": "Cobh Ramblers",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "cordoba-cf",
+      "name": "Cordoba CF",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "cork-city",
+      "name": "Cork City",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "coventry-city",
+      "name": "Coventry City",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "cracovia-krakow",
+      "name": "Cracovia Krakow",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "cruz-azul-hidalgo",
+      "name": "Cruz Azul Hidalgo",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "den-bosch",
+      "name": "Den Bosch",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "deportivo-madryn",
+      "name": "Deportivo Madryn",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "deportivo-moron",
+      "name": "Deportivo Moron",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "deportivo-toluca",
+      "name": "Deportivo Toluca",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "derry-city",
+      "name": "Derry City",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "dijon",
+      "name": "Dijon",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "dordrecht",
+      "name": "Dordrecht",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "drogheda-united",
+      "name": "Drogheda United",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "dundalk",
+      "name": "Dundalk",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "erzurumspor-fk",
+      "name": "Erzurumspor FK",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "esbjerg",
+      "name": "Esbjerg",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "estudiantes-de-rio-cuarto",
+      "name": "Estudiantes de Rio Cuarto",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "etoile-carouge-fc",
+      "name": "Etoile Carouge FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-eindhoven",
+      "name": "FC Eindhoven",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-emmen",
+      "name": "FC Emmen",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-gandzasar-kapan",
+      "name": "FC Gandzasar Kapan",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-hertha-wels",
+      "name": "FC Hertha Wels",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-juarez",
+      "name": "FC Juarez",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-liefering",
+      "name": "FC Liefering",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-pyunik",
+      "name": "FC Pyunik",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-rapperswil-jona",
+      "name": "FC Rapperswil-Jona",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-sellier-bellot-vlasim",
+      "name": "FC Sellier & Bellot Vlasim",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-silon-taborsko",
+      "name": "FC Silon Taborsko",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-stade-lausanne-ouchy",
+      "name": "FC Stade Lausanne Ouchy",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fc-tokyo",
+      "name": "FC Tokyo",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "finn-harps",
+      "name": "Finn Harps",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "first-vienna-1894",
+      "name": "First Vienna 1894",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fk-dukla-praha",
+      "name": "FK Dukla Praha",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fk-pribram",
+      "name": "FK Pribram",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fotbal-trinec",
+      "name": "Fotbal Trinec",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "fredericia",
+      "name": "Fredericia",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "galatasaray",
+      "name": "Galatasaray",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "galway-united",
+      "name": "Galway United",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "girona",
+      "name": "Girona",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "glentoran-fc",
+      "name": "Glentoran FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "godoy-cruz-antonio-tomba",
+      "name": "Godoy Cruz Antonio Tomba",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "grazer-ak",
+      "name": "Grazer AK",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "guingamp",
+      "name": "Guingamp",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "haka",
+      "name": "Haka",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "hansa-rostock",
+      "name": "Hansa Rostock",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "helmond-sport",
+      "name": "Helmond Sport",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "hobro",
+      "name": "Hobro",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ik-sirius-fk",
+      "name": "IK Sirius FK",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "inverness-ct",
+      "name": "Inverness CT",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "japs",
+      "name": "JaPS",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "jef-united-ichihara-chiba",
+      "name": "JEF United Ichihara Chiba",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "jong-az-alkmaar",
+      "name": "Jong AZ Alkmaar",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "kaiserslautern",
+      "name": "Kaiserslautern",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "kapfenberger-sv",
+      "name": "Kapfenberger SV",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "karlsruher-sc",
+      "name": "Karlsruher SC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "kas-eupen",
+      "name": "KAS Eupen",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "kashiwa-reysol",
+      "name": "Kashiwa Reysol",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "kerry-fc",
+      "name": "Kerry FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ks-wieczysta-krakow",
+      "name": "KS Wieczysta Krakow",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "ksc-lokeren",
+      "name": "KSC Lokeren",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "lahti",
+      "name": "Lahti",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "linfield-fc",
+      "name": "Linfield FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "liverpool-montevideo",
+      "name": "Liverpool Montevideo",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "lr-vicenza-1902",
+      "name": "LR Vicenza 1902",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "marseille",
+      "name": "Marseille",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "mfk-karvina",
+      "name": "MFK Karvina",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "monterrey",
+      "name": "Monterrey",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "montpellier",
+      "name": "Montpellier",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "mvv-maastricht",
+      "name": "MVV Maastricht",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "nancy",
+      "name": "Nancy",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "neuchatel-xamax",
+      "name": "Neuchatel Xamax",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "nk-lokomotiva-zagreb",
+      "name": "NK Lokomotiva Zagreb",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "nk-rudes",
+      "name": "NK Rudes",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "partick-thistle",
+      "name": "Partick Thistle",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "pau-fc",
+      "name": "Pau FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "perez-zeledon",
+      "name": "Perez Zeledon",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "petrolul-ploiesti",
+      "name": "Petrolul Ploiesti",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "pk-35-helsinki",
+      "name": "PK-35 Helsinki",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "portimonense",
+      "name": "Portimonense",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "puntarenas-fc",
+      "name": "Puntarenas FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "queretaro",
+      "name": "Queretaro",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "raal-la-louviere",
+      "name": "RAAL La Louviere",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "rapid-bucuresti",
+      "name": "Rapid Bucuresti",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "real-betis",
+      "name": "Real Betis",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "real-sociedad",
+      "name": "Real Sociedad",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "red-star-saint-ouen",
+      "name": "Red Star Saint Ouen",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "rkc-waalwijk",
+      "name": "RKC Waalwijk",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "roda-jc",
+      "name": "Roda JC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "royal-excelsior-virton",
+      "name": "Royal Excelsior Virton",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "rsca-futures",
+      "name": "RSCA Futures",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "rubio-nu",
+      "name": "Rubio Nu",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "san-lorenzo",
+      "name": "San Lorenzo",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sc-preussen-munster",
+      "name": "SC Preussen Munster",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "seinajoen-jk",
+      "name": "Seinajoen JK",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "seinajoen-jk-akatemia",
+      "name": "Seinajoen JK Akatemia",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sfc-opava",
+      "name": "SFC Opava",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sk-kladno",
+      "name": "SK Kladno",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sk-prostejov",
+      "name": "SK Prostejov",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "skn-st-polten",
+      "name": "SKN St. Polten",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sku-amstetten",
+      "name": "SKU Amstetten",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sligo-rovers",
+      "name": "Sligo Rovers",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sochaux",
+      "name": "Sochaux",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "spartak-kostroma",
+      "name": "Spartak Kostroma",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sportivo-trinidense",
+      "name": "Sportivo Trinidense",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "st-patricks-athletic",
+      "name": "St. Patricks Athletic",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "stade-nyonnais",
+      "name": "Stade Nyonnais",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "standard-liege",
+      "name": "Standard Liege",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "strasbourg",
+      "name": "Strasbourg",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sv-austria-salzburg",
+      "name": "SV Austria Salzburg",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "sv-ried",
+      "name": "SV Ried",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "tigres-uanl",
+      "name": "Tigres UANL",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "torpedo-moscow",
+      "name": "Torpedo Moscow",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "treaty-united",
+      "name": "Treaty United",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "uc-dublin",
+      "name": "UC Dublin",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "union-de-santa-fe",
+      "name": "Union de Santa Fe",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "union-la-calera",
+      "name": "Union La Calera",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "us-boulogne",
+      "name": "US Boulogne",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "usl-dunkerque",
+      "name": "USL Dunkerque",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "usti-nad-labem",
+      "name": "Usti nad Labem",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "v-varen-nagasaki",
+      "name": "V-Varen Nagasaki",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "vejle",
+      "name": "Vejle",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "vfb-stuttgart",
+      "name": "VfB Stuttgart",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "viktoria-zizkov",
+      "name": "Viktoria Zizkov",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "vitesse",
+      "name": "Vitesse",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "volendam",
+      "name": "Volendam",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "vysocina-jihlava",
+      "name": "Vysocina Jihlava",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "wacker-innsbruck",
+      "name": "Wacker Innsbruck",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "waldhof-mannheim",
+      "name": "Waldhof Mannheim",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "waterford-fc",
+      "name": "Waterford FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "wexford-fc",
+      "name": "Wexford FC",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "winterthur",
+      "name": "Winterthur",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    },
+    {
+      "id": "young-violets-austria-wien",
+      "name": "Young Violets Austria Wien",
+      "aliases": [],
+      "logoUrl": "",
+      "logoSource": "",
+      "status": "PENDING"
+    }
+  ],
+  "updatedAt": "2026-08-21T00:41:16.437Z",
+  "logoResolution": {
+    "status": "deferred",
+    "reason": "fetch failed",
+    "source": "https://raw.githubusercontent.com/hixcoder/football-teams-flags/main/football_teams.json",
+    "resolvedAt": "2026-08-21T00:41:16.059Z"
+  }
+}
