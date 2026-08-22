@@ -2509,3 +2509,149 @@
     display:none;
   }
 }
+/* =========================================================
+   HOME FINAL — LOGO LEAGUE FIT-CONTAIN
+   Semua logo harus terlihat UTUH
+   ========================================================= */
+
+.mario-home-orb .orbit-team{
+  overflow: visible !important;
+
+  display:flex !important;
+  align-items:center !important;
+  justify-content:center !important;
+
+  box-sizing:border-box !important;
+
+  padding:5px !important;
+}
+
+
+/* Semua SVG/Png logo */
+
+.mario-home-orb .orbit-team img{
+  display:block !important;
+
+  width:100% !important;
+  height:100% !important;
+
+  max-width:100% !important;
+  max-height:100% !important;
+
+  min-width:0 !important;
+  min-height:0 !important;
+
+  padding:7px !important;
+
+  box-sizing:border-box !important;
+
+  object-fit:contain !important;
+  object-position:center center !important;
+
+  overflow:visible !important;
+
+  transform:none !important;
+
+  border:0 !important;
+
+  background:transparent !important;
+
+  flex:0 0 auto !important;
+
+  filter:
+    drop-shadow(0 0 4px currentColor)
+    drop-shadow(0 0 9px currentColor) !important;
+}
+
+
+/* Ukuran logo mengikuti ukuran badge,
+   tetapi tidak pernah keluar dari lingkaran */
+
+.mario-home-orb .track-1 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:8px !important;
+}
+
+.mario-home-orb .track-2 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:8px !important;
+}
+
+.mario-home-orb .track-3 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:7px !important;
+}
+
+.mario-home-orb .track-4 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:7px !important;
+}
+
+.mario-home-orb .track-5 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:7px !important;
+}
+
+.mario-home-orb .track-6 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:6px !important;
+}
+
+.mario-home-orb .track-7 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:6px !important;
+}
+
+.mario-home-orb .track-8 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:6px !important;
+}
+
+.mario-home-orb .track-9 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:5px !important;
+}
+
+.mario-home-orb .track-10 .orbit-team img{
+  width:100% !important;
+  height:100% !important;
+  padding:5px !important;
+}
+
+
+/* Jangan biarkan label memotong badge */
+
+.mario-home-orb .team-orbit-track{
+  overflow:visible !important;
+}
+
+.mario-home-orb .team-orbit{
+  overflow:visible !important;
+}
+
+
+/* Mobile tetap fit */
+
+@media(max-width:680px){
+
+  .mario-home-orb .orbit-team img{
+    width:100% !important;
+    height:100% !important;
+
+    max-width:100% !important;
+    max-height:100% !important;
+
+    padding:4px !important;
+
+    object-fit:contain !important;
+  }
+}
