@@ -79,18 +79,30 @@ jobs:
 
       - name: Commit generated data
         run: |
+          set -e
+
           git config user.name "github-actions[bot]"
           git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
 
-          git add data/schedule.json
-          git add data/predictions.json
-          git add data/teams.json
-          git add data/football-teams.json
-          git add data/news.json || true
+          echo "=== STAGING GENERATED DATA ==="
+
+          git add data/
+          git add assets/home-leagues/ || true
+          git add assets/home/ || true
 
           if git diff --cached --quiet; then
             echo "Tidak ada perubahan data."
-          else
-            git commit -m "chore: update MarioBola match data"
-            git push
+            exit 0
           fi
+
+          git commit -m "chore: update MarioBola generated data"
+
+          echo "=== SYNC WITH REMOTE MAIN ==="
+
+          git fetch origin main
+
+          git rebase origin/main
+
+          echo "=== PUSH GENERATED DATA ==="
+
+          git push origin HEAD:main
