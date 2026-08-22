@@ -1,620 +1,225 @@
 /* =========================================================
-   MARIOBOLA MATCH CENTER — LIVE SCORE ADDON
-   HOME IS LOCKED. DO NOT TOUCH HOME.
+   MARIOBOLA MATCH CENTER — LIVE SCORE ADD-ON
+   Append this block to the END of the existing script.js.
+   HOME is not touched.
    ========================================================= */
 
-(function MarioBolaLiveScore(){
+const MARIO_LIVE = {
+  api: '/api/live-scores',
+  fallback: 'data/live-scores.json',
+  pollMs: 20000
+};
 
-  const API =
-    "/api/live-scores";
+const mbNorm = v => String(v || '')
+  .toLowerCase()
+  .normalize('NFD')
+  .replace(/[\u0300-\u036f]/g,'')
+  .replace(/&/g,' and ')
+  .replace(/[^a-z0-9]+/g,' ')
+  .replace(/\b(fc|cf|sc|afc|ac|bc|club|football|futbol|calcio)\b/g,' ')
+  .replace(/\s+/g,' ')
+  .trim();
 
-  const FALLBACK =
-    "data/live-scores.json";
+const MB_ALIASES = {
+  'manchester united':['manchester united','man utd','man united'],
+  'manchester city':['manchester city','man city'],
+  'tottenham hotspur':['tottenham hotspur','tottenham','spurs'],
+  'newcastle united':['newcastle united','newcastle'],
+  'west ham united':['west ham united','west ham'],
+  'wolverhampton wanderers':['wolverhampton wanderers','wolverhampton','wolves'],
+  'brighton hove albion':['brighton hove albion','brighton'],
+  'nottingham forest':['nottingham forest','nottingham'],
+  'real betis':['real betis','betis'],
+  'atletico madrid':['atletico madrid','atletico'],
+  'inter milan':['inter milan','internazionale','inter'],
+  'ac milan':['ac milan','milan'],
+  'paris saint germain':['paris saint germain','psg']
+};
 
-  const REFRESH =
-    20000;
-
-  let liveTimer = null;
-
-  function normalize(value){
-    return String(value || "")
-      .toLowerCase()
-      .normalize("NFD")
-      .replace(/[\u0300-\u036f]/g,"")
-      .replace(/&/g," and ")
-      .replace(/[^a-z0-9]+/g," ")
-      .replace(
-        /\b(fc|cf|sc|afc|ac|bc|club|football|futbol|calcio)\b/g,
-        " "
-      )
-      .replace(/\s+/g," ")
-      .trim();
+function mbVariants(name){
+  const n = mbNorm(name);
+  const set = new Set([n]);
+  for(const aliases of Object.values(MB_ALIASES)){
+    const a = aliases.map(mbNorm);
+    if(a.includes(n)) a.forEach(x=>set.add(x));
   }
+  return [...set];
+}
 
-  const aliases = {
-    "manchester united": [
-      "manchester united",
-      "man utd",
-      "man united"
-    ],
-
-    "manchester city": [
-      "manchester city",
-      "man city"
-    ],
-
-    "tottenham hotspur": [
-      "tottenham hotspur",
-      "tottenham",
-      "spurs"
-    ],
-
-    "newcastle united": [
-      "newcastle united",
-      "newcastle"
-    ],
-
-    "west ham united": [
-      "west ham united",
-      "west ham"
-    ],
-
-    "inter milan": [
-      "inter milan",
-      "internazionale",
-      "inter"
-    ],
-
-    "ac milan": [
-      "ac milan",
-      "milan"
-    ],
-
-    "paris saint germain": [
-      "paris saint germain",
-      "psg"
-    ]
-  };
-
-  function variants(name){
-
-    const n =
-      normalize(name);
-
-    const result =
-      new Set([n]);
-
-    Object.values(
-      aliases
-    ).forEach(list => {
-
-      const values =
-        list.map(normalize);
-
-      if (
-        values.includes(n)
-      ){
-        values.forEach(
-          value =>
-            result.add(value)
-        );
-      }
-
-    });
-
-    return [...result];
-  }
-
-  function similarity(a,b){
-
-    const av =
-      variants(a);
-
-    const bv =
-      variants(b);
-
-    let best = 0;
-
-    for (
-      const x of av
-    ){
-
-      for (
-        const y of bv
-      ){
-
-        if (!x || !y)
-          continue;
-
-        if (x === y){
-          best =
-            Math.max(
-              best,
-              1
-            );
-
-          continue;
-        }
-
-        if (
-          x.includes(y) ||
-          y.includes(x)
-        ){
-          best =
-            Math.max(
-              best,
-              .88
-            );
-
-          continue;
-        }
-
-        const ax =
-          new Set(
-            x.split(" ")
-          );
-
-        const by =
-          new Set(
-            y.split(" ")
-          );
-
-        const overlap =
-          [...ax]
-            .filter(
-              word =>
-                by.has(word)
-            );
-
-        const union =
-          new Set([
-            ...ax,
-            ...by
-          ]);
-
-        if (union.size){
-          best =
-            Math.max(
-              best,
-              overlap.length /
-              union.size
-            );
-        }
-
-      }
-
+function mbSimilarity(a,b){
+  const av = mbVariants(a), bv = mbVariants(b);
+  let best = 0;
+  for(const x of av) for(const y of bv){
+    if(!x || !y) continue;
+    if(x===y) best = Math.max(best,1);
+    else if(x.includes(y)||y.includes(x)) best = Math.max(best,.88);
+    else {
+      const ax=new Set(x.split(' ')), by=new Set(y.split(' '));
+      const overlap=[...ax].filter(w=>by.has(w));
+      const union=new Set([...ax,...by]);
+      if(union.size) best=Math.max(best,overlap.length/union.size);
     }
-
-    return best;
   }
+  return best;
+}
 
-  function liveEvents(data){
+function mbEvents(payload){
+  if(Array.isArray(payload)) return payload;
+  return payload?.liveMatches || payload?.events || payload?.matches || [];
+}
 
-    if (!data)
-      return [];
+function mbLiveTeam(event,side){
+  if(side==='home') return String(event.home?.name || event.homeTeam || event.competitions?.[0]?.competitors?.find(x=>x.homeAway==='home')?.team?.displayName || '');
+  return String(event.away?.name || event.awayTeam || event.competitions?.[0]?.competitors?.find(x=>x.homeAway==='away')?.team?.displayName || '');
+}
 
-    if (
-      Array.isArray(
-        data.liveMatches
-      )
-    ){
-      return data.liveMatches;
-    }
+function mbLiveScore(event,side){
+  const n = side==='home'
+    ? event.score?.home ?? event.homeScore ?? event.home?.score
+    : event.score?.away ?? event.awayScore ?? event.away?.score;
+  const v = Number(n);
+  return Number.isFinite(v) ? v : null;
+}
 
-    if (
-      Array.isArray(
-        data.matches
-      )
-    ){
-      return data.matches;
-    }
+function mbLiveState(event){
+  const s = String(event.status?.state || event.status?.type?.state || event.state || '').toLowerCase();
+  const t = `${event.status?.type?.name||''} ${event.status?.type?.detail||''} ${event.status?.detail||''}`.toLowerCase();
+  if(s==='in' || s.includes('live') || s.includes('progress') || t.includes('live')) return 'LIVE';
+  if(s==='post' || s.includes('finish') || s.includes('final') || s.includes('complete') || t.includes('final')) return 'FINISHED';
+  return 'UPCOMING';
+}
 
-    if (
-      Array.isArray(data.events)
-    ){
-      return data.events;
-    }
+function mbLiveClock(event){
+  return String(event.status?.clock || event.status?.displayClock || event.status?.type?.shortDetail || event.status?.type?.detail || '');
+}
 
-    return [];
+function mbFindEvent(match,events){
+  const h=match.homeTeam, a=match.awayTeam;
+  let best=null, score=0;
+  for(const e of events){
+    const eh=mbLiveTeam(e,'home'), ea=mbLiveTeam(e,'away');
+    const hs=mbSimilarity(h,eh), as=mbSimilarity(a,ea);
+    if(hs>=.70 && as>=.70 && (hs+as)/2>score){ best=e; score=(hs+as)/2; }
   }
+  return best;
+}
 
-  function liveHome(event){
-    return String(
-      event.home?.name ||
-      event.homeTeam ||
-      ""
-    );
-  }
+async function mbGetLivePayload(){
+  try{
+    const r=await fetch(MARIO_LIVE.api,{cache:'no-store'});
+    if(r.ok) return await r.json();
+  }catch(e){ console.warn('[MarioBola LIVE]',e); }
+  try{
+    const r=await fetch(MARIO_LIVE.fallback,{cache:'no-store'});
+    if(r.ok) return await r.json();
+  }catch(e){ console.warn('[MarioBola LIVE fallback]',e); }
+  return null;
+}
 
-  function liveAway(event){
-    return String(
-      event.away?.name ||
-      event.awayTeam ||
-      ""
-    );
-  }
+async function mbRefreshLiveScore(){
+  if(!Array.isArray(allMatches) || !allMatches.length) return;
 
-  function liveHomeScore(event){
+  const payload=await mbGetLivePayload();
+  if(!payload) return;
 
-    const value =
-      event.score?.home ??
-      event.home?.score ??
-      event.homeScore;
+  const events=mbEvents(payload);
+  const matched=new Set();
+  const base=allMatches.map(m=>({ ...m, liveData:null }));
 
-    return Number.isFinite(
-      Number(value)
-    )
-      ? Number(value)
-      : 0;
-  }
+  for(const m of base){
+    const e=mbFindEvent(m,events);
+    if(!e) continue;
 
-  function liveAwayScore(event){
+    const home=mbLiveScore(e,'home');
+    const away=mbLiveScore(e,'away');
+    const state=mbLiveState(e);
+    const eid=String(e.eventId || e.id || '');
 
-    const value =
-      event.score?.away ??
-      event.away?.score ??
-      event.awayScore;
+    if(eid) matched.add(eid);
 
-    return Number.isFinite(
-      Number(value)
-    )
-      ? Number(value)
-      : 0;
-  }
-
-  function liveClock(event){
-
-    return String(
-      event.status?.clock ||
-      event.status?.detail ||
-      event.clock ||
-      ""
-    );
-  }
-
-  function state(event){
-
-    const value =
-      String(
-        event.status?.state ||
-        event.state ||
-        ""
-      ).toLowerCase();
-
-    if (
-      value === "in" ||
-      value.includes("live") ||
-      value.includes("progress")
-    ){
-      return "LIVE";
-    }
-
-    if (
-      value === "post" ||
-      value.includes("final") ||
-      value.includes("finish") ||
-      value.includes("complete")
-    ){
-      return "FINISHED";
-    }
-
-    return "UPCOMING";
-  }
-
-  function getCurrentMatch(){
-
-    /*
-      Match Center current board.
-      The existing site uses .match-board.
-    */
-
-    return document.querySelector(
-      ".match-board"
-    );
-  }
-
-  function getTeamNames(board){
-
-    if (!board)
-      return null;
-
-    const teams =
-      board.querySelectorAll(
-        ".team h3"
-      );
-
-    if (
-      teams.length < 2
-    ){
-      return null;
-    }
-
-    return {
-      home:
-        teams[0].textContent.trim(),
-
-      away:
-        teams[1].textContent.trim()
+    m.homeScore = home ?? m.homeScore;
+    m.awayScore = away ?? m.awayScore;
+    m.actualStatus = state;
+    m.liveData = {
+      state,
+      clock: mbLiveClock(e),
+      homeScore: home,
+      awayScore: away,
+      eventId: eid
     };
+    m.status = dynamicStatus(m);
   }
 
-  function findLiveMatch(
-    current,
-    events
-  ){
+  /* Add LIVE events that are not present in schedule.json. */
+  for(const e of events){
+    if(mbLiveState(e)!=='LIVE') continue;
+    const eid=String(e.eventId || e.id || '');
+    if(eid && matched.has(eid)) continue;
 
-    if (!current)
-      return null;
+    const home=mbLiveTeam(e,'home'), away=mbLiveTeam(e,'away');
+    if(!home || !away) continue;
 
-    let best = null;
-    let bestScore = 0;
-
-    events.forEach(
-      event => {
-
-        const homeScore =
-          similarity(
-            current.home,
-            liveHome(event)
-          );
-
-        const awayScore =
-          similarity(
-            current.away,
-            liveAway(event)
-          );
-
-        if (
-          homeScore >= .70 &&
-          awayScore >= .70
-        ){
-
-          const score =
-            (homeScore + awayScore) /
-            2;
-
-          if (
-            score > bestScore
-          ){
-
-            bestScore =
-              score;
-
-            best =
-              event;
-          }
-
-        }
-
-      }
-    );
-
-    return best;
-  }
-
-  function updateFeaturedBoard(
-    event
-  ){
-
-    const board =
-      getCurrentMatch();
-
-    if (!board || !event)
-      return;
-
-    const home =
-      liveHomeScore(event);
-
-    const away =
-      liveAwayScore(event);
-
-    const currentState =
-      state(event);
-
-    /*
-      .versus strong is the existing
-      score/VS element.
-    */
-
-    const score =
-      board.querySelector(
-        ".versus strong"
-      );
-
-    if (score){
-
-      score.textContent =
-        `${home} - ${away}`;
-
+    const kickoff=e.kickoff || e.date || e.startDate || '';
+    let date='', time='';
+    if(kickoff){
+      const d=new Date(kickoff);
+      date=d.toLocaleDateString('en-CA',{timeZone:'Asia/Jakarta'});
+      time=d.toLocaleTimeString('id-ID',{timeZone:'Asia/Jakarta',hour:'2-digit',minute:'2-digit',hour12:false});
     }
 
-    const status =
-      board.querySelector(
-        ".match-status"
-      );
-
-    if (status){
-
-      status.textContent =
-        currentState;
-
-      status.classList.remove(
-        "live",
-        "finished"
-      );
-
-      status.classList.add(
-        currentState.toLowerCase()
-      );
-
-    }
-
-    const versusSpans =
-      board.querySelectorAll(
-        ".versus span"
-      );
-
-    if (
-      versusSpans.length
-    ){
-
-      const clock =
-        liveClock(event);
-
-      versusSpans[0].textContent =
-        clock ||
-        currentState;
-
-    }
-
-    /*
-      Dispatch event so any existing Match Center
-      UI can also consume the new score.
-    */
-
-    window.dispatchEvent(
-      new CustomEvent(
-        "mariobola:score-update",
-        {
-          detail:{
-            event,
-            homeScore:home,
-            awayScore:away,
-            state:currentState,
-            clock:liveClock(event)
-          }
-        }
-      )
-    );
+    base.push({
+      id:`auto-live-${eid || `${mbNorm(home)}-${mbNorm(away)}`}`,
+      competition:e.league?.name || e.leagueName || 'LIVE',
+      homeTeam:home,
+      awayTeam:away,
+      homeCrest:e.home?.logo || '',
+      awayCrest:e.away?.logo || '',
+      handicap:null,
+      prediction:null,
+      date,
+      time,
+      actualStatus:'LIVE',
+      homeScore:mbLiveScore(e,'home'),
+      awayScore:mbLiveScore(e,'away'),
+      liveData:{
+        state:'LIVE',
+        clock:mbLiveClock(e),
+        homeScore:mbLiveScore(e,'home'),
+        awayScore:mbLiveScore(e,'away'),
+        eventId:eid
+      },
+      status:'LIVE'
+    });
   }
 
-  async function getLiveData(){
+  allMatches=base.sort((a,b)=>matchDateTime(a)-matchDateTime(b)).map(decorate);
 
-    try{
+  const current=activeMatchId ? allMatches.find(x=>x.id===activeMatchId) : null;
+  const featured=current || allMatches.find(x=>x.status==='LIVE') || allMatches.find(x=>x.status==='UPCOMING') || allMatches[0];
 
-      const response =
-        await fetch(
-          API,
-          {
-            cache:"no-store"
-          }
-        );
-
-      if (
-        !response.ok
-      ){
-        throw new Error(
-          `HTTP ${response.status}`
-        );
-      }
-
-      return await response.json();
-
-    }catch(error){
-
-      console.warn(
-        "[MarioBola Live] API fallback:",
-        error
-      );
-
-      try{
-
-        const fallback =
-          await fetch(
-            FALLBACK,
-            {
-              cache:"no-store"
-            }
-          );
-
-        if (
-          !fallback.ok
-        ){
-          return null;
-        }
-
-        return await fallback.json();
-
-      }catch{
-        return null;
-      }
-
-    }
-
+  if(featured){
+    renderFeatured(featured);
+    renderNextSchedule(featured);
   }
 
-  async function refresh(){
+  renderPreview(currentFilter);
+  renderPredictionBoard();
 
-    const board =
-      getCurrentMatch();
-
-    if (!board)
-      return;
-
-    const current =
-      getTeamNames(board);
-
-    if (!current)
-      return;
-
-    const payload =
-      await getLiveData();
-
-    if (!payload)
-      return;
-
-    const events =
-      liveEvents(payload);
-
-    const match =
-      findLiveMatch(
-        current,
-        events
-      );
-
-    if (!match)
-      return;
-
-    updateFeaturedBoard(
-      match
-    );
-
+  const live=allMatches.find(x=>x.status==='LIVE');
+  if(live){
+    $('#liveEmptyLabel').innerHTML=`LIVE NOW<br><b>${esc(live.homeTeam)} ${live.homeScore??0} - ${live.awayScore??0} ${esc(live.awayTeam)}</b>`;
   }
+}
 
-  function start(){
+/* Wrap the existing loadData without changing HOME. */
+const marioOriginalLoadData = loadData;
+loadData = async function(){
+  await marioOriginalLoadData();
+  await mbRefreshLiveScore();
+};
 
-    if (liveTimer)
-      return;
+/* Refresh live score every 20 seconds. */
+setInterval(mbRefreshLiveScore,MARIO_LIVE.pollMs);
 
-    refresh();
-
-    liveTimer =
-      setInterval(
-        refresh,
-        REFRESH
-      );
-
-  }
-
-  /*
-    Start only after document is loaded.
-    This touches MATCH CENTER only.
-  */
-
-  if (
-    document.readyState ===
-    "loading"
-  ){
-
-    document.addEventListener(
-      "DOMContentLoaded",
-      start
-    );
-
-  }else{
-
-    start();
-
-  }
-
-})();
+/* First live-score refresh after the existing initial load. */
+setTimeout(mbRefreshLiveScore,1500);
