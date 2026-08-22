@@ -1,20 +1,6479 @@
 {
   "version": 1,
-  "generatedAt": null,
+  "generatedAt": "2026-08-22T17:59:16.443Z",
   "source": "ESPN public soccer scoreboard",
-  "dateRange": [],
-  "status": "initializing",
+  "dateRange": [
+    "20260822",
+    "20260823",
+    "20260824"
+  ],
+  "status": "ok",
   "summary": {
-    "totalEvents": 0,
-    "live": 0,
-    "upcoming": 0,
-    "finished": 0,
+    "totalEvents": 72,
+    "live": 6,
+    "upcoming": 58,
+    "finished": 8,
     "leagues": 10,
-    "successfulLeagues": 0
+    "successfulLeagues": 10
   },
-  "leagues": [],
-  "liveMatches": [],
-  "upcomingMatches": [],
-  "finishedMatches": [],
-  "matches": []
+  "leagues": [
+    {
+      "id": "epl",
+      "name": "Premier League",
+      "country": "England",
+      "espnId": "eng.1",
+      "status": "ok",
+      "events": 9,
+      "errors": []
+    },
+    {
+      "id": "serie-a",
+      "name": "Serie A",
+      "country": "Italy",
+      "espnId": "ita.1",
+      "status": "ok",
+      "events": 10,
+      "errors": []
+    },
+    {
+      "id": "bundesliga",
+      "name": "Bundesliga",
+      "country": "Germany",
+      "espnId": "ger.1",
+      "status": "ok",
+      "events": 0,
+      "errors": []
+    },
+    {
+      "id": "la-liga",
+      "name": "La Liga",
+      "country": "Spain",
+      "espnId": "esp.1",
+      "status": "ok",
+      "events": 8,
+      "errors": []
+    },
+    {
+      "id": "ligue-1",
+      "name": "Ligue 1",
+      "country": "France",
+      "espnId": "fra.1",
+      "status": "ok",
+      "events": 8,
+      "errors": []
+    },
+    {
+      "id": "brasileirao",
+      "name": "Brasileirão Série A",
+      "country": "Brazil",
+      "espnId": "bra.1",
+      "status": "ok",
+      "events": 10,
+      "errors": []
+    },
+    {
+      "id": "primeira-liga",
+      "name": "Primeira Liga",
+      "country": "Portugal",
+      "espnId": "por.1",
+      "status": "ok",
+      "events": 7,
+      "errors": []
+    },
+    {
+      "id": "belgian-pro-league",
+      "name": "Belgian Pro League",
+      "country": "Belgium",
+      "espnId": "bel.1",
+      "status": "ok",
+      "events": 5,
+      "errors": []
+    },
+    {
+      "id": "mls",
+      "name": "Major League Soccer",
+      "country": "United States",
+      "espnId": "usa.1",
+      "status": "ok",
+      "events": 15,
+      "errors": []
+    },
+    {
+      "id": "bri-super-league",
+      "name": "BRI Super League",
+      "country": "Indonesia",
+      "espnId": "idn.1",
+      "status": "ok",
+      "events": 0,
+      "errors": []
+    }
+  ],
+  "liveMatches": [
+    {
+      "eventId": "401879021",
+      "uid": "s:600~l:3901~e:401879021",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:15Z",
+      "venue": "Stade du Pays de Charleroi",
+      "home": {
+        "id": "3616",
+        "uid": "s:600~t:3616",
+        "name": "Royal Charleroi SC",
+        "shortName": "Royal Charleroi",
+        "abbreviation": "CHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3616.png"
+      },
+      "away": {
+        "id": "7879",
+        "uid": "s:600~t:7879",
+        "name": "KV Mechelen",
+        "shortName": "KV Mechelen",
+        "abbreviation": "KVM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7879.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "display": "2-0"
+      },
+      "status": {
+        "state": "live",
+        "clock": "86'",
+        "period": "2",
+        "detail": "86'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879021",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879321",
+      "uid": "s:600~l:700~e:401879321",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:30Z",
+      "venue": "Gtech Community Stadium",
+      "home": {
+        "id": "337",
+        "uid": "s:600~t:337",
+        "name": "Brentford",
+        "shortName": "Brentford",
+        "abbreviation": "BRE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png"
+      },
+      "away": {
+        "id": "367",
+        "uid": "s:600~t:367",
+        "name": "Tottenham Hotspur",
+        "shortName": "Spurs",
+        "abbreviation": "TOT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 0,
+        "display": "3-0"
+      },
+      "status": {
+        "state": "live",
+        "clock": "72'",
+        "period": "2",
+        "detail": "72'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879321",
+      "broadcasts": [
+        "NBC"
+      ]
+    },
+    {
+      "eventId": "401874931",
+      "uid": "s:600~l:730~e:401874931",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:30Z",
+      "venue": "San Siro",
+      "home": {
+        "id": "110",
+        "uid": "s:600~t:110",
+        "name": "Internazionale",
+        "shortName": "Inter Milan",
+        "abbreviation": "INT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
+      },
+      "away": {
+        "id": "4007",
+        "uid": "s:600~t:4007",
+        "name": "Monza",
+        "shortName": "Monza",
+        "abbreviation": "MON",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png"
+      },
+      "score": {
+        "home": 4,
+        "away": 1,
+        "display": "4-1"
+      },
+      "status": {
+        "state": "live",
+        "clock": "68'",
+        "period": "2",
+        "detail": "68'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874931",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874745",
+      "uid": "s:600~l:730~e:401874745",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:30Z",
+      "venue": "Stadio Friuli",
+      "home": {
+        "id": "118",
+        "uid": "s:600~t:118",
+        "name": "Udinese",
+        "shortName": "Udinese",
+        "abbreviation": "UDI",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png"
+      },
+      "away": {
+        "id": "2572",
+        "uid": "s:600~t:2572",
+        "name": "Como",
+        "shortName": "Como",
+        "abbreviation": "COMO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "display": "1-1"
+      },
+      "status": {
+        "state": "live",
+        "clock": "65'",
+        "period": "2",
+        "detail": "65'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874745",
+      "broadcasts": [
+        "CBSSN"
+      ]
+    },
+    {
+      "eventId": "401885473",
+      "uid": "s:600~l:715~e:401885473",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T17:00Z",
+      "venue": "Estádio António Coimbra da Mota",
+      "home": {
+        "id": "12216",
+        "uid": "s:600~t:12216",
+        "name": "Estoril",
+        "shortName": "Estoril",
+        "abbreviation": "EPF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12216.png"
+      },
+      "away": {
+        "id": "3822",
+        "uid": "s:600~t:3822",
+        "name": "Rio Ave",
+        "shortName": "Rio Ave",
+        "abbreviation": "RAFC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3822.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "display": "0-1"
+      },
+      "status": {
+        "state": "live",
+        "clock": "45'+1'",
+        "period": "1",
+        "detail": "HT",
+        "description": "Halftime"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885473",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882907",
+      "uid": "s:600~l:740~e:401882907",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T17:30Z",
+      "venue": "Mestalla Stadium",
+      "home": {
+        "id": "94",
+        "uid": "s:600~t:94",
+        "name": "Valencia",
+        "shortName": "Valencia",
+        "abbreviation": "VAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+      },
+      "away": {
+        "id": "85",
+        "uid": "s:600~t:85",
+        "name": "Celta Vigo",
+        "shortName": "Celta Vigo",
+        "abbreviation": "CEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "live",
+        "clock": "26'",
+        "period": "1",
+        "detail": "26'",
+        "description": "First Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882907",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
+    }
+  ],
+  "upcomingMatches": [
+    {
+      "eventId": "401874929",
+      "uid": "s:600~l:730~e:401874929",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stadio Luigi Ferraris",
+      "home": {
+        "id": "3263",
+        "uid": "s:600~t:3263",
+        "name": "Genoa",
+        "shortName": "Genoa",
+        "abbreviation": "GEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
+      },
+      "away": {
+        "id": "114",
+        "uid": "s:600~t:114",
+        "name": "Napoli",
+        "shortName": "Napoli",
+        "abbreviation": "NAP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874929/napoli-genoa",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874747",
+      "uid": "s:600~l:730~e:401874747",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Ennio Tardini",
+      "home": {
+        "id": "115",
+        "uid": "s:600~t:115",
+        "name": "Parma",
+        "shortName": "Parma",
+        "abbreviation": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
+      },
+      "away": {
+        "id": "2925",
+        "uid": "s:600~t:2925",
+        "name": "Cagliari",
+        "shortName": "Cagliari",
+        "abbreviation": "CAG",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874747/cagliari-parma",
+      "broadcasts": [
+        "CBSSN"
+      ]
+    },
+    {
+      "eventId": "401876491",
+      "uid": "s:600~l:710~e:401876491",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stade Marie-Marvingt",
+      "home": {
+        "id": "2697",
+        "uid": "s:600~t:2697",
+        "name": "Le Mans",
+        "shortName": "Le Mans",
+        "abbreviation": "MNS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png"
+      },
+      "away": {
+        "id": "6997",
+        "uid": "s:600~t:6997",
+        "name": "Brest",
+        "shortName": "Brest",
+        "abbreviation": "BRE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876491/brest-le-mans",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876488",
+      "uid": "s:600~l:710~e:401876488",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Allianz Riviera",
+      "home": {
+        "id": "2502",
+        "uid": "s:600~t:2502",
+        "name": "Nice",
+        "shortName": "Nice",
+        "abbreviation": "NICE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
+      },
+      "away": {
+        "id": "273",
+        "uid": "s:600~t:273",
+        "name": "Lorient",
+        "shortName": "Lorient",
+        "abbreviation": "LOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876488/lorient-nice",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876486",
+      "uid": "s:600~l:710~e:401876486",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stadium Municipal de Toulouse",
+      "home": {
+        "id": "179",
+        "uid": "s:600~t:179",
+        "name": "Toulouse",
+        "shortName": "Toulouse",
+        "abbreviation": "TOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
+      },
+      "away": {
+        "id": "167",
+        "uid": "s:600~t:167",
+        "name": "Lyon",
+        "shortName": "Lyon",
+        "abbreviation": "LYON",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876486/lyon-toulouse",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876485",
+      "uid": "s:600~l:710~e:401876485",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stade de l'Aube",
+      "home": {
+        "id": "170",
+        "uid": "s:600~t:170",
+        "name": "Troyes",
+        "shortName": "Troyes",
+        "abbreviation": "TRY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png"
+      },
+      "away": {
+        "id": "6851",
+        "uid": "s:600~t:6851",
+        "name": "Paris FC",
+        "shortName": "Paris FC",
+        "abbreviation": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876485/paris-fc-troyes",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879019",
+      "uid": "s:600~l:3901~e:401879019",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Bosuilstadion",
+      "home": {
+        "id": "17544",
+        "uid": "s:600~t:17544",
+        "name": "Antwerp",
+        "shortName": "Antwerp",
+        "abbreviation": "ANT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png"
+      },
+      "away": {
+        "id": "938",
+        "uid": "s:600~t:938",
+        "name": "Racing Genk",
+        "shortName": "Genk",
+        "abbreviation": "GENK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879019/racing-genk-antwerp",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841205",
+      "uid": "s:600~l:630~e:401841205",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:00Z",
+      "venue": "Estadio do Maracana",
+      "home": {
+        "id": "3445",
+        "uid": "s:600~t:3445",
+        "name": "Fluminense",
+        "shortName": "Fluminense",
+        "abbreviation": "FLU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3445.png"
+      },
+      "away": {
+        "id": "4936",
+        "uid": "s:600~t:4936",
+        "name": "Remo",
+        "shortName": "Remo",
+        "abbreviation": "REMO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4936.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841205/remo-fluminense",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882912",
+      "uid": "s:600~l:740~e:401882912",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:30Z",
+      "venue": "RCDE Stadium",
+      "home": {
+        "id": "88",
+        "uid": "s:600~t:88",
+        "name": "Espanyol",
+        "shortName": "Espanyol",
+        "abbreviation": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+      },
+      "away": {
+        "id": "86",
+        "uid": "s:600~t:86",
+        "name": "Real Madrid",
+        "shortName": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882912/real-madrid-espanyol",
+      "broadcasts": [
+        "ABC"
+      ]
+    },
+    {
+      "eventId": "401885467",
+      "uid": "s:600~l:715~e:401885467",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:30Z",
+      "venue": "Estádio José Alvalade",
+      "home": {
+        "id": "2250",
+        "uid": "s:600~t:2250",
+        "name": "Sporting CP",
+        "shortName": "Sporting",
+        "abbreviation": "SCP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
+      },
+      "away": {
+        "id": "21613",
+        "uid": "s:600~t:21613",
+        "name": "Alverca",
+        "shortName": "Alverca",
+        "abbreviation": "ALV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21613.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885467/alverca-sporting-cp",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841204",
+      "uid": "s:600~l:630~e:401841204",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T21:30Z",
+      "venue": "Estadio Beira-Rio",
+      "home": {
+        "id": "1936",
+        "uid": "s:600~t:1936",
+        "name": "Internacional",
+        "shortName": "Internacional",
+        "abbreviation": "INT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1936.png"
+      },
+      "away": {
+        "id": "7632",
+        "uid": "s:600~t:7632",
+        "name": "Atlético-MG",
+        "shortName": "Atlético-MG",
+        "abbreviation": "CAM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7632.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 5:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841204/atletico-mg-internacional",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841206",
+      "uid": "s:600~l:630~e:401841206",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Estadio Mineirão",
+      "home": {
+        "id": "2022",
+        "uid": "s:600~t:2022",
+        "name": "Cruzeiro",
+        "shortName": "Cruzeiro",
+        "abbreviation": "CRU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2022.png"
+      },
+      "away": {
+        "id": "819",
+        "uid": "s:600~t:819",
+        "name": "Flamengo",
+        "shortName": "Flamengo",
+        "abbreviation": "FLA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/819.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841206/flamengo-cruzeiro",
+      "broadcasts": []
+    },
+    {
+      "eventId": "761745",
+      "uid": "s:600~l:770~e:761745",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Stade Saputo",
+      "home": {
+        "id": "9720",
+        "uid": "s:600~t:9720",
+        "name": "CF Montréal",
+        "shortName": "CF Montréal",
+        "abbreviation": "MTL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png"
+      },
+      "away": {
+        "id": "187",
+        "uid": "s:600~t:187",
+        "name": "LA Galaxy",
+        "shortName": "LA Galaxy",
+        "abbreviation": "LA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761745/la-galaxy-cf-montreal",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761741",
+      "uid": "s:600~l:770~e:761741",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Bank of America Stadium",
+      "home": {
+        "id": "21300",
+        "uid": "s:600~t:21300",
+        "name": "Charlotte FC",
+        "shortName": "Charlotte",
+        "abbreviation": "CLT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png"
+      },
+      "away": {
+        "id": "193",
+        "uid": "s:600~t:193",
+        "name": "D.C. United",
+        "shortName": "D.C. United",
+        "abbreviation": "DC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761741/dc-united-charlotte-fc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761743",
+      "uid": "s:600~l:770~e:761743",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "TQL Stadium",
+      "home": {
+        "id": "18267",
+        "uid": "s:600~t:18267",
+        "name": "FC Cincinnati",
+        "shortName": "Cincinnati",
+        "abbreviation": "CIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png"
+      },
+      "away": {
+        "id": "9726",
+        "uid": "s:600~t:9726",
+        "name": "Seattle Sounders FC",
+        "shortName": "Seattle",
+        "abbreviation": "SEA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761743/seattle-sounders-fc-fc-cincinnati",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761742",
+      "uid": "s:600~l:770~e:761742",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Nu Stadium",
+      "home": {
+        "id": "20232",
+        "uid": "s:600~t:20232",
+        "name": "Inter Miami CF",
+        "shortName": "Miami",
+        "abbreviation": "MIA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png"
+      },
+      "away": {
+        "id": "7318",
+        "uid": "s:600~t:7318",
+        "name": "Toronto FC",
+        "shortName": "Toronto",
+        "abbreviation": "TOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761742/toronto-fc-inter-miami-cf",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761740",
+      "uid": "s:600~l:770~e:761740",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Inter&Co Stadium",
+      "home": {
+        "id": "12011",
+        "uid": "s:600~t:12011",
+        "name": "Orlando City SC",
+        "shortName": "Orlando",
+        "abbreviation": "ORL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png"
+      },
+      "away": {
+        "id": "4771",
+        "uid": "s:600~t:4771",
+        "name": "Real Salt Lake",
+        "shortName": "Salt Lake",
+        "abbreviation": "RSL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761740/real-salt-lake-orlando-city-sc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761744",
+      "uid": "s:600~l:770~e:761744",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Red Bull Arena",
+      "home": {
+        "id": "190",
+        "uid": "s:600~t:190",
+        "name": "Red Bull New York",
+        "shortName": "Red Bull NY",
+        "abbreviation": "RBNY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png"
+      },
+      "away": {
+        "id": "182",
+        "uid": "s:600~t:182",
+        "name": "Chicago Fire FC",
+        "shortName": "Chicago",
+        "abbreviation": "CHI",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761744/chicago-fire-fc-red-bull-new-york",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761748",
+      "uid": "s:600~l:770~e:761748",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T00:30Z",
+      "venue": "Q2 Stadium",
+      "home": {
+        "id": "20906",
+        "uid": "s:600~t:20906",
+        "name": "Austin FC",
+        "shortName": "Austin",
+        "abbreviation": "ATX",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png"
+      },
+      "away": {
+        "id": "10739",
+        "uid": "s:600~t:10739",
+        "name": "Philadelphia Union",
+        "shortName": "Philadelphia",
+        "abbreviation": "PHI",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 8:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761748/philadelphia-union-austin-fc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761746",
+      "uid": "s:600~l:770~e:761746",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T00:30Z",
+      "venue": "GEODIS Park",
+      "home": {
+        "id": "18986",
+        "uid": "s:600~t:18986",
+        "name": "Nashville SC",
+        "shortName": "Nashville",
+        "abbreviation": "NSH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png"
+      },
+      "away": {
+        "id": "183",
+        "uid": "s:600~t:183",
+        "name": "Columbus Crew",
+        "shortName": "Columbus",
+        "abbreviation": "CLB",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 8:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761746/columbus-crew-nashville-sc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761747",
+      "uid": "s:600~l:770~e:761747",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T00:30Z",
+      "venue": "Energizer Park",
+      "home": {
+        "id": "21812",
+        "uid": "s:600~t:21812",
+        "name": "St. Louis CITY SC",
+        "shortName": "St. Louis",
+        "abbreviation": "STL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png"
+      },
+      "away": {
+        "id": "6077",
+        "uid": "s:600~t:6077",
+        "name": "Houston Dynamo FC",
+        "shortName": "Houston",
+        "abbreviation": "HOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 8:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761747/houston-dynamo-fc-st-louis-city-sc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761749",
+      "uid": "s:600~l:770~e:761749",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T01:30Z",
+      "venue": "BC Place",
+      "home": {
+        "id": "9727",
+        "uid": "s:600~t:9727",
+        "name": "Vancouver Whitecaps",
+        "shortName": "Vancouver",
+        "abbreviation": "VAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png"
+      },
+      "away": {
+        "id": "185",
+        "uid": "s:600~t:185",
+        "name": "FC Dallas",
+        "shortName": "Dallas",
+        "abbreviation": "DAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 9:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761749/fc-dallas-vancouver-whitecaps",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761751",
+      "uid": "s:600~l:770~e:761751",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T02:30Z",
+      "venue": "BMO Stadium",
+      "home": {
+        "id": "18966",
+        "uid": "s:600~t:18966",
+        "name": "LAFC",
+        "shortName": "LAFC",
+        "abbreviation": "LAFC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png"
+      },
+      "away": {
+        "id": "9723",
+        "uid": "s:600~t:9723",
+        "name": "Portland Timbers",
+        "shortName": "Portland",
+        "abbreviation": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 10:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761751/portland-timbers-lafc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761750",
+      "uid": "s:600~l:770~e:761750",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T02:30Z",
+      "venue": "Snapdragon Stadium",
+      "home": {
+        "id": "22529",
+        "uid": "s:600~t:22529",
+        "name": "San Diego FC",
+        "shortName": "San Diego",
+        "abbreviation": "SD",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png"
+      },
+      "away": {
+        "id": "184",
+        "uid": "s:600~t:184",
+        "name": "Colorado Rapids",
+        "shortName": "Colorado",
+        "abbreviation": "COL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 10:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761750/colorado-rapids-san-diego-fc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761752",
+      "uid": "s:600~l:770~e:761752",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T02:30Z",
+      "venue": "PayPal Park",
+      "home": {
+        "id": "191",
+        "uid": "s:600~t:191",
+        "name": "San Jose Earthquakes",
+        "shortName": "San Jose",
+        "abbreviation": "SJ",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png"
+      },
+      "away": {
+        "id": "17362",
+        "uid": "s:600~t:17362",
+        "name": "Minnesota United FC",
+        "shortName": "Minnesota",
+        "abbreviation": "MIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 10:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761752/minnesota-united-fc-san-jose-earthquakes",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "401879297",
+      "uid": "s:600~l:700~e:401879297",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T13:00Z",
+      "venue": "American Express Stadium",
+      "home": {
+        "id": "331",
+        "uid": "s:600~t:331",
+        "name": "Brighton & Hove Albion",
+        "shortName": "Brighton",
+        "abbreviation": "BHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+      },
+      "away": {
+        "id": "362",
+        "uid": "s:600~t:362",
+        "name": "Aston Villa",
+        "shortName": "Aston Villa",
+        "abbreviation": "AVL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 9:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879297/aston-villa-brighton-hove-albion",
+      "broadcasts": [
+        "Peacock"
+      ]
+    },
+    {
+      "eventId": "401879320",
+      "uid": "s:600~l:700~e:401879320",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T13:00Z",
+      "venue": "Etihad Stadium",
+      "home": {
+        "id": "382",
+        "uid": "s:600~t:382",
+        "name": "Manchester City",
+        "shortName": "Man City",
+        "abbreviation": "MNC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+      },
+      "away": {
+        "id": "349",
+        "uid": "s:600~t:349",
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "abbreviation": "BOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 9:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879320/afc-bournemouth-manchester-city",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401876493",
+      "uid": "s:600~l:710~e:401876493",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T13:00Z",
+      "venue": "Stade Raymond Kopa",
+      "home": {
+        "id": "7868",
+        "uid": "s:600~t:7868",
+        "name": "Angers",
+        "shortName": "Angers",
+        "abbreviation": "ANG",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png"
+      },
+      "away": {
+        "id": "166",
+        "uid": "s:600~t:166",
+        "name": "Lille",
+        "shortName": "Lille",
+        "abbreviation": "LILL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 9:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876493/lille-angers",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879017",
+      "uid": "s:600~l:3901~e:401879017",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T14:00Z",
+      "venue": "Soeverein Stadion",
+      "home": {
+        "id": "22269",
+        "uid": "s:600~t:22269",
+        "name": "Lommel SK",
+        "shortName": "Lommel SK",
+        "abbreviation": "LOM",
+        "logo": ""
+      },
+      "away": {
+        "id": "606",
+        "uid": "s:600~t:606",
+        "name": "KVC Westerlo",
+        "shortName": "Westerlo",
+        "abbreviation": "KVCW",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/606.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 10:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879017/kvc-westerlo-lommel-sk",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401885466",
+      "uid": "s:600~l:715~e:401885466",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T14:30Z",
+      "venue": "Estádio D. Afonso Henriques",
+      "home": {
+        "id": "5309",
+        "uid": "s:600~t:5309",
+        "name": "Vitória de Guimaraes",
+        "shortName": "Vitória",
+        "abbreviation": "VSC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5309.png"
+      },
+      "away": {
+        "id": "3472",
+        "uid": "s:600~t:3472",
+        "name": "C.D. Nacional",
+        "shortName": "Nacional",
+        "abbreviation": "CDN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3472.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 10:30 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885466/cd-nacional-vitoria-de-guimaraes",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882915",
+      "uid": "s:600~l:740~e:401882915",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T15:00Z",
+      "venue": "Riyadh Air Metropolitano",
+      "home": {
+        "id": "1068",
+        "uid": "s:600~t:1068",
+        "name": "Atlético Madrid",
+        "shortName": "Atlético",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "away": {
+        "id": "102",
+        "uid": "s:600~t:102",
+        "name": "Villarreal",
+        "shortName": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 11:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882915/villarreal-atletico-madrid",
+      "broadcasts": [
+        "ESPN2"
+      ]
+    },
+    {
+      "eventId": "401876492",
+      "uid": "s:600~l:710~e:401876492",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T15:15Z",
+      "venue": "Stade Océane",
+      "home": {
+        "id": "3236",
+        "uid": "s:600~t:3236",
+        "name": "Le Havre AC",
+        "shortName": "Le Havre AC",
+        "abbreviation": "HAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png"
+      },
+      "away": {
+        "id": "174",
+        "uid": "s:600~t:174",
+        "name": "AS Monaco",
+        "shortName": "Monaco",
+        "abbreviation": "MON",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 11:15 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876492/as-monaco-le-havre-ac",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879319",
+      "uid": "s:600~l:700~e:401879319",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T15:30Z",
+      "venue": "St. James' Park",
+      "home": {
+        "id": "361",
+        "uid": "s:600~t:361",
+        "name": "Newcastle United",
+        "shortName": "Newcastle",
+        "abbreviation": "NEW",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+      },
+      "away": {
+        "id": "364",
+        "uid": "s:600~t:364",
+        "name": "Liverpool",
+        "shortName": "Liverpool",
+        "abbreviation": "LIV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 11:30 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879319/liverpool-newcastle-united",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401874930",
+      "uid": "s:600~l:730~e:401874930",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T16:30Z",
+      "venue": "Stadio Benito Stirpe",
+      "home": {
+        "id": "4057",
+        "uid": "s:600~t:4057",
+        "name": "Frosinone",
+        "shortName": "Frosinone",
+        "abbreviation": "FRO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png"
+      },
+      "away": {
+        "id": "111",
+        "uid": "s:600~t:111",
+        "name": "Juventus",
+        "shortName": "Juventus",
+        "abbreviation": "JUV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 12:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874930/juventus-frosinone",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874946",
+      "uid": "s:600~l:730~e:401874946",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T16:30Z",
+      "venue": "Stadio Pier Luigi Penzo",
+      "home": {
+        "id": "17530",
+        "uid": "s:600~t:17530",
+        "name": "Venezia",
+        "shortName": "Venezia",
+        "abbreviation": "VEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png"
+      },
+      "away": {
+        "id": "113",
+        "uid": "s:600~t:113",
+        "name": "Lecce",
+        "shortName": "Lecce",
+        "abbreviation": "LEC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 12:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874946/lecce-venezia",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401879016",
+      "uid": "s:600~l:3901~e:401879016",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T16:30Z",
+      "venue": "Jan Breydel Stadium",
+      "home": {
+        "id": "570",
+        "uid": "s:600~t:570",
+        "name": "Club Brugge",
+        "shortName": "Club Brugge",
+        "abbreviation": "BRU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png"
+      },
+      "away": {
+        "id": "3610",
+        "uid": "s:600~t:3610",
+        "name": "Cercle Brugge KSV",
+        "shortName": "Cercle Brugge",
+        "abbreviation": "CBK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3610.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 12:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879016/cercle-brugge-ksv-club-brugge",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401885468",
+      "uid": "s:600~l:715~e:401885468",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T17:00Z",
+      "venue": "Estádio de São Miguel",
+      "home": {
+        "id": "12215",
+        "uid": "s:600~t:12215",
+        "name": "Santa Clara",
+        "shortName": "Santa Clara",
+        "abbreviation": "CDSC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12215.png"
+      },
+      "away": {
+        "id": "12698",
+        "uid": "s:600~t:12698",
+        "name": "FC Famalicao",
+        "shortName": "FC Famalicao",
+        "abbreviation": "FCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12698.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 1:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885468/fc-famalicao-santa-clara",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882911",
+      "uid": "s:600~l:740~e:401882911",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T17:30Z",
+      "venue": "Estadio Coliseum",
+      "home": {
+        "id": "2922",
+        "uid": "s:600~t:2922",
+        "name": "Getafe",
+        "shortName": "Getafe",
+        "abbreviation": "GET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+      },
+      "away": {
+        "id": "87",
+        "uid": "s:600~t:87",
+        "name": "Racing Santander",
+        "shortName": "Racing",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 1:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882911/racing-santander-getafe",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "eventId": "401874748",
+      "uid": "s:600~l:730~e:401874748",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T18:45Z",
+      "venue": "New Balance Arena",
+      "home": {
+        "id": "105",
+        "uid": "s:600~t:105",
+        "name": "Atalanta",
+        "shortName": "Atalanta",
+        "abbreviation": "ATA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
+      },
+      "away": {
+        "id": "3997",
+        "uid": "s:600~t:3997",
+        "name": "Sassuolo",
+        "shortName": "Sassuolo",
+        "abbreviation": "SAS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874748/sassuolo-atalanta",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874932",
+      "uid": "s:600~l:730~e:401874932",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T18:45Z",
+      "venue": "Stadio Olimpico Grande Torino",
+      "home": {
+        "id": "239",
+        "uid": "s:600~t:239",
+        "name": "Torino",
+        "shortName": "Torino",
+        "abbreviation": "TOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png"
+      },
+      "away": {
+        "id": "103",
+        "uid": "s:600~t:103",
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "abbreviation": "MIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874932/ac-milan-torino",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401876487",
+      "uid": "s:600~l:710~e:401876487",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T18:45Z",
+      "venue": "Roazhon Park",
+      "home": {
+        "id": "169",
+        "uid": "s:600~t:169",
+        "name": "Stade Rennais",
+        "shortName": "Rennes",
+        "abbreviation": "REN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
+      },
+      "away": {
+        "id": "160",
+        "uid": "s:600~t:160",
+        "name": "Paris Saint-Germain",
+        "shortName": "PSG",
+        "abbreviation": "PSG",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876487/paris-saint-germain-stade-rennais",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841203",
+      "uid": "s:600~l:630~e:401841203",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:00Z",
+      "venue": "Allianz Parque",
+      "home": {
+        "id": "2029",
+        "uid": "s:600~t:2029",
+        "name": "Palmeiras",
+        "shortName": "Palmeiras",
+        "abbreviation": "PAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2029.png"
+      },
+      "away": {
+        "id": "3454",
+        "uid": "s:600~t:3454",
+        "name": "Vasco da Gama",
+        "shortName": "Vasco",
+        "abbreviation": "VAS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3454.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841203/vasco-da-gama-palmeiras",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841202",
+      "uid": "s:600~l:630~e:401841202",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:00Z",
+      "venue": "Estádio Municipal Cicero de Souza Marques",
+      "home": {
+        "id": "6079",
+        "uid": "s:600~t:6079",
+        "name": "Red Bull Bragantino",
+        "shortName": "Bragantino",
+        "abbreviation": "BRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6079.png"
+      },
+      "away": {
+        "id": "6273",
+        "uid": "s:600~t:6273",
+        "name": "Grêmio",
+        "shortName": "Grêmio",
+        "abbreviation": "GRE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841202/gremio-red-bull-bragantino",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841200",
+      "uid": "s:600~l:630~e:401841200",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:00Z",
+      "venue": "Estadio Manoel Barradas",
+      "home": {
+        "id": "3457",
+        "uid": "s:600~t:3457",
+        "name": "Vitória",
+        "shortName": "Vitória",
+        "abbreviation": "VIT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3457.png"
+      },
+      "away": {
+        "id": "9967",
+        "uid": "s:600~t:9967",
+        "name": "Bahia",
+        "shortName": "Bahia",
+        "abbreviation": "BAH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9967.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841200/bahia-vitoria",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882913",
+      "uid": "s:600~l:740~e:401882913",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:30Z",
+      "venue": "Estadio Martínez Valero",
+      "home": {
+        "id": "3751",
+        "uid": "s:600~t:3751",
+        "name": "Elche",
+        "shortName": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "away": {
+        "id": "83",
+        "uid": "s:600~t:83",
+        "name": "Barcelona",
+        "shortName": "Barcelona",
+        "abbreviation": "BAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882913/barcelona-elche",
+      "broadcasts": [
+        "ABC"
+      ]
+    },
+    {
+      "eventId": "401885469",
+      "uid": "s:600~l:715~e:401885469",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:30Z",
+      "venue": "Estádio do Dragão",
+      "home": {
+        "id": "437",
+        "uid": "s:600~t:437",
+        "name": "FC Porto",
+        "shortName": "FC Porto",
+        "abbreviation": "FCP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png"
+      },
+      "away": {
+        "id": "15784",
+        "uid": "s:600~t:15784",
+        "name": "Arouca",
+        "shortName": "Arouca",
+        "abbreviation": "FCA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15784.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885469/arouca-fc-porto",
+      "broadcasts": []
+    },
+    {
+      "eventId": "761753",
+      "uid": "s:600~l:770~e:761753",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T20:30Z",
+      "venue": "Gillette Stadium",
+      "home": {
+        "id": "189",
+        "uid": "s:600~t:189",
+        "name": "New England Revolution",
+        "shortName": "New England",
+        "abbreviation": "NE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png"
+      },
+      "away": {
+        "id": "17606",
+        "uid": "s:600~t:17606",
+        "name": "New York City FC",
+        "shortName": "NYCFC",
+        "abbreviation": "NYC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 4:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761753/new-york-city-fc-new-england-revolution",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "401841199",
+      "uid": "s:600~l:630~e:401841199",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T21:30Z",
+      "venue": "Arena Condá",
+      "home": {
+        "id": "9318",
+        "uid": "s:600~t:9318",
+        "name": "Chapecoense",
+        "shortName": "Chapecoense",
+        "abbreviation": "CHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9318.png"
+      },
+      "away": {
+        "id": "2026",
+        "uid": "s:600~t:2026",
+        "name": "São Paulo",
+        "shortName": "São Paulo",
+        "abbreviation": "SAO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 5:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841199/sao-paulo-chapecoense",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841201",
+      "uid": "s:600~l:630~e:401841201",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T21:30Z",
+      "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
+      "home": {
+        "id": "2674",
+        "uid": "s:600~t:2674",
+        "name": "Santos",
+        "shortName": "Santos",
+        "abbreviation": "SAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png"
+      },
+      "away": {
+        "id": "9169",
+        "uid": "s:600~t:9169",
+        "name": "Mirassol",
+        "shortName": "Mirassol",
+        "abbreviation": "MIR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9169.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 5:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841201/mirassol-santos",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841207",
+      "uid": "s:600~l:630~e:401841207",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T22:30Z",
+      "venue": "Couto Pereira",
+      "home": {
+        "id": "3456",
+        "uid": "s:600~t:3456",
+        "name": "Coritiba",
+        "shortName": "Coritiba",
+        "abbreviation": "CFC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3456.png"
+      },
+      "away": {
+        "id": "874",
+        "uid": "s:600~t:874",
+        "name": "Corinthians",
+        "shortName": "Corinthians",
+        "abbreviation": "COR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/874.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 6:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841207/corinthians-coritiba",
+      "broadcasts": []
+    },
+    {
+      "eventId": "761754",
+      "uid": "s:600~l:770~e:761754",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T23:00Z",
+      "venue": "Mercedes-Benz Stadium",
+      "home": {
+        "id": "18418",
+        "uid": "s:600~t:18418",
+        "name": "Atlanta United FC",
+        "shortName": "Atlanta",
+        "abbreviation": "ATL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png"
+      },
+      "away": {
+        "id": "186",
+        "uid": "s:600~t:186",
+        "name": "Sporting Kansas City",
+        "shortName": "Kansas City",
+        "abbreviation": "SKC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 7:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761754/sporting-kansas-city-atlanta-united-fc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "401874927",
+      "uid": "s:600~l:730~e:401874927",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T16:30Z",
+      "venue": "Renato Dall'Ara",
+      "home": {
+        "id": "107",
+        "uid": "s:600~t:107",
+        "name": "Bologna",
+        "shortName": "Bologna",
+        "abbreviation": "BOL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
+      },
+      "away": {
+        "id": "112",
+        "uid": "s:600~t:112",
+        "name": "Lazio",
+        "shortName": "Lazio",
+        "abbreviation": "LAZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 12:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874927/lazio-bologna",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401882909",
+      "uid": "s:600~l:740~e:401882909",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T17:30Z",
+      "venue": "El Sadar",
+      "home": {
+        "id": "97",
+        "uid": "s:600~t:97",
+        "name": "Osasuna",
+        "shortName": "Osasuna",
+        "abbreviation": "OSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+      },
+      "away": {
+        "id": "1538",
+        "uid": "s:600~t:1538",
+        "name": "Levante",
+        "shortName": "Levante",
+        "abbreviation": "LEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 1:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882909/levante-osasuna",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "eventId": "401874928",
+      "uid": "s:600~l:730~e:401874928",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T18:45Z",
+      "venue": "Olimpico",
+      "home": {
+        "id": "104",
+        "uid": "s:600~t:104",
+        "name": "AS Roma",
+        "shortName": "AS Roma",
+        "abbreviation": "ROMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png"
+      },
+      "away": {
+        "id": "109",
+        "uid": "s:600~t:109",
+        "name": "Fiorentina",
+        "shortName": "Fiorentina",
+        "abbreviation": "FIO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874928/fiorentina-as-roma",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401879318",
+      "uid": "s:600~l:700~e:401879318",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T19:00Z",
+      "venue": "Craven Cottage",
+      "home": {
+        "id": "370",
+        "uid": "s:600~t:370",
+        "name": "Fulham",
+        "shortName": "Fulham",
+        "abbreviation": "FUL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png"
+      },
+      "away": {
+        "id": "363",
+        "uid": "s:600~t:363",
+        "name": "Chelsea",
+        "shortName": "Chelsea",
+        "abbreviation": "CHE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879318/chelsea-fulham",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401885472",
+      "uid": "s:600~l:715~e:401885472",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T19:15Z",
+      "venue": "Estádio Cidade de Barcelos",
+      "home": {
+        "id": "3699",
+        "uid": "s:600~t:3699",
+        "name": "Gil Vicente",
+        "shortName": "Gil Vicente",
+        "abbreviation": "GVFC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3699.png"
+      },
+      "away": {
+        "id": "21581",
+        "uid": "s:600~t:21581",
+        "name": "Casa Pia",
+        "shortName": "Casa Pia",
+        "abbreviation": "CPAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 3:15 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885472/casa-pia-gil-vicente",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882910",
+      "uid": "s:600~l:740~e:401882910",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T19:30Z",
+      "venue": "La Rosaleda",
+      "home": {
+        "id": "99",
+        "uid": "s:600~t:99",
+        "name": "Málaga",
+        "shortName": "Málaga",
+        "abbreviation": "MCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
+      },
+      "away": {
+        "id": "90",
+        "uid": "s:600~t:90",
+        "name": "Deportivo",
+        "shortName": "Deportivo",
+        "abbreviation": "DEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882910/deportivo-malaga",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "eventId": "401841198",
+      "uid": "s:600~l:630~e:401841198",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T23:00Z",
+      "venue": "Joao Havelange Stadium",
+      "home": {
+        "id": "6086",
+        "uid": "s:600~t:6086",
+        "name": "Botafogo",
+        "shortName": "Botafogo",
+        "abbreviation": "BOT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6086.png"
+      },
+      "away": {
+        "id": "3458",
+        "uid": "s:600~t:3458",
+        "name": "Athletico-PR",
+        "shortName": "Athletico-PR",
+        "abbreviation": "CAP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3458.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 7:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841198/athletico-paranaense-botafogo",
+      "broadcasts": []
+    }
+  ],
+  "finishedMatches": [
+    {
+      "eventId": "401879322",
+      "uid": "s:600~l:700~e:401879322",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T11:30Z",
+      "venue": "The MKM Stadium",
+      "home": {
+        "id": "306",
+        "uid": "s:600~t:306",
+        "name": "Hull City",
+        "shortName": "Hull",
+        "abbreviation": "HUL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png"
+      },
+      "away": {
+        "id": "360",
+        "uid": "s:600~t:360",
+        "name": "Manchester United",
+        "shortName": "Man United",
+        "abbreviation": "MAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "display": "2-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+6'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879322/manchester-united-hull-city",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401879300",
+      "uid": "s:600~l:700~e:401879300",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Hill Dickinson Stadium",
+      "home": {
+        "id": "368",
+        "uid": "s:600~t:368",
+        "name": "Everton",
+        "shortName": "Everton",
+        "abbreviation": "EVE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+      },
+      "away": {
+        "id": "384",
+        "uid": "s:600~t:384",
+        "name": "Crystal Palace",
+        "shortName": "C Palace",
+        "abbreviation": "CRY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "display": "2-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+8'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879300/crystal-palace-everton",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401879299",
+      "uid": "s:600~l:700~e:401879299",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Portman Road",
+      "home": {
+        "id": "373",
+        "uid": "s:600~t:373",
+        "name": "Ipswich Town",
+        "shortName": "Ipswich",
+        "abbreviation": "IPS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
+      },
+      "away": {
+        "id": "366",
+        "uid": "s:600~t:366",
+        "name": "Sunderland",
+        "shortName": "Sunderland",
+        "abbreviation": "SUN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "display": "2-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+5'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879299/sunderland-ipswich-town",
+      "broadcasts": [
+        "Peacock"
+      ]
+    },
+    {
+      "eventId": "401879298",
+      "uid": "s:600~l:700~e:401879298",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "The City Ground",
+      "home": {
+        "id": "393",
+        "uid": "s:600~t:393",
+        "name": "Nottingham Forest",
+        "shortName": "Nottm Forest",
+        "abbreviation": "NFO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
+      },
+      "away": {
+        "id": "357",
+        "uid": "s:600~t:357",
+        "name": "Leeds United",
+        "shortName": "Leeds",
+        "abbreviation": "LEE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "display": "0-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+4'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879298/leeds-united-nottingham-forest",
+      "broadcasts": [
+        "NBCSN"
+      ]
+    },
+    {
+      "eventId": "401879022",
+      "uid": "s:600~l:3901~e:401879022",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Elindus Arena",
+      "home": {
+        "id": "4691",
+        "uid": "s:600~t:4691",
+        "name": "Zulte-Waregem",
+        "shortName": "Zulte-Waregem",
+        "abbreviation": "ZUL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4691.png"
+      },
+      "away": {
+        "id": "13450",
+        "uid": "s:600~t:13450",
+        "name": "Waasland-Beveren",
+        "shortName": "Waasland-Beveren",
+        "abbreviation": "WAA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13450.png"
+      },
+      "score": {
+        "home": 4,
+        "away": 0,
+        "display": "4-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+5'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879022/waasland-beveren-zulte-waregem",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401885471",
+      "uid": "s:600~l:715~e:401885471",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:30Z",
+      "venue": "Estádio do Marítimo",
+      "home": {
+        "id": "552",
+        "uid": "s:600~t:552",
+        "name": "Maritimo",
+        "shortName": "Maritimo",
+        "abbreviation": "MAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/552.png"
+      },
+      "away": {
+        "id": "21607",
+        "uid": "s:600~t:21607",
+        "name": "Académico de Viseu",
+        "shortName": "Académico",
+        "abbreviation": "ACV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21607.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+7'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885471/academico-de-viseu-maritimo",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882916",
+      "uid": "s:600~l:740~e:401882916",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T15:00Z",
+      "venue": "San Mamés",
+      "home": {
+        "id": "93",
+        "uid": "s:600~t:93",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "abbreviation": "ATH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+      },
+      "away": {
+        "id": "243",
+        "uid": "s:600~t:243",
+        "name": "Sevilla",
+        "shortName": "Sevilla",
+        "abbreviation": "SEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 3,
+        "display": "1-3"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+8'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882916/sevilla-athletic-club",
+      "broadcasts": [
+        "ESPN2"
+      ]
+    },
+    {
+      "eventId": "401876490",
+      "uid": "s:600~l:710~e:401876490",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T15:15Z",
+      "venue": "Stade Bollaert-Delelis",
+      "home": {
+        "id": "175",
+        "uid": "s:600~t:175",
+        "name": "Lens",
+        "shortName": "Lens",
+        "abbreviation": "RCL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
+      },
+      "away": {
+        "id": "172",
+        "uid": "s:600~t:172",
+        "name": "AJ Auxerre",
+        "shortName": "Auxerre",
+        "abbreviation": "AUX",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png"
+      },
+      "score": {
+        "home": 5,
+        "away": 2,
+        "display": "5-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+10'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876490/aj-auxerre-lens",
+      "broadcasts": []
+    }
+  ],
+  "matches": [
+    {
+      "eventId": "401879322",
+      "uid": "s:600~l:700~e:401879322",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T11:30Z",
+      "venue": "The MKM Stadium",
+      "home": {
+        "id": "306",
+        "uid": "s:600~t:306",
+        "name": "Hull City",
+        "shortName": "Hull",
+        "abbreviation": "HUL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/306.png"
+      },
+      "away": {
+        "id": "360",
+        "uid": "s:600~t:360",
+        "name": "Manchester United",
+        "shortName": "Man United",
+        "abbreviation": "MAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/360.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "display": "2-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+6'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879322/manchester-united-hull-city",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401879300",
+      "uid": "s:600~l:700~e:401879300",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Hill Dickinson Stadium",
+      "home": {
+        "id": "368",
+        "uid": "s:600~t:368",
+        "name": "Everton",
+        "shortName": "Everton",
+        "abbreviation": "EVE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+      },
+      "away": {
+        "id": "384",
+        "uid": "s:600~t:384",
+        "name": "Crystal Palace",
+        "shortName": "C Palace",
+        "abbreviation": "CRY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "display": "2-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+8'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879300/crystal-palace-everton",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401879299",
+      "uid": "s:600~l:700~e:401879299",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Portman Road",
+      "home": {
+        "id": "373",
+        "uid": "s:600~t:373",
+        "name": "Ipswich Town",
+        "shortName": "Ipswich",
+        "abbreviation": "IPS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
+      },
+      "away": {
+        "id": "366",
+        "uid": "s:600~t:366",
+        "name": "Sunderland",
+        "shortName": "Sunderland",
+        "abbreviation": "SUN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "display": "2-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+5'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879299/sunderland-ipswich-town",
+      "broadcasts": [
+        "Peacock"
+      ]
+    },
+    {
+      "eventId": "401879298",
+      "uid": "s:600~l:700~e:401879298",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "The City Ground",
+      "home": {
+        "id": "393",
+        "uid": "s:600~t:393",
+        "name": "Nottingham Forest",
+        "shortName": "Nottm Forest",
+        "abbreviation": "NFO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
+      },
+      "away": {
+        "id": "357",
+        "uid": "s:600~t:357",
+        "name": "Leeds United",
+        "shortName": "Leeds",
+        "abbreviation": "LEE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "display": "0-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+4'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879298/leeds-united-nottingham-forest",
+      "broadcasts": [
+        "NBCSN"
+      ]
+    },
+    {
+      "eventId": "401879022",
+      "uid": "s:600~l:3901~e:401879022",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Elindus Arena",
+      "home": {
+        "id": "4691",
+        "uid": "s:600~t:4691",
+        "name": "Zulte-Waregem",
+        "shortName": "Zulte-Waregem",
+        "abbreviation": "ZUL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4691.png"
+      },
+      "away": {
+        "id": "13450",
+        "uid": "s:600~t:13450",
+        "name": "Waasland-Beveren",
+        "shortName": "Waasland-Beveren",
+        "abbreviation": "WAA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/13450.png"
+      },
+      "score": {
+        "home": 4,
+        "away": 0,
+        "display": "4-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+5'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879022/waasland-beveren-zulte-waregem",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401885471",
+      "uid": "s:600~l:715~e:401885471",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:30Z",
+      "venue": "Estádio do Marítimo",
+      "home": {
+        "id": "552",
+        "uid": "s:600~t:552",
+        "name": "Maritimo",
+        "shortName": "Maritimo",
+        "abbreviation": "MAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/552.png"
+      },
+      "away": {
+        "id": "21607",
+        "uid": "s:600~t:21607",
+        "name": "Académico de Viseu",
+        "shortName": "Académico",
+        "abbreviation": "ACV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21607.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+7'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885471/academico-de-viseu-maritimo",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882916",
+      "uid": "s:600~l:740~e:401882916",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T15:00Z",
+      "venue": "San Mamés",
+      "home": {
+        "id": "93",
+        "uid": "s:600~t:93",
+        "name": "Athletic Club",
+        "shortName": "Athletic",
+        "abbreviation": "ATH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/93.png"
+      },
+      "away": {
+        "id": "243",
+        "uid": "s:600~t:243",
+        "name": "Sevilla",
+        "shortName": "Sevilla",
+        "abbreviation": "SEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/243.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 3,
+        "display": "1-3"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+8'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882916/sevilla-athletic-club",
+      "broadcasts": [
+        "ESPN2"
+      ]
+    },
+    {
+      "eventId": "401876490",
+      "uid": "s:600~l:710~e:401876490",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T15:15Z",
+      "venue": "Stade Bollaert-Delelis",
+      "home": {
+        "id": "175",
+        "uid": "s:600~t:175",
+        "name": "Lens",
+        "shortName": "Lens",
+        "abbreviation": "RCL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/175.png"
+      },
+      "away": {
+        "id": "172",
+        "uid": "s:600~t:172",
+        "name": "AJ Auxerre",
+        "shortName": "Auxerre",
+        "abbreviation": "AUX",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/172.png"
+      },
+      "score": {
+        "home": 5,
+        "away": 2,
+        "display": "5-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+10'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876490/aj-auxerre-lens",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879021",
+      "uid": "s:600~l:3901~e:401879021",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:15Z",
+      "venue": "Stade du Pays de Charleroi",
+      "home": {
+        "id": "3616",
+        "uid": "s:600~t:3616",
+        "name": "Royal Charleroi SC",
+        "shortName": "Royal Charleroi",
+        "abbreviation": "CHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3616.png"
+      },
+      "away": {
+        "id": "7879",
+        "uid": "s:600~t:7879",
+        "name": "KV Mechelen",
+        "shortName": "KV Mechelen",
+        "abbreviation": "KVM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7879.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 0,
+        "display": "2-0"
+      },
+      "status": {
+        "state": "live",
+        "clock": "86'",
+        "period": "2",
+        "detail": "86'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879021",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879321",
+      "uid": "s:600~l:700~e:401879321",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:30Z",
+      "venue": "Gtech Community Stadium",
+      "home": {
+        "id": "337",
+        "uid": "s:600~t:337",
+        "name": "Brentford",
+        "shortName": "Brentford",
+        "abbreviation": "BRE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/337.png"
+      },
+      "away": {
+        "id": "367",
+        "uid": "s:600~t:367",
+        "name": "Tottenham Hotspur",
+        "shortName": "Spurs",
+        "abbreviation": "TOT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/367.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 0,
+        "display": "3-0"
+      },
+      "status": {
+        "state": "live",
+        "clock": "72'",
+        "period": "2",
+        "detail": "72'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879321",
+      "broadcasts": [
+        "NBC"
+      ]
+    },
+    {
+      "eventId": "401874931",
+      "uid": "s:600~l:730~e:401874931",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:30Z",
+      "venue": "San Siro",
+      "home": {
+        "id": "110",
+        "uid": "s:600~t:110",
+        "name": "Internazionale",
+        "shortName": "Inter Milan",
+        "abbreviation": "INT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/110.png"
+      },
+      "away": {
+        "id": "4007",
+        "uid": "s:600~t:4007",
+        "name": "Monza",
+        "shortName": "Monza",
+        "abbreviation": "MON",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4007.png"
+      },
+      "score": {
+        "home": 4,
+        "away": 1,
+        "display": "4-1"
+      },
+      "status": {
+        "state": "live",
+        "clock": "68'",
+        "period": "2",
+        "detail": "68'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874931",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874745",
+      "uid": "s:600~l:730~e:401874745",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:30Z",
+      "venue": "Stadio Friuli",
+      "home": {
+        "id": "118",
+        "uid": "s:600~t:118",
+        "name": "Udinese",
+        "shortName": "Udinese",
+        "abbreviation": "UDI",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/118.png"
+      },
+      "away": {
+        "id": "2572",
+        "uid": "s:600~t:2572",
+        "name": "Como",
+        "shortName": "Como",
+        "abbreviation": "COMO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2572.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "display": "1-1"
+      },
+      "status": {
+        "state": "live",
+        "clock": "65'",
+        "period": "2",
+        "detail": "65'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874745",
+      "broadcasts": [
+        "CBSSN"
+      ]
+    },
+    {
+      "eventId": "401885473",
+      "uid": "s:600~l:715~e:401885473",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T17:00Z",
+      "venue": "Estádio António Coimbra da Mota",
+      "home": {
+        "id": "12216",
+        "uid": "s:600~t:12216",
+        "name": "Estoril",
+        "shortName": "Estoril",
+        "abbreviation": "EPF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12216.png"
+      },
+      "away": {
+        "id": "3822",
+        "uid": "s:600~t:3822",
+        "name": "Rio Ave",
+        "shortName": "Rio Ave",
+        "abbreviation": "RAFC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3822.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "display": "0-1"
+      },
+      "status": {
+        "state": "live",
+        "clock": "45'+1'",
+        "period": "1",
+        "detail": "HT",
+        "description": "Halftime"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885473",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882907",
+      "uid": "s:600~l:740~e:401882907",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T17:30Z",
+      "venue": "Mestalla Stadium",
+      "home": {
+        "id": "94",
+        "uid": "s:600~t:94",
+        "name": "Valencia",
+        "shortName": "Valencia",
+        "abbreviation": "VAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+      },
+      "away": {
+        "id": "85",
+        "uid": "s:600~t:85",
+        "name": "Celta Vigo",
+        "shortName": "Celta Vigo",
+        "abbreviation": "CEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "live",
+        "clock": "26'",
+        "period": "1",
+        "detail": "26'",
+        "description": "First Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882907",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "eventId": "401874929",
+      "uid": "s:600~l:730~e:401874929",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stadio Luigi Ferraris",
+      "home": {
+        "id": "3263",
+        "uid": "s:600~t:3263",
+        "name": "Genoa",
+        "shortName": "Genoa",
+        "abbreviation": "GEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
+      },
+      "away": {
+        "id": "114",
+        "uid": "s:600~t:114",
+        "name": "Napoli",
+        "shortName": "Napoli",
+        "abbreviation": "NAP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874929/napoli-genoa",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874747",
+      "uid": "s:600~l:730~e:401874747",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Ennio Tardini",
+      "home": {
+        "id": "115",
+        "uid": "s:600~t:115",
+        "name": "Parma",
+        "shortName": "Parma",
+        "abbreviation": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
+      },
+      "away": {
+        "id": "2925",
+        "uid": "s:600~t:2925",
+        "name": "Cagliari",
+        "shortName": "Cagliari",
+        "abbreviation": "CAG",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874747/cagliari-parma",
+      "broadcasts": [
+        "CBSSN"
+      ]
+    },
+    {
+      "eventId": "401876491",
+      "uid": "s:600~l:710~e:401876491",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stade Marie-Marvingt",
+      "home": {
+        "id": "2697",
+        "uid": "s:600~t:2697",
+        "name": "Le Mans",
+        "shortName": "Le Mans",
+        "abbreviation": "MNS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png"
+      },
+      "away": {
+        "id": "6997",
+        "uid": "s:600~t:6997",
+        "name": "Brest",
+        "shortName": "Brest",
+        "abbreviation": "BRE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876491/brest-le-mans",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876488",
+      "uid": "s:600~l:710~e:401876488",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Allianz Riviera",
+      "home": {
+        "id": "2502",
+        "uid": "s:600~t:2502",
+        "name": "Nice",
+        "shortName": "Nice",
+        "abbreviation": "NICE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
+      },
+      "away": {
+        "id": "273",
+        "uid": "s:600~t:273",
+        "name": "Lorient",
+        "shortName": "Lorient",
+        "abbreviation": "LOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876488/lorient-nice",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876486",
+      "uid": "s:600~l:710~e:401876486",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stadium Municipal de Toulouse",
+      "home": {
+        "id": "179",
+        "uid": "s:600~t:179",
+        "name": "Toulouse",
+        "shortName": "Toulouse",
+        "abbreviation": "TOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
+      },
+      "away": {
+        "id": "167",
+        "uid": "s:600~t:167",
+        "name": "Lyon",
+        "shortName": "Lyon",
+        "abbreviation": "LYON",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876486/lyon-toulouse",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876485",
+      "uid": "s:600~l:710~e:401876485",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stade de l'Aube",
+      "home": {
+        "id": "170",
+        "uid": "s:600~t:170",
+        "name": "Troyes",
+        "shortName": "Troyes",
+        "abbreviation": "TRY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png"
+      },
+      "away": {
+        "id": "6851",
+        "uid": "s:600~t:6851",
+        "name": "Paris FC",
+        "shortName": "Paris FC",
+        "abbreviation": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876485/paris-fc-troyes",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879019",
+      "uid": "s:600~l:3901~e:401879019",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Bosuilstadion",
+      "home": {
+        "id": "17544",
+        "uid": "s:600~t:17544",
+        "name": "Antwerp",
+        "shortName": "Antwerp",
+        "abbreviation": "ANT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png"
+      },
+      "away": {
+        "id": "938",
+        "uid": "s:600~t:938",
+        "name": "Racing Genk",
+        "shortName": "Genk",
+        "abbreviation": "GENK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879019/racing-genk-antwerp",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841205",
+      "uid": "s:600~l:630~e:401841205",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:00Z",
+      "venue": "Estadio do Maracana",
+      "home": {
+        "id": "3445",
+        "uid": "s:600~t:3445",
+        "name": "Fluminense",
+        "shortName": "Fluminense",
+        "abbreviation": "FLU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3445.png"
+      },
+      "away": {
+        "id": "4936",
+        "uid": "s:600~t:4936",
+        "name": "Remo",
+        "shortName": "Remo",
+        "abbreviation": "REMO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4936.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841205/remo-fluminense",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882912",
+      "uid": "s:600~l:740~e:401882912",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:30Z",
+      "venue": "RCDE Stadium",
+      "home": {
+        "id": "88",
+        "uid": "s:600~t:88",
+        "name": "Espanyol",
+        "shortName": "Espanyol",
+        "abbreviation": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+      },
+      "away": {
+        "id": "86",
+        "uid": "s:600~t:86",
+        "name": "Real Madrid",
+        "shortName": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882912/real-madrid-espanyol",
+      "broadcasts": [
+        "ABC"
+      ]
+    },
+    {
+      "eventId": "401885467",
+      "uid": "s:600~l:715~e:401885467",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:30Z",
+      "venue": "Estádio José Alvalade",
+      "home": {
+        "id": "2250",
+        "uid": "s:600~t:2250",
+        "name": "Sporting CP",
+        "shortName": "Sporting",
+        "abbreviation": "SCP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
+      },
+      "away": {
+        "id": "21613",
+        "uid": "s:600~t:21613",
+        "name": "Alverca",
+        "shortName": "Alverca",
+        "abbreviation": "ALV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21613.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885467/alverca-sporting-cp",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841204",
+      "uid": "s:600~l:630~e:401841204",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T21:30Z",
+      "venue": "Estadio Beira-Rio",
+      "home": {
+        "id": "1936",
+        "uid": "s:600~t:1936",
+        "name": "Internacional",
+        "shortName": "Internacional",
+        "abbreviation": "INT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1936.png"
+      },
+      "away": {
+        "id": "7632",
+        "uid": "s:600~t:7632",
+        "name": "Atlético-MG",
+        "shortName": "Atlético-MG",
+        "abbreviation": "CAM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7632.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 5:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841204/atletico-mg-internacional",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841206",
+      "uid": "s:600~l:630~e:401841206",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Estadio Mineirão",
+      "home": {
+        "id": "2022",
+        "uid": "s:600~t:2022",
+        "name": "Cruzeiro",
+        "shortName": "Cruzeiro",
+        "abbreviation": "CRU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2022.png"
+      },
+      "away": {
+        "id": "819",
+        "uid": "s:600~t:819",
+        "name": "Flamengo",
+        "shortName": "Flamengo",
+        "abbreviation": "FLA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/819.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841206/flamengo-cruzeiro",
+      "broadcasts": []
+    },
+    {
+      "eventId": "761745",
+      "uid": "s:600~l:770~e:761745",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Stade Saputo",
+      "home": {
+        "id": "9720",
+        "uid": "s:600~t:9720",
+        "name": "CF Montréal",
+        "shortName": "CF Montréal",
+        "abbreviation": "MTL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9720.png"
+      },
+      "away": {
+        "id": "187",
+        "uid": "s:600~t:187",
+        "name": "LA Galaxy",
+        "shortName": "LA Galaxy",
+        "abbreviation": "LA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/187.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761745/la-galaxy-cf-montreal",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761741",
+      "uid": "s:600~l:770~e:761741",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Bank of America Stadium",
+      "home": {
+        "id": "21300",
+        "uid": "s:600~t:21300",
+        "name": "Charlotte FC",
+        "shortName": "Charlotte",
+        "abbreviation": "CLT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21300.png"
+      },
+      "away": {
+        "id": "193",
+        "uid": "s:600~t:193",
+        "name": "D.C. United",
+        "shortName": "D.C. United",
+        "abbreviation": "DC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/193.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761741/dc-united-charlotte-fc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761743",
+      "uid": "s:600~l:770~e:761743",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "TQL Stadium",
+      "home": {
+        "id": "18267",
+        "uid": "s:600~t:18267",
+        "name": "FC Cincinnati",
+        "shortName": "Cincinnati",
+        "abbreviation": "CIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18267.png"
+      },
+      "away": {
+        "id": "9726",
+        "uid": "s:600~t:9726",
+        "name": "Seattle Sounders FC",
+        "shortName": "Seattle",
+        "abbreviation": "SEA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9726.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761743/seattle-sounders-fc-fc-cincinnati",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761742",
+      "uid": "s:600~l:770~e:761742",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Nu Stadium",
+      "home": {
+        "id": "20232",
+        "uid": "s:600~t:20232",
+        "name": "Inter Miami CF",
+        "shortName": "Miami",
+        "abbreviation": "MIA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20232.png"
+      },
+      "away": {
+        "id": "7318",
+        "uid": "s:600~t:7318",
+        "name": "Toronto FC",
+        "shortName": "Toronto",
+        "abbreviation": "TOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7318.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761742/toronto-fc-inter-miami-cf",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761740",
+      "uid": "s:600~l:770~e:761740",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Inter&Co Stadium",
+      "home": {
+        "id": "12011",
+        "uid": "s:600~t:12011",
+        "name": "Orlando City SC",
+        "shortName": "Orlando",
+        "abbreviation": "ORL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12011.png"
+      },
+      "away": {
+        "id": "4771",
+        "uid": "s:600~t:4771",
+        "name": "Real Salt Lake",
+        "shortName": "Salt Lake",
+        "abbreviation": "RSL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4771.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761740/real-salt-lake-orlando-city-sc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761744",
+      "uid": "s:600~l:770~e:761744",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T23:30Z",
+      "venue": "Red Bull Arena",
+      "home": {
+        "id": "190",
+        "uid": "s:600~t:190",
+        "name": "Red Bull New York",
+        "shortName": "Red Bull NY",
+        "abbreviation": "RBNY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/190.png"
+      },
+      "away": {
+        "id": "182",
+        "uid": "s:600~t:182",
+        "name": "Chicago Fire FC",
+        "shortName": "Chicago",
+        "abbreviation": "CHI",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/182.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 7:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761744/chicago-fire-fc-red-bull-new-york",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761748",
+      "uid": "s:600~l:770~e:761748",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T00:30Z",
+      "venue": "Q2 Stadium",
+      "home": {
+        "id": "20906",
+        "uid": "s:600~t:20906",
+        "name": "Austin FC",
+        "shortName": "Austin",
+        "abbreviation": "ATX",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/20906.png"
+      },
+      "away": {
+        "id": "10739",
+        "uid": "s:600~t:10739",
+        "name": "Philadelphia Union",
+        "shortName": "Philadelphia",
+        "abbreviation": "PHI",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/10739.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 8:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761748/philadelphia-union-austin-fc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761746",
+      "uid": "s:600~l:770~e:761746",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T00:30Z",
+      "venue": "GEODIS Park",
+      "home": {
+        "id": "18986",
+        "uid": "s:600~t:18986",
+        "name": "Nashville SC",
+        "shortName": "Nashville",
+        "abbreviation": "NSH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18986.png"
+      },
+      "away": {
+        "id": "183",
+        "uid": "s:600~t:183",
+        "name": "Columbus Crew",
+        "shortName": "Columbus",
+        "abbreviation": "CLB",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/183.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 8:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761746/columbus-crew-nashville-sc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761747",
+      "uid": "s:600~l:770~e:761747",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T00:30Z",
+      "venue": "Energizer Park",
+      "home": {
+        "id": "21812",
+        "uid": "s:600~t:21812",
+        "name": "St. Louis CITY SC",
+        "shortName": "St. Louis",
+        "abbreviation": "STL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21812.png"
+      },
+      "away": {
+        "id": "6077",
+        "uid": "s:600~t:6077",
+        "name": "Houston Dynamo FC",
+        "shortName": "Houston",
+        "abbreviation": "HOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6077.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 8:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761747/houston-dynamo-fc-st-louis-city-sc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761749",
+      "uid": "s:600~l:770~e:761749",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T01:30Z",
+      "venue": "BC Place",
+      "home": {
+        "id": "9727",
+        "uid": "s:600~t:9727",
+        "name": "Vancouver Whitecaps",
+        "shortName": "Vancouver",
+        "abbreviation": "VAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9727.png"
+      },
+      "away": {
+        "id": "185",
+        "uid": "s:600~t:185",
+        "name": "FC Dallas",
+        "shortName": "Dallas",
+        "abbreviation": "DAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/185.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 9:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761749/fc-dallas-vancouver-whitecaps",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761751",
+      "uid": "s:600~l:770~e:761751",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T02:30Z",
+      "venue": "BMO Stadium",
+      "home": {
+        "id": "18966",
+        "uid": "s:600~t:18966",
+        "name": "LAFC",
+        "shortName": "LAFC",
+        "abbreviation": "LAFC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18966.png"
+      },
+      "away": {
+        "id": "9723",
+        "uid": "s:600~t:9723",
+        "name": "Portland Timbers",
+        "shortName": "Portland",
+        "abbreviation": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9723.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 10:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761751/portland-timbers-lafc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761750",
+      "uid": "s:600~l:770~e:761750",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T02:30Z",
+      "venue": "Snapdragon Stadium",
+      "home": {
+        "id": "22529",
+        "uid": "s:600~t:22529",
+        "name": "San Diego FC",
+        "shortName": "San Diego",
+        "abbreviation": "SD",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/22529.png"
+      },
+      "away": {
+        "id": "184",
+        "uid": "s:600~t:184",
+        "name": "Colorado Rapids",
+        "shortName": "Colorado",
+        "abbreviation": "COL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/184.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 10:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761750/colorado-rapids-san-diego-fc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "761752",
+      "uid": "s:600~l:770~e:761752",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-23T02:30Z",
+      "venue": "PayPal Park",
+      "home": {
+        "id": "191",
+        "uid": "s:600~t:191",
+        "name": "San Jose Earthquakes",
+        "shortName": "San Jose",
+        "abbreviation": "SJ",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/191.png"
+      },
+      "away": {
+        "id": "17362",
+        "uid": "s:600~t:17362",
+        "name": "Minnesota United FC",
+        "shortName": "Minnesota",
+        "abbreviation": "MIN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17362.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sat, August 22nd at 10:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761752/minnesota-united-fc-san-jose-earthquakes",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "401879297",
+      "uid": "s:600~l:700~e:401879297",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T13:00Z",
+      "venue": "American Express Stadium",
+      "home": {
+        "id": "331",
+        "uid": "s:600~t:331",
+        "name": "Brighton & Hove Albion",
+        "shortName": "Brighton",
+        "abbreviation": "BHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/331.png"
+      },
+      "away": {
+        "id": "362",
+        "uid": "s:600~t:362",
+        "name": "Aston Villa",
+        "shortName": "Aston Villa",
+        "abbreviation": "AVL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/362.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 9:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879297/aston-villa-brighton-hove-albion",
+      "broadcasts": [
+        "Peacock"
+      ]
+    },
+    {
+      "eventId": "401879320",
+      "uid": "s:600~l:700~e:401879320",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T13:00Z",
+      "venue": "Etihad Stadium",
+      "home": {
+        "id": "382",
+        "uid": "s:600~t:382",
+        "name": "Manchester City",
+        "shortName": "Man City",
+        "abbreviation": "MNC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/382.png"
+      },
+      "away": {
+        "id": "349",
+        "uid": "s:600~t:349",
+        "name": "AFC Bournemouth",
+        "shortName": "Bournemouth",
+        "abbreviation": "BOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/349.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 9:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879320/afc-bournemouth-manchester-city",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401876493",
+      "uid": "s:600~l:710~e:401876493",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T13:00Z",
+      "venue": "Stade Raymond Kopa",
+      "home": {
+        "id": "7868",
+        "uid": "s:600~t:7868",
+        "name": "Angers",
+        "shortName": "Angers",
+        "abbreviation": "ANG",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/7868.png"
+      },
+      "away": {
+        "id": "166",
+        "uid": "s:600~t:166",
+        "name": "Lille",
+        "shortName": "Lille",
+        "abbreviation": "LILL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/166.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 9:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876493/lille-angers",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879017",
+      "uid": "s:600~l:3901~e:401879017",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T14:00Z",
+      "venue": "Soeverein Stadion",
+      "home": {
+        "id": "22269",
+        "uid": "s:600~t:22269",
+        "name": "Lommel SK",
+        "shortName": "Lommel SK",
+        "abbreviation": "LOM",
+        "logo": ""
+      },
+      "away": {
+        "id": "606",
+        "uid": "s:600~t:606",
+        "name": "KVC Westerlo",
+        "shortName": "Westerlo",
+        "abbreviation": "KVCW",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/606.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 10:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879017/kvc-westerlo-lommel-sk",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401885466",
+      "uid": "s:600~l:715~e:401885466",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T14:30Z",
+      "venue": "Estádio D. Afonso Henriques",
+      "home": {
+        "id": "5309",
+        "uid": "s:600~t:5309",
+        "name": "Vitória de Guimaraes",
+        "shortName": "Vitória",
+        "abbreviation": "VSC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5309.png"
+      },
+      "away": {
+        "id": "3472",
+        "uid": "s:600~t:3472",
+        "name": "C.D. Nacional",
+        "shortName": "Nacional",
+        "abbreviation": "CDN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3472.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 10:30 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885466/cd-nacional-vitoria-de-guimaraes",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882915",
+      "uid": "s:600~l:740~e:401882915",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T15:00Z",
+      "venue": "Riyadh Air Metropolitano",
+      "home": {
+        "id": "1068",
+        "uid": "s:600~t:1068",
+        "name": "Atlético Madrid",
+        "shortName": "Atlético",
+        "abbreviation": "ATM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1068.png"
+      },
+      "away": {
+        "id": "102",
+        "uid": "s:600~t:102",
+        "name": "Villarreal",
+        "shortName": "Villarreal",
+        "abbreviation": "VIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/102.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 11:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882915/villarreal-atletico-madrid",
+      "broadcasts": [
+        "ESPN2"
+      ]
+    },
+    {
+      "eventId": "401876492",
+      "uid": "s:600~l:710~e:401876492",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T15:15Z",
+      "venue": "Stade Océane",
+      "home": {
+        "id": "3236",
+        "uid": "s:600~t:3236",
+        "name": "Le Havre AC",
+        "shortName": "Le Havre AC",
+        "abbreviation": "HAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3236.png"
+      },
+      "away": {
+        "id": "174",
+        "uid": "s:600~t:174",
+        "name": "AS Monaco",
+        "shortName": "Monaco",
+        "abbreviation": "MON",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/174.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 11:15 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876492/as-monaco-le-havre-ac",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879319",
+      "uid": "s:600~l:700~e:401879319",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T15:30Z",
+      "venue": "St. James' Park",
+      "home": {
+        "id": "361",
+        "uid": "s:600~t:361",
+        "name": "Newcastle United",
+        "shortName": "Newcastle",
+        "abbreviation": "NEW",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/361.png"
+      },
+      "away": {
+        "id": "364",
+        "uid": "s:600~t:364",
+        "name": "Liverpool",
+        "shortName": "Liverpool",
+        "abbreviation": "LIV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/364.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 11:30 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879319/liverpool-newcastle-united",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401874930",
+      "uid": "s:600~l:730~e:401874930",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T16:30Z",
+      "venue": "Stadio Benito Stirpe",
+      "home": {
+        "id": "4057",
+        "uid": "s:600~t:4057",
+        "name": "Frosinone",
+        "shortName": "Frosinone",
+        "abbreviation": "FRO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4057.png"
+      },
+      "away": {
+        "id": "111",
+        "uid": "s:600~t:111",
+        "name": "Juventus",
+        "shortName": "Juventus",
+        "abbreviation": "JUV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/111.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 12:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874930/juventus-frosinone",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874946",
+      "uid": "s:600~l:730~e:401874946",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T16:30Z",
+      "venue": "Stadio Pier Luigi Penzo",
+      "home": {
+        "id": "17530",
+        "uid": "s:600~t:17530",
+        "name": "Venezia",
+        "shortName": "Venezia",
+        "abbreviation": "VEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17530.png"
+      },
+      "away": {
+        "id": "113",
+        "uid": "s:600~t:113",
+        "name": "Lecce",
+        "shortName": "Lecce",
+        "abbreviation": "LEC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/113.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 12:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874946/lecce-venezia",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401879016",
+      "uid": "s:600~l:3901~e:401879016",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T16:30Z",
+      "venue": "Jan Breydel Stadium",
+      "home": {
+        "id": "570",
+        "uid": "s:600~t:570",
+        "name": "Club Brugge",
+        "shortName": "Club Brugge",
+        "abbreviation": "BRU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/570.png"
+      },
+      "away": {
+        "id": "3610",
+        "uid": "s:600~t:3610",
+        "name": "Cercle Brugge KSV",
+        "shortName": "Cercle Brugge",
+        "abbreviation": "CBK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3610.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 12:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879016/cercle-brugge-ksv-club-brugge",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401885468",
+      "uid": "s:600~l:715~e:401885468",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T17:00Z",
+      "venue": "Estádio de São Miguel",
+      "home": {
+        "id": "12215",
+        "uid": "s:600~t:12215",
+        "name": "Santa Clara",
+        "shortName": "Santa Clara",
+        "abbreviation": "CDSC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12215.png"
+      },
+      "away": {
+        "id": "12698",
+        "uid": "s:600~t:12698",
+        "name": "FC Famalicao",
+        "shortName": "FC Famalicao",
+        "abbreviation": "FCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/12698.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 1:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885468/fc-famalicao-santa-clara",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882911",
+      "uid": "s:600~l:740~e:401882911",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T17:30Z",
+      "venue": "Estadio Coliseum",
+      "home": {
+        "id": "2922",
+        "uid": "s:600~t:2922",
+        "name": "Getafe",
+        "shortName": "Getafe",
+        "abbreviation": "GET",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2922.png"
+      },
+      "away": {
+        "id": "87",
+        "uid": "s:600~t:87",
+        "name": "Racing Santander",
+        "shortName": "Racing",
+        "abbreviation": "RAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/87.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 1:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882911/racing-santander-getafe",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "eventId": "401874748",
+      "uid": "s:600~l:730~e:401874748",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T18:45Z",
+      "venue": "New Balance Arena",
+      "home": {
+        "id": "105",
+        "uid": "s:600~t:105",
+        "name": "Atalanta",
+        "shortName": "Atalanta",
+        "abbreviation": "ATA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/105.png"
+      },
+      "away": {
+        "id": "3997",
+        "uid": "s:600~t:3997",
+        "name": "Sassuolo",
+        "shortName": "Sassuolo",
+        "abbreviation": "SAS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3997.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874748/sassuolo-atalanta",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874932",
+      "uid": "s:600~l:730~e:401874932",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T18:45Z",
+      "venue": "Stadio Olimpico Grande Torino",
+      "home": {
+        "id": "239",
+        "uid": "s:600~t:239",
+        "name": "Torino",
+        "shortName": "Torino",
+        "abbreviation": "TOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/239.png"
+      },
+      "away": {
+        "id": "103",
+        "uid": "s:600~t:103",
+        "name": "AC Milan",
+        "shortName": "Milan",
+        "abbreviation": "MIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/103.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874932/ac-milan-torino",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401876487",
+      "uid": "s:600~l:710~e:401876487",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T18:45Z",
+      "venue": "Roazhon Park",
+      "home": {
+        "id": "169",
+        "uid": "s:600~t:169",
+        "name": "Stade Rennais",
+        "shortName": "Rennes",
+        "abbreviation": "REN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/169.png"
+      },
+      "away": {
+        "id": "160",
+        "uid": "s:600~t:160",
+        "name": "Paris Saint-Germain",
+        "shortName": "PSG",
+        "abbreviation": "PSG",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/160.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876487/paris-saint-germain-stade-rennais",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841203",
+      "uid": "s:600~l:630~e:401841203",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:00Z",
+      "venue": "Allianz Parque",
+      "home": {
+        "id": "2029",
+        "uid": "s:600~t:2029",
+        "name": "Palmeiras",
+        "shortName": "Palmeiras",
+        "abbreviation": "PAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2029.png"
+      },
+      "away": {
+        "id": "3454",
+        "uid": "s:600~t:3454",
+        "name": "Vasco da Gama",
+        "shortName": "Vasco",
+        "abbreviation": "VAS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3454.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841203/vasco-da-gama-palmeiras",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841202",
+      "uid": "s:600~l:630~e:401841202",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:00Z",
+      "venue": "Estádio Municipal Cicero de Souza Marques",
+      "home": {
+        "id": "6079",
+        "uid": "s:600~t:6079",
+        "name": "Red Bull Bragantino",
+        "shortName": "Bragantino",
+        "abbreviation": "BRA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6079.png"
+      },
+      "away": {
+        "id": "6273",
+        "uid": "s:600~t:6273",
+        "name": "Grêmio",
+        "shortName": "Grêmio",
+        "abbreviation": "GRE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6273.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841202/gremio-red-bull-bragantino",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841200",
+      "uid": "s:600~l:630~e:401841200",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:00Z",
+      "venue": "Estadio Manoel Barradas",
+      "home": {
+        "id": "3457",
+        "uid": "s:600~t:3457",
+        "name": "Vitória",
+        "shortName": "Vitória",
+        "abbreviation": "VIT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3457.png"
+      },
+      "away": {
+        "id": "9967",
+        "uid": "s:600~t:9967",
+        "name": "Bahia",
+        "shortName": "Bahia",
+        "abbreviation": "BAH",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9967.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841200/bahia-vitoria",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882913",
+      "uid": "s:600~l:740~e:401882913",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:30Z",
+      "venue": "Estadio Martínez Valero",
+      "home": {
+        "id": "3751",
+        "uid": "s:600~t:3751",
+        "name": "Elche",
+        "shortName": "Elche",
+        "abbreviation": "ELC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3751.png"
+      },
+      "away": {
+        "id": "83",
+        "uid": "s:600~t:83",
+        "name": "Barcelona",
+        "shortName": "Barcelona",
+        "abbreviation": "BAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/83.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882913/barcelona-elche",
+      "broadcasts": [
+        "ABC"
+      ]
+    },
+    {
+      "eventId": "401885469",
+      "uid": "s:600~l:715~e:401885469",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T19:30Z",
+      "venue": "Estádio do Dragão",
+      "home": {
+        "id": "437",
+        "uid": "s:600~t:437",
+        "name": "FC Porto",
+        "shortName": "FC Porto",
+        "abbreviation": "FCP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/437.png"
+      },
+      "away": {
+        "id": "15784",
+        "uid": "s:600~t:15784",
+        "name": "Arouca",
+        "shortName": "Arouca",
+        "abbreviation": "FCA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/15784.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885469/arouca-fc-porto",
+      "broadcasts": []
+    },
+    {
+      "eventId": "761753",
+      "uid": "s:600~l:770~e:761753",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T20:30Z",
+      "venue": "Gillette Stadium",
+      "home": {
+        "id": "189",
+        "uid": "s:600~t:189",
+        "name": "New England Revolution",
+        "shortName": "New England",
+        "abbreviation": "NE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/189.png"
+      },
+      "away": {
+        "id": "17606",
+        "uid": "s:600~t:17606",
+        "name": "New York City FC",
+        "shortName": "NYCFC",
+        "abbreviation": "NYC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17606.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 4:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761753/new-york-city-fc-new-england-revolution",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "401841199",
+      "uid": "s:600~l:630~e:401841199",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T21:30Z",
+      "venue": "Arena Condá",
+      "home": {
+        "id": "9318",
+        "uid": "s:600~t:9318",
+        "name": "Chapecoense",
+        "shortName": "Chapecoense",
+        "abbreviation": "CHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9318.png"
+      },
+      "away": {
+        "id": "2026",
+        "uid": "s:600~t:2026",
+        "name": "São Paulo",
+        "shortName": "São Paulo",
+        "abbreviation": "SAO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2026.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 5:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841199/sao-paulo-chapecoense",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841201",
+      "uid": "s:600~l:630~e:401841201",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T21:30Z",
+      "venue": "Estádio Vila Belmiro (Urbano Caldeira)",
+      "home": {
+        "id": "2674",
+        "uid": "s:600~t:2674",
+        "name": "Santos",
+        "shortName": "Santos",
+        "abbreviation": "SAN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2674.png"
+      },
+      "away": {
+        "id": "9169",
+        "uid": "s:600~t:9169",
+        "name": "Mirassol",
+        "shortName": "Mirassol",
+        "abbreviation": "MIR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/9169.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 5:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841201/mirassol-santos",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841207",
+      "uid": "s:600~l:630~e:401841207",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T22:30Z",
+      "venue": "Couto Pereira",
+      "home": {
+        "id": "3456",
+        "uid": "s:600~t:3456",
+        "name": "Coritiba",
+        "shortName": "Coritiba",
+        "abbreviation": "CFC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3456.png"
+      },
+      "away": {
+        "id": "874",
+        "uid": "s:600~t:874",
+        "name": "Corinthians",
+        "shortName": "Corinthians",
+        "abbreviation": "COR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/874.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 6:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841207/corinthians-coritiba",
+      "broadcasts": []
+    },
+    {
+      "eventId": "761754",
+      "uid": "s:600~l:770~e:761754",
+      "league": {
+        "id": "mls",
+        "name": "Major League Soccer",
+        "country": "United States",
+        "espnId": "usa.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T23:00Z",
+      "venue": "Mercedes-Benz Stadium",
+      "home": {
+        "id": "18418",
+        "uid": "s:600~t:18418",
+        "name": "Atlanta United FC",
+        "shortName": "Atlanta",
+        "abbreviation": "ATL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/18418.png"
+      },
+      "away": {
+        "id": "186",
+        "uid": "s:600~t:186",
+        "name": "Sporting Kansas City",
+        "shortName": "Kansas City",
+        "abbreviation": "SKC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/186.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Sun, August 23rd at 7:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/761754/sporting-kansas-city-atlanta-united-fc",
+      "broadcasts": [
+        "Apple TV"
+      ]
+    },
+    {
+      "eventId": "401874927",
+      "uid": "s:600~l:730~e:401874927",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T16:30Z",
+      "venue": "Renato Dall'Ara",
+      "home": {
+        "id": "107",
+        "uid": "s:600~t:107",
+        "name": "Bologna",
+        "shortName": "Bologna",
+        "abbreviation": "BOL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/107.png"
+      },
+      "away": {
+        "id": "112",
+        "uid": "s:600~t:112",
+        "name": "Lazio",
+        "shortName": "Lazio",
+        "abbreviation": "LAZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/112.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 12:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874927/lazio-bologna",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401882909",
+      "uid": "s:600~l:740~e:401882909",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T17:30Z",
+      "venue": "El Sadar",
+      "home": {
+        "id": "97",
+        "uid": "s:600~t:97",
+        "name": "Osasuna",
+        "shortName": "Osasuna",
+        "abbreviation": "OSA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/97.png"
+      },
+      "away": {
+        "id": "1538",
+        "uid": "s:600~t:1538",
+        "name": "Levante",
+        "shortName": "Levante",
+        "abbreviation": "LEV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/1538.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 1:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882909/levante-osasuna",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "eventId": "401874928",
+      "uid": "s:600~l:730~e:401874928",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T18:45Z",
+      "venue": "Olimpico",
+      "home": {
+        "id": "104",
+        "uid": "s:600~t:104",
+        "name": "AS Roma",
+        "shortName": "AS Roma",
+        "abbreviation": "ROMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/104.png"
+      },
+      "away": {
+        "id": "109",
+        "uid": "s:600~t:109",
+        "name": "Fiorentina",
+        "shortName": "Fiorentina",
+        "abbreviation": "FIO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/109.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 2:45 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874928/fiorentina-as-roma",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401879318",
+      "uid": "s:600~l:700~e:401879318",
+      "league": {
+        "id": "epl",
+        "name": "Premier League",
+        "country": "England",
+        "espnId": "eng.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T19:00Z",
+      "venue": "Craven Cottage",
+      "home": {
+        "id": "370",
+        "uid": "s:600~t:370",
+        "name": "Fulham",
+        "shortName": "Fulham",
+        "abbreviation": "FUL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/370.png"
+      },
+      "away": {
+        "id": "363",
+        "uid": "s:600~t:363",
+        "name": "Chelsea",
+        "shortName": "Chelsea",
+        "abbreviation": "CHE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/363.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 3:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879318/chelsea-fulham",
+      "broadcasts": [
+        "USA Net"
+      ]
+    },
+    {
+      "eventId": "401885472",
+      "uid": "s:600~l:715~e:401885472",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T19:15Z",
+      "venue": "Estádio Cidade de Barcelos",
+      "home": {
+        "id": "3699",
+        "uid": "s:600~t:3699",
+        "name": "Gil Vicente",
+        "shortName": "Gil Vicente",
+        "abbreviation": "GVFC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3699.png"
+      },
+      "away": {
+        "id": "21581",
+        "uid": "s:600~t:21581",
+        "name": "Casa Pia",
+        "shortName": "Casa Pia",
+        "abbreviation": "CPAC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21581.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 3:15 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885472/casa-pia-gil-vicente",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882910",
+      "uid": "s:600~l:740~e:401882910",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T19:30Z",
+      "venue": "La Rosaleda",
+      "home": {
+        "id": "99",
+        "uid": "s:600~t:99",
+        "name": "Málaga",
+        "shortName": "Málaga",
+        "abbreviation": "MCF",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/99.png"
+      },
+      "away": {
+        "id": "90",
+        "uid": "s:600~t:90",
+        "name": "Deportivo",
+        "shortName": "Deportivo",
+        "abbreviation": "DEP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/90.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 3:30 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882910/deportivo-malaga",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
+    },
+    {
+      "eventId": "401841198",
+      "uid": "s:600~l:630~e:401841198",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260824",
+      "kickoff": "2026-08-24T23:00Z",
+      "venue": "Joao Havelange Stadium",
+      "home": {
+        "id": "6086",
+        "uid": "s:600~t:6086",
+        "name": "Botafogo",
+        "shortName": "Botafogo",
+        "abbreviation": "BOT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6086.png"
+      },
+      "away": {
+        "id": "3458",
+        "uid": "s:600~t:3458",
+        "name": "Athletico-PR",
+        "shortName": "Athletico-PR",
+        "abbreviation": "CAP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3458.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "0'",
+        "period": "",
+        "detail": "Mon, August 24th at 7:00 PM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841198/athletico-paranaense-botafogo",
+      "broadcasts": []
+    }
+  ]
 }
