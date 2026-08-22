@@ -1702,3 +1702,810 @@
         0 0 25px rgba(55,200,255,.28),
         inset 0 0 25px rgba(55,200,255,.18);
 }
+/* =========================================================
+   MARIOBOLA HOME — LOCAL LEAGUE SVG ORBITS
+   ========================================================= */
+
+.mario-home-orb{
+  position:relative;
+  width:620px !important;
+  height:620px !important;
+  min-width:620px !important;
+  min-height:620px !important;
+
+  justify-self:end;
+
+  overflow:visible !important;
+  isolation:isolate;
+}
+
+
+/* =========================================================
+   SPACE GLOW
+   ========================================================= */
+
+.mario-home-orb::before{
+  content:"";
+
+  position:absolute;
+  inset:-15%;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(22,119,255,.18),
+      transparent 44%
+    ),
+    radial-gradient(
+      circle,
+      rgba(115,65,255,.10),
+      transparent 68%
+    );
+
+  filter:blur(25px);
+
+  z-index:0;
+}
+
+
+.mario-home-orb::after{
+  content:"";
+
+  position:absolute;
+  inset:-20%;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(circle at 12% 35%,white 0 1px,transparent 2px),
+    radial-gradient(circle at 78% 12%,#55d9ff 0 1px,transparent 2px),
+    radial-gradient(circle at 90% 70%,#b56cff 0 1px,transparent 2px),
+    radial-gradient(circle at 27% 86%,#ffb14c 0 1px,transparent 2px),
+    radial-gradient(circle at 64% 91%,#55d9ff 0 1px,transparent 2px);
+
+  background-size:
+    125px 125px,
+    170px 170px,
+    190px 190px,
+    150px 150px,
+    165px 165px;
+
+  opacity:.68;
+
+  animation:
+    marioHomeStars 25s linear infinite;
+
+  pointer-events:none;
+}
+
+
+/* =========================================================
+   EARTH CORE
+   ========================================================= */
+
+.mario-earth-core{
+
+  position:absolute;
+
+  left:50%;
+  top:50%;
+
+  width:185px;
+  height:185px;
+
+  transform:
+    translate(-50%,-50%);
+
+  border-radius:50%;
+
+  overflow:hidden;
+
+  z-index:30;
+
+  background:
+
+    radial-gradient(
+      circle at 34% 28%,
+      rgba(105,205,255,.45),
+      rgba(15,89,163,.96) 38%,
+      rgba(2,13,27,1) 74%
+    );
+
+  border:
+    1px solid
+    rgba(104,224,255,.78);
+
+  box-shadow:
+
+    0 0 24px
+    rgba(55,200,255,.62),
+
+    0 0 70px
+    rgba(22,119,255,.37),
+
+    0 0 120px
+    rgba(22,119,255,.16),
+
+    inset
+    -24px -20px 42px
+    rgba(0,0,0,.65);
+}
+
+
+/* Atmosphere */
+
+.mario-earth-core::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:-6px;
+
+  border-radius:50%;
+
+  border:
+    1px solid
+    rgba(70,225,255,.62);
+
+  box-shadow:
+
+    0 0 20px
+    rgba(55,200,255,.38),
+
+    0 0 50px
+    rgba(55,200,255,.14);
+}
+
+
+/* Earth glow */
+
+.earth-glow{
+
+  position:absolute;
+
+  inset:-20px;
+
+  border-radius:50%;
+
+  background:
+    radial-gradient(
+      circle,
+      rgba(39,181,255,.14),
+      transparent 65%
+    );
+
+  filter:blur(9px);
+}
+
+
+/* Continents */
+
+.earth-land{
+
+  position:absolute;
+
+  inset:8%;
+
+  border-radius:50%;
+
+  background:
+
+    radial-gradient(
+      ellipse at 34% 34%,
+      #59d67c 0 9%,
+      transparent 10%
+    ),
+
+    radial-gradient(
+      ellipse at 52% 31%,
+      #3ca965 0 7%,
+      transparent 8%
+    ),
+
+    radial-gradient(
+      ellipse at 61% 53%,
+      #32975f 0 9%,
+      transparent 10%
+    ),
+
+    radial-gradient(
+      ellipse at 37% 63%,
+      #46ac68 0 8%,
+      transparent 9%
+    ),
+
+    radial-gradient(
+      ellipse at 74% 67%,
+      #2c8954 0 7%,
+      transparent 8%
+    );
+
+  filter:
+    blur(.4px);
+
+  opacity:.88;
+}
+
+
+/* Light crossing Earth */
+
+.earth-light{
+
+  position:absolute;
+
+  inset:0;
+
+  border-radius:50%;
+
+  background:
+
+    linear-gradient(
+      125deg,
+      rgba(255,255,255,.32),
+      transparent 32% 72%,
+      rgba(0,0,0,.45)
+    );
+
+  mix-blend-mode:screen;
+
+  animation:
+    marioEarthLight
+    14s
+    linear
+    infinite;
+}
+
+
+/* =========================================================
+   ORBITS
+   ========================================================= */
+
+.mario-home-orb .team-orbit{
+
+  position:absolute !important;
+
+  inset:0 !important;
+
+  animation:none !important;
+
+  transform:none !important;
+
+  z-index:4;
+}
+
+
+.mario-home-orb
+.team-orbit-track{
+
+  position:absolute !important;
+
+  left:50% !important;
+
+  top:50% !important;
+
+  border-radius:50%;
+
+  transform-origin:center;
+
+  border:
+    1px solid
+    rgba(55,200,255,.14);
+
+  box-shadow:
+    0 0 16px rgba(55,200,255,.04);
+}
+
+
+/* =========================================================
+   SIZE + SPEED
+   ========================================================= */
+
+.track-1{
+  width:100%;
+  height:100%;
+  margin:-50% 0 0 -50%;
+  animation:
+    marioOrbit1
+    78s
+    linear
+    infinite;
+}
+
+.track-2{
+  width:91%;
+  height:91%;
+  margin:-45.5% 0 0 -45.5%;
+  animation:
+    marioOrbit2
+    68s
+    linear
+    infinite;
+}
+
+.track-3{
+  width:82%;
+  height:82%;
+  margin:-41% 0 0 -41%;
+  animation:
+    marioOrbit3
+    60s
+    linear
+    infinite;
+}
+
+.track-4{
+  width:73%;
+  height:73%;
+  margin:-36.5% 0 0 -36.5%;
+  animation:
+    marioOrbit4
+    53s
+    linear
+    infinite;
+}
+
+.track-5{
+  width:65%;
+  height:65%;
+  margin:-32.5% 0 0 -32.5%;
+  animation:
+    marioOrbit5
+    47s
+    linear
+    infinite;
+}
+
+.track-6{
+  width:57%;
+  height:57%;
+  margin:-28.5% 0 0 -28.5%;
+  animation:
+    marioOrbit6
+    41s
+    linear
+    infinite;
+}
+
+.track-7{
+  width:50%;
+  height:50%;
+  margin:-25% 0 0 -25%;
+  animation:
+    marioOrbit7
+    36s
+    linear
+    infinite;
+}
+
+.track-8{
+  width:43%;
+  height:43%;
+  margin:-21.5% 0 0 -21.5%;
+  animation:
+    marioOrbit8
+    31s
+    linear
+    infinite;
+}
+
+.track-9{
+  width:36%;
+  height:36%;
+  margin:-18% 0 0 -18%;
+  animation:
+    marioOrbit9
+    26s
+    linear
+    infinite;
+}
+
+.track-10{
+  width:30%;
+  height:30%;
+  margin:-15% 0 0 -15%;
+  animation:
+    marioOrbit10
+    21s
+    linear
+    infinite;
+}
+
+
+/* =========================================================
+   LOGO BADGES
+   ========================================================= */
+
+.mario-home-orb .orbit-team{
+
+  position:absolute;
+
+  left:50%;
+
+  display:grid;
+
+  place-items:center;
+
+  border-radius:50%;
+
+  transform:
+    translateX(-50%);
+
+  background:
+
+    radial-gradient(
+      circle at 30% 22%,
+      rgba(255,255,255,.18),
+      transparent 20%
+    ),
+
+    radial-gradient(
+      circle,
+      rgba(13,30,55,.98),
+      rgba(3,10,19,.99) 73%
+    );
+
+  overflow:visible;
+}
+
+
+.track-1 .orbit-team{
+  top:-34px;
+  width:68px;
+  height:68px;
+  color:#b35dff;
+}
+
+.track-2 .orbit-team{
+  top:-32px;
+  width:64px;
+  height:64px;
+  color:#49adff;
+}
+
+.track-3 .orbit-team{
+  top:-30px;
+  width:60px;
+  height:60px;
+  color:#ff5164;
+}
+
+.track-4 .orbit-team{
+  top:-28px;
+  width:56px;
+  height:56px;
+  color:#ffb34d;
+}
+
+.track-5 .orbit-team{
+  top:-26px;
+  width:52px;
+  height:52px;
+  color:#7a6cff;
+}
+
+.track-6 .orbit-team{
+  top:-24px;
+  width:48px;
+  height:48px;
+  color:#6cff7c;
+}
+
+.track-7 .orbit-team{
+  top:-23px;
+  width:46px;
+  height:46px;
+  color:#5ceaff;
+}
+
+.track-8 .orbit-team{
+  top:-21px;
+  width:42px;
+  height:42px;
+  color:#ff52d2;
+}
+
+.track-9 .orbit-team{
+  top:-19px;
+  width:38px;
+  height:38px;
+  color:#ff6060;
+}
+
+.track-10 .orbit-team{
+  top:-18px;
+  width:36px;
+  height:36px;
+  color:#ffe06a;
+}
+
+
+/* actual SVG */
+
+.mario-home-orb
+.orbit-team img{
+
+  width:70%;
+  height:70%;
+
+  object-fit:contain;
+
+  display:block;
+
+  position:relative;
+
+  z-index:3;
+
+  filter:
+    drop-shadow(
+      0 0 6px currentColor
+    )
+
+    drop-shadow(
+      0 0 14px currentColor
+    );
+}
+
+
+/* neon ring */
+
+.mario-home-orb
+.orbit-team::before{
+
+  content:"";
+
+  position:absolute;
+
+  inset:-5px;
+
+  border-radius:50%;
+
+  border:
+    1px solid currentColor;
+
+  opacity:.50;
+
+  box-shadow:
+    0 0 12px currentColor,
+    0 0 26px currentColor;
+
+  animation:
+    marioLogoPulse
+    3s
+    ease-in-out
+    infinite;
+}
+
+
+/* =========================================================
+   FALLBACK BADGES
+   Only for the 2 missing assets.
+   ========================================================= */
+
+.orbit-missing{
+  background:
+    radial-gradient(
+      circle,
+      rgba(25,38,60,.98),
+      rgba(3,10,19,.99)
+    );
+}
+
+.league-fallback{
+
+  font-family:
+    var(--display);
+
+  font-size:
+    11px;
+
+  font-weight:
+    900;
+
+  letter-spacing:
+    1px;
+
+  color:
+    #fff;
+
+  text-shadow:
+    0 0 10px currentColor;
+
+  z-index:3;
+}
+
+
+/* =========================================================
+   LABEL
+   ========================================================= */
+
+.mario-home-orb
+.orbit-label{
+
+  position:absolute;
+
+  left:
+    calc(100% + 12px);
+
+  top:50%;
+
+  transform:
+    translateY(-50%);
+
+  display:flex;
+
+  flex-direction:column;
+
+  gap:2px;
+
+  min-width:125px;
+
+  white-space:nowrap;
+
+  text-align:left;
+
+  text-shadow:
+    0 2px 12px #000,
+    0 0 8px rgba(55,200,255,.3);
+}
+
+.orbit-label b{
+  font-family:
+    var(--display);
+
+  font-size:
+    9px;
+
+  color:
+    currentColor;
+}
+
+.orbit-label strong{
+  font-family:
+    var(--display);
+
+  font-size:
+    11px;
+
+  color:
+    #fff;
+}
+
+.orbit-label em{
+  font-family:
+    var(--body);
+
+  font-size:
+    7px;
+
+  font-style:
+    normal;
+
+  color:
+    #b7c5d7;
+}
+
+
+/* =========================================================
+   ANIMATION
+   ========================================================= */
+
+@keyframes marioOrbit1{
+  from{transform:rotate(0deg)}
+  to{transform:rotate(360deg)}
+}
+
+@keyframes marioOrbit2{
+  from{transform:rotate(22deg)}
+  to{transform:rotate(382deg)}
+}
+
+@keyframes marioOrbit3{
+  from{transform:rotate(45deg)}
+  to{transform:rotate(405deg)}
+}
+
+@keyframes marioOrbit4{
+  from{transform:rotate(72deg)}
+  to{transform:rotate(432deg)}
+}
+
+@keyframes marioOrbit5{
+  from{transform:rotate(110deg)}
+  to{transform:rotate(470deg)}
+}
+
+@keyframes marioOrbit6{
+  from{transform:rotate(145deg)}
+  to{transform:rotate(505deg)}
+}
+
+@keyframes marioOrbit7{
+  from{transform:rotate(184deg)}
+  to{transform:rotate(544deg)}
+}
+
+@keyframes marioOrbit8{
+  from{transform:rotate(224deg)}
+  to{transform:rotate(584deg)}
+}
+
+@keyframes marioOrbit9{
+  from{transform:rotate(268deg)}
+  to{transform:rotate(628deg)}
+}
+
+@keyframes marioOrbit10{
+  from{transform:rotate(315deg)}
+  to{transform:rotate(675deg)}
+}
+
+
+/* earth light */
+
+@keyframes marioEarthLight{
+  from{
+    transform:rotate(0deg);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+
+/* stars */
+
+@keyframes marioHomeStars{
+  from{
+    transform:rotate(0);
+  }
+  to{
+    transform:rotate(360deg);
+  }
+}
+
+
+/* badge pulse */
+
+@keyframes marioLogoPulse{
+  0%,100%{
+    transform:scale(.92);
+    opacity:.24;
+  }
+
+  50%{
+    transform:scale(1.08);
+    opacity:.78;
+  }
+}
+
+
+@media(max-width:680px){
+
+  .mario-home-orb{
+    width:340px !important;
+    height:340px !important;
+    min-width:340px !important;
+    min-height:340px !important;
+
+    right:50% !important;
+
+    top:auto !important;
+    bottom:30px !important;
+
+    transform:
+      translateX(50%) !important;
+  }
+
+  .mario-earth-core{
+    width:105px;
+    height:105px;
+  }
+
+  .mario-home-orb
+  .orbit-label{
+    display:none;
+  }
+}
