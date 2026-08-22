@@ -8,6 +8,7 @@
     "resolve-logos": "node scripts/resolve-team-logos.js",
     "validate-data": "node scripts/validate-data.js",
     "update-news": "node scripts/update-news.js",
+    "update-live-scores": "node scripts/update-live-scores.js",
     "update-standings": "node scripts/update-standings.js"
   }
 }
