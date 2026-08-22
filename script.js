@@ -195,25 +195,70 @@ async function loadData(){
             x.teams.length
         );
 
-    const live =
-      allMatches.find(
-        m => m.status === "LIVE"
+    const featuredLeagues = new Set([
+  "english premier league",
+  "premier league",
+  "la liga",
+  "serie a",
+  "bundesliga",
+  "ligue 1",
+  "eredivisie",
+  "primeira liga",
+  "brasileirão série a",
+  "major league soccer",
+  "mls",
+  "bri super league",
+  "belgian pro league",
+  "english championship"
+]);
+
+const normalizeFeaturedLeague = value =>
+  String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[^a-z0-9]+/g, " ")
+    .replace(/\s+/g, " ")
+    .trim();
+
+const featuredMatches =
+  allMatches.filter(match => {
+
+    const competition =
+      normalizeFeaturedLeague(
+        match.competition
       );
 
-    const upcoming =
-      allMatches.find(
-        m => m.status === "UPCOMING"
-      );
+    return [
+      ...featuredLeagues
+    ].some(
+      league =>
+        competition === league ||
+        competition.includes(league)
+    );
+  });
 
-    const featured =
-      live ||
-      allMatches.find(
-        m =>
-          m.featured &&
-          m.status === "UPCOMING"
-      ) ||
-      upcoming ||
-      allMatches[allMatches.length - 1];
+const live =
+  featuredMatches.find(
+    m => m.status === "LIVE"
+  );
+
+const upcoming =
+  featuredMatches.find(
+    m => m.status === "UPCOMING"
+  );
+
+const featured =
+  live ||
+  featuredMatches.find(
+    m =>
+      m.featured &&
+      m.status === "UPCOMING"
+  ) ||
+  upcoming ||
+  featuredMatches[
+    featuredMatches.length - 1
+  ];
 
     if (featured){
 
