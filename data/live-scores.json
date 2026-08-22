@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T22:06:55.038Z",
+  "generatedAt": "2026-08-22T22:53:35.349Z",
   "source": "ESPN public soccer scoreboard",
   "dateRange": [
     "20260822",
@@ -162,10 +162,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "36'",
-        "period": 1,
-        "detail": "36'",
-        "description": "First Half"
+        "clock": "64'",
+        "period": 2,
+        "detail": "64'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401841204",
       "broadcasts": []
@@ -5934,10 +5934,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "36'",
-        "period": 1,
-        "detail": "36'",
-        "description": "First Half"
+        "clock": "64'",
+        "period": 2,
+        "detail": "64'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401841204",
       "broadcasts": []
