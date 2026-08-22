@@ -396,3 +396,123 @@
     display:none!important;
   }
 }
+/* =========================================================
+   FIX LOGO 1-7
+   Logo 8-10 sudah benar — jangan diubah.
+   ========================================================= */
+
+/* Premier League */
+.mario-home-orb .track-1 .orbit-team img{
+  width:56px !important;
+  height:56px !important;
+  max-width:56px !important;
+  max-height:56px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* Serie A */
+.mario-home-orb .track-2 .orbit-team img{
+  width:51px !important;
+  height:51px !important;
+  max-width:51px !important;
+  max-height:51px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* Bundesliga */
+.mario-home-orb .track-3 .orbit-team img{
+  width:48px !important;
+  height:48px !important;
+  max-width:48px !important;
+  max-height:48px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* La Liga */
+.mario-home-orb .track-4 .orbit-team img{
+  width:45px !important;
+  height:45px !important;
+  max-width:45px !important;
+  max-height:45px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* Ligue 1 */
+.mario-home-orb .track-5 .orbit-team img{
+  width:42px !important;
+  height:42px !important;
+  max-width:42px !important;
+  max-height:42px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* Brasileirão */
+.mario-home-orb .track-6 .orbit-team img{
+  width:39px !important;
+  height:39px !important;
+  max-width:39px !important;
+  max-height:39px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* Liga Portugal */
+.mario-home-orb .track-7 .orbit-team img{
+  width:36px !important;
+  height:36px !important;
+  max-width:36px !important;
+  max-height:36px !important;
+  object-fit:contain !important;
+  object-position:center !important;
+}
+
+/* =========================================================
+   Pastikan badge 1-7 punya ruang cukup dan tidak memotong
+   ========================================================= */
+
+.mario-home-orb .track-1 .orbit-team{
+  width:74px !important;
+  height:74px !important;
+  overflow:visible !important;
+}
+
+.mario-home-orb .track-2 .orbit-team{
+  width:70px !important;
+  height:70px !important;
+  overflow:visible !important;
+}
+
+.mario-home-orb .track-3 .orbit-team{
+  width:66px !important;
+  height:66px !important;
+  overflow:visible !important;
+}
+
+.mario-home-orb .track-4 .orbit-team{
+  width:62px !important;
+  height:62px !important;
+  overflow:visible !important;
+}
+
+.mario-home-orb .track-5 .orbit-team{
+  width:58px !important;
+  height:58px !important;
+  overflow:visible !important;
+}
+
+.mario-home-orb .track-6 .orbit-team{
+  width:54px !important;
+  height:54px !important;
+  overflow:visible !important;
+}
+
+.mario-home-orb .track-7 .orbit-team{
+  width:50px !important;
+  height:50px !important;
+  overflow:visible !important;
+}
