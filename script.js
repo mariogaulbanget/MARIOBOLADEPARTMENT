@@ -17,7 +17,35 @@ const initials=n=>String(n||"?").split(/\s+/).filter(Boolean).slice(0,2).map(x=>
 const fetchJson=async url=>{const r=await fetch(url,{cache:"no-store"});if(!r.ok)throw new Error(`${url} HTTP ${r.status}`);return r.json()};
 function matchDateTime(m){return new Date(`${m.date}T${m.time}:00+07:00`)}
 function formatDate(d){return new Intl.DateTimeFormat("id-ID",{timeZone:"Asia/Jakarta",day:"2-digit",month:"short",year:"numeric"}).format(d)}
-function dynamicStatus(m){const d=matchDateTime(m),now=new Date();if(m.actualStatus==="FINISHED"||m.status==="FINISHED"&&m.homeScore!=null&&m.awayScore!=null)return"FINISHED";if(m.actualStatus==="LIVE")return"LIVE";if(now<d)return"UPCOMING";return now<new Date(d.getTime()+125*60000)?"LIVE":"FINISHED"}
+function dynamicStatus(m){
+
+  /*
+    STATUS LIVE/FULL TIME harus berasal dari
+    sumber live score, bukan hanya karena jam kickoff
+    sudah lewat.
+
+    Ini mencegah MATCH CENTER menampilkan
+    LIVE palsu ketika API belum mengirim event LIVE.
+  */
+
+  if(
+    m.actualStatus === "FINISHED"
+  ){
+    return "FINISHED";
+  }
+
+  if(
+    m.actualStatus === "LIVE"
+  ){
+    return "LIVE";
+  }
+
+  /*
+    Kalau sumber live belum mengatakan LIVE,
+    pertandingan tetap UPCOMING.
+  */
+  return "UPCOMING";
+}
 function decorate(m){return {...m,status:dynamicStatus(m)}}
 function statusLabel(s){return s==="LIVE"?"LIVE":s==="FINISHED"?"FINISHED":"UPCOMING"}
 function statusClass(s){return s.toLowerCase()}
