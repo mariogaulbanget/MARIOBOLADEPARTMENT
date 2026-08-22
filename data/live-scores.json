@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T19:59:25.276Z",
+  "generatedAt": "2026-08-22T20:13:04.489Z",
   "source": "ESPN public soccer scoreboard",
   "dateRange": [
     "20260822",
@@ -9,12 +9,12 @@
   ],
   "status": "ok",
   "summary": {
-    "totalEvents": 72,
-    "live": 10,
-    "upcoming": 48,
-    "finished": 14,
-    "leagues": 10,
-    "successfulLeagues": 10
+    "totalEvents": 91,
+    "live": 11,
+    "upcoming": 52,
+    "finished": 28,
+    "leagues": 12,
+    "successfulLeagues": 12
   },
   "leagues": [
     {
@@ -24,6 +24,15 @@
       "espnId": "eng.1",
       "status": "ok",
       "events": 9,
+      "errors": []
+    },
+    {
+      "id": "la-liga",
+      "name": "La Liga",
+      "country": "Spain",
+      "espnId": "esp.1",
+      "status": "ok",
+      "events": 8,
       "errors": []
     },
     {
@@ -45,15 +54,6 @@
       "errors": []
     },
     {
-      "id": "la-liga",
-      "name": "La Liga",
-      "country": "Spain",
-      "espnId": "esp.1",
-      "status": "ok",
-      "events": 8,
-      "errors": []
-    },
-    {
       "id": "ligue-1",
       "name": "Ligue 1",
       "country": "France",
@@ -63,12 +63,12 @@
       "errors": []
     },
     {
-      "id": "brasileirao",
-      "name": "Brasileirão Série A",
-      "country": "Brazil",
-      "espnId": "bra.1",
+      "id": "eredivisie",
+      "name": "Eredivisie",
+      "country": "Netherlands",
+      "espnId": "ned.1",
       "status": "ok",
-      "events": 10,
+      "events": 7,
       "errors": []
     },
     {
@@ -81,12 +81,12 @@
       "errors": []
     },
     {
-      "id": "belgian-pro-league",
-      "name": "Belgian Pro League",
-      "country": "Belgium",
-      "espnId": "bel.1",
+      "id": "brasileirao",
+      "name": "Brasileirão Série A",
+      "country": "Brazil",
+      "espnId": "bra.1",
       "status": "ok",
-      "events": 5,
+      "events": 10,
       "errors": []
     },
     {
@@ -105,6 +105,24 @@
       "espnId": "idn.1",
       "status": "ok",
       "events": 0,
+      "errors": []
+    },
+    {
+      "id": "belgian-pro-league",
+      "name": "Belgian Pro League",
+      "country": "Belgium",
+      "espnId": "bel.1",
+      "status": "ok",
+      "events": 5,
+      "errors": []
+    },
+    {
+      "id": "english-championship",
+      "name": "English Championship",
+      "country": "England",
+      "espnId": "eng.2",
+      "status": "ok",
+      "events": 12,
       "errors": []
     }
   ],
@@ -144,9 +162,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "55'",
-        "period": "2",
-        "detail": "55'",
+        "clock": "68'",
+        "period": 2,
+        "detail": "68'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874929",
@@ -189,14 +207,15 @@
       },
       "status": {
         "state": "live",
-        "clock": "54'",
-        "period": "2",
-        "detail": "54'",
+        "clock": "67'",
+        "period": 2,
+        "detail": "67'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874747",
       "broadcasts": [
-        "CBSSN"
+        "CBSSN",
+        "Paramount+"
       ]
     },
     {
@@ -228,16 +247,16 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
       },
       "score": {
-        "home": 1,
-        "away": 1,
-        "display": "1-1"
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
       },
       "status": {
         "state": "live",
-        "clock": "55'",
-        "period": "2",
-        "detail": "55'",
-        "description": "In Progress"
+        "clock": "70'",
+        "period": 2,
+        "detail": "70'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876491",
       "broadcasts": []
@@ -277,9 +296,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "57'",
-        "period": "2",
-        "detail": "57'",
+        "clock": "71'",
+        "period": 2,
+        "detail": "71'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876488",
@@ -315,14 +334,14 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "away": 1,
+        "display": "0-1"
       },
       "status": {
         "state": "live",
-        "clock": "57'",
-        "period": "2",
-        "detail": "57'",
+        "clock": "70'",
+        "period": 2,
+        "detail": "70'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876486",
@@ -363,10 +382,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "56'",
-        "period": "2",
-        "detail": "56'",
-        "description": "In Progress"
+        "clock": "70'",
+        "period": 2,
+        "detail": "70'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876485",
       "broadcasts": []
@@ -401,17 +420,60 @@
       },
       "score": {
         "home": 1,
-        "away": 2,
-        "display": "1-2"
+        "away": 3,
+        "display": "1-3"
       },
       "status": {
         "state": "live",
-        "clock": "54'",
-        "period": "2",
-        "detail": "54'",
+        "clock": "68'",
+        "period": 2,
+        "detail": "68'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879019",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401875634",
+      "uid": "s:600~l:725~e:401875634",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:00Z",
+      "venue": "Abe Lenstra Stadion",
+      "home": {
+        "id": "146",
+        "uid": "s:600~t:146",
+        "name": "Heerenveen",
+        "shortName": "Heerenveen",
+        "abbreviation": "HEE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/146.png"
+      },
+      "away": {
+        "id": "2565",
+        "uid": "s:600~t:2565",
+        "name": "PEC Zwolle",
+        "shortName": "PEC Zwolle",
+        "abbreviation": "PEC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2565.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "display": "0-1"
+      },
+      "status": {
+        "state": "live",
+        "clock": "53'",
+        "period": 2,
+        "detail": "53'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875634",
       "broadcasts": []
     },
     {
@@ -449,10 +511,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "45'+4'",
-        "period": "1",
-        "detail": "HT",
-        "description": "Halftime"
+        "clock": "54'",
+        "period": 2,
+        "detail": "54'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401841205",
       "broadcasts": []
@@ -486,20 +548,22 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1,
-        "display": "0-1"
+        "display": "1-1"
       },
       "status": {
         "state": "live",
-        "clock": "28'",
-        "period": "1",
-        "detail": "28'",
+        "clock": "41'",
+        "period": 1,
+        "detail": "41'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882912",
       "broadcasts": [
-        "ABC"
+        "ABC",
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -537,9 +601,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "26'",
-        "period": "1",
-        "detail": "26'",
+        "clock": "39'",
+        "period": 1,
+        "detail": "39'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401885467",
@@ -582,7 +646,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 5:30 PM EDT",
         "description": "Scheduled"
@@ -625,7 +689,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -668,7 +732,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -713,7 +777,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -758,7 +822,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -803,7 +867,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -848,7 +912,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -893,7 +957,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -938,7 +1002,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 8:30 PM EDT",
         "description": "Scheduled"
@@ -983,7 +1047,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 8:30 PM EDT",
         "description": "Scheduled"
@@ -1028,7 +1092,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 8:30 PM EDT",
         "description": "Scheduled"
@@ -1073,7 +1137,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 9:30 PM EDT",
         "description": "Scheduled"
@@ -1118,7 +1182,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 10:30 PM EDT",
         "description": "Scheduled"
@@ -1163,7 +1227,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 10:30 PM EDT",
         "description": "Scheduled"
@@ -1208,7 +1272,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 10:30 PM EDT",
         "description": "Scheduled"
@@ -1216,6 +1280,139 @@
       "link": "https://www.espn.com/soccer/match/_/gameId/761752/minnesota-united-fc-san-jose-earthquakes",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "eventId": "401875633",
+      "uid": "s:600~l:725~e:401875633",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T10:15Z",
+      "venue": "De Adelaarshorst",
+      "home": {
+        "id": "3706",
+        "uid": "s:600~t:3706",
+        "name": "Go Ahead Eagles",
+        "shortName": "Go Ahead Eagles",
+        "abbreviation": "GAE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3706.png"
+      },
+      "away": {
+        "id": "2726",
+        "uid": "s:600~t:2726",
+        "name": "ADO Den Haag",
+        "shortName": "ADO Den Haag",
+        "abbreviation": "ADO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2726.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "Scheduled",
+        "period": "",
+        "detail": "Sun, August 23rd at 6:15 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875633/ado-den-haag-go-ahead-eagles",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880319",
+      "uid": "s:600~l:3914~e:401880319",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T11:00Z",
+      "venue": "The Hawthorns",
+      "home": {
+        "id": "383",
+        "uid": "s:600~t:383",
+        "name": "West Bromwich Albion",
+        "shortName": "West Brom",
+        "abbreviation": "WBA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/383.png"
+      },
+      "away": {
+        "id": "379",
+        "uid": "s:600~t:379",
+        "name": "Burnley",
+        "shortName": "Burnley",
+        "abbreviation": "BUR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/379.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "Scheduled",
+        "period": "",
+        "detail": "Sun, August 23rd at 7:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880319/burnley-west-bromwich-albion",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401875632",
+      "uid": "s:600~l:725~e:401875632",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T12:30Z",
+      "venue": "Philips Stadion",
+      "home": {
+        "id": "148",
+        "uid": "s:600~t:148",
+        "name": "PSV Eindhoven",
+        "shortName": "PSV",
+        "abbreviation": "PSV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png"
+      },
+      "away": {
+        "id": "145",
+        "uid": "s:600~t:145",
+        "name": "FC Groningen",
+        "shortName": "FC Groningen",
+        "abbreviation": "GRO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/145.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "Scheduled",
+        "period": "",
+        "detail": "Sun, August 23rd at 8:30 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875632/fc-groningen-psv-eindhoven",
+      "broadcasts": [
+        "ESPN+"
       ]
     },
     {
@@ -1253,7 +1450,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 9:00 AM EDT",
         "description": "Scheduled"
@@ -1298,14 +1495,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 9:00 AM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879320/afc-bournemouth-manchester-city",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Tele"
       ]
     },
     {
@@ -1343,7 +1541,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 9:00 AM EDT",
         "description": "Scheduled"
@@ -1386,7 +1584,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 10:00 AM EDT",
         "description": "Scheduled"
@@ -1410,7 +1608,7 @@
         "id": "5309",
         "uid": "s:600~t:5309",
         "name": "Vitória de Guimaraes",
-        "shortName": "Vitória",
+        "shortName": "Vitória ",
         "abbreviation": "VSC",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5309.png"
       },
@@ -1429,13 +1627,58 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 10:30 AM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401885466/cd-nacional-vitoria-de-guimaraes",
       "broadcasts": []
+    },
+    {
+      "eventId": "401875631",
+      "uid": "s:600~l:725~e:401875631",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T14:45Z",
+      "venue": "Kooi Stadium",
+      "home": {
+        "id": "3736",
+        "uid": "s:600~t:3736",
+        "name": "SC Cambuur",
+        "shortName": "Cambuur",
+        "abbreviation": "CAM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3736.png"
+      },
+      "away": {
+        "id": "142",
+        "uid": "s:600~t:142",
+        "name": "Feyenoord Rotterdam",
+        "shortName": "Feyenoord",
+        "abbreviation": "FEY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "Scheduled",
+        "period": "",
+        "detail": "Sun, August 23rd at 10:45 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875631/feyenoord-rotterdam-sc-cambuur",
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "eventId": "401882915",
@@ -1472,14 +1715,16 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 11:00 AM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882915/villarreal-atletico-madrid",
       "broadcasts": [
-        "ESPN2"
+        "ESPN2",
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -1517,7 +1762,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 11:15 AM EDT",
         "description": "Scheduled"
@@ -1560,14 +1805,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 11:30 AM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879319/liverpool-newcastle-united",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Tele"
       ]
     },
     {
@@ -1605,7 +1851,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 12:30 PM EDT",
         "description": "Scheduled"
@@ -1650,7 +1896,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 12:30 PM EDT",
         "description": "Scheduled"
@@ -1695,7 +1941,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 12:30 PM EDT",
         "description": "Scheduled"
@@ -1738,7 +1984,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 1:00 PM EDT",
         "description": "Scheduled"
@@ -1781,14 +2027,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 1:30 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882911/racing-santander-getafe",
       "broadcasts": [
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -1826,7 +2073,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 2:45 PM EDT",
         "description": "Scheduled"
@@ -1871,7 +2118,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 2:45 PM EDT",
         "description": "Scheduled"
@@ -1916,7 +2163,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 2:45 PM EDT",
         "description": "Scheduled"
@@ -1959,7 +2206,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:00 PM EDT",
         "description": "Scheduled"
@@ -2002,7 +2249,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:00 PM EDT",
         "description": "Scheduled"
@@ -2045,7 +2292,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:00 PM EDT",
         "description": "Scheduled"
@@ -2088,14 +2335,16 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:30 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882913/barcelona-elche",
       "broadcasts": [
-        "ABC"
+        "ABC",
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -2133,7 +2382,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:30 PM EDT",
         "description": "Scheduled"
@@ -2176,7 +2425,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 4:30 PM EDT",
         "description": "Scheduled"
@@ -2221,7 +2470,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 5:30 PM EDT",
         "description": "Scheduled"
@@ -2264,7 +2513,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 5:30 PM EDT",
         "description": "Scheduled"
@@ -2307,7 +2556,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 6:30 PM EDT",
         "description": "Scheduled"
@@ -2350,7 +2599,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 7:00 PM EDT",
         "description": "Scheduled"
@@ -2395,7 +2644,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 12:30 PM EDT",
         "description": "Scheduled"
@@ -2440,14 +2689,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 1:30 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882909/levante-osasuna",
       "broadcasts": [
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -2485,7 +2735,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 2:45 PM EDT",
         "description": "Scheduled"
@@ -2530,14 +2780,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 3:00 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879318/chelsea-fulham",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Universo"
       ]
     },
     {
@@ -2575,7 +2826,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 3:15 PM EDT",
         "description": "Scheduled"
@@ -2618,14 +2869,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 3:30 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882910/deportivo-malaga",
       "broadcasts": [
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -2663,7 +2915,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 7:00 PM EDT",
         "description": "Scheduled"
@@ -2708,15 +2960,149 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+6'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879322/manchester-united-hull-city",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Universo"
       ]
+    },
+    {
+      "eventId": "401880328",
+      "uid": "s:600~l:3914~e:401880328",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T11:30Z",
+      "venue": "St. Andrew's Stadium",
+      "home": {
+        "id": "392",
+        "uid": "s:600~t:392",
+        "name": "Birmingham City",
+        "shortName": "Birmingham",
+        "abbreviation": "BIR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/392.png"
+      },
+      "away": {
+        "id": "333",
+        "uid": "s:600~t:333",
+        "name": "Bristol City",
+        "shortName": "Bristol City",
+        "abbreviation": "BRC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/333.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880328/bristol-city-birmingham-city",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880325",
+      "uid": "s:600~l:3914~e:401880325",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T11:30Z",
+      "venue": "LNER Stadium",
+      "home": {
+        "id": "314",
+        "uid": "s:600~t:314",
+        "name": "Lincoln City",
+        "shortName": "Lincoln City",
+        "abbreviation": "LCN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/314.png"
+      },
+      "away": {
+        "id": "385",
+        "uid": "s:600~t:385",
+        "name": "Portsmouth",
+        "shortName": "Portsmouth",
+        "abbreviation": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/385.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 3,
+        "display": "1-3"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880325/portsmouth-lincoln-city",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880324",
+      "uid": "s:600~l:3914~e:401880324",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T11:30Z",
+      "venue": "The Den",
+      "home": {
+        "id": "391",
+        "uid": "s:600~t:391",
+        "name": "Millwall",
+        "shortName": "Millwall",
+        "abbreviation": "MIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/391.png"
+      },
+      "away": {
+        "id": "381",
+        "uid": "s:600~t:381",
+        "name": "Norwich City",
+        "shortName": "Norwich City",
+        "abbreviation": "NOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/381.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 0,
+        "display": "3-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880324/norwich-city-millwall",
+      "broadcasts": []
     },
     {
       "eventId": "401879300",
@@ -2753,14 +3139,15 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+8'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879300/crystal-palace-everton",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Universo"
       ]
     },
     {
@@ -2798,8 +3185,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+5'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -2843,14 +3230,15 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+4'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879298/leeds-united-nottingham-forest",
       "broadcasts": [
-        "NBCSN"
+        "NBCSN",
+        "Peacock"
       ]
     },
     {
@@ -2888,13 +3276,411 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+5'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879022/waasland-beveren-zulte-waregem",
       "broadcasts": []
+    },
+    {
+      "eventId": "401880327",
+      "uid": "s:600~l:3914~e:401880327",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Ewood Park",
+      "home": {
+        "id": "365",
+        "uid": "s:600~t:365",
+        "name": "Blackburn Rovers",
+        "shortName": "Blackburn",
+        "abbreviation": "BLK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/365.png"
+      },
+      "away": {
+        "id": "369",
+        "uid": "s:600~t:369",
+        "name": "Middlesbrough",
+        "shortName": "Boro",
+        "abbreviation": "MID",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/369.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "display": "2-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880327/middlesbrough-blackburn-rovers",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880326",
+      "uid": "s:600~l:3914~e:401880326",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Pride Park",
+      "home": {
+        "id": "374",
+        "uid": "s:600~t:374",
+        "name": "Derby County",
+        "shortName": "Derby",
+        "abbreviation": "DER",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/374.png"
+      },
+      "away": {
+        "id": "347",
+        "uid": "s:600~t:347",
+        "name": "Cardiff City",
+        "shortName": "Cardiff",
+        "abbreviation": "CAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/347.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880326/cardiff-city-derby-county",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880323",
+      "uid": "s:600~l:3914~e:401880323",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Deepdale",
+      "home": {
+        "id": "394",
+        "uid": "s:600~t:394",
+        "name": "Preston North End",
+        "shortName": "Preston",
+        "abbreviation": "PNE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/394.png"
+      },
+      "away": {
+        "id": "380",
+        "uid": "s:600~t:380",
+        "name": "Wolverhampton Wanderers",
+        "shortName": "Wolves",
+        "abbreviation": "WOL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 3,
+        "display": "1-3"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880323/wolverhampton-wanderers-preston-north-end",
+      "broadcasts": [
+        "CBSSN",
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880322",
+      "uid": "s:600~l:3914~e:401880322",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "MATRADE Loftus Road",
+      "home": {
+        "id": "334",
+        "uid": "s:600~t:334",
+        "name": "Queens Park Rangers",
+        "shortName": "QPR",
+        "abbreviation": "QPR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/334.png"
+      },
+      "away": {
+        "id": "358",
+        "uid": "s:600~t:358",
+        "name": "Bolton Wanderers",
+        "shortName": "Bolton",
+        "abbreviation": "BOL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/358.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880322/bolton-wanderers-queens-park-rangers",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880321",
+      "uid": "s:600~l:3914~e:401880321",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "St. Mary's Stadium",
+      "home": {
+        "id": "376",
+        "uid": "s:600~t:376",
+        "name": "Southampton",
+        "shortName": "Southampton",
+        "abbreviation": "SOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/376.png"
+      },
+      "away": {
+        "id": "336",
+        "uid": "s:600~t:336",
+        "name": "Stoke City",
+        "shortName": "Stoke",
+        "abbreviation": "STK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/336.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 1,
+        "display": "3-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880321/stoke-city-southampton",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880320",
+      "uid": "s:600~l:3914~e:401880320",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Swansea.com Stadium",
+      "home": {
+        "id": "318",
+        "uid": "s:600~t:318",
+        "name": "Swansea City",
+        "shortName": "Swansea",
+        "abbreviation": "SWA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/318.png"
+      },
+      "away": {
+        "id": "398",
+        "uid": "s:600~t:398",
+        "name": "Sheffield United",
+        "shortName": "Sheffield Utd",
+        "abbreviation": "SHU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/398.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880320/sheffield-united-swansea-city",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880318",
+      "uid": "s:600~l:3914~e:401880318",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "London Stadium",
+      "home": {
+        "id": "371",
+        "uid": "s:600~t:371",
+        "name": "West Ham United",
+        "shortName": "West Ham",
+        "abbreviation": "WHU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png"
+      },
+      "away": {
+        "id": "372",
+        "uid": "s:600~t:372",
+        "name": "Charlton Athletic",
+        "shortName": "Charlton",
+        "abbreviation": "CHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/372.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 2,
+        "display": "1-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880318/charlton-athletic-west-ham-united",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880317",
+      "uid": "s:600~l:3914~e:401880317",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "STōK Cae Ras",
+      "home": {
+        "id": "352",
+        "uid": "s:600~t:352",
+        "name": "Wrexham",
+        "shortName": "Wrexham",
+        "abbreviation": "WXM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png"
+      },
+      "away": {
+        "id": "395",
+        "uid": "s:600~t:395",
+        "name": "Watford",
+        "shortName": "Watford",
+        "abbreviation": "WAT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/395.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "display": "1-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880317/watford-wrexham",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401875637",
+      "uid": "s:600~l:725~e:401875637",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:30Z",
+      "venue": "Fortuna Sittard Stadion",
+      "home": {
+        "id": "143",
+        "uid": "s:600~t:143",
+        "name": "Fortuna Sittard",
+        "shortName": "Fortuna",
+        "abbreviation": "FOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/143.png"
+      },
+      "away": {
+        "id": "140",
+        "uid": "s:600~t:140",
+        "name": "AZ Alkmaar",
+        "shortName": "AZ Alkmaar",
+        "abbreviation": "AZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/140.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 2,
+        "display": "0-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875637/az-alkmaar-fortuna-sittard",
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "eventId": "401885471",
@@ -2931,8 +3717,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+7'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -2974,14 +3760,16 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+8'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882916/sevilla-athletic-club",
       "broadcasts": [
-        "ESPN2"
+        "ESPN2",
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -3019,8 +3807,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+10'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3062,8 +3850,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+4'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3105,14 +3893,15 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+5'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879321/tottenham-hotspur-brentford",
       "broadcasts": [
-        "NBC"
+        "NBC",
+        "Peacock"
       ]
     },
     {
@@ -3150,8 +3939,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+4'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3195,15 +3984,59 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+6'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874745/como-udinese",
       "broadcasts": [
-        "CBSSN"
+        "CBSSN",
+        "Paramount+"
       ]
+    },
+    {
+      "eventId": "401875635",
+      "uid": "s:600~l:725~e:401875635",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:45Z",
+      "venue": "Sparta-Stadion Het Kasteel",
+      "home": {
+        "id": "151",
+        "uid": "s:600~t:151",
+        "name": "Sparta Rotterdam",
+        "shortName": "Sparta",
+        "abbreviation": "SPA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/151.png"
+      },
+      "away": {
+        "id": "153",
+        "uid": "s:600~t:153",
+        "name": "FC Utrecht",
+        "shortName": "FC Utrecht",
+        "abbreviation": "UTR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/153.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 3,
+        "display": "3-3"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875635/fc-utrecht-sparta-rotterdam",
+      "broadcasts": []
     },
     {
       "eventId": "401885473",
@@ -3240,8 +4073,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+5'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3283,15 +4116,59 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+6'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882907/celta-vigo-valencia",
       "broadcasts": [
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN+"
       ]
+    },
+    {
+      "eventId": "401875636",
+      "uid": "s:600~l:725~e:401875636",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:00Z",
+      "venue": "Goffertstadion",
+      "home": {
+        "id": "147",
+        "uid": "s:600~t:147",
+        "name": "NEC Nijmegen",
+        "shortName": "NEC",
+        "abbreviation": "NEC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/147.png"
+      },
+      "away": {
+        "id": "2566",
+        "uid": "s:600~t:2566",
+        "name": "Excelsior",
+        "shortName": "Excelsior",
+        "abbreviation": "EXC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2566.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "Postponed",
+        "period": "",
+        "detail": "Postponed",
+        "description": "Postponed"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875636/excelsior-nec-nijmegen",
+      "broadcasts": []
     }
   ],
   "matches": [
@@ -3330,15 +4207,149 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+6'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879322/manchester-united-hull-city",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Universo"
       ]
+    },
+    {
+      "eventId": "401880328",
+      "uid": "s:600~l:3914~e:401880328",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T11:30Z",
+      "venue": "St. Andrew's Stadium",
+      "home": {
+        "id": "392",
+        "uid": "s:600~t:392",
+        "name": "Birmingham City",
+        "shortName": "Birmingham",
+        "abbreviation": "BIR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/392.png"
+      },
+      "away": {
+        "id": "333",
+        "uid": "s:600~t:333",
+        "name": "Bristol City",
+        "shortName": "Bristol City",
+        "abbreviation": "BRC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/333.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880328/bristol-city-birmingham-city",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880325",
+      "uid": "s:600~l:3914~e:401880325",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T11:30Z",
+      "venue": "LNER Stadium",
+      "home": {
+        "id": "314",
+        "uid": "s:600~t:314",
+        "name": "Lincoln City",
+        "shortName": "Lincoln City",
+        "abbreviation": "LCN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/314.png"
+      },
+      "away": {
+        "id": "385",
+        "uid": "s:600~t:385",
+        "name": "Portsmouth",
+        "shortName": "Portsmouth",
+        "abbreviation": "POR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/385.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 3,
+        "display": "1-3"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880325/portsmouth-lincoln-city",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880324",
+      "uid": "s:600~l:3914~e:401880324",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T11:30Z",
+      "venue": "The Den",
+      "home": {
+        "id": "391",
+        "uid": "s:600~t:391",
+        "name": "Millwall",
+        "shortName": "Millwall",
+        "abbreviation": "MIL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/391.png"
+      },
+      "away": {
+        "id": "381",
+        "uid": "s:600~t:381",
+        "name": "Norwich City",
+        "shortName": "Norwich City",
+        "abbreviation": "NOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/381.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 0,
+        "display": "3-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880324/norwich-city-millwall",
+      "broadcasts": []
     },
     {
       "eventId": "401879300",
@@ -3375,14 +4386,15 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+8'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879300/crystal-palace-everton",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Universo"
       ]
     },
     {
@@ -3420,8 +4432,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+5'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3465,14 +4477,15 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+4'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879298/leeds-united-nottingham-forest",
       "broadcasts": [
-        "NBCSN"
+        "NBCSN",
+        "Peacock"
       ]
     },
     {
@@ -3510,13 +4523,411 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+5'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879022/waasland-beveren-zulte-waregem",
       "broadcasts": []
+    },
+    {
+      "eventId": "401880327",
+      "uid": "s:600~l:3914~e:401880327",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Ewood Park",
+      "home": {
+        "id": "365",
+        "uid": "s:600~t:365",
+        "name": "Blackburn Rovers",
+        "shortName": "Blackburn",
+        "abbreviation": "BLK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/365.png"
+      },
+      "away": {
+        "id": "369",
+        "uid": "s:600~t:369",
+        "name": "Middlesbrough",
+        "shortName": "Boro",
+        "abbreviation": "MID",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/369.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "display": "2-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880327/middlesbrough-blackburn-rovers",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880326",
+      "uid": "s:600~l:3914~e:401880326",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Pride Park",
+      "home": {
+        "id": "374",
+        "uid": "s:600~t:374",
+        "name": "Derby County",
+        "shortName": "Derby",
+        "abbreviation": "DER",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/374.png"
+      },
+      "away": {
+        "id": "347",
+        "uid": "s:600~t:347",
+        "name": "Cardiff City",
+        "shortName": "Cardiff",
+        "abbreviation": "CAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/347.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880326/cardiff-city-derby-county",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880323",
+      "uid": "s:600~l:3914~e:401880323",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Deepdale",
+      "home": {
+        "id": "394",
+        "uid": "s:600~t:394",
+        "name": "Preston North End",
+        "shortName": "Preston",
+        "abbreviation": "PNE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/394.png"
+      },
+      "away": {
+        "id": "380",
+        "uid": "s:600~t:380",
+        "name": "Wolverhampton Wanderers",
+        "shortName": "Wolves",
+        "abbreviation": "WOL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/380.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 3,
+        "display": "1-3"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880323/wolverhampton-wanderers-preston-north-end",
+      "broadcasts": [
+        "CBSSN",
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880322",
+      "uid": "s:600~l:3914~e:401880322",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "MATRADE Loftus Road",
+      "home": {
+        "id": "334",
+        "uid": "s:600~t:334",
+        "name": "Queens Park Rangers",
+        "shortName": "QPR",
+        "abbreviation": "QPR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/334.png"
+      },
+      "away": {
+        "id": "358",
+        "uid": "s:600~t:358",
+        "name": "Bolton Wanderers",
+        "shortName": "Bolton",
+        "abbreviation": "BOL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/358.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880322/bolton-wanderers-queens-park-rangers",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880321",
+      "uid": "s:600~l:3914~e:401880321",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "St. Mary's Stadium",
+      "home": {
+        "id": "376",
+        "uid": "s:600~t:376",
+        "name": "Southampton",
+        "shortName": "Southampton",
+        "abbreviation": "SOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/376.png"
+      },
+      "away": {
+        "id": "336",
+        "uid": "s:600~t:336",
+        "name": "Stoke City",
+        "shortName": "Stoke",
+        "abbreviation": "STK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/336.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 1,
+        "display": "3-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880321/stoke-city-southampton",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880320",
+      "uid": "s:600~l:3914~e:401880320",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "Swansea.com Stadium",
+      "home": {
+        "id": "318",
+        "uid": "s:600~t:318",
+        "name": "Swansea City",
+        "shortName": "Swansea",
+        "abbreviation": "SWA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/318.png"
+      },
+      "away": {
+        "id": "398",
+        "uid": "s:600~t:398",
+        "name": "Sheffield United",
+        "shortName": "Sheffield Utd",
+        "abbreviation": "SHU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/398.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880320/sheffield-united-swansea-city",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880318",
+      "uid": "s:600~l:3914~e:401880318",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "London Stadium",
+      "home": {
+        "id": "371",
+        "uid": "s:600~t:371",
+        "name": "West Ham United",
+        "shortName": "West Ham",
+        "abbreviation": "WHU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/371.png"
+      },
+      "away": {
+        "id": "372",
+        "uid": "s:600~t:372",
+        "name": "Charlton Athletic",
+        "shortName": "Charlton",
+        "abbreviation": "CHA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/372.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 2,
+        "display": "1-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880318/charlton-athletic-west-ham-united",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401880317",
+      "uid": "s:600~l:3914~e:401880317",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:00Z",
+      "venue": "STōK Cae Ras",
+      "home": {
+        "id": "352",
+        "uid": "s:600~t:352",
+        "name": "Wrexham",
+        "shortName": "Wrexham",
+        "abbreviation": "WXM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/352.png"
+      },
+      "away": {
+        "id": "395",
+        "uid": "s:600~t:395",
+        "name": "Watford",
+        "shortName": "Watford",
+        "abbreviation": "WAT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/395.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 1,
+        "display": "1-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880317/watford-wrexham",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401875637",
+      "uid": "s:600~l:725~e:401875637",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T14:30Z",
+      "venue": "Fortuna Sittard Stadion",
+      "home": {
+        "id": "143",
+        "uid": "s:600~t:143",
+        "name": "Fortuna Sittard",
+        "shortName": "Fortuna",
+        "abbreviation": "FOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/143.png"
+      },
+      "away": {
+        "id": "140",
+        "uid": "s:600~t:140",
+        "name": "AZ Alkmaar",
+        "shortName": "AZ Alkmaar",
+        "abbreviation": "AZ",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/140.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 2,
+        "display": "0-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875637/az-alkmaar-fortuna-sittard",
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "eventId": "401885471",
@@ -3553,8 +4964,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+7'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3596,14 +5007,16 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+8'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882916/sevilla-athletic-club",
       "broadcasts": [
-        "ESPN2"
+        "ESPN2",
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -3641,8 +5054,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+10'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3684,8 +5097,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+4'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3727,14 +5140,15 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+5'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879321/tottenham-hotspur-brentford",
       "broadcasts": [
-        "NBC"
+        "NBC",
+        "Peacock"
       ]
     },
     {
@@ -3772,8 +5186,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+4'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3817,15 +5231,59 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+6'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874745/como-udinese",
       "broadcasts": [
-        "CBSSN"
+        "CBSSN",
+        "Paramount+"
       ]
+    },
+    {
+      "eventId": "401875635",
+      "uid": "s:600~l:725~e:401875635",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T16:45Z",
+      "venue": "Sparta-Stadion Het Kasteel",
+      "home": {
+        "id": "151",
+        "uid": "s:600~t:151",
+        "name": "Sparta Rotterdam",
+        "shortName": "Sparta",
+        "abbreviation": "SPA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/151.png"
+      },
+      "away": {
+        "id": "153",
+        "uid": "s:600~t:153",
+        "name": "FC Utrecht",
+        "shortName": "FC Utrecht",
+        "abbreviation": "UTR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/153.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 3,
+        "display": "3-3"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875635/fc-utrecht-sparta-rotterdam",
+      "broadcasts": []
     },
     {
       "eventId": "401885473",
@@ -3862,8 +5320,8 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+5'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
@@ -3905,15 +5363,59 @@
       },
       "status": {
         "state": "finished",
-        "clock": "90'+6'",
-        "period": "2",
+        "clock": "FT",
+        "period": 2,
         "detail": "FT",
         "description": "Full Time"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882907/celta-vigo-valencia",
       "broadcasts": [
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN+"
       ]
+    },
+    {
+      "eventId": "401875636",
+      "uid": "s:600~l:725~e:401875636",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:00Z",
+      "venue": "Goffertstadion",
+      "home": {
+        "id": "147",
+        "uid": "s:600~t:147",
+        "name": "NEC Nijmegen",
+        "shortName": "NEC",
+        "abbreviation": "NEC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/147.png"
+      },
+      "away": {
+        "id": "2566",
+        "uid": "s:600~t:2566",
+        "name": "Excelsior",
+        "shortName": "Excelsior",
+        "abbreviation": "EXC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2566.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "Postponed",
+        "period": "",
+        "detail": "Postponed",
+        "description": "Postponed"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875636/excelsior-nec-nijmegen",
+      "broadcasts": []
     },
     {
       "eventId": "401874929",
@@ -3950,9 +5452,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "55'",
-        "period": "2",
-        "detail": "55'",
+        "clock": "68'",
+        "period": 2,
+        "detail": "68'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874929",
@@ -3995,14 +5497,15 @@
       },
       "status": {
         "state": "live",
-        "clock": "54'",
-        "period": "2",
-        "detail": "54'",
+        "clock": "67'",
+        "period": 2,
+        "detail": "67'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874747",
       "broadcasts": [
-        "CBSSN"
+        "CBSSN",
+        "Paramount+"
       ]
     },
     {
@@ -4034,16 +5537,16 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
       },
       "score": {
-        "home": 1,
-        "away": 1,
-        "display": "1-1"
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
       },
       "status": {
         "state": "live",
-        "clock": "55'",
-        "period": "2",
-        "detail": "55'",
-        "description": "In Progress"
+        "clock": "70'",
+        "period": 2,
+        "detail": "70'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876491",
       "broadcasts": []
@@ -4083,9 +5586,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "57'",
-        "period": "2",
-        "detail": "57'",
+        "clock": "71'",
+        "period": 2,
+        "detail": "71'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876488",
@@ -4121,14 +5624,14 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "away": 1,
+        "display": "0-1"
       },
       "status": {
         "state": "live",
-        "clock": "57'",
-        "period": "2",
-        "detail": "57'",
+        "clock": "70'",
+        "period": 2,
+        "detail": "70'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876486",
@@ -4169,10 +5672,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "56'",
-        "period": "2",
-        "detail": "56'",
-        "description": "In Progress"
+        "clock": "70'",
+        "period": 2,
+        "detail": "70'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876485",
       "broadcasts": []
@@ -4207,17 +5710,60 @@
       },
       "score": {
         "home": 1,
-        "away": 2,
-        "display": "1-2"
+        "away": 3,
+        "display": "1-3"
       },
       "status": {
         "state": "live",
-        "clock": "54'",
-        "period": "2",
-        "detail": "54'",
+        "clock": "68'",
+        "period": 2,
+        "detail": "68'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879019",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401875634",
+      "uid": "s:600~l:725~e:401875634",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:00Z",
+      "venue": "Abe Lenstra Stadion",
+      "home": {
+        "id": "146",
+        "uid": "s:600~t:146",
+        "name": "Heerenveen",
+        "shortName": "Heerenveen",
+        "abbreviation": "HEE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/146.png"
+      },
+      "away": {
+        "id": "2565",
+        "uid": "s:600~t:2565",
+        "name": "PEC Zwolle",
+        "shortName": "PEC Zwolle",
+        "abbreviation": "PEC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2565.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "display": "0-1"
+      },
+      "status": {
+        "state": "live",
+        "clock": "53'",
+        "period": 2,
+        "detail": "53'",
+        "description": "Second Half"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875634",
       "broadcasts": []
     },
     {
@@ -4255,10 +5801,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "45'+4'",
-        "period": "1",
-        "detail": "HT",
-        "description": "Halftime"
+        "clock": "54'",
+        "period": 2,
+        "detail": "54'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401841205",
       "broadcasts": []
@@ -4292,20 +5838,22 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 1,
-        "display": "0-1"
+        "display": "1-1"
       },
       "status": {
         "state": "live",
-        "clock": "28'",
-        "period": "1",
-        "detail": "28'",
+        "clock": "41'",
+        "period": 1,
+        "detail": "41'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882912",
       "broadcasts": [
-        "ABC"
+        "ABC",
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -4343,9 +5891,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "26'",
-        "period": "1",
-        "detail": "26'",
+        "clock": "39'",
+        "period": 1,
+        "detail": "39'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401885467",
@@ -4386,7 +5934,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 5:30 PM EDT",
         "description": "Scheduled"
@@ -4429,7 +5977,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -4472,7 +6020,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -4517,7 +6065,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -4562,7 +6110,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -4607,7 +6155,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -4652,7 +6200,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -4697,7 +6245,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 7:30 PM EDT",
         "description": "Scheduled"
@@ -4742,7 +6290,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 8:30 PM EDT",
         "description": "Scheduled"
@@ -4787,7 +6335,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 8:30 PM EDT",
         "description": "Scheduled"
@@ -4832,7 +6380,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 8:30 PM EDT",
         "description": "Scheduled"
@@ -4877,7 +6425,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 9:30 PM EDT",
         "description": "Scheduled"
@@ -4922,7 +6470,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 10:30 PM EDT",
         "description": "Scheduled"
@@ -4967,7 +6515,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 10:30 PM EDT",
         "description": "Scheduled"
@@ -5012,7 +6560,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sat, August 22nd at 10:30 PM EDT",
         "description": "Scheduled"
@@ -5020,6 +6568,139 @@
       "link": "https://www.espn.com/soccer/match/_/gameId/761752/minnesota-united-fc-san-jose-earthquakes",
       "broadcasts": [
         "Apple TV"
+      ]
+    },
+    {
+      "eventId": "401875633",
+      "uid": "s:600~l:725~e:401875633",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T10:15Z",
+      "venue": "De Adelaarshorst",
+      "home": {
+        "id": "3706",
+        "uid": "s:600~t:3706",
+        "name": "Go Ahead Eagles",
+        "shortName": "Go Ahead Eagles",
+        "abbreviation": "GAE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3706.png"
+      },
+      "away": {
+        "id": "2726",
+        "uid": "s:600~t:2726",
+        "name": "ADO Den Haag",
+        "shortName": "ADO Den Haag",
+        "abbreviation": "ADO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2726.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "Scheduled",
+        "period": "",
+        "detail": "Sun, August 23rd at 6:15 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875633/ado-den-haag-go-ahead-eagles",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401880319",
+      "uid": "s:600~l:3914~e:401880319",
+      "league": {
+        "id": "english-championship",
+        "name": "English Championship",
+        "country": "England",
+        "espnId": "eng.2"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T11:00Z",
+      "venue": "The Hawthorns",
+      "home": {
+        "id": "383",
+        "uid": "s:600~t:383",
+        "name": "West Bromwich Albion",
+        "shortName": "West Brom",
+        "abbreviation": "WBA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/383.png"
+      },
+      "away": {
+        "id": "379",
+        "uid": "s:600~t:379",
+        "name": "Burnley",
+        "shortName": "Burnley",
+        "abbreviation": "BUR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/379.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "Scheduled",
+        "period": "",
+        "detail": "Sun, August 23rd at 7:00 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401880319/burnley-west-bromwich-albion",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401875632",
+      "uid": "s:600~l:725~e:401875632",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T12:30Z",
+      "venue": "Philips Stadion",
+      "home": {
+        "id": "148",
+        "uid": "s:600~t:148",
+        "name": "PSV Eindhoven",
+        "shortName": "PSV",
+        "abbreviation": "PSV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/148.png"
+      },
+      "away": {
+        "id": "145",
+        "uid": "s:600~t:145",
+        "name": "FC Groningen",
+        "shortName": "FC Groningen",
+        "abbreviation": "GRO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/145.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "Scheduled",
+        "period": "",
+        "detail": "Sun, August 23rd at 8:30 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875632/fc-groningen-psv-eindhoven",
+      "broadcasts": [
+        "ESPN+"
       ]
     },
     {
@@ -5057,7 +6738,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 9:00 AM EDT",
         "description": "Scheduled"
@@ -5102,14 +6783,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 9:00 AM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879320/afc-bournemouth-manchester-city",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Tele"
       ]
     },
     {
@@ -5147,7 +6829,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 9:00 AM EDT",
         "description": "Scheduled"
@@ -5190,7 +6872,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 10:00 AM EDT",
         "description": "Scheduled"
@@ -5214,7 +6896,7 @@
         "id": "5309",
         "uid": "s:600~t:5309",
         "name": "Vitória de Guimaraes",
-        "shortName": "Vitória",
+        "shortName": "Vitória ",
         "abbreviation": "VSC",
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/5309.png"
       },
@@ -5233,13 +6915,58 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 10:30 AM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401885466/cd-nacional-vitoria-de-guimaraes",
       "broadcasts": []
+    },
+    {
+      "eventId": "401875631",
+      "uid": "s:600~l:725~e:401875631",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260823",
+      "kickoff": "2026-08-23T14:45Z",
+      "venue": "Kooi Stadium",
+      "home": {
+        "id": "3736",
+        "uid": "s:600~t:3736",
+        "name": "SC Cambuur",
+        "shortName": "Cambuur",
+        "abbreviation": "CAM",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3736.png"
+      },
+      "away": {
+        "id": "142",
+        "uid": "s:600~t:142",
+        "name": "Feyenoord Rotterdam",
+        "shortName": "Feyenoord",
+        "abbreviation": "FEY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/142.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "upcoming",
+        "clock": "Scheduled",
+        "period": "",
+        "detail": "Sun, August 23rd at 10:45 AM EDT",
+        "description": "Scheduled"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875631/feyenoord-rotterdam-sc-cambuur",
+      "broadcasts": [
+        "ESPN+"
+      ]
     },
     {
       "eventId": "401882915",
@@ -5276,14 +7003,16 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 11:00 AM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882915/villarreal-atletico-madrid",
       "broadcasts": [
-        "ESPN2"
+        "ESPN2",
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -5321,7 +7050,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 11:15 AM EDT",
         "description": "Scheduled"
@@ -5364,14 +7093,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 11:30 AM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879319/liverpool-newcastle-united",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Tele"
       ]
     },
     {
@@ -5409,7 +7139,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 12:30 PM EDT",
         "description": "Scheduled"
@@ -5454,7 +7184,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 12:30 PM EDT",
         "description": "Scheduled"
@@ -5499,7 +7229,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 12:30 PM EDT",
         "description": "Scheduled"
@@ -5542,7 +7272,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 1:00 PM EDT",
         "description": "Scheduled"
@@ -5585,14 +7315,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 1:30 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882911/racing-santander-getafe",
       "broadcasts": [
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -5630,7 +7361,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 2:45 PM EDT",
         "description": "Scheduled"
@@ -5675,7 +7406,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 2:45 PM EDT",
         "description": "Scheduled"
@@ -5720,7 +7451,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 2:45 PM EDT",
         "description": "Scheduled"
@@ -5763,7 +7494,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:00 PM EDT",
         "description": "Scheduled"
@@ -5806,7 +7537,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:00 PM EDT",
         "description": "Scheduled"
@@ -5849,7 +7580,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:00 PM EDT",
         "description": "Scheduled"
@@ -5892,14 +7623,16 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:30 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882913/barcelona-elche",
       "broadcasts": [
-        "ABC"
+        "ABC",
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -5937,7 +7670,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 3:30 PM EDT",
         "description": "Scheduled"
@@ -5980,7 +7713,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 4:30 PM EDT",
         "description": "Scheduled"
@@ -6025,7 +7758,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 5:30 PM EDT",
         "description": "Scheduled"
@@ -6068,7 +7801,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 5:30 PM EDT",
         "description": "Scheduled"
@@ -6111,7 +7844,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 6:30 PM EDT",
         "description": "Scheduled"
@@ -6154,7 +7887,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Sun, August 23rd at 7:00 PM EDT",
         "description": "Scheduled"
@@ -6199,7 +7932,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 12:30 PM EDT",
         "description": "Scheduled"
@@ -6244,14 +7977,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 1:30 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882909/levante-osasuna",
       "broadcasts": [
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -6289,7 +8023,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 2:45 PM EDT",
         "description": "Scheduled"
@@ -6334,14 +8068,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 3:00 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879318/chelsea-fulham",
       "broadcasts": [
-        "USA Net"
+        "USA Net",
+        "Universo"
       ]
     },
     {
@@ -6379,7 +8114,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 3:15 PM EDT",
         "description": "Scheduled"
@@ -6422,14 +8157,15 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 3:30 PM EDT",
         "description": "Scheduled"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882910/deportivo-malaga",
       "broadcasts": [
-        "ESPN Deportes"
+        "ESPN Deportes",
+        "ESPN+"
       ]
     },
     {
@@ -6467,7 +8203,7 @@
       },
       "status": {
         "state": "upcoming",
-        "clock": "0'",
+        "clock": "Scheduled",
         "period": "",
         "detail": "Mon, August 24th at 7:00 PM EDT",
         "description": "Scheduled"
