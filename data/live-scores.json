@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T19:03:37.982Z",
+  "generatedAt": "2026-08-22T19:07:23.098Z",
   "source": "ESPN public soccer scoreboard",
   "dateRange": [
     "20260822",
@@ -144,9 +144,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "70'",
+        "clock": "74'",
         "period": "2",
-        "detail": "70'",
+        "detail": "74'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882907",
@@ -189,10 +189,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "17'",
+        "clock": "21'",
         "period": "1",
-        "detail": "17'",
-        "description": "First Half"
+        "detail": "21'",
+        "description": "In Progress"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874929",
       "broadcasts": [
@@ -234,9 +234,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "17'",
+        "clock": "21'",
         "period": "1",
-        "detail": "17'",
+        "detail": "21'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874747",
@@ -279,9 +279,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "18'",
+        "clock": "22'",
         "period": "1",
-        "detail": "18'",
+        "detail": "22'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876491",
@@ -322,9 +322,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "18'",
+        "clock": "22'",
         "period": "1",
-        "detail": "18'",
+        "detail": "22'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876488",
@@ -365,9 +365,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "19'",
+        "clock": "22'",
         "period": "1",
-        "detail": "19'",
+        "detail": "22'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876486",
@@ -408,9 +408,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "18'",
+        "clock": "22'",
         "period": "1",
-        "detail": "18'",
+        "detail": "22'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876485",
@@ -445,16 +445,16 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png"
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "display": "0-0"
+        "display": "1-0"
       },
       "status": {
         "state": "live",
-        "clock": "16'",
+        "clock": "20'",
         "period": "1",
-        "detail": "16'",
-        "description": "First Half"
+        "detail": "20'",
+        "description": "In Progress"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879019",
       "broadcasts": []
@@ -494,9 +494,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "3'",
+        "clock": "7'",
         "period": "1",
-        "detail": "3'",
+        "detail": "7'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401841205",
@@ -3905,9 +3905,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "70'",
+        "clock": "74'",
         "period": "2",
-        "detail": "70'",
+        "detail": "74'",
         "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401882907",
@@ -3950,10 +3950,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "17'",
+        "clock": "21'",
         "period": "1",
-        "detail": "17'",
-        "description": "First Half"
+        "detail": "21'",
+        "description": "In Progress"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874929",
       "broadcasts": [
@@ -3995,9 +3995,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "17'",
+        "clock": "21'",
         "period": "1",
-        "detail": "17'",
+        "detail": "21'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874747",
@@ -4040,9 +4040,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "18'",
+        "clock": "22'",
         "period": "1",
-        "detail": "18'",
+        "detail": "22'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876491",
@@ -4083,9 +4083,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "18'",
+        "clock": "22'",
         "period": "1",
-        "detail": "18'",
+        "detail": "22'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876488",
@@ -4126,9 +4126,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "19'",
+        "clock": "22'",
         "period": "1",
-        "detail": "19'",
+        "detail": "22'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876486",
@@ -4169,9 +4169,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "18'",
+        "clock": "22'",
         "period": "1",
-        "detail": "18'",
+        "detail": "22'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876485",
@@ -4206,16 +4206,16 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png"
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "display": "0-0"
+        "display": "1-0"
       },
       "status": {
         "state": "live",
-        "clock": "16'",
+        "clock": "20'",
         "period": "1",
-        "detail": "16'",
-        "description": "First Half"
+        "detail": "20'",
+        "description": "In Progress"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879019",
       "broadcasts": []
@@ -4255,9 +4255,9 @@
       },
       "status": {
         "state": "live",
-        "clock": "3'",
+        "clock": "7'",
         "period": "1",
-        "detail": "3'",
+        "detail": "7'",
         "description": "First Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401841205",
