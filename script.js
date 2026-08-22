@@ -36,4 +36,658 @@ function renderStandings(){const league=standings[standingsIndex];if(!league){$(
 function buildStandingsDots(){const box=$("#standingsDots");box.innerHTML=standings.map((_,i)=>`<span class="standings-dot" data-index="${i}"></span>`).join("");$$(".standings-dot").forEach(d=>d.addEventListener("click",()=>{standingsIndex=Number(d.dataset.index);renderStandings()}));renderStandings()}
 async function loadData(){try{const [schedule,news,config,stand]=await Promise.all([fetchJson("data/schedule.json"),fetchJson("data/news.json").catch(()=>({articles:[]})),fetchJson("data/site-config.json").catch(()=>({})),fetchJson("data/standings.json").catch(()=>({leagues:[]}))]);Object.assign(CONFIG,config||{});applyLinks();allMatches=(schedule.matches||[]).map(decorate).sort((a,b)=>matchDateTime(a)-matchDateTime(b));newsArticles=news.articles||[];standings=(stand.leagues||[]).filter(x=>Array.isArray(x.teams)&&x.teams.length);const live=allMatches.find(m=>m.status==="LIVE");const upcoming=allMatches.find(m=>m.status==="UPCOMING");const featured=live||allMatches.find(m=>m.featured&&m.status==="UPCOMING")||upcoming||allMatches[allMatches.length-1];if(featured){renderFeatured(featured);renderNextSchedule(featured)}renderPreview(currentFilter);renderPredictionBoard();renderNews();buildStandingsDots();const liveMatch=live||featured;$("#liveEmptyLabel").innerHTML=liveMatch?.status==="LIVE"?`LIVE NOW<br><b>${esc(liveMatch.homeTeam)} VS ${esc(liveMatch.awayTeam)}</b>`:"LIVE STREAMING<br><b>READY</b>";setActionLink($("#liveStreamingLink"),CONFIG.liveStreaming||liveMatch?.liveStreamingUrl,"LIVE STREAMING →");}catch(e){console.error(e);$("#matchCompetition").textContent="DATA ERROR";$("#matchStatus").textContent="CHECK FILE";$("#previewSummary").textContent="schedule.json belum tersedia atau tidak valid."}}
 function updateClock(){const t=new Intl.DateTimeFormat("id-ID",{timeZone:"Asia/Jakarta",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(new Date());$("#liveClock").textContent=`${t} WIB`}
-$("#menuToggle")?.addEventListener("click",()=>$("#mainNav").classList.toggle("open"));$$('.main-nav a').forEach(a=>a.addEventListener("click",()=>$("#mainNav").classList.remove("open")));window.addEventListener("scroll",()=>{const max=document.documentElement.scrollHeight-innerHeight;$("#scrollProgress").style.width=`${max?scrollY/max*100:0}%`});$$('.preview-filter').forEach(b=>b.addEventListener("click",()=>{$$('.preview-filter').forEach(x=>x.classList.remove("active"));b.classList.add("active");renderPreview(b.dataset.filter)}));$$('[data-scroll-target]').forEach(b=>b.addEventListener("click",()=>document.getElementById(b.dataset.scrollTarget)?.scrollIntoView({behavior:"smooth"})));$("#standingsPrev")?.addEventListener("click",()=>{if(!standings.length)return;standingsIndex=(standingsIndex-1+standings.length)%standings.length;renderStandings()});$("#standingsNext")?.addEventListener("click",()=>{if(!standings.length)return;standingsIndex=(standingsIndex+1)%standings.length;renderStandings()});$("#matchModal")?.addEventListener("click",e=>{if(e.target.id==="matchModal"||e.target.closest(".modal-close,.modal-close-btn")){$("#matchModal").classList.remove("show");$("#matchModal").setAttribute("aria-hidden","true")}});$("#year").textContent=new Date().getFullYear();updateClock();setInterval(updateClock,1000);loadData();setInterval(loadData,60000);
+$("#menuToggle")?.addEventListener("click",()=>$("#mainNav").classList.toggle("open"));$$('.main-nav a').forEach(a=>a.addEventListener("click",()=>$("#mainNav").classList.remove("open")));window.addEventListener("scroll",()=>{const max=document.documentElement.scrollHeight-innerHeight;$("#scrollProgress").style.width=`${max?scrollY/max*100:0}%`});$$('.preview-filter').forEach(b=>b.addEventListener("click",()=>{$$('.preview-filter').forEach(x=>x.classList.remove("active"));b.classList.add("active");renderPreview(b.dataset.filter)}));$$('[data-scroll-target]').forEach(b=>b.addEventListener("click",()=>document.getElementById(b.dataset.scrollTarget)?.scrollIntoView({behavior:"smooth"})));$("#standingsPrev")?.addEventListener("click",()=>{if(!standings.length)return;standingsIndex=(standingsIndex-1+standings.length)%standings.length;renderStandings()});$("#standingsNext")?.addEventListener("click",()=>{if(!standings.length)return;standingsIndex=(standingsIndex+1)%standings.length;renderStandings()});$("#matchModal")?.addEventListener("click",e=>{if(e.target.id==="matchModal"||e.target.closest(".modal-close,.modal-close-btn")){$("#matchModal").classList.remove("show");$("#matchModal").setAttribute("aria-hidden","true")}});/* =========================================================
+   MARIOBOLA MATCH CENTER — LIVE SCORE
+   HOME IS LOCKED
+   ========================================================= */
+
+const LIVE_SCORE_API = "/api/live-scores";
+const LIVE_SCORE_FALLBACK = "data/live-scores.json";
+const LIVE_SCORE_REFRESH = 20000;
+
+function normalizeLiveTeam(name){
+  return String(name || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .replace(/&/g," and ")
+    .replace(/[^a-z0-9]+/g," ")
+    .replace(
+      /\b(fc|cf|sc|afc|ac|bc|club|football|futbol|calcio)\b/g,
+      " "
+    )
+    .replace(/\s+/g," ")
+    .trim();
+}
+
+const LIVE_TEAM_ALIASES = {
+  "manchester united":[
+    "manchester united",
+    "man utd",
+    "man united"
+  ],
+
+  "manchester city":[
+    "manchester city",
+    "man city"
+  ],
+
+  "tottenham hotspur":[
+    "tottenham hotspur",
+    "tottenham",
+    "spurs"
+  ],
+
+  "newcastle united":[
+    "newcastle united",
+    "newcastle"
+  ],
+
+  "west ham united":[
+    "west ham united",
+    "west ham"
+  ],
+
+  "wolverhampton wanderers":[
+    "wolverhampton wanderers",
+    "wolverhampton",
+    "wolves"
+  ],
+
+  "brighton hove albion":[
+    "brighton hove albion",
+    "brighton"
+  ],
+
+  "nottingham forest":[
+    "nottingham forest",
+    "nottingham"
+  ],
+
+  "real betis":[
+    "real betis",
+    "betis"
+  ],
+
+  "atletico madrid":[
+    "atletico madrid",
+    "atletico"
+  ],
+
+  "inter milan":[
+    "inter milan",
+    "internazionale",
+    "inter"
+  ],
+
+  "ac milan":[
+    "ac milan",
+    "milan"
+  ],
+
+  "paris saint germain":[
+    "paris saint germain",
+    "psg"
+  ]
+};
+
+function liveTeamVariants(name){
+
+  const normalized =
+    normalizeLiveTeam(name);
+
+  const result =
+    new Set([normalized]);
+
+  Object.values(
+    LIVE_TEAM_ALIASES
+  ).forEach(list => {
+
+    const normalizedAliases =
+      list.map(normalizeLiveTeam);
+
+    if (
+      normalizedAliases.includes(
+        normalized
+      )
+    ){
+
+      normalizedAliases.forEach(
+        item =>
+          result.add(item)
+      );
+    }
+
+  });
+
+  return [...result];
+}
+
+function liveTeamSimilarity(a,b){
+
+  const av =
+    liveTeamVariants(a);
+
+  const bv =
+    liveTeamVariants(b);
+
+  let best = 0;
+
+  for (
+    const x of av
+  ){
+
+    for (
+      const y of bv
+    ){
+
+      if (!x || !y)
+        continue;
+
+      if (x === y){
+        best =
+          Math.max(best,1);
+
+        continue;
+      }
+
+      if (
+        x.includes(y) ||
+        y.includes(x)
+      ){
+
+        best =
+          Math.max(best,.88);
+
+        continue;
+      }
+
+      const ax =
+        new Set(
+          x.split(" ")
+        );
+
+      const by =
+        new Set(
+          y.split(" ")
+        );
+
+      const overlap =
+        [...ax].filter(
+          word =>
+            by.has(word)
+        );
+
+      const union =
+        new Set([
+          ...ax,
+          ...by
+        ]);
+
+      if (union.size){
+        best =
+          Math.max(
+            best,
+            overlap.length /
+            union.size
+          );
+      }
+    }
+  }
+
+  return best;
+}
+
+async function fetchLiveScoreData(){
+
+  try{
+
+    const response =
+      await fetch(
+        LIVE_SCORE_API,
+        {
+          cache:"no-store"
+        }
+      );
+
+    if (!response.ok){
+      throw new Error(
+        `LIVE API HTTP ${response.status}`
+      );
+    }
+
+    return await response.json();
+
+  }catch(error){
+
+    console.warn(
+      "[MARIOBOLA LIVE] API gagal, memakai fallback.",
+      error
+    );
+
+    try{
+
+      const fallback =
+        await fetch(
+          LIVE_SCORE_FALLBACK,
+          {
+            cache:"no-store"
+          }
+        );
+
+      if (!fallback.ok){
+        throw new Error(
+          `Fallback HTTP ${fallback.status}`
+        );
+      }
+
+      return await fallback.json();
+
+    }catch(fallbackError){
+
+      console.warn(
+        "[MARIOBOLA LIVE] Fallback gagal.",
+        fallbackError
+      );
+
+      return null;
+    }
+  }
+}
+
+function getLiveEvents(payload){
+
+  if (!payload)
+    return [];
+
+  if (
+    Array.isArray(
+      payload.liveMatches
+    )
+  ){
+    return payload.liveMatches;
+  }
+
+  if (
+    Array.isArray(
+      payload.matches
+    )
+  ){
+    return payload.matches;
+  }
+
+  if (
+    Array.isArray(
+      payload.events
+    )
+  ){
+    return payload.events;
+  }
+
+  return [];
+}
+
+function getLiveHomeName(event){
+
+  return String(
+    event?.home?.name ||
+    event?.homeTeam ||
+    ""
+  );
+}
+
+function getLiveAwayName(event){
+
+  return String(
+    event?.away?.name ||
+    event?.awayTeam ||
+    ""
+  );
+}
+
+function getLiveHomeScore(event){
+
+  const score =
+    event?.score?.home ??
+    event?.home?.score ??
+    event?.homeScore;
+
+  return Number.isFinite(
+    Number(score)
+  )
+    ? Number(score)
+    : 0;
+}
+
+function getLiveAwayScore(event){
+
+  const score =
+    event?.score?.away ??
+    event?.away?.score ??
+    event?.awayScore;
+
+  return Number.isFinite(
+    Number(score)
+  )
+    ? Number(score)
+    : 0;
+}
+
+function getLiveClock(event){
+
+  return String(
+    event?.status?.clock ||
+    event?.status?.detail ||
+    event?.clock ||
+    ""
+  );
+}
+
+function getLiveState(event){
+
+  const value =
+    String(
+      event?.status?.state ||
+      event?.state ||
+      ""
+    ).toLowerCase();
+
+  if (
+    value === "in" ||
+    value.includes("live") ||
+    value.includes("progress")
+  ){
+    return "LIVE";
+  }
+
+  if (
+    value === "post" ||
+    value.includes("finish") ||
+    value.includes("final") ||
+    value.includes("complete")
+  ){
+    return "FINISHED";
+  }
+
+  return "UPCOMING";
+}
+
+function findLiveEventForMatch(
+  match,
+  events
+){
+
+  let best = null;
+  let bestScore = 0;
+
+  for (
+    const event
+    of events
+  ){
+
+    const homeScore =
+      liveTeamSimilarity(
+        match.homeTeam,
+        getLiveHomeName(event)
+      );
+
+    const awayScore =
+      liveTeamSimilarity(
+        match.awayTeam,
+        getLiveAwayName(event)
+      );
+
+    if (
+      homeScore >= .70 &&
+      awayScore >= .70
+    ){
+
+      const combined =
+        (homeScore + awayScore) /
+        2;
+
+      if (
+        combined > bestScore
+      ){
+
+        bestScore =
+          combined;
+
+        best =
+          event;
+      }
+    }
+  }
+
+  return best;
+}
+
+async function updateMatchCenterLive(){
+
+  if (
+    !Array.isArray(allMatches) ||
+    !allMatches.length
+  ){
+    return;
+  }
+
+  const payload =
+    await fetchLiveScoreData();
+
+  if (!payload)
+    return;
+
+  const events =
+    getLiveEvents(payload);
+
+  if (!events.length)
+    return;
+
+  allMatches =
+    allMatches.map(
+      match => {
+
+        const event =
+          findLiveEventForMatch(
+            match,
+            events
+          );
+
+        if (!event){
+          return match;
+        }
+
+        return {
+          ...match,
+
+          homeScore:
+            getLiveHomeScore(event),
+
+          awayScore:
+            getLiveAwayScore(event),
+
+          actualStatus:
+            getLiveState(event),
+
+          liveData:{
+            clock:
+              getLiveClock(event),
+
+            state:
+              getLiveState(event),
+
+            homeScore:
+              getLiveHomeScore(event),
+
+            awayScore:
+              getLiveAwayScore(event),
+
+            eventId:
+              event.eventId ||
+              event.id ||
+              null
+          },
+
+          status:
+            getLiveState(event)
+        };
+      }
+    );
+
+  /*
+    Pertahankan pertandingan yang sedang
+    tampil sebagai Featured Match.
+  */
+
+  let featured =
+    allMatches.find(
+      m =>
+        m.id ===
+        activeMatchId
+    );
+
+  if (!featured){
+
+    featured =
+      allMatches.find(
+        m =>
+          m.status ===
+          "LIVE"
+      );
+  }
+
+  if (!featured){
+
+    featured =
+      allMatches.find(
+        m =>
+          m.status ===
+          "UPCOMING"
+      );
+  }
+
+  if (!featured){
+    featured =
+      allMatches[0];
+  }
+
+  if (featured){
+
+    renderFeatured(
+      featured
+    );
+
+    renderNextSchedule(
+      featured
+    );
+  }
+
+  /*
+    Update ticker.
+  */
+
+  renderPreview(
+    currentFilter
+  );
+
+  /*
+    Update ALL PREDICTIONS.
+  */
+
+  renderPredictionBoard();
+
+  /*
+    Update LIVE HUB label.
+  */
+
+  const live =
+    allMatches.find(
+      m =>
+        m.status === "LIVE"
+    );
+
+  if (live){
+
+    $("#liveEmptyLabel").innerHTML =
+      `LIVE NOW<br>
+       <b>
+       ${esc(live.homeTeam)}
+       ${live.homeScore ?? 0}
+       -
+       ${live.awayScore ?? 0}
+       ${esc(live.awayTeam)}
+       </b>`;
+
+  }
+}
+
+
+/* =========================================================
+   SAFE STARTUP
+   ========================================================= */
+
+function marioBolaStart(){
+
+  const year =
+    $("#year");
+
+  if (year){
+    year.textContent =
+      new Date()
+        .getFullYear();
+  }
+
+  updateClock();
+
+  setInterval(
+    updateClock,
+    1000
+  );
+
+  /*
+    FIRST normal website load.
+  */
+  loadData();
+
+  /*
+    Normal schedule/data refresh.
+  */
+  setInterval(
+    loadData,
+    60000
+  );
+
+  /*
+    LIVE SCORE refresh.
+  */
+  setInterval(
+    updateMatchCenterLive,
+    LIVE_SCORE_REFRESH
+  );
+
+  /*
+    First live-score request immediately.
+  */
+  setTimeout(
+    updateMatchCenterLive,
+    1500
+  );
+}
+
+if (
+  document.readyState ===
+  "loading"
+){
+
+  document.addEventListener(
+    "DOMContentLoaded",
+    marioBolaStart,
+    {
+      once:true
+    }
+  );
+
+}else{
+
+  marioBolaStart();
+}
