@@ -25,7 +25,99 @@ function logoUrl(m,side){return side==="home"?m.homeCrest||"":m.awayCrest||""}
 function logoMarkup(m,side){const n=side==="home"?m.homeTeam:m.awayTeam,u=logoUrl(m,side);return `<div class="preview-logo ${u?"has-logo":""}" ${u?`style="background-image:url('${esc(u)}')"`:""}>${u?"":initials(n)}</div>`}
 function setCrest(el,url,name){if(!el)return;el.textContent=url?"":initials(name);el.style.backgroundImage=url?`url("${url}")`:"";el.classList.toggle("has-crest",!!url)}
 function applyLinks(){ $$('[data-config-link]').forEach(el=>{const key=el.dataset.configLink,url=CONFIG[key];if(url){el.href=url;el.target="_blank";el.rel="noopener noreferrer"}});const img=$("#liveImage");if(img&&CONFIG.liveImage){img.src=CONFIG.liveImage;img.onerror=()=>{img.src="assets/live/live-placeholder.svg"}}}
-function renderFeatured(m){if(!m)return;activeMatchId=m.id;$("#matchCompetition").textContent=m.competition||"FOOTBALL";const st=$("#matchStatus");st.textContent=statusLabel(m.status);st.className=`match-status ${statusClass(m.status)}`;$("#matchDate").textContent=formatDate(matchDateTime(m));$("#matchTime").textContent=`${m.time} WIB`;$("#matchScore").textContent=m.homeScore!=null&&m.awayScore!=null?`${m.homeScore} - ${m.awayScore}`:"VS";$("#homeTeam").textContent=m.homeTeam;$("#awayTeam").textContent=m.awayTeam;$("#matchHandicap").textContent=m.handicap||"-";$("#matchPrediction").textContent=m.prediction||"-";setCrest($("#homeCrest"),m.homeCrest,m.homeTeam);setCrest($("#awayCrest"),m.awayCrest,m.awayTeam);$("#matchModal").dataset.matchId=m.id}
+function renderFeatured(m){
+
+  if(!m) return;
+
+  activeMatchId = m.id;
+
+  $("#matchCompetition").textContent =
+    m.competition || "FOOTBALL";
+
+  const st = $("#matchStatus");
+
+  st.textContent =
+    statusLabel(m.status);
+
+  st.className =
+    `match-status ${statusClass(m.status)}`;
+
+  $("#matchDate").textContent =
+    formatDate(
+      matchDateTime(m)
+    );
+
+  /*
+    WAKTU MATCH CENTER
+
+    UPCOMING  → jam pertandingan
+    LIVE      → menit/clock dari live score
+    FINISHED  → FINISHED
+  */
+  if(m.status === "LIVE"){
+
+    $("#matchTime").textContent =
+      m.liveData?.clock ||
+      "LIVE";
+
+  }else if(m.status === "FINISHED"){
+
+    $("#matchTime").textContent =
+      "FINISHED";
+
+  }else{
+
+    $("#matchTime").textContent =
+      `${m.time} WIB`;
+  }
+
+  /*
+    SCORE
+
+    LIVE / FINISHED → skor aktual
+    UPCOMING        → VS
+  */
+  if(
+    m.homeScore != null &&
+    m.awayScore != null
+  ){
+
+    $("#matchScore").textContent =
+      `${m.homeScore} - ${m.awayScore}`;
+
+  }else{
+
+    $("#matchScore").textContent =
+      "VS";
+  }
+
+  $("#homeTeam").textContent =
+    m.homeTeam;
+
+  $("#awayTeam").textContent =
+    m.awayTeam;
+
+  $("#matchHandicap").textContent =
+    m.handicap || "-";
+
+  $("#matchPrediction").textContent =
+    m.prediction || "-";
+
+  setCrest(
+    $("#homeCrest"),
+    m.homeCrest,
+    m.homeTeam
+  );
+
+  setCrest(
+    $("#awayCrest"),
+    m.awayCrest,
+    m.awayTeam
+  );
+
+  $("#matchModal")
+    .dataset.matchId = m.id;
+}
 function renderNextSchedule(m){const sorted=allMatches.filter(x=>x.status!=="FINISHED").sort((a,b)=>matchDateTime(a)-matchDateTime(b));let idx=sorted.findIndex(x=>x.id===m?.id);if(idx<0)idx=0;[1,2,3].forEach((n,i)=>{const x=sorted[(idx+i+1)%Math.max(sorted.length,1)];if(x){$("#fixtureTeam"+n).textContent=`${x.homeTeam} vs ${x.awayTeam}`;$("#fixtureMeta"+n).textContent=`${formatDate(matchDateTime(x))} • ${x.time} WIB • ${statusLabel(x.status)}`}})}
 function renderPreview(filter=currentFilter){currentFilter=filter;const list=allMatches.filter(m=>filter==="all"||m.status.toLowerCase()===filter).sort((a,b)=>matchDateTime(a)-matchDateTime(b));$("#previewSummary").textContent=`${list.length} pertandingan • sumber TXT harian MARIOBOLA • WIB`;const grid=$("#matchPreviewGrid");if(!list.length){grid.innerHTML='<div class="preview-empty">NO MATCH FOUND FOR THIS FILTER.</div>';return}const card=m=>`<article class="fixture-ticker-card"><div class="fixture-ticker-league">${esc(m.competition)}</div><div class="fixture-ticker-team">${logoMarkup(m,"home")}<strong>${esc(m.homeTeam)}</strong></div><div class="fixture-ticker-vs">VS</div><div class="fixture-ticker-team">${logoMarkup(m,"away")}<strong>${esc(m.awayTeam)}</strong></div><div class="fixture-ticker-time"><strong>${esc(m.time)}</strong><small>${esc(formatDate(matchDateTime(m)))}</small></div><div class="fixture-ticker-prediction"><small>PRED</small><strong>${esc(m.prediction||"-")}</strong></div><div class="fixture-ticker-status">${statusLabel(m.status)}</div></article>`;const html=list.map(card).join("");grid.innerHTML=`<div class="fixtures-marquee"><div class="fixtures-marquee-group">${html}</div><div class="fixtures-marquee-group">${html}</div></div>`;requestAnimationFrame(()=>{const group=$(".fixtures-marquee-group",grid),marquee=$(".fixtures-marquee",grid);if(group&&marquee){marquee.style.animationDuration=`${Math.max(40,group.scrollWidth/20)}s`}})}
 function renderPredictionBoard(){const box=$("#predictionBoard");const list=[...allMatches].sort((a,b)=>matchDateTime(a)-matchDateTime(b));box.innerHTML=list.map((m,i)=>`<article class="prediction-card-modern"><div class="prediction-card-number">${String(i+1).padStart(2,"0")}</div><div><div class="prediction-card-league"><span>${esc(m.competition)}</span><b class="${statusClass(m.status)}">${statusLabel(m.status)}</b></div><div class="prediction-card-date">${esc(formatDate(matchDateTime(m)))} • ${esc(m.time)} WIB</div><div class="prediction-card-teams"><div class="prediction-team">${logoMarkup(m,"home")}<strong>${esc(m.homeTeam)}</strong></div><div class="prediction-vs">VS</div><div class="prediction-team">${logoMarkup(m,"away")}<strong>${esc(m.awayTeam)}</strong></div></div></div><div class="prediction-card-info"><div><small>HANDICAP</small><strong>${esc(m.handicap||"-")}</strong></div><div><small>PREDICTION</small><strong>${esc(m.prediction||"-")}</strong></div></div><button class="prediction-detail-modern ${statusClass(m.status)}" data-preview-id="${esc(m.id)}">${statusLabel(m.status)} <span>${m.status==="LIVE"?"●":"↗"}</span></button></article>`).join("")||'<div class="preview-empty">NO PREDICTION DATA.</div>';$$("[data-preview-id]",box).forEach(b=>b.addEventListener("click",()=>openMatch(b.dataset.previewId)))}
