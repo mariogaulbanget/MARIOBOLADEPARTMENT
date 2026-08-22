@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T20:13:04.489Z",
+  "generatedAt": "2026-08-22T22:06:55.038Z",
   "source": "ESPN public soccer scoreboard",
   "dateRange": [
     "20260822",
@@ -10,9 +10,9 @@
   "status": "ok",
   "summary": {
     "totalEvents": 91,
-    "live": 11,
-    "upcoming": 52,
-    "finished": 28,
+    "live": 1,
+    "upcoming": 51,
+    "finished": 39,
     "leagues": 12,
     "successfulLeagues": 12
   },
@@ -128,490 +128,6 @@
   ],
   "liveMatches": [
     {
-      "eventId": "401874929",
-      "uid": "s:600~l:730~e:401874929",
-      "league": {
-        "id": "serie-a",
-        "name": "Serie A",
-        "country": "Italy",
-        "espnId": "ita.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T18:45Z",
-      "venue": "Stadio Luigi Ferraris",
-      "home": {
-        "id": "3263",
-        "uid": "s:600~t:3263",
-        "name": "Genoa",
-        "shortName": "Genoa",
-        "abbreviation": "GEN",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
-      },
-      "away": {
-        "id": "114",
-        "uid": "s:600~t:114",
-        "name": "Napoli",
-        "shortName": "Napoli",
-        "abbreviation": "NAP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "display": "0-0"
-      },
-      "status": {
-        "state": "live",
-        "clock": "68'",
-        "period": 2,
-        "detail": "68'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401874929",
-      "broadcasts": [
-        "Paramount+"
-      ]
-    },
-    {
-      "eventId": "401874747",
-      "uid": "s:600~l:730~e:401874747",
-      "league": {
-        "id": "serie-a",
-        "name": "Serie A",
-        "country": "Italy",
-        "espnId": "ita.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T18:45Z",
-      "venue": "Ennio Tardini",
-      "home": {
-        "id": "115",
-        "uid": "s:600~t:115",
-        "name": "Parma",
-        "shortName": "Parma",
-        "abbreviation": "PAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
-      },
-      "away": {
-        "id": "2925",
-        "uid": "s:600~t:2925",
-        "name": "Cagliari",
-        "shortName": "Cagliari",
-        "abbreviation": "CAG",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "display": "0-0"
-      },
-      "status": {
-        "state": "live",
-        "clock": "67'",
-        "period": 2,
-        "detail": "67'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401874747",
-      "broadcasts": [
-        "CBSSN",
-        "Paramount+"
-      ]
-    },
-    {
-      "eventId": "401876491",
-      "uid": "s:600~l:710~e:401876491",
-      "league": {
-        "id": "ligue-1",
-        "name": "Ligue 1",
-        "country": "France",
-        "espnId": "fra.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T18:45Z",
-      "venue": "Stade Marie-Marvingt",
-      "home": {
-        "id": "2697",
-        "uid": "s:600~t:2697",
-        "name": "Le Mans",
-        "shortName": "Le Mans",
-        "abbreviation": "MNS",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png"
-      },
-      "away": {
-        "id": "6997",
-        "uid": "s:600~t:6997",
-        "name": "Brest",
-        "shortName": "Brest",
-        "abbreviation": "BRE",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
-      },
-      "score": {
-        "home": 2,
-        "away": 2,
-        "display": "2-2"
-      },
-      "status": {
-        "state": "live",
-        "clock": "70'",
-        "period": 2,
-        "detail": "70'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876491",
-      "broadcasts": []
-    },
-    {
-      "eventId": "401876488",
-      "uid": "s:600~l:710~e:401876488",
-      "league": {
-        "id": "ligue-1",
-        "name": "Ligue 1",
-        "country": "France",
-        "espnId": "fra.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T18:45Z",
-      "venue": "Allianz Riviera",
-      "home": {
-        "id": "2502",
-        "uid": "s:600~t:2502",
-        "name": "Nice",
-        "shortName": "Nice",
-        "abbreviation": "NICE",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
-      },
-      "away": {
-        "id": "273",
-        "uid": "s:600~t:273",
-        "name": "Lorient",
-        "shortName": "Lorient",
-        "abbreviation": "LOR",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "display": "0-0"
-      },
-      "status": {
-        "state": "live",
-        "clock": "71'",
-        "period": 2,
-        "detail": "71'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876488",
-      "broadcasts": []
-    },
-    {
-      "eventId": "401876486",
-      "uid": "s:600~l:710~e:401876486",
-      "league": {
-        "id": "ligue-1",
-        "name": "Ligue 1",
-        "country": "France",
-        "espnId": "fra.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T18:45Z",
-      "venue": "Stadium Municipal de Toulouse",
-      "home": {
-        "id": "179",
-        "uid": "s:600~t:179",
-        "name": "Toulouse",
-        "shortName": "Toulouse",
-        "abbreviation": "TOU",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
-      },
-      "away": {
-        "id": "167",
-        "uid": "s:600~t:167",
-        "name": "Lyon",
-        "shortName": "Lyon",
-        "abbreviation": "LYON",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 1,
-        "display": "0-1"
-      },
-      "status": {
-        "state": "live",
-        "clock": "70'",
-        "period": 2,
-        "detail": "70'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876486",
-      "broadcasts": []
-    },
-    {
-      "eventId": "401876485",
-      "uid": "s:600~l:710~e:401876485",
-      "league": {
-        "id": "ligue-1",
-        "name": "Ligue 1",
-        "country": "France",
-        "espnId": "fra.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T18:45Z",
-      "venue": "Stade de l'Aube",
-      "home": {
-        "id": "170",
-        "uid": "s:600~t:170",
-        "name": "Troyes",
-        "shortName": "Troyes",
-        "abbreviation": "TRY",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png"
-      },
-      "away": {
-        "id": "6851",
-        "uid": "s:600~t:6851",
-        "name": "Paris FC",
-        "shortName": "Paris FC",
-        "abbreviation": "PAR",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "display": "0-0"
-      },
-      "status": {
-        "state": "live",
-        "clock": "70'",
-        "period": 2,
-        "detail": "70'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876485",
-      "broadcasts": []
-    },
-    {
-      "eventId": "401879019",
-      "uid": "s:600~l:3901~e:401879019",
-      "league": {
-        "id": "belgian-pro-league",
-        "name": "Belgian Pro League",
-        "country": "Belgium",
-        "espnId": "bel.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T18:45Z",
-      "venue": "Bosuilstadion",
-      "home": {
-        "id": "17544",
-        "uid": "s:600~t:17544",
-        "name": "Antwerp",
-        "shortName": "Antwerp",
-        "abbreviation": "ANT",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png"
-      },
-      "away": {
-        "id": "938",
-        "uid": "s:600~t:938",
-        "name": "Racing Genk",
-        "shortName": "Genk",
-        "abbreviation": "GENK",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 3,
-        "display": "1-3"
-      },
-      "status": {
-        "state": "live",
-        "clock": "68'",
-        "period": 2,
-        "detail": "68'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401879019",
-      "broadcasts": []
-    },
-    {
-      "eventId": "401875634",
-      "uid": "s:600~l:725~e:401875634",
-      "league": {
-        "id": "eredivisie",
-        "name": "Eredivisie",
-        "country": "Netherlands",
-        "espnId": "ned.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T19:00Z",
-      "venue": "Abe Lenstra Stadion",
-      "home": {
-        "id": "146",
-        "uid": "s:600~t:146",
-        "name": "Heerenveen",
-        "shortName": "Heerenveen",
-        "abbreviation": "HEE",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/146.png"
-      },
-      "away": {
-        "id": "2565",
-        "uid": "s:600~t:2565",
-        "name": "PEC Zwolle",
-        "shortName": "PEC Zwolle",
-        "abbreviation": "PEC",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2565.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 1,
-        "display": "0-1"
-      },
-      "status": {
-        "state": "live",
-        "clock": "53'",
-        "period": 2,
-        "detail": "53'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401875634",
-      "broadcasts": []
-    },
-    {
-      "eventId": "401841205",
-      "uid": "s:600~l:630~e:401841205",
-      "league": {
-        "id": "brasileirao",
-        "name": "Brasileirão Série A",
-        "country": "Brazil",
-        "espnId": "bra.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T19:00Z",
-      "venue": "Estadio do Maracana",
-      "home": {
-        "id": "3445",
-        "uid": "s:600~t:3445",
-        "name": "Fluminense",
-        "shortName": "Fluminense",
-        "abbreviation": "FLU",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3445.png"
-      },
-      "away": {
-        "id": "4936",
-        "uid": "s:600~t:4936",
-        "name": "Remo",
-        "shortName": "Remo",
-        "abbreviation": "REMO",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4936.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 1,
-        "display": "0-1"
-      },
-      "status": {
-        "state": "live",
-        "clock": "54'",
-        "period": 2,
-        "detail": "54'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401841205",
-      "broadcasts": []
-    },
-    {
-      "eventId": "401882912",
-      "uid": "s:600~l:740~e:401882912",
-      "league": {
-        "id": "la-liga",
-        "name": "La Liga",
-        "country": "Spain",
-        "espnId": "esp.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T19:30Z",
-      "venue": "RCDE Stadium",
-      "home": {
-        "id": "88",
-        "uid": "s:600~t:88",
-        "name": "Espanyol",
-        "shortName": "Espanyol",
-        "abbreviation": "ESP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
-      },
-      "away": {
-        "id": "86",
-        "uid": "s:600~t:86",
-        "name": "Real Madrid",
-        "shortName": "Real Madrid",
-        "abbreviation": "RMA",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 1,
-        "display": "1-1"
-      },
-      "status": {
-        "state": "live",
-        "clock": "41'",
-        "period": 1,
-        "detail": "41'",
-        "description": "First Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882912",
-      "broadcasts": [
-        "ABC",
-        "ESPN Deportes",
-        "ESPN+"
-      ]
-    },
-    {
-      "eventId": "401885467",
-      "uid": "s:600~l:715~e:401885467",
-      "league": {
-        "id": "primeira-liga",
-        "name": "Primeira Liga",
-        "country": "Portugal",
-        "espnId": "por.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T19:30Z",
-      "venue": "Estádio José Alvalade",
-      "home": {
-        "id": "2250",
-        "uid": "s:600~t:2250",
-        "name": "Sporting CP",
-        "shortName": "Sporting",
-        "abbreviation": "SCP",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
-      },
-      "away": {
-        "id": "21613",
-        "uid": "s:600~t:21613",
-        "name": "Alverca",
-        "shortName": "Alverca",
-        "abbreviation": "ALV",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21613.png"
-      },
-      "score": {
-        "home": 1,
-        "away": 0,
-        "display": "1-0"
-      },
-      "status": {
-        "state": "live",
-        "clock": "39'",
-        "period": 1,
-        "detail": "39'",
-        "description": "First Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401885467",
-      "broadcasts": []
-    }
-  ],
-  "upcomingMatches": [
-    {
       "eventId": "401841204",
       "uid": "s:600~l:630~e:401841204",
       "league": {
@@ -645,15 +161,17 @@
         "display": "0-0"
       },
       "status": {
-        "state": "upcoming",
-        "clock": "Scheduled",
-        "period": "",
-        "detail": "Sat, August 22nd at 5:30 PM EDT",
-        "description": "Scheduled"
+        "state": "live",
+        "clock": "36'",
+        "period": 1,
+        "detail": "36'",
+        "description": "First Half"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401841204/atletico-mg-internacional",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841204",
       "broadcasts": []
-    },
+    }
+  ],
+  "upcomingMatches": [
     {
       "eventId": "401841206",
       "uid": "s:600~l:630~e:401841206",
@@ -4169,6 +3687,488 @@
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401875636/excelsior-nec-nijmegen",
       "broadcasts": []
+    },
+    {
+      "eventId": "401874929",
+      "uid": "s:600~l:730~e:401874929",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stadio Luigi Ferraris",
+      "home": {
+        "id": "3263",
+        "uid": "s:600~t:3263",
+        "name": "Genoa",
+        "shortName": "Genoa",
+        "abbreviation": "GEN",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3263.png"
+      },
+      "away": {
+        "id": "114",
+        "uid": "s:600~t:114",
+        "name": "Napoli",
+        "shortName": "Napoli",
+        "abbreviation": "NAP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/114.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 2,
+        "display": "0-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874929/napoli-genoa",
+      "broadcasts": [
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401874747",
+      "uid": "s:600~l:730~e:401874747",
+      "league": {
+        "id": "serie-a",
+        "name": "Serie A",
+        "country": "Italy",
+        "espnId": "ita.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Ennio Tardini",
+      "home": {
+        "id": "115",
+        "uid": "s:600~t:115",
+        "name": "Parma",
+        "shortName": "Parma",
+        "abbreviation": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/115.png"
+      },
+      "away": {
+        "id": "2925",
+        "uid": "s:600~t:2925",
+        "name": "Cagliari",
+        "shortName": "Cagliari",
+        "abbreviation": "CAG",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2925.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 1,
+        "display": "0-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874747/cagliari-parma",
+      "broadcasts": [
+        "CBSSN",
+        "Paramount+"
+      ]
+    },
+    {
+      "eventId": "401876491",
+      "uid": "s:600~l:710~e:401876491",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stade Marie-Marvingt",
+      "home": {
+        "id": "2697",
+        "uid": "s:600~t:2697",
+        "name": "Le Mans",
+        "shortName": "Le Mans",
+        "abbreviation": "MNS",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2697.png"
+      },
+      "away": {
+        "id": "6997",
+        "uid": "s:600~t:6997",
+        "name": "Brest",
+        "shortName": "Brest",
+        "abbreviation": "BRE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 2,
+        "display": "2-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876491/brest-le-mans",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876488",
+      "uid": "s:600~l:710~e:401876488",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Allianz Riviera",
+      "home": {
+        "id": "2502",
+        "uid": "s:600~t:2502",
+        "name": "Nice",
+        "shortName": "Nice",
+        "abbreviation": "NICE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2502.png"
+      },
+      "away": {
+        "id": "273",
+        "uid": "s:600~t:273",
+        "name": "Lorient",
+        "shortName": "Lorient",
+        "abbreviation": "LOR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/273.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876488/lorient-nice",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876486",
+      "uid": "s:600~l:710~e:401876486",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stadium Municipal de Toulouse",
+      "home": {
+        "id": "179",
+        "uid": "s:600~t:179",
+        "name": "Toulouse",
+        "shortName": "Toulouse",
+        "abbreviation": "TOU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/179.png"
+      },
+      "away": {
+        "id": "167",
+        "uid": "s:600~t:167",
+        "name": "Lyon",
+        "shortName": "Lyon",
+        "abbreviation": "LYON",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/167.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 2,
+        "display": "0-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876486/lyon-toulouse",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401876485",
+      "uid": "s:600~l:710~e:401876485",
+      "league": {
+        "id": "ligue-1",
+        "name": "Ligue 1",
+        "country": "France",
+        "espnId": "fra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Stade de l'Aube",
+      "home": {
+        "id": "170",
+        "uid": "s:600~t:170",
+        "name": "Troyes",
+        "shortName": "Troyes",
+        "abbreviation": "TRY",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/170.png"
+      },
+      "away": {
+        "id": "6851",
+        "uid": "s:600~t:6851",
+        "name": "Paris FC",
+        "shortName": "Paris FC",
+        "abbreviation": "PAR",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6851.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876485/paris-fc-troyes",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401879019",
+      "uid": "s:600~l:3901~e:401879019",
+      "league": {
+        "id": "belgian-pro-league",
+        "name": "Belgian Pro League",
+        "country": "Belgium",
+        "espnId": "bel.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T18:45Z",
+      "venue": "Bosuilstadion",
+      "home": {
+        "id": "17544",
+        "uid": "s:600~t:17544",
+        "name": "Antwerp",
+        "shortName": "Antwerp",
+        "abbreviation": "ANT",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/17544.png"
+      },
+      "away": {
+        "id": "938",
+        "uid": "s:600~t:938",
+        "name": "Racing Genk",
+        "shortName": "Genk",
+        "abbreviation": "GENK",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png"
+      },
+      "score": {
+        "home": 4,
+        "away": 4,
+        "display": "4-4"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879019/racing-genk-antwerp",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401875634",
+      "uid": "s:600~l:725~e:401875634",
+      "league": {
+        "id": "eredivisie",
+        "name": "Eredivisie",
+        "country": "Netherlands",
+        "espnId": "ned.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:00Z",
+      "venue": "Abe Lenstra Stadion",
+      "home": {
+        "id": "146",
+        "uid": "s:600~t:146",
+        "name": "Heerenveen",
+        "shortName": "Heerenveen",
+        "abbreviation": "HEE",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/146.png"
+      },
+      "away": {
+        "id": "2565",
+        "uid": "s:600~t:2565",
+        "name": "PEC Zwolle",
+        "shortName": "PEC Zwolle",
+        "abbreviation": "PEC",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2565.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 2,
+        "display": "0-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875634/pec-zwolle-heerenveen",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401841205",
+      "uid": "s:600~l:630~e:401841205",
+      "league": {
+        "id": "brasileirao",
+        "name": "Brasileirão Série A",
+        "country": "Brazil",
+        "espnId": "bra.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:00Z",
+      "venue": "Estadio do Maracana",
+      "home": {
+        "id": "3445",
+        "uid": "s:600~t:3445",
+        "name": "Fluminense",
+        "shortName": "Fluminense",
+        "abbreviation": "FLU",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/3445.png"
+      },
+      "away": {
+        "id": "4936",
+        "uid": "s:600~t:4936",
+        "name": "Remo",
+        "shortName": "Remo",
+        "abbreviation": "REMO",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4936.png"
+      },
+      "score": {
+        "home": 2,
+        "away": 1,
+        "display": "2-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841205/remo-fluminense",
+      "broadcasts": []
+    },
+    {
+      "eventId": "401882912",
+      "uid": "s:600~l:740~e:401882912",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:30Z",
+      "venue": "RCDE Stadium",
+      "home": {
+        "id": "88",
+        "uid": "s:600~t:88",
+        "name": "Espanyol",
+        "shortName": "Espanyol",
+        "abbreviation": "ESP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/88.png"
+      },
+      "away": {
+        "id": "86",
+        "uid": "s:600~t:86",
+        "name": "Real Madrid",
+        "shortName": "Real Madrid",
+        "abbreviation": "RMA",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
+      },
+      "score": {
+        "home": 1,
+        "away": 2,
+        "display": "1-2"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882912/real-madrid-espanyol",
+      "broadcasts": [
+        "ABC",
+        "ESPN Deportes",
+        "ESPN+"
+      ]
+    },
+    {
+      "eventId": "401885467",
+      "uid": "s:600~l:715~e:401885467",
+      "league": {
+        "id": "primeira-liga",
+        "name": "Primeira Liga",
+        "country": "Portugal",
+        "espnId": "por.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T19:30Z",
+      "venue": "Estádio José Alvalade",
+      "home": {
+        "id": "2250",
+        "uid": "s:600~t:2250",
+        "name": "Sporting CP",
+        "shortName": "Sporting",
+        "abbreviation": "SCP",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/2250.png"
+      },
+      "away": {
+        "id": "21613",
+        "uid": "s:600~t:21613",
+        "name": "Alverca",
+        "shortName": "Alverca",
+        "abbreviation": "ALV",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21613.png"
+      },
+      "score": {
+        "home": 3,
+        "away": 1,
+        "display": "3-1"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885467/alverca-sporting-cp",
+      "broadcasts": []
     }
   ],
   "matches": [
@@ -5447,17 +5447,17 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "away": 2,
+        "display": "0-2"
       },
       "status": {
-        "state": "live",
-        "clock": "68'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "68'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401874929",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874929/napoli-genoa",
       "broadcasts": [
         "Paramount+"
       ]
@@ -5492,17 +5492,17 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "away": 1,
+        "display": "0-1"
       },
       "status": {
-        "state": "live",
-        "clock": "67'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "67'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401874747",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401874747/cagliari-parma",
       "broadcasts": [
         "CBSSN",
         "Paramount+"
@@ -5542,13 +5542,13 @@
         "display": "2-2"
       },
       "status": {
-        "state": "live",
-        "clock": "70'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "70'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876491",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876491/brest-le-mans",
       "broadcasts": []
     },
     {
@@ -5585,13 +5585,13 @@
         "display": "0-0"
       },
       "status": {
-        "state": "live",
-        "clock": "71'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "71'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876488",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876488/lorient-nice",
       "broadcasts": []
     },
     {
@@ -5624,17 +5624,17 @@
       },
       "score": {
         "home": 0,
-        "away": 1,
-        "display": "0-1"
+        "away": 2,
+        "display": "0-2"
       },
       "status": {
-        "state": "live",
-        "clock": "70'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "70'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876486",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876486/lyon-toulouse",
       "broadcasts": []
     },
     {
@@ -5671,13 +5671,13 @@
         "display": "0-0"
       },
       "status": {
-        "state": "live",
-        "clock": "70'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "70'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401876485",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401876485/paris-fc-troyes",
       "broadcasts": []
     },
     {
@@ -5709,18 +5709,18 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/938.png"
       },
       "score": {
-        "home": 1,
-        "away": 3,
-        "display": "1-3"
+        "home": 4,
+        "away": 4,
+        "display": "4-4"
       },
       "status": {
-        "state": "live",
-        "clock": "68'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "68'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401879019",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401879019/racing-genk-antwerp",
       "broadcasts": []
     },
     {
@@ -5753,17 +5753,17 @@
       },
       "score": {
         "home": 0,
-        "away": 1,
-        "display": "0-1"
+        "away": 2,
+        "display": "0-2"
       },
       "status": {
-        "state": "live",
-        "clock": "53'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "53'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401875634",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401875634/pec-zwolle-heerenveen",
       "broadcasts": []
     },
     {
@@ -5795,18 +5795,18 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/4936.png"
       },
       "score": {
-        "home": 0,
+        "home": 2,
         "away": 1,
-        "display": "0-1"
+        "display": "2-1"
       },
       "status": {
-        "state": "live",
-        "clock": "54'",
+        "state": "finished",
+        "clock": "FT",
         "period": 2,
-        "detail": "54'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401841205",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841205/remo-fluminense",
       "broadcasts": []
     },
     {
@@ -5839,17 +5839,17 @@
       },
       "score": {
         "home": 1,
-        "away": 1,
-        "display": "1-1"
+        "away": 2,
+        "display": "1-2"
       },
       "status": {
-        "state": "live",
-        "clock": "41'",
-        "period": 1,
-        "detail": "41'",
-        "description": "First Half"
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882912",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882912/real-madrid-espanyol",
       "broadcasts": [
         "ABC",
         "ESPN Deportes",
@@ -5885,18 +5885,18 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21613.png"
       },
       "score": {
-        "home": 1,
-        "away": 0,
-        "display": "1-0"
+        "home": 3,
+        "away": 1,
+        "display": "3-1"
       },
       "status": {
-        "state": "live",
-        "clock": "39'",
-        "period": 1,
-        "detail": "39'",
-        "description": "First Half"
+        "state": "finished",
+        "clock": "FT",
+        "period": 2,
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401885467",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885467/alverca-sporting-cp",
       "broadcasts": []
     },
     {
@@ -5933,13 +5933,13 @@
         "display": "0-0"
       },
       "status": {
-        "state": "upcoming",
-        "clock": "Scheduled",
-        "period": "",
-        "detail": "Sat, August 22nd at 5:30 PM EDT",
-        "description": "Scheduled"
+        "state": "live",
+        "clock": "36'",
+        "period": 1,
+        "detail": "36'",
+        "description": "First Half"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401841204/atletico-mg-internacional",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401841204",
       "broadcasts": []
     },
     {
