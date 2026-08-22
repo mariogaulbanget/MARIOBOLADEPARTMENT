@@ -34,7 +34,149 @@ function setActionLink(el,url,label){if(!el)return;el.textContent=label;if(url){
 function renderNews(){const a=newsArticles.find(x=>x&&x.url&&x.url!=="#")||newsArticles[0];if(!a)return;const title=$("#featuredNewsTitle"),copy=$("#featuredNewsCopy");if(title)title.innerHTML=`${esc(a.title||"THE NEXT BIG MATCH")}<br><span>STARTS HERE.</span>`;if(copy)copy.textContent=a.summary||"Analisis dan berita bola terbaru dari sumber editorial MARIOBOLA."}
 function renderStandings(){const league=standings[standingsIndex];if(!league){$("#standingsLeagueName").textContent="STANDINGS UNAVAILABLE";$("#standingsBody").innerHTML='<tr><td colspan="8" class="table-loading">Belum ada data klasemen. Jalankan GitHub Actions.</td></tr>';return}$("#standingsLeagueName").textContent=league.name;$("#standingsMeta").textContent=`${league.status==="ok"?"LIVE DATA":"LAST KNOWN DATA"} • ${league.season||"-"} • ${league.teams?.length||0} TEAMS`;$("#standingsCounter").textContent=`${String(standingsIndex+1).padStart(2,"0")} / ${String(standings.length).padStart(2,"0")}`;const body=$("#standingsBody");body.innerHTML=(league.teams||[]).map(r=>`<tr><td>${r.rank}</td><td><div class="table-team">${r.team?.logo?`<img class="table-logo" src="${esc(r.team.logo)}" onerror="this.style.display='none'">`:""}<span>${esc(r.team?.shortName||r.team?.name||"Unknown")}</span></div></td><td>${r.played??0}</td><td>${r.wins??0}</td><td>${r.draws??0}</td><td>${r.losses??0}</td><td>${r.goalDifference>0?"+":""}${r.goalDifference??0}</td><td><strong>${r.points??0}</strong></td></tr>`).join("")||'<tr><td colspan="8" class="table-loading">NO STANDINGS DATA.</td></tr>';$$(".standings-dot").forEach((d,i)=>d.classList.toggle("active",i===standingsIndex))}
 function buildStandingsDots(){const box=$("#standingsDots");box.innerHTML=standings.map((_,i)=>`<span class="standings-dot" data-index="${i}"></span>`).join("");$$(".standings-dot").forEach(d=>d.addEventListener("click",()=>{standingsIndex=Number(d.dataset.index);renderStandings()}));renderStandings()}
-async function loadData(){try{const [schedule,news,config,stand]=await Promise.all([fetchJson("data/schedule.json"),fetchJson("data/news.json").catch(()=>({articles:[]})),fetchJson("data/site-config.json").catch(()=>({})),fetchJson("data/standings.json").catch(()=>({leagues:[]}))]);Object.assign(CONFIG,config||{});applyLinks();allMatches=(schedule.matches||[]).map(decorate).sort((a,b)=>matchDateTime(a)-matchDateTime(b));newsArticles=news.articles||[];standings=(stand.leagues||[]).filter(x=>Array.isArray(x.teams)&&x.teams.length);const live=allMatches.find(m=>m.status==="LIVE");const upcoming=allMatches.find(m=>m.status==="UPCOMING");const featured=live||allMatches.find(m=>m.featured&&m.status==="UPCOMING")||upcoming||allMatches[allMatches.length-1];if(featured){renderFeatured(featured);renderNextSchedule(featured)}renderPreview(currentFilter);renderPredictionBoard();renderNews();buildStandingsDots();const liveMatch=live||featured;$("#liveEmptyLabel").innerHTML=liveMatch?.status==="LIVE"?`LIVE NOW<br><b>${esc(liveMatch.homeTeam)} VS ${esc(liveMatch.awayTeam)}</b>`:"LIVE STREAMING<br><b>READY</b>";setActionLink($("#liveStreamingLink"),CONFIG.liveStreaming||liveMatch?.liveStreamingUrl,"LIVE STREAMING →");}catch(e){console.error(e);$("#matchCompetition").textContent="DATA ERROR";$("#matchStatus").textContent="CHECK FILE";$("#previewSummary").textContent="schedule.json belum tersedia atau tidak valid."}}
+async function loadData(){
+
+  try{
+
+    console.log("[MARIOBOLA] Loading schedule.json...");
+
+    const schedule =
+      await fetchJson(
+        "data/schedule.json"
+      );
+
+    console.log(
+      "[MARIOBOLA] schedule.json loaded:",
+      schedule
+    );
+
+    const news =
+      await fetchJson(
+        "data/news.json"
+      ).catch(
+        () => ({articles:[]})
+      );
+
+    const config =
+      await fetchJson(
+        "data/site-config.json"
+      ).catch(
+        () => ({})
+      );
+
+    const stand =
+      await fetchJson(
+        "data/standings.json"
+      ).catch(
+        () => ({leagues:[]})
+      );
+
+    Object.assign(
+      CONFIG,
+      config || {}
+    );
+
+    applyLinks();
+
+    allMatches =
+      (schedule.matches || [])
+        .map(decorate)
+        .sort(
+          (a,b) =>
+            matchDateTime(a) -
+            matchDateTime(b)
+        );
+
+    console.log(
+      "[MARIOBOLA] Matches loaded:",
+      allMatches.length
+    );
+
+    newsArticles =
+      news.articles || [];
+
+    standings =
+      (stand.leagues || [])
+        .filter(
+          x =>
+            Array.isArray(x.teams) &&
+            x.teams.length
+        );
+
+    const live =
+      allMatches.find(
+        m => m.status === "LIVE"
+      );
+
+    const upcoming =
+      allMatches.find(
+        m => m.status === "UPCOMING"
+      );
+
+    const featured =
+      live ||
+      allMatches.find(
+        m =>
+          m.featured &&
+          m.status === "UPCOMING"
+      ) ||
+      upcoming ||
+      allMatches[allMatches.length - 1];
+
+    if (featured){
+
+      renderFeatured(
+        featured
+      );
+
+      renderNextSchedule(
+        featured
+      );
+    }
+
+    renderPreview(
+      currentFilter
+    );
+
+    renderPredictionBoard();
+
+    renderNews();
+
+    buildStandingsDots();
+
+    const liveMatch =
+      live || featured;
+
+    $("#liveEmptyLabel").innerHTML =
+      liveMatch?.status === "LIVE"
+        ? `LIVE NOW<br><b>${esc(liveMatch.homeTeam)} VS ${esc(liveMatch.awayTeam)}</b>`
+        : "LIVE STREAMING<br><b>READY</b>";
+
+    setActionLink(
+      $("#liveStreamingLink"),
+      CONFIG.liveStreaming ||
+      liveMatch?.liveStreamingUrl,
+      "LIVE STREAMING →"
+    );
+
+  }catch(error){
+
+    console.error(
+      "[MARIOBOLA] LOAD DATA ERROR:",
+      error
+    );
+
+    $("#matchCompetition").textContent =
+      "DATA ERROR";
+
+    $("#matchStatus").textContent =
+      "CHECK FILE";
+
+    $("#previewSummary").textContent =
+      "Gagal memuat data pertandingan.";
+
+  }
+}
 function updateClock(){const t=new Intl.DateTimeFormat("id-ID",{timeZone:"Asia/Jakarta",hour:"2-digit",minute:"2-digit",second:"2-digit",hour12:false}).format(new Date());$("#liveClock").textContent=`${t} WIB`}
 $("#menuToggle")?.addEventListener("click",()=>$("#mainNav").classList.toggle("open"));$$('.main-nav a').forEach(a=>a.addEventListener("click",()=>$("#mainNav").classList.remove("open")));window.addEventListener("scroll",()=>{const max=document.documentElement.scrollHeight-innerHeight;$("#scrollProgress").style.width=`${max?scrollY/max*100:0}%`});$$('.preview-filter').forEach(b=>b.addEventListener("click",()=>{$$('.preview-filter').forEach(x=>x.classList.remove("active"));b.classList.add("active");renderPreview(b.dataset.filter)}));$$('[data-scroll-target]').forEach(b=>b.addEventListener("click",()=>document.getElementById(b.dataset.scrollTarget)?.scrollIntoView({behavior:"smooth"})));$("#standingsPrev")?.addEventListener("click",()=>{if(!standings.length)return;standingsIndex=(standingsIndex-1+standings.length)%standings.length;renderStandings()});$("#standingsNext")?.addEventListener("click",()=>{if(!standings.length)return;standingsIndex=(standingsIndex+1)%standings.length;renderStandings()});$("#matchModal")?.addEventListener("click",e=>{if(e.target.id==="matchModal"||e.target.closest(".modal-close,.modal-close-btn")){$("#matchModal").classList.remove("show");$("#matchModal").setAttribute("aria-hidden","true")}});/* =========================================================
    MARIOBOLA MATCH CENTER — LIVE SCORE
