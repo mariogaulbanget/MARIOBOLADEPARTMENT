@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T15:48:54.158Z",
+  "generatedAt": "2026-08-22T16:56:04.374Z",
   "source": "ESPN public standings API",
   "status": "ok",
   "successfulLeagues": 10,
@@ -39,6 +39,25 @@
         {
           "rank": 2,
           "team": {
+            "id": "368",
+            "name": "Everton",
+            "shortName": "Everton",
+            "abbreviation": "EVE",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
+          },
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 0,
+          "goalDifference": 2,
+          "points": 3,
+          "form": ""
+        },
+        {
+          "rank": 3,
+          "team": {
             "id": "306",
             "name": "Hull City",
             "shortName": "Hull",
@@ -56,7 +75,45 @@
           "form": ""
         },
         {
-          "rank": 3,
+          "rank": 4,
+          "team": {
+            "id": "373",
+            "name": "Ipswich Town",
+            "shortName": "Ipswich",
+            "abbreviation": "IPS",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
+          },
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 2,
+          "goalsAgainst": 1,
+          "goalDifference": 1,
+          "points": 3,
+          "form": ""
+        },
+        {
+          "rank": 5,
+          "team": {
+            "id": "357",
+            "name": "Leeds United",
+            "shortName": "Leeds",
+            "abbreviation": "LEE",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
+          },
+          "played": 1,
+          "wins": 1,
+          "draws": 0,
+          "losses": 0,
+          "goalsFor": 1,
+          "goalsAgainst": 0,
+          "goalDifference": 1,
+          "points": 3,
+          "form": ""
+        },
+        {
+          "rank": 6,
           "team": {
             "id": "362",
             "name": "Aston Villa",
@@ -75,7 +132,7 @@
           "form": ""
         },
         {
-          "rank": 4,
+          "rank": 7,
           "team": {
             "id": "349",
             "name": "AFC Bournemouth",
@@ -94,7 +151,7 @@
           "form": ""
         },
         {
-          "rank": 5,
+          "rank": 8,
           "team": {
             "id": "337",
             "name": "Brentford",
@@ -113,7 +170,7 @@
           "form": ""
         },
         {
-          "rank": 6,
+          "rank": 9,
           "team": {
             "id": "331",
             "name": "Brighton & Hove Albion",
@@ -132,7 +189,7 @@
           "form": ""
         },
         {
-          "rank": 7,
+          "rank": 10,
           "team": {
             "id": "363",
             "name": "Chelsea",
@@ -151,45 +208,7 @@
           "form": ""
         },
         {
-          "rank": 8,
-          "team": {
-            "id": "384",
-            "name": "Crystal Palace",
-            "shortName": "C Palace",
-            "abbreviation": "CRY",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
-          },
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "form": ""
-        },
-        {
-          "rank": 9,
-          "team": {
-            "id": "368",
-            "name": "Everton",
-            "shortName": "Everton",
-            "abbreviation": "EVE",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/368.png"
-          },
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "form": ""
-        },
-        {
-          "rank": 10,
+          "rank": 11,
           "team": {
             "id": "370",
             "name": "Fulham",
@@ -208,45 +227,7 @@
           "form": ""
         },
         {
-          "rank": 11,
-          "team": {
-            "id": "373",
-            "name": "Ipswich Town",
-            "shortName": "Ipswich",
-            "abbreviation": "IPS",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/373.png"
-          },
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "form": ""
-        },
-        {
           "rank": 12,
-          "team": {
-            "id": "357",
-            "name": "Leeds United",
-            "shortName": "Leeds",
-            "abbreviation": "LEE",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/357.png"
-          },
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "form": ""
-        },
-        {
-          "rank": 13,
           "team": {
             "id": "364",
             "name": "Liverpool",
@@ -265,7 +246,7 @@
           "form": ""
         },
         {
-          "rank": 14,
+          "rank": 13,
           "team": {
             "id": "382",
             "name": "Manchester City",
@@ -284,7 +265,7 @@
           "form": ""
         },
         {
-          "rank": 15,
+          "rank": 14,
           "team": {
             "id": "361",
             "name": "Newcastle United",
@@ -303,45 +284,7 @@
           "form": ""
         },
         {
-          "rank": 16,
-          "team": {
-            "id": "393",
-            "name": "Nottingham Forest",
-            "shortName": "Nottm Forest",
-            "abbreviation": "NFO",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
-          },
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "form": ""
-        },
-        {
-          "rank": 17,
-          "team": {
-            "id": "366",
-            "name": "Sunderland",
-            "shortName": "Sunderland",
-            "abbreviation": "SUN",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
-          },
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "form": ""
-        },
-        {
-          "rank": 18,
+          "rank": 15,
           "team": {
             "id": "367",
             "name": "Tottenham Hotspur",
@@ -356,6 +299,63 @@
           "goalsFor": 0,
           "goalsAgainst": 0,
           "goalDifference": 0,
+          "points": 0,
+          "form": ""
+        },
+        {
+          "rank": 16,
+          "team": {
+            "id": "366",
+            "name": "Sunderland",
+            "shortName": "Sunderland",
+            "abbreviation": "SUN",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/366.png"
+          },
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 1,
+          "goalsAgainst": 2,
+          "goalDifference": -1,
+          "points": 0,
+          "form": ""
+        },
+        {
+          "rank": 17,
+          "team": {
+            "id": "393",
+            "name": "Nottingham Forest",
+            "shortName": "Nottm Forest",
+            "abbreviation": "NFO",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/393.png"
+          },
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 1,
+          "goalDifference": -1,
+          "points": 0,
+          "form": ""
+        },
+        {
+          "rank": 18,
+          "team": {
+            "id": "384",
+            "name": "Crystal Palace",
+            "shortName": "C Palace",
+            "abbreviation": "CRY",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/384.png"
+          },
+          "played": 1,
+          "wins": 0,
+          "draws": 0,
+          "losses": 1,
+          "goalsFor": 0,
+          "goalsAgainst": 2,
+          "goalDifference": -2,
           "points": 0,
           "form": ""
         },
@@ -1915,14 +1915,14 @@
             "abbreviation": "AZ",
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/140.png"
           },
-          "played": 2,
-          "wins": 2,
+          "played": 3,
+          "wins": 3,
           "draws": 0,
           "losses": 0,
-          "goalsFor": 6,
+          "goalsFor": 8,
           "goalsAgainst": 1,
-          "goalDifference": 5,
-          "points": 6,
+          "goalDifference": 7,
+          "points": 9,
           "form": ""
         },
         {
@@ -1966,25 +1966,6 @@
         {
           "rank": 4,
           "team": {
-            "id": "143",
-            "name": "Fortuna Sittard",
-            "shortName": "Fortuna",
-            "abbreviation": "FOR",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/143.png"
-          },
-          "played": 2,
-          "wins": 1,
-          "draws": 1,
-          "losses": 0,
-          "goalsFor": 5,
-          "goalsAgainst": 3,
-          "goalDifference": 2,
-          "points": 4,
-          "form": ""
-        },
-        {
-          "rank": 5,
-          "team": {
             "id": "139",
             "name": "Ajax Amsterdam",
             "shortName": "Ajax",
@@ -2002,7 +1983,7 @@
           "form": ""
         },
         {
-          "rank": 6,
+          "rank": 5,
           "team": {
             "id": "148",
             "name": "PSV Eindhoven",
@@ -2021,7 +2002,7 @@
           "form": ""
         },
         {
-          "rank": 7,
+          "rank": 6,
           "team": {
             "id": "142",
             "name": "Feyenoord Rotterdam",
@@ -2040,7 +2021,7 @@
           "form": ""
         },
         {
-          "rank": 8,
+          "rank": 7,
           "team": {
             "id": "146",
             "name": "Heerenveen",
@@ -2055,6 +2036,25 @@
           "goalsFor": 3,
           "goalsAgainst": 2,
           "goalDifference": 1,
+          "points": 4,
+          "form": ""
+        },
+        {
+          "rank": 8,
+          "team": {
+            "id": "143",
+            "name": "Fortuna Sittard",
+            "shortName": "Fortuna",
+            "abbreviation": "FOR",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/143.png"
+          },
+          "played": 3,
+          "wins": 1,
+          "draws": 1,
+          "losses": 1,
+          "goalsFor": 5,
+          "goalsAgainst": 5,
+          "goalDifference": 0,
           "points": 4,
           "form": ""
         },
@@ -2264,6 +2264,25 @@
         {
           "rank": 1,
           "team": {
+            "id": "552",
+            "name": "Maritimo",
+            "shortName": "Maritimo",
+            "abbreviation": "MAR",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/552.png"
+          },
+          "played": 3,
+          "wins": 2,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 5,
+          "goalsAgainst": 3,
+          "goalDifference": 2,
+          "points": 7,
+          "form": ""
+        },
+        {
+          "rank": 2,
+          "team": {
             "id": "15784",
             "name": "Arouca",
             "shortName": "Arouca",
@@ -2281,7 +2300,7 @@
           "form": ""
         },
         {
-          "rank": 2,
+          "rank": 3,
           "team": {
             "id": "437",
             "name": "FC Porto",
@@ -2296,25 +2315,6 @@
           "goalsFor": 4,
           "goalsAgainst": 0,
           "goalDifference": 4,
-          "points": 6,
-          "form": ""
-        },
-        {
-          "rank": 3,
-          "team": {
-            "id": "552",
-            "name": "Maritimo",
-            "shortName": "Maritimo",
-            "abbreviation": "MAR",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/552.png"
-          },
-          "played": 2,
-          "wins": 2,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 3,
-          "goalsAgainst": 1,
-          "goalDifference": 2,
           "points": 6,
           "form": ""
         },
@@ -2435,6 +2435,25 @@
         {
           "rank": 10,
           "team": {
+            "id": "21607",
+            "name": "Académico de Viseu",
+            "shortName": "Académico",
+            "abbreviation": "ACV",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21607.png"
+          },
+          "played": 3,
+          "wins": 0,
+          "draws": 2,
+          "losses": 1,
+          "goalsFor": 4,
+          "goalsAgainst": 5,
+          "goalDifference": -1,
+          "points": 2,
+          "form": ""
+        },
+        {
+          "rank": 11,
+          "team": {
             "id": "2994",
             "name": "Braga",
             "shortName": "Braga",
@@ -2452,7 +2471,7 @@
           "form": ""
         },
         {
-          "rank": 11,
+          "rank": 12,
           "team": {
             "id": "12698",
             "name": "FC Famalicao",
@@ -2471,7 +2490,7 @@
           "form": ""
         },
         {
-          "rank": 12,
+          "rank": 13,
           "team": {
             "id": "12216",
             "name": "Estoril",
@@ -2490,7 +2509,7 @@
           "form": ""
         },
         {
-          "rank": 13,
+          "rank": 14,
           "team": {
             "id": "3696",
             "name": "Moreirense",
@@ -2505,25 +2524,6 @@
           "goalsFor": 2,
           "goalsAgainst": 6,
           "goalDifference": -4,
-          "points": 1,
-          "form": ""
-        },
-        {
-          "rank": 14,
-          "team": {
-            "id": "21607",
-            "name": "Académico de Viseu",
-            "shortName": "Académico",
-            "abbreviation": "ACV",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21607.png"
-          },
-          "played": 2,
-          "wins": 0,
-          "draws": 1,
-          "losses": 1,
-          "goalsFor": 2,
-          "goalsAgainst": 3,
-          "goalDifference": -1,
           "points": 1,
           "form": ""
         },
