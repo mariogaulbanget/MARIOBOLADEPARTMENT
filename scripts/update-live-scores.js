@@ -6,43 +6,51 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 
 const ROOT = path.join(__dirname, "..");
-const OUTPUT = path.join(
-  ROOT,
-  "data",
-  "live-scores.json"
-);
+
+const OUTPUT =
+  path.join(
+    ROOT,
+    "data",
+    "live-scores.json"
+  );
 
 /*
 =========================================================
-MARIOBOLA LIVE SCORE ENGINE
+MARIOBOLA LIVE SCORE GENERATOR
 =========================================================
 
-Sumber:
-ESPN public scoreboard endpoint
+12 COMPETITIONS
 
-Tidak membutuhkan API key.
-
-League IDs:
-eng.1  = Premier League
-ita.1  = Serie A
-ger.1  = Bundesliga
-esp.1  = La Liga
-fra.1  = Ligue 1
-bra.1  = Brasileirão Série A
-por.1  = Primeira Liga
-bel.1  = Belgian Pro League
-usa.1  = MLS
-idn.1  = Indonesia / BRI Super League
+1. Premier League
+2. La Liga
+3. Serie A
+4. Bundesliga
+5. Ligue 1
+6. Eredivisie
+7. Primeira Liga
+8. Brasileirão Série A
+9. Major League Soccer
+10. BRI Super League
+11. Belgian Pro League
+12. English Championship
 
 =========================================================
 */
 
 const LEAGUES = [
+
   {
     id: "epl",
     name: "Premier League",
     country: "England",
     espnId: "eng.1"
+  },
+
+  {
+    id: "la-liga",
+    name: "La Liga",
+    country: "Spain",
+    espnId: "esp.1"
   },
 
   {
@@ -60,13 +68,6 @@ const LEAGUES = [
   },
 
   {
-    id: "la-liga",
-    name: "La Liga",
-    country: "Spain",
-    espnId: "esp.1"
-  },
-
-  {
     id: "ligue-1",
     name: "Ligue 1",
     country: "France",
@@ -74,10 +75,10 @@ const LEAGUES = [
   },
 
   {
-    id: "brasileirao",
-    name: "Brasileirão Série A",
-    country: "Brazil",
-    espnId: "bra.1"
+    id: "eredivisie",
+    name: "Eredivisie",
+    country: "Netherlands",
+    espnId: "ned.1"
   },
 
   {
@@ -88,10 +89,10 @@ const LEAGUES = [
   },
 
   {
-    id: "belgian-pro-league",
-    name: "Belgian Pro League",
-    country: "Belgium",
-    espnId: "bel.1"
+    id: "brasileirao",
+    name: "Brasileirão Série A",
+    country: "Brazil",
+    espnId: "bra.1"
   },
 
   {
@@ -106,114 +107,111 @@ const LEAGUES = [
     name: "BRI Super League",
     country: "Indonesia",
     espnId: "idn.1"
+  },
+
+  {
+    id: "belgian-pro-league",
+    name: "Belgian Pro League",
+    country: "Belgium",
+    espnId: "bel.1"
+  },
+
+  {
+    id: "english-championship",
+    name: "English Championship",
+    country: "England",
+    espnId: "eng.2"
   }
+
 ];
 
-const USER_AGENT =
-  "Mozilla/5.0 (compatible; MarioBolaLiveScore/1.0)";
 
 /*
-Fetch yesterday + today + tomorrow.
-
-This avoids losing matches around midnight
-because ESPN and our local WIB/WITA/WIT date can differ.
+=========================================================
+DATE
+=========================================================
 */
 
-function getDateString(offsetDays = 0) {
+function getJakartaDate(offsetDays = 0){
 
-  const now = new Date();
+  const now =
+    new Date();
 
-  const jakarta =
+  const parts =
     new Intl.DateTimeFormat(
       "en-CA",
       {
-        timeZone: "Asia/Jakarta",
-        year: "numeric",
-        month: "2-digit",
-        day: "2-digit"
+        timeZone:
+          "Asia/Jakarta",
+
+        year:
+          "numeric",
+
+        month:
+          "2-digit",
+
+        day:
+          "2-digit"
       }
     ).formatToParts(now);
 
-  const parts = {};
+  const values = {};
 
-  for (const item of jakarta) {
-    if (item.type !== "literal") {
-      parts[item.type] = item.value;
+  for(
+    const part
+    of parts
+  ){
+
+    if(
+      part.type !==
+      "literal"
+    ){
+
+      values[
+        part.type
+      ] =
+        part.value;
     }
   }
 
   const base =
     new Date(
-      `${parts.year}-${parts.month}-${parts.day}T12:00:00+07:00`
+      `${values.year}-${values.month}-${values.day}T12:00:00+07:00`
     );
 
   base.setDate(
-    base.getDate() + offsetDays
+    base.getDate() +
+    offsetDays
   );
 
-  return (
-    base
-      .toISOString()
-      .slice(0, 10)
-      .replaceAll("-", "")
-  );
+  return base
+    .toISOString()
+    .slice(0,10)
+    .replaceAll("-","");
 }
 
-const DATE_RANGE = [
-  getDateString(-1),
-  getDateString(0),
-  getDateString(1)
-];
 
-/* ------------------------------------------------------
-Helpers
------------------------------------------------------- */
+/*
+=========================================================
+FETCH ONE LEAGUE / ONE DATE
+=========================================================
+*/
 
-function text(value) {
-  return value == null
-    ? ""
-    : String(value).trim();
-}
-
-function number(value, fallback = null) {
-
-  const n =
-    Number(value);
-
-  return Number.isFinite(n)
-    ? n
-    : fallback;
-}
-
-function safeArray(value) {
-  return Array.isArray(value)
-    ? value
-    : [];
-}
-
-/* ------------------------------------------------------
-Fetch ESPN
------------------------------------------------------- */
-
-async function fetchScoreboard(
+async function fetchLeague(
   league,
   date
-) {
+){
 
   const url =
     `https://site.api.espn.com/apis/site/v2/sports/soccer/${league.espnId}/scoreboard?dates=${date}`;
-
-  console.log(
-    `Fetching ${league.name} ${date}`
-  );
 
   const response =
     await fetch(
       url,
       {
-        headers: {
+        headers:{
           "User-Agent":
-            USER_AGENT,
+            "MarioBolaLiveScore/1.0",
 
           "Accept":
             "application/json"
@@ -221,245 +219,214 @@ async function fetchScoreboard(
       }
     );
 
-  if (!response.ok) {
+  if(
+    !response.ok
+  ){
 
     throw new Error(
-      `HTTP ${response.status} ${response.statusText}`
+      `${league.name}: HTTP ${response.status}`
     );
   }
 
-  return response.json();
+  const payload =
+    await response.json();
+
+  return payload?.events || [];
 }
 
-/* ------------------------------------------------------
-Status normalization
------------------------------------------------------- */
 
-function getStatusInfo(
+/*
+=========================================================
+STATUS
+=========================================================
+*/
+
+function normalizeStatus(
   event
-) {
+){
 
   const status =
-    event?.status ??
-    event?.competitions?.[0]?.status ??
+    event?.status ||
+    event?.competitions?.[0]?.status ||
     {};
 
   const type =
-    status.type ?? {};
+    status?.type ||
+    {};
 
   const state =
-    text(
-      type.state ??
-      status.state
+    String(
+      type.state ||
+      status.state ||
+      ""
     ).toLowerCase();
 
-  const name =
-    text(
-      type.name ??
-      status.name
-    ).toLowerCase();
-
-  const detail =
-    text(
-      type.detail ??
-      status.detail
-    );
-
-  const description =
-    text(
-      type.description ??
+  const allText =
+    [
+      type.name,
+      type.detail,
+      type.description,
+      status.detail,
       status.description
-    );
-
-  const all =
-    `${state} ${name} ${detail} ${description}`
+    ]
+      .filter(Boolean)
+      .join(" ")
       .toLowerCase();
 
-  let normalized =
-    "unknown";
-
-  if (
+  if(
     state === "in" ||
-    all.includes("in progress") ||
-    all.includes("live")
-  ) {
+    allText.includes(
+      "in progress"
+    ) ||
+    allText.includes(
+      "live"
+    )
+  ){
 
-    normalized = "live";
-
-  } else if (
-    state === "post" ||
-    all.includes("final") ||
-    all.includes("finished") ||
-    all.includes("complete")
-  ) {
-
-    normalized = "finished";
-
-  } else if (
-    state === "pre" ||
-    all.includes("scheduled") ||
-    all.includes("upcoming")
-  ) {
-
-    normalized = "upcoming";
+    return "live";
   }
 
-  return {
+  if(
+    state === "post" ||
+    allText.includes(
+      "final"
+    ) ||
+    allText.includes(
+      "finished"
+    ) ||
+    allText.includes(
+      "complete"
+    )
+  ){
 
-    state:
-      normalized,
+    return "finished";
+  }
 
-    displayClock:
-      text(
-        status.displayClock ??
-        event?.displayClock ??
-        ""
-      ),
-
-    displayPeriod:
-      text(
-        status.period ??
-        event?.period ??
-        ""
-      ),
-
-    detail,
-
-    description
-  };
+  return "upcoming";
 }
 
-/* ------------------------------------------------------
-Competitors
------------------------------------------------------- */
 
-function getCompetitor(
-  event,
-  side
-) {
-
-  return (
-    event?.competitions?.[0]?.competitors
-      ?.find(
-        item =>
-          item.homeAway === side
-      )
-  );
-}
-
-/* ------------------------------------------------------
-Team
------------------------------------------------------- */
+/*
+=========================================================
+TEAM
+=========================================================
+*/
 
 function normalizeTeam(
   competitor
-) {
+){
 
   const team =
-    competitor?.team ?? {};
-
-  const logo =
-    team?.logos?.[0]?.href ??
-    team?.logo ??
-    "";
+    competitor?.team ||
+    {};
 
   return {
 
     id:
-      text(
-        team.id ??
-        competitor?.id
-      ),
+      team.id ||
+      competitor?.id ||
+      "",
 
     uid:
-      text(
-        team.uid
-      ),
+      team.uid ||
+      "",
 
     name:
-      text(
-        team.displayName ??
-        team.name ??
-        team.shortDisplayName
-      ),
+      team.displayName ||
+      team.name ||
+      team.shortDisplayName ||
+      "",
 
     shortName:
-      text(
-        team.shortDisplayName ??
-        team.shortName ??
-        team.abbreviation
-      ),
+      team.shortDisplayName ||
+      team.shortName ||
+      team.abbreviation ||
+      "",
 
     abbreviation:
-      text(
-        team.abbreviation
-      ),
+      team.abbreviation ||
+      "",
 
-    logo
+    logo:
+      team.logos?.[0]?.href ||
+      team.logo ||
+      ""
   };
 }
 
-/* ------------------------------------------------------
-Normalize event
------------------------------------------------------- */
+
+/*
+=========================================================
+EVENT
+=========================================================
+*/
 
 function normalizeEvent(
   event,
   league,
   sourceDate
-) {
+){
 
-  const home =
-    getCompetitor(
-      event,
-      "home"
+  const competition =
+    event?.competitions?.[0] ||
+    {};
+
+  const homeCompetitor =
+    competition?.competitors?.find(
+      item =>
+        item.homeAway ===
+        "home"
     );
 
-  const away =
-    getCompetitor(
-      event,
-      "away"
+  const awayCompetitor =
+    competition?.competitors?.find(
+      item =>
+        item.homeAway ===
+        "away"
     );
 
   const status =
-    getStatusInfo(
-      event
-    );
+    event?.status ||
+    competition?.status ||
+    {};
 
-  const homeTeam =
-    normalizeTeam(
-      home
-    );
-
-  const awayTeam =
-    normalizeTeam(
-      away
-    );
+  const type =
+    status?.type ||
+    {};
 
   const homeScore =
-    number(
-      home?.score
-    );
+    Number.isFinite(
+      Number(
+        homeCompetitor?.score
+      )
+    )
+      ? Number(
+          homeCompetitor?.score
+        )
+      : 0;
 
   const awayScore =
-    number(
-      away?.score
-    );
+    Number.isFinite(
+      Number(
+        awayCompetitor?.score
+      )
+    )
+      ? Number(
+          awayCompetitor?.score
+        )
+      : 0;
 
   return {
 
     eventId:
-      text(
-        event.id
-      ),
+      event?.id ||
+      "",
 
     uid:
-      text(
-        event.uid
-      ),
+      event?.uid ||
+      "",
 
-    league: {
-
+    league:{
       id:
         league.id,
 
@@ -476,23 +443,25 @@ function normalizeEvent(
     sourceDate,
 
     kickoff:
-      event.date ??
-      event.startDate ??
+      event?.date ||
+      event?.startDate ||
       null,
 
     venue:
-      text(
-        event?.competitions?.[0]?.venue?.fullName
-      ),
+      competition?.venue?.fullName ||
+      "",
 
     home:
-      homeTeam,
+      normalizeTeam(
+        homeCompetitor
+      ),
 
     away:
-      awayTeam,
+      normalizeTeam(
+        awayCompetitor
+      ),
 
-    score: {
-
+    score:{
       home:
         homeScore,
 
@@ -500,133 +469,95 @@ function normalizeEvent(
         awayScore,
 
       display:
-        `${homeScore ?? 0}-${awayScore ?? 0}`
+        `${homeScore}-${awayScore}`
     },
 
-    status: {
-
+    status:{
       state:
-        status.state,
+        normalizeStatus(
+          event
+        ),
 
       clock:
-        status.displayClock,
+        type.shortDetail ||
+        type.detail ||
+        status.displayClock ||
+        "",
 
       period:
-        status.displayPeriod,
+        status.period ||
+        "",
 
       detail:
-        status.detail,
+        type.detail ||
+        status.detail ||
+        "",
 
       description:
-        status.description
+        type.description ||
+        status.description ||
+        ""
     },
 
     link:
-      event?.links?.[0]?.href ??
+      event?.links?.[0]?.href ||
       "",
 
     broadcasts:
-      safeArray(
-        event?.competitions?.[0]?.broadcasts
-      ).map(
-        item =>
-          text(
-            item?.names?.[0]
-          )
-      )
+      (competition?.broadcasts || [])
+        .flatMap(
+          item =>
+            item?.names || []
+        )
   };
 }
 
-/* ------------------------------------------------------
-Dedupe
------------------------------------------------------- */
 
-function dedupeEvents(
-  events
-) {
+/*
+=========================================================
+MAIN
+=========================================================
+*/
 
-  const map =
-    new Map();
+async function main(){
 
-  for (const event of events) {
+  console.log(
+    "=========================================="
+  );
 
-    if (!event.eventId) {
-      continue;
-    }
+  console.log(
+    " MARIOBOLA LIVE SCORE GENERATOR"
+  );
 
-    map.set(
-      event.eventId,
-      event
-    );
-  }
+  console.log(
+    " 12 LEAGUES"
+  );
 
-  return [
-    ...map.values()
+  console.log(
+    "=========================================="
+  );
+
+
+  const dates = [
+
+    getJakartaDate(-1),
+
+    getJakartaDate(0),
+
+    getJakartaDate(1)
+
   ];
-}
 
-/* ------------------------------------------------------
-Sort
------------------------------------------------------- */
 
-function sortEvents(
-  events
-) {
+  const allEvents = [];
 
-  return [
-    ...events
-  ].sort(
-    (a, b) => {
+  const leagueResults = [];
 
-      const aTime =
-        a.kickoff
-          ? new Date(
-              a.kickoff
-            ).getTime()
-          : Infinity;
 
-      const bTime =
-        b.kickoff
-          ? new Date(
-              b.kickoff
-            ).getTime()
-          : Infinity;
-
-      return (
-        aTime -
-        bTime
-      );
-    }
-  );
-}
-
-/* ------------------------------------------------------
-Main
------------------------------------------------------- */
-
-async function main() {
-
-  console.log("");
-  console.log(
-    "=========================================="
-  );
-  console.log(
-    " MARIOBOLA LIVE SCORE ENGINE"
-  );
-  console.log(
-    "=========================================="
-  );
-
-  const allEvents =
-    [];
-
-  const leagueResults =
-    [];
-
-  for (
+  for(
     const league
     of LEAGUES
-  ) {
+  ){
 
     const result = {
 
@@ -652,163 +583,209 @@ async function main() {
         []
     };
 
-    for (
+
+    for(
       const date
-      of DATE_RANGE
-    ) {
+      of dates
+    ){
 
-      try {
+      try{
 
-        const payload =
-          await fetchScoreboard(
+        const events =
+          await fetchLeague(
             league,
             date
           );
 
-        const events =
-          safeArray(
-            payload?.events
-          );
 
-        for (
+        for(
           const event
           of events
-        ) {
+        ){
 
-          const normalized =
+          allEvents.push(
             normalizeEvent(
               event,
               league,
               date
-            );
-
-          allEvents.push(
-            normalized
+            )
           );
         }
+
 
         result.events +=
           events.length;
 
-      } catch (error) {
+
+      }catch(error){
 
         result.errors.push(
           `${date}: ${error.message}`
         );
 
         console.warn(
-          `WARNING ${league.name} ${date}: ${error.message}`
+          `[WARNING] ${league.name} ${date}: ${error.message}`
         );
       }
     }
 
-    if (
+
+    if(
       result.errors.length
-    ) {
+    ){
 
       result.status =
-        result.events
+        result.events > 0
           ? "partial"
           : "error";
     }
+
 
     leagueResults.push(
       result
     );
   }
 
-  const events =
-    sortEvents(
-      dedupeEvents(
-        allEvents
-      )
-    );
 
-  const live =
-    events.filter(
+  /*
+  DEDUPE
+  */
+
+  const unique =
+    [
+      ...new Map(
+        allEvents
+          .filter(
+            event =>
+              event.eventId
+          )
+          .map(
+            event => [
+              event.eventId,
+              event
+            ]
+          )
+      ).values()
+    ];
+
+
+  /*
+  SORT
+  */
+
+  unique.sort(
+    (a,b)=>{
+
+      const at =
+        a.kickoff
+          ? Date.parse(
+              a.kickoff
+            )
+          : Infinity;
+
+      const bt =
+        b.kickoff
+          ? Date.parse(
+              b.kickoff
+            )
+          : Infinity;
+
+      return at-bt;
+    }
+  );
+
+
+  /*
+  GROUPS
+  */
+
+  const liveMatches =
+    unique.filter(
       event =>
         event.status.state ===
         "live"
     );
 
-  const upcoming =
-    events.filter(
+  const upcomingMatches =
+    unique.filter(
       event =>
         event.status.state ===
         "upcoming"
     );
 
-  const finished =
-    events.filter(
+  const finishedMatches =
+    unique.filter(
       event =>
         event.status.state ===
         "finished"
     );
 
-  const generatedAt =
-    new Date()
-      .toISOString();
+
+  /*
+  OUTPUT
+  */
 
   const output = {
 
     version:
       1,
 
-    generatedAt,
+    generatedAt:
+      new Date().toISOString(),
 
     source:
       "ESPN public soccer scoreboard",
 
     dateRange:
-      DATE_RANGE,
+      dates,
 
     status:
-      leagueResults.every(
-        x =>
-          x.status === "ok"
+      leagueResults.some(
+        league =>
+          league.status ===
+          "error"
       )
-        ? "ok"
-        : "partial",
+        ? "partial"
+        : "ok",
 
-    summary: {
+    summary:{
 
       totalEvents:
-        events.length,
+        unique.length,
 
       live:
-        live.length,
+        liveMatches.length,
 
       upcoming:
-        upcoming.length,
+        upcomingMatches.length,
 
       finished:
-        finished.length,
+        finishedMatches.length,
 
       leagues:
         LEAGUES.length,
 
       successfulLeagues:
         leagueResults.filter(
-          x =>
-            x.status === "ok"
+          league =>
+            league.status ===
+            "ok"
         ).length
     },
 
     leagues:
       leagueResults,
 
-    liveMatches:
-      live,
+    liveMatches,
 
-    upcomingMatches:
-      upcoming,
+    upcomingMatches,
 
-    finishedMatches:
-      finished,
+    finishedMatches,
 
     matches:
-      events
+      unique
   };
+
 
   fs.mkdirSync(
     path.dirname(
@@ -820,6 +797,7 @@ async function main() {
     }
   );
 
+
   fs.writeFileSync(
     OUTPUT,
     JSON.stringify(
@@ -830,72 +808,82 @@ async function main() {
     "utf8"
   );
 
+
   console.log("");
   console.log(
     "=========================================="
   );
+
   console.log(
     " LIVE SCORE BUILD COMPLETE"
   );
+
   console.log(
     "=========================================="
   );
+
   console.log(
-    `Total events : ${events.length}`
+    `Leagues  : ${LEAGUES.length}`
   );
+
   console.log(
-    `LIVE         : ${live.length}`
+    `Events   : ${unique.length}`
   );
+
   console.log(
-    `UPCOMING     : ${upcoming.length}`
+    `LIVE     : ${liveMatches.length}`
   );
+
   console.log(
-    `FINISHED     : ${finished.length}`
+    `UPCOMING : ${upcomingMatches.length}`
   );
+
   console.log(
-    `Output       : ${OUTPUT}`
+    `FINISHED : ${finishedMatches.length}`
   );
+
+  console.log(
+    `Output   : ${OUTPUT}`
+  );
+
   console.log(
     "=========================================="
   );
-  console.log("");
+
 
   /*
-  We intentionally DO NOT fail the workflow when
-  one league temporarily fails.
-
-  This allows the other leagues to keep updating.
-
-  However, if ALL leagues fail, exit 1 so the problem
-  is visible in GitHub Actions.
+  Do not fail merely because one league has
+  no events today. A league with 0 events can
+  be legitimate.
   */
 
-  const successful =
+  const available =
     leagueResults.filter(
-      x =>
-        x.events > 0
+      league =>
+        league.status !==
+        "error"
     ).length;
 
-  if (
-    successful === 0
-  ) {
 
-    console.error(
-      "ERROR: tidak ada data pertandingan yang berhasil diambil."
+  if(
+    available === 0
+  ){
+
+    throw new Error(
+      "Semua sumber liga gagal diambil."
     );
-
-    process.exit(1);
   }
 }
+
 
 main()
   .catch(
     error => {
 
-      console.error("");
       console.error(
-        "MARIOBOLA LIVE SCORE ERROR"
+        "[MARIOBOLA LIVE SCORE ERROR]"
       );
+
       console.error(
         error
       );
