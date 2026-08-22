@@ -3,6 +3,7 @@ export async function onRequestGet(context) {
     ["epl", "Premier League", "England", "eng.1"],
     ["serie-a", "Serie A", "Italy", "ita.1"],
     ["bundesliga", "Bundesliga", "Germany", "ger.1"],
+    ["eredivisie", "Eredivisie", "Netherlands", "ned.1"],
     ["la-liga", "La Liga", "Spain", "esp.1"],
     ["ligue-1", "Ligue 1", "France", "fra.1"],
     ["brasileirao", "Brasileirão Série A", "Brazil", "bra.1"],
