@@ -835,7 +835,7 @@ function findLiveEventForMatch(
 
 async function updateMatchCenterLive(){
 
-  if (
+  if(
     !Array.isArray(allMatches) ||
     !allMatches.length
   ){
@@ -845,18 +845,72 @@ async function updateMatchCenterLive(){
   const payload =
     await fetchLiveScoreData();
 
-  if (!payload)
+  if(!payload){
     return;
+  }
 
   const events =
     getLiveEvents(payload);
 
-  if (!events.length)
+  if(!events.length){
     return;
+  }
 
+  const featuredLeagues = new Set([
+    "english premier league",
+    "premier league",
+    "la liga",
+    "serie a",
+    "bundesliga",
+    "ligue 1",
+    "eredivisie",
+    "primeira liga",
+    "brasileirão série a",
+    "major league soccer",
+    "mls",
+    "bri super league",
+    "belgian pro league",
+    "english championship"
+  ]);
+
+  const normalizeLeague = value =>
+    String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g,"")
+      .replace(/[^a-z0-9]+/g," ")
+      .replace(/\s+/g," ")
+      .trim();
+
+  const isAllowedLeague = match => {
+
+    const competition =
+      normalizeLeague(
+        match.competition
+      );
+
+    return [
+      ...featuredLeagues
+    ].some(
+      league =>
+        competition === league ||
+        competition.includes(league)
+    );
+  };
+
+  /*
+    Update hanya pertandingan yang
+    termasuk 12 liga.
+  */
   allMatches =
     allMatches.map(
       match => {
+
+        if(
+          !isAllowedLeague(match)
+        ){
+          return match;
+        }
 
         const event =
           findLiveEventForMatch(
@@ -864,85 +918,115 @@ async function updateMatchCenterLive(){
             events
           );
 
-        if (!event){
+        if(!event){
           return match;
         }
+
+        const state =
+          getLiveState(event);
+
+        const homeScore =
+          getLiveHomeScore(event);
+
+        const awayScore =
+          getLiveAwayScore(event);
+
+        const clock =
+          getLiveClock(event);
 
         return {
           ...match,
 
-          homeScore:
-            getLiveHomeScore(event),
+          homeScore,
 
-          awayScore:
-            getLiveAwayScore(event),
+          awayScore,
 
           actualStatus:
-            getLiveState(event),
+            state,
+
+          status:
+            state,
 
           liveData:{
-            clock:
-              getLiveClock(event),
+            state,
 
-            state:
-              getLiveState(event),
+            clock,
 
-            homeScore:
-              getLiveHomeScore(event),
+            homeScore,
 
-            awayScore:
-              getLiveAwayScore(event),
+            awayScore,
 
             eventId:
               event.eventId ||
               event.id ||
               null
-          },
-
-          status:
-            getLiveState(event)
+          }
         };
       }
     );
 
   /*
-    Pertahankan pertandingan yang sedang
-    tampil sebagai Featured Match.
+    MATCH CENTER hanya melihat
+    pertandingan dari 12 liga.
+  */
+  const matchCenterMatches =
+    allMatches.filter(
+      isAllowedLeague
+    );
+
+  /*
+    Prioritas Featured:
+    1. pertandingan LIVE
+    2. pertandingan yang sedang dipilih
+    3. UPCOMING featured
+    4. UPCOMING pertama
+    5. pertandingan terakhir
   */
 
   let featured =
-    allMatches.find(
+    matchCenterMatches.find(
       m =>
-        m.id ===
-        activeMatchId
+        m.status === "LIVE"
     );
 
-  if (!featured){
+  if(!featured){
 
     featured =
-      allMatches.find(
+      matchCenterMatches.find(
         m =>
-          m.status ===
-          "LIVE"
+          m.id ===
+          activeMatchId
       );
   }
 
-  if (!featured){
+  if(!featured){
 
     featured =
-      allMatches.find(
+      matchCenterMatches.find(
         m =>
-          m.status ===
-          "UPCOMING"
+          m.featured &&
+          m.status === "UPCOMING"
       );
   }
 
-  if (!featured){
+  if(!featured){
+
     featured =
-      allMatches[0];
+      matchCenterMatches.find(
+        m =>
+          m.status === "UPCOMING"
+      );
   }
 
-  if (featured){
+  if(!featured){
+
+    featured =
+      matchCenterMatches[
+        matchCenterMatches.length - 1
+      ];
+  }
+
+  if(featured){
 
     renderFeatured(
       featured
@@ -954,41 +1038,39 @@ async function updateMatchCenterLive(){
   }
 
   /*
-    Update ticker.
+    Refresh fixture ticker.
   */
-
   renderPreview(
     currentFilter
   );
 
   /*
-    Update ALL PREDICTIONS.
+    Refresh ALL PREDICTIONS.
   */
-
   renderPredictionBoard();
 
   /*
-    Update LIVE HUB label.
+    LIVE HUB.
   */
-
   const live =
-    allMatches.find(
+    matchCenterMatches.find(
       m =>
         m.status === "LIVE"
     );
 
-  if (live){
+  if(live){
 
     $("#liveEmptyLabel").innerHTML =
-      `LIVE NOW<br>
-       <b>
-       ${esc(live.homeTeam)}
-       ${live.homeScore ?? 0}
-       -
-       ${live.awayScore ?? 0}
-       ${esc(live.awayTeam)}
-       </b>`;
-
+      `
+      LIVE NOW<br>
+      <b>
+        ${esc(live.homeTeam)}
+        ${live.homeScore ?? 0}
+        -
+        ${live.awayScore ?? 0}
+        ${esc(live.awayTeam)}
+      </b>
+      `;
   }
 }
 
@@ -1078,7 +1160,7 @@ const MATCH_CENTER_LEAGUES = new Set([
   "belgian pro league",
   "english championship"
 ]);
-
+                                                                                                                                                                                                                                                                                                                                     
 function normalizeCompetition(value){
   return String(value || "")
     .toLowerCase()
