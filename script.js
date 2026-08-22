@@ -118,7 +118,99 @@ function renderFeatured(m){
   $("#matchModal")
     .dataset.matchId = m.id;
 }
-function renderNextSchedule(m){const sorted=allMatches.filter(x=>x.status!=="FINISHED").sort((a,b)=>matchDateTime(a)-matchDateTime(b));let idx=sorted.findIndex(x=>x.id===m?.id);if(idx<0)idx=0;[1,2,3].forEach((n,i)=>{const x=sorted[(idx+i+1)%Math.max(sorted.length,1)];if(x){$("#fixtureTeam"+n).textContent=`${x.homeTeam} vs ${x.awayTeam}`;$("#fixtureMeta"+n).textContent=`${formatDate(matchDateTime(x))} • ${x.time} WIB • ${statusLabel(x.status)}`}})}
+function renderNextSchedule(m){
+
+  const featuredLeagues = new Set([
+    "english premier league",
+    "premier league",
+    "la liga",
+    "serie a",
+    "bundesliga",
+    "ligue 1",
+    "eredivisie",
+    "primeira liga",
+    "brasileirão série a",
+    "major league soccer",
+    "mls",
+    "bri super league",
+    "belgian pro league",
+    "english championship"
+  ]);
+
+  const normalizeLeague = value =>
+    String(value || "")
+      .toLowerCase()
+      .normalize("NFD")
+      .replace(/[\u0300-\u036f]/g, "")
+      .replace(/[^a-z0-9]+/g, " ")
+      .replace(/\s+/g, " ")
+      .trim();
+
+  const sorted =
+    allMatches
+      .filter(x => {
+
+        if(x.status === "FINISHED"){
+          return false;
+        }
+
+        const competition =
+          normalizeLeague(
+            x.competition
+          );
+
+        return [
+          ...featuredLeagues
+        ].some(
+          league =>
+            competition === league ||
+            competition.includes(league)
+        );
+      })
+      .sort(
+        (a,b) =>
+          matchDateTime(a) -
+          matchDateTime(b)
+      );
+
+  let idx =
+    sorted.findIndex(
+      x =>
+        x.id === m?.id
+    );
+
+  if(idx < 0){
+    idx = 0;
+  }
+
+  [1,2,3].forEach(
+    (n,i) => {
+
+      const x =
+        sorted[
+          (idx+i+1) %
+          Math.max(
+            sorted.length,
+            1
+          )
+        ];
+
+      if(!x){
+        return;
+      }
+
+      $("#fixtureTeam"+n)
+        .textContent =
+        `${x.homeTeam} vs ${x.awayTeam}`;
+
+      $("#fixtureMeta"+n)
+        .textContent =
+        x.status === "LIVE"
+          ? `${formatDate(matchDateTime(x))} • ${x.liveData?.clock || "LIVE"} • LIVE`
+          : `${formatDate(matchDateTime(x))} • ${x.time} WIB • ${statusLabel(x.status)}`;
+    }
+  );
+}
 function renderPreview(filter=currentFilter){currentFilter=filter;const list=allMatches.filter(m=>filter==="all"||m.status.toLowerCase()===filter).sort((a,b)=>matchDateTime(a)-matchDateTime(b));$("#previewSummary").textContent=`${list.length} pertandingan • sumber TXT harian MARIOBOLA • WIB`;const grid=$("#matchPreviewGrid");if(!list.length){grid.innerHTML='<div class="preview-empty">NO MATCH FOUND FOR THIS FILTER.</div>';return}const card=m=>`<article class="fixture-ticker-card"><div class="fixture-ticker-league">${esc(m.competition)}</div><div class="fixture-ticker-team">${logoMarkup(m,"home")}<strong>${esc(m.homeTeam)}</strong></div><div class="fixture-ticker-vs">VS</div><div class="fixture-ticker-team">${logoMarkup(m,"away")}<strong>${esc(m.awayTeam)}</strong></div><div class="fixture-ticker-time"><strong>${esc(m.time)}</strong><small>${esc(formatDate(matchDateTime(m)))}</small></div><div class="fixture-ticker-prediction"><small>PRED</small><strong>${esc(m.prediction||"-")}</strong></div><div class="fixture-ticker-status">${statusLabel(m.status)}</div></article>`;const html=list.map(card).join("");grid.innerHTML=`<div class="fixtures-marquee"><div class="fixtures-marquee-group">${html}</div><div class="fixtures-marquee-group">${html}</div></div>`;requestAnimationFrame(()=>{const group=$(".fixtures-marquee-group",grid),marquee=$(".fixtures-marquee",grid);if(group&&marquee){marquee.style.animationDuration=`${Math.max(40,group.scrollWidth/20)}s`}})}
 function renderPredictionBoard(){const box=$("#predictionBoard");const list=[...allMatches].sort((a,b)=>matchDateTime(a)-matchDateTime(b));box.innerHTML=list.map((m,i)=>`<article class="prediction-card-modern"><div class="prediction-card-number">${String(i+1).padStart(2,"0")}</div><div><div class="prediction-card-league"><span>${esc(m.competition)}</span><b class="${statusClass(m.status)}">${statusLabel(m.status)}</b></div><div class="prediction-card-date">${esc(formatDate(matchDateTime(m)))} • ${esc(m.time)} WIB</div><div class="prediction-card-teams"><div class="prediction-team">${logoMarkup(m,"home")}<strong>${esc(m.homeTeam)}</strong></div><div class="prediction-vs">VS</div><div class="prediction-team">${logoMarkup(m,"away")}<strong>${esc(m.awayTeam)}</strong></div></div></div><div class="prediction-card-info"><div><small>HANDICAP</small><strong>${esc(m.handicap||"-")}</strong></div><div><small>PREDICTION</small><strong>${esc(m.prediction||"-")}</strong></div></div><button class="prediction-detail-modern ${statusClass(m.status)}" data-preview-id="${esc(m.id)}">${statusLabel(m.status)} <span>${m.status==="LIVE"?"●":"↗"}</span></button></article>`).join("")||'<div class="preview-empty">NO PREDICTION DATA.</div>';$$("[data-preview-id]",box).forEach(b=>b.addEventListener("click",()=>openMatch(b.dataset.previewId)))}
 function openMatch(id){const m=allMatches.find(x=>x.id===id);if(!m)return;renderFeatured(m);$("#modalMatchTitle").textContent=`${m.homeTeam} VS ${m.awayTeam}`;$("#modalMatchCopy").textContent=`${m.competition} • ${formatDate(matchDateTime(m))} • ${m.time} WIB • ${statusLabel(m.status)}.`;$("#modalMatchMeta").innerHTML=`<div>HANDICAP<br><strong>${esc(m.handicap||"-")}</strong></div><div>PREDICTION<br><strong>${esc(m.prediction||"-")}</strong></div><div>STATUS<br><strong>${statusLabel(m.status)}</strong></div>`;setActionLink($("#modalDetailLink"),m.matchDetailUrl,"MATCH DETAIL →");setActionLink($("#modalStreamLink"),m.liveStreamingUrl||CONFIG.liveStreaming,"LIVE STREAMING →");$("#matchModal").classList.add("show");$("#matchModal").setAttribute("aria-hidden","false")}
