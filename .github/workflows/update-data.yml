@@ -44,9 +44,12 @@ jobs:
 
       - name: Resolve team logos
         run: npm run resolve-logos
-        
+
       - name: Update league standings
         run: npm run update-standings
+
+      - name: Update live scores
+        run: npm run update-live-scores
 
       - name: Validate generated data
         run: npm run validate-data
@@ -61,17 +64,82 @@ jobs:
           echo " MARIOBOLA BUILD SUMMARY"
           echo "======================================"
 
-          node -e "
-          const d=require('./data/schedule.json');
-          console.log('Matches       :', d.matches.length);
-          console.log('Predictions   :', d.matchedPredictions);
+          node --input-type=module -e "
+          import fs from 'node:fs';
+
+          const d = JSON.parse(
+            fs.readFileSync('./data/schedule.json', 'utf8')
+          );
+
+          console.log(
+            'Matches       :',
+            Array.isArray(d.matches) ? d.matches.length : 0
+          );
+
+          console.log(
+            'Predictions   :',
+            d.matchedPredictions ?? 0
+          );
+
           console.log(
             'With home logo:',
-            d.matches.filter(x=>x.homeCrest).length
+            Array.isArray(d.matches)
+              ? d.matches.filter(x => x.homeCrest).length
+              : 0
           );
+
           console.log(
             'With away logo:',
-            d.matches.filter(x=>x.awayCrest).length
+            Array.isArray(d.matches)
+              ? d.matches.filter(x => x.awayCrest).length
+              : 0
+          );
+          "
+
+          echo ""
+          echo "======================================"
+          echo " LIVE SCORE SUMMARY"
+          echo "======================================"
+
+          node --input-type=module -e "
+          import fs from 'node:fs';
+
+          const file = './data/live-scores.json';
+
+          if (!fs.existsSync(file)) {
+            console.log('live-scores.json tidak ditemukan.');
+            process.exit(0);
+          }
+
+          const d = JSON.parse(
+            fs.readFileSync(file, 'utf8')
+          );
+
+          console.log(
+            'Live matches  :',
+            d.summary?.live ?? 0
+          );
+
+          console.log(
+            'Upcoming      :',
+            d.summary?.upcoming ?? 0
+          );
+
+          console.log(
+            'Finished      :',
+            d.summary?.finished ?? 0
+          );
+
+          console.log(
+            'Total events  :',
+            d.summary?.totalEvents ?? 0
+          );
+
+          console.log(
+            'Leagues OK    :',
+            d.summary?.successfulLeagues ?? 0,
+            '/',
+            d.summary?.leagues ?? 0
           );
           "
 
