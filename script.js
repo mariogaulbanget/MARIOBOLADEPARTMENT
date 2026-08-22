@@ -833,3 +833,46 @@ if (
 
   marioBolaStart();
 }
+const MATCH_CENTER_LEAGUES = new Set([
+  "english premier league",
+  "premier league",
+  "la liga",
+  "serie a",
+  "bundesliga",
+  "ligue 1",
+  "eredivisie",
+  "primeira liga",
+  "brasileirão série a",
+  "major league soccer",
+  "mls",
+  "bri super league",
+  "belgian pro league",
+  "english championship"
+]);
+
+function normalizeCompetition(value){
+  return String(value || "")
+    .toLowerCase()
+    .normalize("NFD")
+    .replace(/[\u0300-\u036f]/g,"")
+    .replace(/[^a-z0-9]+/g," ")
+    .replace(/\s+/g," ")
+    .trim();
+}
+
+function isMatchCenterLeague(match){
+  const name =
+    normalizeCompetition(match.competition);
+
+  return [...MATCH_CENTER_LEAGUES].some(
+    league =>
+      name === league ||
+      name.includes(league)
+  );
+}
+
+function getMatchCenterMatches(){
+  return allMatches.filter(
+    isMatchCenterLeague
+  );
+}
