@@ -1,0 +1,20 @@
+{
+  "version": 1,
+  "generatedAt": null,
+  "source": "ESPN public soccer scoreboard",
+  "dateRange": [],
+  "status": "initializing",
+  "summary": {
+    "totalEvents": 0,
+    "live": 0,
+    "upcoming": 0,
+    "finished": 0,
+    "leagues": 10,
+    "successfulLeagues": 0
+  },
+  "leagues": [],
+  "liveMatches": [],
+  "upcomingMatches": [],
+  "finishedMatches": [],
+  "matches": []
+}
