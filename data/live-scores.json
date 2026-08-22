@@ -1,6 +1,6 @@
 {
   "version": 1,
-  "generatedAt": "2026-08-22T19:07:23.098Z",
+  "generatedAt": "2026-08-22T19:59:25.276Z",
   "source": "ESPN public soccer scoreboard",
   "dateRange": [
     "20260822",
@@ -10,9 +10,9 @@
   "status": "ok",
   "summary": {
     "totalEvents": 72,
-    "live": 9,
-    "upcoming": 50,
-    "finished": 13,
+    "live": 10,
+    "upcoming": 48,
+    "finished": 14,
     "leagues": 10,
     "successfulLeagues": 10
   },
@@ -110,51 +110,6 @@
   ],
   "liveMatches": [
     {
-      "eventId": "401882907",
-      "uid": "s:600~l:740~e:401882907",
-      "league": {
-        "id": "la-liga",
-        "name": "La Liga",
-        "country": "Spain",
-        "espnId": "esp.1"
-      },
-      "sourceDate": "20260822",
-      "kickoff": "2026-08-22T17:30Z",
-      "venue": "Mestalla Stadium",
-      "home": {
-        "id": "94",
-        "uid": "s:600~t:94",
-        "name": "Valencia",
-        "shortName": "Valencia",
-        "abbreviation": "VAL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
-      },
-      "away": {
-        "id": "85",
-        "uid": "s:600~t:85",
-        "name": "Celta Vigo",
-        "shortName": "Celta Vigo",
-        "abbreviation": "CEL",
-        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
-      },
-      "score": {
-        "home": 0,
-        "away": 0,
-        "display": "0-0"
-      },
-      "status": {
-        "state": "live",
-        "clock": "74'",
-        "period": "2",
-        "detail": "74'",
-        "description": "Second Half"
-      },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882907",
-      "broadcasts": [
-        "ESPN Deportes"
-      ]
-    },
-    {
       "eventId": "401874929",
       "uid": "s:600~l:730~e:401874929",
       "league": {
@@ -189,10 +144,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "21'",
-        "period": "1",
-        "detail": "21'",
-        "description": "In Progress"
+        "clock": "55'",
+        "period": "2",
+        "detail": "55'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874929",
       "broadcasts": [
@@ -234,10 +189,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "21'",
-        "period": "1",
-        "detail": "21'",
-        "description": "First Half"
+        "clock": "54'",
+        "period": "2",
+        "detail": "54'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874747",
       "broadcasts": [
@@ -273,16 +228,16 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "home": 1,
+        "away": 1,
+        "display": "1-1"
       },
       "status": {
         "state": "live",
-        "clock": "22'",
-        "period": "1",
-        "detail": "22'",
-        "description": "First Half"
+        "clock": "55'",
+        "period": "2",
+        "detail": "55'",
+        "description": "In Progress"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876491",
       "broadcasts": []
@@ -322,10 +277,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "22'",
-        "period": "1",
-        "detail": "22'",
-        "description": "First Half"
+        "clock": "57'",
+        "period": "2",
+        "detail": "57'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876488",
       "broadcasts": []
@@ -365,10 +320,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "22'",
-        "period": "1",
-        "detail": "22'",
-        "description": "First Half"
+        "clock": "57'",
+        "period": "2",
+        "detail": "57'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876486",
       "broadcasts": []
@@ -408,10 +363,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "22'",
-        "period": "1",
-        "detail": "22'",
-        "description": "First Half"
+        "clock": "56'",
+        "period": "2",
+        "detail": "56'",
+        "description": "In Progress"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876485",
       "broadcasts": []
@@ -446,15 +401,15 @@
       },
       "score": {
         "home": 1,
-        "away": 0,
-        "display": "1-0"
+        "away": 2,
+        "display": "1-2"
       },
       "status": {
         "state": "live",
-        "clock": "20'",
-        "period": "1",
-        "detail": "20'",
-        "description": "In Progress"
+        "clock": "54'",
+        "period": "2",
+        "detail": "54'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879019",
       "broadcasts": []
@@ -489,21 +444,19 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "away": 1,
+        "display": "0-1"
       },
       "status": {
         "state": "live",
-        "clock": "7'",
+        "clock": "45'+4'",
         "period": "1",
-        "detail": "7'",
-        "description": "First Half"
+        "detail": "HT",
+        "description": "Halftime"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401841205",
       "broadcasts": []
-    }
-  ],
-  "upcomingMatches": [
+    },
     {
       "eventId": "401882912",
       "uid": "s:600~l:740~e:401882912",
@@ -534,17 +487,17 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "away": 1,
+        "display": "0-1"
       },
       "status": {
-        "state": "upcoming",
-        "clock": "0'",
-        "period": "",
-        "detail": "Sat, August 22nd at 3:30 PM EDT",
-        "description": "Scheduled"
+        "state": "live",
+        "clock": "28'",
+        "period": "1",
+        "detail": "28'",
+        "description": "First Half"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882912/real-madrid-espanyol",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882912",
       "broadcasts": [
         "ABC"
       ]
@@ -578,20 +531,22 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21613.png"
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "display": "0-0"
+        "display": "1-0"
       },
       "status": {
-        "state": "upcoming",
-        "clock": "0'",
-        "period": "",
-        "detail": "Sat, August 22nd at 3:30 PM EDT",
-        "description": "Scheduled"
+        "state": "live",
+        "clock": "26'",
+        "period": "1",
+        "detail": "26'",
+        "description": "First Half"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401885467/alverca-sporting-cp",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885467",
       "broadcasts": []
-    },
+    }
+  ],
+  "upcomingMatches": [
     {
       "eventId": "401841204",
       "uid": "s:600~l:630~e:401841204",
@@ -3292,6 +3247,51 @@
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401885473/rio-ave-estoril",
       "broadcasts": []
+    },
+    {
+      "eventId": "401882907",
+      "uid": "s:600~l:740~e:401882907",
+      "league": {
+        "id": "la-liga",
+        "name": "La Liga",
+        "country": "Spain",
+        "espnId": "esp.1"
+      },
+      "sourceDate": "20260822",
+      "kickoff": "2026-08-22T17:30Z",
+      "venue": "Mestalla Stadium",
+      "home": {
+        "id": "94",
+        "uid": "s:600~t:94",
+        "name": "Valencia",
+        "shortName": "Valencia",
+        "abbreviation": "VAL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+      },
+      "away": {
+        "id": "85",
+        "uid": "s:600~t:85",
+        "name": "Celta Vigo",
+        "shortName": "Celta Vigo",
+        "abbreviation": "CEL",
+        "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+      },
+      "score": {
+        "home": 0,
+        "away": 0,
+        "display": "0-0"
+      },
+      "status": {
+        "state": "finished",
+        "clock": "90'+6'",
+        "period": "2",
+        "detail": "FT",
+        "description": "Full Time"
+      },
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882907/celta-vigo-valencia",
+      "broadcasts": [
+        "ESPN Deportes"
+      ]
     }
   ],
   "matches": [
@@ -3904,13 +3904,13 @@
         "display": "0-0"
       },
       "status": {
-        "state": "live",
-        "clock": "74'",
+        "state": "finished",
+        "clock": "90'+6'",
         "period": "2",
-        "detail": "74'",
-        "description": "Second Half"
+        "detail": "FT",
+        "description": "Full Time"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882907",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882907/celta-vigo-valencia",
       "broadcasts": [
         "ESPN Deportes"
       ]
@@ -3950,10 +3950,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "21'",
-        "period": "1",
-        "detail": "21'",
-        "description": "In Progress"
+        "clock": "55'",
+        "period": "2",
+        "detail": "55'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874929",
       "broadcasts": [
@@ -3995,10 +3995,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "21'",
-        "period": "1",
-        "detail": "21'",
-        "description": "First Half"
+        "clock": "54'",
+        "period": "2",
+        "detail": "54'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401874747",
       "broadcasts": [
@@ -4034,16 +4034,16 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/6997.png"
       },
       "score": {
-        "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "home": 1,
+        "away": 1,
+        "display": "1-1"
       },
       "status": {
         "state": "live",
-        "clock": "22'",
-        "period": "1",
-        "detail": "22'",
-        "description": "First Half"
+        "clock": "55'",
+        "period": "2",
+        "detail": "55'",
+        "description": "In Progress"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876491",
       "broadcasts": []
@@ -4083,10 +4083,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "22'",
-        "period": "1",
-        "detail": "22'",
-        "description": "First Half"
+        "clock": "57'",
+        "period": "2",
+        "detail": "57'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876488",
       "broadcasts": []
@@ -4126,10 +4126,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "22'",
-        "period": "1",
-        "detail": "22'",
-        "description": "First Half"
+        "clock": "57'",
+        "period": "2",
+        "detail": "57'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876486",
       "broadcasts": []
@@ -4169,10 +4169,10 @@
       },
       "status": {
         "state": "live",
-        "clock": "22'",
-        "period": "1",
-        "detail": "22'",
-        "description": "First Half"
+        "clock": "56'",
+        "period": "2",
+        "detail": "56'",
+        "description": "In Progress"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401876485",
       "broadcasts": []
@@ -4207,15 +4207,15 @@
       },
       "score": {
         "home": 1,
-        "away": 0,
-        "display": "1-0"
+        "away": 2,
+        "display": "1-2"
       },
       "status": {
         "state": "live",
-        "clock": "20'",
-        "period": "1",
-        "detail": "20'",
-        "description": "In Progress"
+        "clock": "54'",
+        "period": "2",
+        "detail": "54'",
+        "description": "Second Half"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401879019",
       "broadcasts": []
@@ -4250,15 +4250,15 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "away": 1,
+        "display": "0-1"
       },
       "status": {
         "state": "live",
-        "clock": "7'",
+        "clock": "45'+4'",
         "period": "1",
-        "detail": "7'",
-        "description": "First Half"
+        "detail": "HT",
+        "description": "Halftime"
       },
       "link": "https://www.espn.com/soccer/match/_/gameId/401841205",
       "broadcasts": []
@@ -4293,17 +4293,17 @@
       },
       "score": {
         "home": 0,
-        "away": 0,
-        "display": "0-0"
+        "away": 1,
+        "display": "0-1"
       },
       "status": {
-        "state": "upcoming",
-        "clock": "0'",
-        "period": "",
-        "detail": "Sat, August 22nd at 3:30 PM EDT",
-        "description": "Scheduled"
+        "state": "live",
+        "clock": "28'",
+        "period": "1",
+        "detail": "28'",
+        "description": "First Half"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401882912/real-madrid-espanyol",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401882912",
       "broadcasts": [
         "ABC"
       ]
@@ -4337,18 +4337,18 @@
         "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/21613.png"
       },
       "score": {
-        "home": 0,
+        "home": 1,
         "away": 0,
-        "display": "0-0"
+        "display": "1-0"
       },
       "status": {
-        "state": "upcoming",
-        "clock": "0'",
-        "period": "",
-        "detail": "Sat, August 22nd at 3:30 PM EDT",
-        "description": "Scheduled"
+        "state": "live",
+        "clock": "26'",
+        "period": "1",
+        "detail": "26'",
+        "description": "First Half"
       },
-      "link": "https://www.espn.com/soccer/match/_/gameId/401885467/alverca-sporting-cp",
+      "link": "https://www.espn.com/soccer/match/_/gameId/401885467",
       "broadcasts": []
     },
     {

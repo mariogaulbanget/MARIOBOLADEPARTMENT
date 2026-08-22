@@ -1,5 +1,5 @@
 {
-  "generatedAt": "2026-08-22T19:07:21.497Z",
+  "generatedAt": "2026-08-22T19:59:23.067Z",
   "source": "ESPN public standings API",
   "status": "ok",
   "successfulLeagues": 10,
@@ -584,6 +584,44 @@
         {
           "rank": 10,
           "team": {
+            "id": "94",
+            "name": "Valencia",
+            "shortName": "Valencia",
+            "abbreviation": "VAL",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
+          },
+          "played": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 1,
+          "form": ""
+        },
+        {
+          "rank": 11,
+          "team": {
+            "id": "85",
+            "name": "Celta Vigo",
+            "shortName": "Celta Vigo",
+            "abbreviation": "CEL",
+            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
+          },
+          "played": 1,
+          "wins": 0,
+          "draws": 1,
+          "losses": 0,
+          "goalsFor": 0,
+          "goalsAgainst": 0,
+          "goalDifference": 0,
+          "points": 1,
+          "form": ""
+        },
+        {
+          "rank": 12,
+          "team": {
             "id": "101",
             "name": "Rayo Vallecano",
             "shortName": "Rayo",
@@ -601,7 +639,7 @@
           "form": ""
         },
         {
-          "rank": 11,
+          "rank": 13,
           "team": {
             "id": "83",
             "name": "Barcelona",
@@ -620,26 +658,7 @@
           "form": ""
         },
         {
-          "rank": 12,
-          "team": {
-            "id": "85",
-            "name": "Celta Vigo",
-            "shortName": "Celta Vigo",
-            "abbreviation": "CEL",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/85.png"
-          },
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "form": ""
-        },
-        {
-          "rank": 13,
+          "rank": 14,
           "team": {
             "id": "97",
             "name": "Osasuna",
@@ -658,32 +677,13 @@
           "form": ""
         },
         {
-          "rank": 14,
+          "rank": 15,
           "team": {
             "id": "86",
             "name": "Real Madrid",
             "shortName": "Real Madrid",
             "abbreviation": "RMA",
             "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/86.png"
-          },
-          "played": 0,
-          "wins": 0,
-          "draws": 0,
-          "losses": 0,
-          "goalsFor": 0,
-          "goalsAgainst": 0,
-          "goalDifference": 0,
-          "points": 0,
-          "form": ""
-        },
-        {
-          "rank": 15,
-          "team": {
-            "id": "94",
-            "name": "Valencia",
-            "shortName": "Valencia",
-            "abbreviation": "VAL",
-            "logo": "https://a.espncdn.com/i/teamlogos/soccer/500/94.png"
           },
           "played": 0,
           "wins": 0,
