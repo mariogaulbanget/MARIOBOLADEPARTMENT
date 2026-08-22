@@ -1,17 +1,18 @@
 export async function onRequestGet(context) {
   const leagues = [
-    ["epl", "Premier League", "England", "eng.1"],
-    ["serie-a", "Serie A", "Italy", "ita.1"],
-    ["bundesliga", "Bundesliga", "Germany", "ger.1"],
-    ["eredivisie", "Eredivisie", "Netherlands", "ned.1"],
-    ["la-liga", "La Liga", "Spain", "esp.1"],
-    ["ligue-1", "Ligue 1", "France", "fra.1"],
-    ["brasileirao", "Brasileirão Série A", "Brazil", "bra.1"],
-    ["primeira-liga", "Primeira Liga", "Portugal", "por.1"],
-    ["belgian-pro-league", "Belgian Pro League", "Belgium", "bel.1"],
-    ["mls", "Major League Soccer", "United States", "usa.1"],
-    ["bri-super-league", "BRI Super League", "Indonesia", "idn.1"]
-  ];
+  ["epl", "Premier League", "England", "eng.1"],
+  ["la-liga", "La Liga", "Spain", "esp.1"],
+  ["serie-a", "Serie A", "Italy", "ita.1"],
+  ["bundesliga", "Bundesliga", "Germany", "ger.1"],
+  ["ligue-1", "Ligue 1", "France", "fra.1"],
+  ["eredivisie", "Eredivisie", "Netherlands", "ned.1"],
+  ["primeira-liga", "Primeira Liga", "Portugal", "por.1"],
+  ["brasileirao", "Brasileirão Série A", "Brazil", "bra.1"],
+  ["mls", "Major League Soccer", "United States", "usa.1"],
+  ["bri-super-league", "BRI Super League", "Indonesia", "idn.1"],
+  ["belgian-pro-league", "Belgian Pro League", "Belgium", "bel.1"],
+  ["english-championship", "English Championship", "England", "eng.2"]
+];
 
   const parts = new Intl.DateTimeFormat("en-CA", {
     timeZone: "Asia/Jakarta",
